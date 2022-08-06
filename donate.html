@@ -11,30 +11,32 @@
 </head>
 
 <body>
-    <header class="text-gray-400 bg-gray-900 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0" href="/index.html">
-                <img class="rounded-full w-1/6 h-1/6" src="/Assets/Images/Pet Care Logo.png" alt="logo" />
-                <span class="ml-3 text-xl">PetMe</span>
-            </a>
-            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                <a href="/index.html" class="mr-5 hover:text-white">Home</a>
-                <a href="/" class="mr-5 hover:text-white">Donate Animals</a>
-                <a href="/reportstary.html" class="mr-5 hover:text-white">Emergency Report</a>
-                <a href="#about" class="mr-5 hover:text-white">About Us</a>
-            </nav>
-            <a href="/index.html#contact">
-                <button
-                    class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
-                    Contact Us
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                </button>
-            </a>
-        </div>
-    </header>
+  <header class="text-gray-400 bg-gray-900 body-font flex flex-col items-start">
+    <div class="container mx-auto flex  p-5 items-center">
+      <a class="flex-auto grow-[0] pr-[25px]" href="#">
+        <img class="rounded-full w-[80px] h-[80px]" src="./Assets/Images/logo.jpg" alt="logo" />
+      </a>
+      <div class="flex flex-col justify-start flex-auto grow-[2]">
+        <span class="text-4xl text-gray-100 pb-[8px]">Adopt today</span>
+        <span class="text-lg text-gray-400">Give life to a needed animal</span>
+      </div>
+    </div>
+    <nav class="flex flex-wrap items-center text-base justify-center p-5">
+        <a href="/" class="mr-5 hover:text-white">Home</a>
+        <a href="./donate.html" class="mr-5 hover:text-white">Donate Animals</a>
+        <a href="./reportstary.html" class="mr-5 hover:text-white">Emergency Report</a>
+      <a href="#contact">
+        <button
+          class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Contact
+          Us
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </a>
+    </nav>
+  </header>
 
     <section class="text-gray-600 body-font relative bg-[url('Assets/Images/pets-donation.jpg')] bg-center bg-no-repeat
         bg-cover">

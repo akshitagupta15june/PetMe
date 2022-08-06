@@ -1,169 +1,268 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./output.css">
-    <link rel="stylesheet" href="./style.css">
-    <title>PetMe</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./output.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>PetMe</title>
 </head>
 
 <body>
-    <header class="text-gray-400 bg-gray-900 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0" href="#">
-                <img class="rounded-full w-1/6 h-1/6" src="./Assets/Images/Pet Care Logo.png" alt="logo" />
-                <span class="ml-3 text-xl">PetMe</span>
-            </a>
-            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                <a href="/" class="mr-5 hover:text-white">Home</a>
-                <a href="./donate.html" class="mr-5 hover:text-white">Donate Animals</a>
-                <a href="./reportstary.html" class="mr-5 hover:text-white">Emergency Report</a>
-                <a href="#about" class="mr-5 hover:text-white">About Us</a>
-            </nav>
-            <a href="#contact">
-                <button
-                    class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Contact
-                    Us
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                </button>
-            </a>
-        </div>
-    </header>
-    <!--     Intro section -->
-    <section class=" flex md:flex-row md:h-[80%] m-3.5">
-        <div class=" w-[70%] flex md:flex-col justify-center items-center gap-8 ">
-            <h1 class="text-8xl">Adopt Today</h1>
-            <p class="text-3xl">Give life to a needed animal</p>
-        </div>
-        <div class="bg-[url('Assets/Images/dont-shop-adopt.jpg')] bg-center bg-no-repeat
-        bg-cover w-[30%] border-4 border-solid border-gray-800 rounded-xl">
-        </div>
-    </section>
-    <!--     Intro section ends -->
-    <section class=" flex flex-wrap justify-center items-center gap-2 px-2 py-12 flex-auto">
-        <div class="rounded-lg shadow-lg bg-white max-w-xs">
-            <a href="#">
-                <img class="rounded-t-lg" src="Assets/Images/dog.jpg" alt="" />
-            </a>
-            <div class="p-4 flex flex-col gap-2">
-                <h5 class="text-gray-900 md:text-[40px] font-bold mb-2 text-center">Luci</h5>
-                <ul class=" grid sm:grid-cols-2 gap-5">
-                    <li class=" flex gap-2 text-xl justify-self-center">
-                        <img class=" w-5 h-auto" src="Assets/Images/dog-icon.svg" alt="">
-                        <span>Dog</span>
-                    </li>
-                    <li class=" flex text-xl justify-self-center">
-                        <span>8 years</span>
-                    </li>
-                    <li class=" flex text-xl justify-self-center">
-                        <span>Breed</span>
-                    </li>
-                    <li class=" flex text-xl justify-self-center">
-                        <span>Brown</span>
-                    </li>
-                    <li class=" flex gap-2 text-xl justify-self-center">
-                        <img class=" w-5 h-auto" src="Assets/Images/loation-icon.svg" alt="">
-                        <span>Delhi</span>
-                    </li>
-                </ul>
-                <button type="button"
-                    class=" self-center border-2 bg-gray-800 rounded-lg py-3 px-16 mt-3 text-white hover:text-gray-300 ">Adopt
-                    me</button>
-            </div>
-        </div>
-        <div class="rounded-lg shadow-lg bg-white max-w-xs">
-            <a href="#">
-                <img class="rounded-t-lg" src="Assets/Images/dog.jpg" alt="" />
-            </a>
-            <div class="p-4 flex flex-col gap-2">
-                <h5 class="text-gray-900 md:text-[40px] font-bold mb-2 text-center">Luci</h5>
-                <ul class=" grid sm:grid-cols-2 gap-5">
-                    <li class=" flex gap-2 text-xl justify-self-center">
-                        <img class=" w-5 h-auto" src="Assets/Images/dog-icon.svg" alt="">
-                        <span>Dog</span>
-                    </li>
-                    <li class=" flex text-xl justify-self-center">
-                        <span>8 years</span>
-                    </li>
-                    <li class=" flex text-xl justify-self-center">
-                        <span>Breed</span>
-                    </li>
-                    <li class=" flex text-xl justify-self-center">
-                        <span>Brown</span>
-                    </li>
-                    <li class=" flex gap-2 text-xl justify-self-center">
-                        <img class=" w-5 h-auto" src="Assets/Images/loation-icon.svg" alt="">
-                        <span>Delhi</span>
-                    </li>
-                </ul>
-                <button type="button"
-                    class=" self-center border-2 bg-gray-800 rounded-lg py-3 px-16 mt-3 text-white hover:text-gray-300 ">Adopt
-                    me</button>
-            </div>
-        </div>
-        <div class="rounded-lg shadow-lg bg-white max-w-xs">
-            <a href="#">
-                <img class="rounded-t-lg" src="Assets/Images/dog.jpg" alt="" />
-            </a>
-            <div class="p-4 flex flex-col gap-2">
-                <h5 class="text-gray-900 md:text-[40px] font-bold mb-2 text-center">Luci</h5>
-                <ul class=" grid sm:grid-cols-2 gap-5">
-                    <li class=" flex gap-2 text-xl justify-self-center">
-                        <img class=" w-5 h-auto" src="Assets/Images/dog-icon.svg" alt="">
-                        <span>Dog</span>
-                    </li>
-                    <li class=" flex text-xl justify-self-center">
-                        <span>8 years</span>
-                    </li>
-                    <li class=" flex text-xl justify-self-center">
-                        <span>Breed</span>
-                    </li>
-                    <li class=" flex text-xl justify-self-center">
-                        <span>Brown</span>
-                    </li>
-                    <li class=" flex gap-2 text-xl justify-self-center">
-                        <img class=" w-5 h-auto" src="Assets/Images/loation-icon.svg" alt="">
-                        <span>Delhi</span>
-                    </li>
-                </ul>
-                <button type="button"
-                    class=" self-center border-2 bg-gray-800 rounded-lg py-3 px-16 mt-3 text-white hover:text-gray-300 ">Adopt
-                    me</button>
-            </div>
-        </div>
-    </section>
+  <header class="text-gray-400 bg-gray-900 body-font flex flex-col items-start">
+    <div class="container mx-auto flex  p-5 items-center">
+      <a class="flex-auto grow-[0] pr-[25px]" href="#">
+        <img class="rounded-full w-[80px] h-[80px]" src="./Assets/Images/logo.jpg" alt="logo" />
+      </a>
+      <div class="flex flex-col justify-start flex-auto grow-[2]">
+        <span class="text-4xl text-gray-100 pb-[8px]">Adopt today</span>
+        <span class="text-lg text-gray-400">Give life to a needed animal</span>
+      </div>
+    </div>
+    <nav class="flex flex-wrap items-center text-base justify-center p-5">
+        <a href="/" class="mr-5 hover:text-white">Home</a>
+        <a href="./donate.html" class="mr-5 hover:text-white">Donate Animals</a>
+        <a href="./reportstary.html" class="mr-5 hover:text-white">SOS Report</a>
+      <a href="#contact">
+        <button
+          class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Contact
+          Us
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </a>
+    </nav>
+  </header>
+  <section class=" flex flex-wrap justify-center items-center gap-2 px-2 py-12 flex-auto">
+    <div class="rounded-lg shadow-lg bg-white max-w-xs">
+      <a href="#">
+        <img class="rounded-t-lg" src="Assets/Images/goldern-ret.jpg" alt="" />
+      </a>
+      <div class="p-4 flex flex-col gap-2">
+        <h5 class="text-gray-900 md:text-[40px] font-bold mb-2 text-center">Bongo</h5>
+        <ul class=" grid sm:grid-cols-2 gap-5">
+          <li class=" flex gap-2 text-xl justify-self-center">
+            <img class=" w-5 h-auto" src="Assets/Images/dog-icon.svg"  alt="">
+            <span>Dog</span>
+          </li>
+          <li class=" flex text-xl justify-self-center">
+            <span>8 years</span>
+          </li>
+          <li class=" flex text-xl justify-self-center">
+            <span>Male</span>
+          </li>
+          <li class=" flex text-xl justify-self-center">
+            <span>G-Retriever</span>
+          </li>
+          <li class=" flex text-xl justify-self-center">
+            <span>Brown</span>
+          </li>
+          <li class=" flex gap-2 text-xl justify-self-center">
+            <img class=" w-5 h-auto" src="Assets/Images/loation-icon.svg" alt="">
+            <span>Delhi</span>
+          </li>
+        </ul>
+        <button type="button"
+          class=" self-center border-2 bg-gray-800 rounded-lg py-3 px-16 mt-3 text-white hover:text-gray-300 ">Adopt
+          me</button>
+      </div>
+    </div>
+    <div class="rounded-lg shadow-lg bg-white max-w-xs">
+      <a href="#">
+        <img class="rounded-t-lg" src="Assets/Images/pug.jpg" height=300 width=385 alt="" />
+      </a>
+      <div class="p-4 flex flex-col gap-2">
+        <h5 class="text-gray-900 md:text-[40px] font-bold mb-2 text-center">Roblet</h5>
+        <ul class=" grid sm:grid-cols-2 gap-5">
+          <li class=" flex gap-2 text-xl justify-self-center">
+            <img class=" w-5 h-auto" src="Assets/Images/dog-icon.svg" alt="">
+            <span>Dog</span>
+          </li>
+          <li class=" flex text-xl justify-self-center">
+            <span>8 years</span>
+          </li>
+          <li class=" flex text-xl justify-self-center">
+            <span>Male</span>
+          </li>
+          <li class=" flex text-xl justify-self-center">
+            <span>Pug</span>
+          </li>
+          <li class=" flex text-xl justify-self-center">
+            <span>Brown</span>
+          </li>
+          <li class=" flex gap-2 text-xl justify-self-center">
+            <img class=" w-5 h-auto" src="Assets/Images/loation-icon.svg" alt="">
+            <span>Lucknow</span>
+          </li>
+        </ul>
+        <button type="button"
+          class=" self-center border-2 bg-gray-800 rounded-lg py-3 px-16 mt-3 text-white hover:text-gray-300 ">Adopt
+          me</button>
+      </div>
+    </div>
+    <div class="rounded-lg shadow-lg bg-white max-w-xs">
+      <a href="#">
+        <img class="rounded-t-lg" src="Assets/Images/husky.jpg" height=500 width=400 alt="" />
+      </a>
+      <div class="p-4 flex flex-col gap-2">
+        <h5 class="text-gray-900 md:text-[40px] font-bold mb-2 text-center">Sipper</h5>
+        <ul class=" grid sm:grid-cols-2 gap-5">
+          <li class=" flex gap-2 text-xl justify-self-center">
+            <img class=" w-5 h-auto" src="Assets/Images/dog-icon.svg" alt="">
+            <span>Dog</span>
+          </li>
+          <li class=" flex text-xl justify-self-center">
+            <span>7 years</span>
+          </li>
+          <li class=" flex text-xl justify-self-center">
+            <span>Male</span>
+          </li>
+          <li class=" flex text-xl justify-self-center">
+            <span>Husky</span>
+          </li>
+          <li class=" flex text-xl justify-self-center">
+            <span>Brown</span>
+          </li>
+          <li class=" flex gap-2 text-xl justify-self-center">
+            <img class=" w-5 h-auto" src="Assets/Images/loation-icon.svg" alt="">
+            <span>Kashmir</span>
+          </li>
+        </ul>
+        <button type="button"
+          class=" self-center border-2 bg-gray-800 rounded-lg py-3 px-16 mt-3 text-white hover:text-gray-300 ">Adopt
+          me</button>
+      </div>
+    </div>
+    <div class="rounded-lg shadow-lg bg-white max-w-xs">
+      <a href="#">
+        <img class="rounded-t-lg" src="Assets/Images/ragdo.jpg" height=315 width=250 alt="" />
+      </a>
+      <div class="p-4 flex flex-col gap-2">
+        <h5 class="text-gray-900 md:text-[40px] font-bold mb-2 text-center">Russia</h5>
+        <ul class=" grid sm:grid-cols-2 gap-5">
+          <li class=" flex gap-2 text-xl justify-self-center">
+            <img class=" w-5 h-auto" src="Assets/Images/cat.png"  alt="">
+            <span>Cat</span>
+          </li>
+          <li class=" flex text-xl justify-self-center">
+            <span>2.5 years</span>
+          </li>
+          <li class=" flex text-xl justify-self-center">
+            <span>Female</span>
+          </li>
+          <li class=" flex text-xl justify-self-center">
+            <span>Ragdoll</span>
+          </li>
+          <li class=" flex text-xl justify-self-center">
+            <span>White</span>
+          </li>
+          <li class=" flex gap-2 text-xl justify-self-center">
+            <img class=" w-5 h-auto" src="Assets/Images/loation-icon.svg" alt="">
+            <span>Karnataka</span>
+          </li>
+        </ul>
+        <button type="button"
+          class=" self-center border-2 bg-gray-800 rounded-lg py-3 px-16 mt-3 text-white hover:text-gray-300 ">Adopt
+          me</button>
+      </div>
+    </div>
+    <div class="rounded-lg shadow-lg bg-white max-w-xs">
+      <a href="#">
+        <img class="rounded-t-lg" src="Assets/Images/persian.webp" height=300 width=385 alt="" />
+      </a>
+      <div class="p-4 flex flex-col gap-2">
+        <h5 class="text-gray-900 md:text-[40px] font-bold mb-2 text-center">Zombo</h5>
+        <ul class=" grid sm:grid-cols-2 gap-5">
+          <li class=" flex gap-2 text-xl justify-self-center">
+            <img class=" w-5 h-auto" src="Assets/Images/cat.png" alt="">
+            <span>Cat</span>
+          </li>
+          <li class=" flex text-xl justify-self-center">
+            <span>1.5 years</span>
+          </li>
+          <li class=" flex text-xl justify-self-center">
+            <span>Female</span>
+          </li>
+          <li class=" flex text-xl justify-self-center">
+            <span>Persian</span>
+          </li>
+          <li class=" flex text-xl justify-self-center">
+            <span>White</span>
+          </li>
+          <li class=" flex gap-2 text-xl justify-self-center">
+            <img class=" w-5 h-auto" src="Assets/Images/loation-icon.svg" alt="">
+            <span>Kanpur</span>
+          </li>
+        </ul>
+        <button type="button"
+          class=" self-center border-2 bg-gray-800 rounded-lg py-3 px-16 mt-3 text-white hover:text-gray-300 ">Adopt
+          me</button>
+      </div>
+    </div>
+    <div class="rounded-lg shadow-lg bg-white max-w-xs">
+      <a href="#">
+        <img class="rounded-t-lg" src="Assets/Images/angora.jpg" height=500 width=400 alt="" />
+      </a>
+      <div class="p-4 flex flex-col gap-2">
+        <h5 class="text-gray-900 md:text-[40px] font-bold mb-2 text-center">Riksy</h5>
+        <ul class=" grid sm:grid-cols-2 gap-5">
+          <li class=" flex gap-2 text-xl justify-self-center">
+            <img class=" w-5 h-auto" src="Assets/Images/rabbit.png" alt="">
+            <span>Rabbit</span>
+          </li>
+          <li class=" flex text-xl justify-self-center">
+            <span>0.5 years</span>
+          </li>
+          <li class=" flex text-xl justify-self-center">
+            <span>Female</span>
+          </li>
+          <li class=" flex text-xl justify-self-center">
+            <span>Angora</span>
+          </li>
+          <li class=" flex text-xl justify-self-center">
+            <span>White</span>
+          </li>
+          <li class=" flex gap-2 text-xl justify-self-center">
+            <img class=" w-5 h-auto" src="Assets/Images/loation-icon.svg" alt="">
+            <span>Kashmir</span>
+          </li>
+        </ul>
+        <button type="button"
+          class=" self-center border-2 bg-gray-800 rounded-lg py-3 px-16 mt-3 text-white hover:text-gray-300 ">Adopt
+          me</button>
+      </div>
+    </div>
+  </section>
 
 
-    <!--     Contact us section html starts from here -->
-    <section id="contact">
-        <div class="sectionheader">
-            <h1>CONTACT US</h1>
-        </div>
-        <article>
-            <p>Any issues! fill the form below and our team will contact you shortly.</p>
+  <!--     Contact us section html starts from here -->
+  <section id="contact">
+    <div class="sectionheader">
+      <h1>CONTACT US</h1>
+    </div>
+    <article>
+      <p>Any issues! fill the form below and our team will contact you shortly.</p>
 
-            <label for="checkcontact" class="contactbutton">
-                <div class="mail"></div>
-            </label><input id="checkcontact" type="checkbox">
+      <label for="checkcontact" class="contactbutton">
+        <div class="mail"></div>
+      </label><input id="checkcontact" type="checkbox">
 
-            <form action="https://formspree.io/f/xayaokzl" method="post" class="contactform">
-                <p class="input_wrapper"><input type="text" name="contact_nom" value="" id="contact_nom"><label
-                        for="contact_nom">NAME</label></p>
-                <p class="input_wrapper"><input type="text" name="contact_email" value="" id="contact_email"><label
-                        for="contact_email">EMAIL</label></p>
+      <form action="https://formspree.io/f/xayaokzl" method="post" class="contactform">
+        <p class="input_wrapper"><input type="text" name="contact_nom" value="" id="contact_nom"><label
+            for="contact_nom">NAME</label></p>
+        <p class="input_wrapper"><input type="text" name="contact_email" value="" id="contact_email"><label
+            for="contact_email">EMAIL</label></p>
 
-                <p class="textarea_wrapper"><textarea name="contact_message" id="contact_message"></textarea></p>
-                <p class="submit_wrapper"><input type="submit" value="SUBMIT"></p>
-            </form>
-        </article>
-    </section>
-    <!--     Contact us section html ends here -->
+        <p class="textarea_wrapper"><textarea name="contact_message" id="contact_message"></textarea></p>
+        <p class="submit_wrapper"><input type="submit" value="SUBMIT"></p>
+      </form>
+    </article>
+  </section>
+  <!--     Contact us section html ends here -->
 </body>
 
 </html>
