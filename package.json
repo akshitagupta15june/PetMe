@@ -1,0 +1,22 @@
+{
+  "name": "petme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muditchoudhary/petMe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muditchoudhary/petMe/issues"
+  },
+  "homepage": "https://github.com/muditchoudhary/petMe#readme",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.1.7"
+  }
+}
