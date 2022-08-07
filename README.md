@@ -51,7 +51,7 @@ In the future, we plan to scale this application more to reach as many people as
 
 Furthermore, we plan to connect with the nearest government organization that provides medical assistance to stray animals.
 
-##🚀 How we have used **Github** in our project? 🚀
+## How we have used **Github** in our project? 🚀
 
 We used Github in different ways:
 
