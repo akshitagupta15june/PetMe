@@ -1,6 +1,6 @@
 # PetMe
 
-##💡 Inspiration
+## Inspiration💡
 
 Each year, it's estimated that more than one million adoptable dogs and cats are euthanized in the United States, simply because too many pets come into shelters and too few people consider adoption when looking for a pet.
 
@@ -10,7 +10,7 @@ Researchers and animal welfare activists apprehend that in the wake of misinform
 
 We are following the policy of saving lives, saving animals and we built **PetMe** in this hackathon.
 
-##⚙️ What it does 
+## What it does⚙️
 
 ### Test here [PetMe](https://akshitagupta15june.github.io/PetMe/)
 
