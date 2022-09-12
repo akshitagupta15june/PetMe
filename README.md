@@ -64,3 +64,36 @@ We used Github in different ways:
 **Github Templates** We used the Github default LICENSE template for adding an MIT license to our project.
 
 **Github Actions** Although implementing the actions was a kind of hectic task for our team but we tried to implement them for our pull requests. We still had to learn about GitHub's actions for future hackathons.
+
+
+---
+
+## Contributing 👨‍💻 
+
+- Contributions make the open source community such an amazing place to learn, inspire, and create.
+- Any contributions you make are **greatly appreciated**.
+- Check out our [contribution guidelines](/CONTRIBUTING.md) for more information.
+
+
+## License 🛡️ 
+
+PetMe is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Open Source Programs
+ <a href="https://hacktoberfest.com/">
+ <img width="1200" alt="Email Banners-Dark" src="https://user-images.githubusercontent.com/79099734/189589410-ca17afb8-5855-4316-918a-054f27594809.png">
+ </a>
+
+## 😎 Project Maintainer
+
+<table>
+  <tr>
+<td align="center"><a href="https://github.com/Susmita-Dey"><img src="https://avatars.githubusercontent.com/u/79099734?v=4" width="100px;" alt=""/><br /><sub><b>Susmita Dey</b></sub></a></td>
+  </tr>
+</table>
+
+## Thanks to all Contributors 💪 
+
+Thanks a lot for spending your time helping all-round-calculator grow. Thanks a lot! Keep rocking 🍻
+
+[![Contributors](https://contrib.rocks/image?repo=akshitagupta15june/PetMe)](https://github.com/akshitagupta15june/PetMe/graphs/contributors)
