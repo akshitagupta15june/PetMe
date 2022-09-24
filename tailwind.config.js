@@ -31,6 +31,9 @@ module.exports = {
         borderRadius: {
           "4xl": "2rem",
         },
+        colors: {
+          'light-blue': '#B7DFF8',
+        }
       },
     },
   },

@@ -11,30 +11,51 @@
 </head>
 
 <body>
-  <header class="text-gray-400 bg-gray-900 body-font flex flex-col items-start">
-    <div class="container flex pl-10 p-5 items-center">
-      <a class="flex-auto grow-[0] pr-[25px]" href="#">
-        <img class="rounded-full w-[80px] h-[80px]" src="./Assets/Images/logo.jpg" alt="logo" />
+  <header class=" text-gray-400 bg-gray-900 body-font flex flex-row items-center justify-center lg:justify-around">
+    <div class="flex flex-col items-center md:flex-row md:items-center p-5">
+      <a class="w-32" href="#">
+        <img class="rounded-full" src="./Assets/Images/logo.jpg" alt="logo" />
       </a>
-      <div class="flex flex-col justify-start flex-auto grow-[2]">
-        <span class="text-4xl text-gray-100 pb-[8px]">Adopt today</span>
-        <span class="text-lg text-gray-400">Give life to a needed animal</span>
+
+      <div class="w-full mt-8 md:mt-0">
+        <h1 class="text-4xl text-blue-200 text-center md:text-left md:ml-12 uppercase font-serif font-bold ">Adopt
+          today!</h1>
+        <p class="text-lg text-gray-400 text-center md:text-left md:ml-12 mt-2">Give life to a needed animal</p>
       </div>
     </div>
-    <nav class="flex flex-wrap items-center text-base justify-center pl-10 p-5">
-      <a href="/" class="mr-5 hover:text-white">Home</a>
-      <a href="./donate.html" class="mr-5 hover:text-white">Donate Animals</a>
-      <a href="./reportstary.html" class="mr-5 hover:text-white">SOS Report</a>
-      <a href="#contact">
-        <button
-          class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Contact
-          Us
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
-        </button>
-      </a>
+    <button data-collapse-toggle="navbar-default" type="button"
+      class="absolute top-4 right-4 sm:inline-flex sm:items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 z-10"
+      aria-controls="navbar-default" aria-expanded="false" id="nav-button">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+          clip-rule="evenodd"></path>
+      </svg>
+    </button>
+    <nav class="">
+      <div class="hidden w-full lg:block z-0" id="navbar">
+        <ul
+          class="absolute w-full h-1/2 top-0 right-0 p-4 text-center space-y-8 lg:space-y-0 lg:space-x-3 lg:static lg:w-auto flex flex-col bg-gray-800 rounded-lg border border-gray-100 items-center lg:bg-transparent lg:border-0 lg:flex-row justify-center">
+          <li><a href="/" class="p-3 text-white font-bold hover:underline underline-offset-4">Home</a></li>
+          <li><a href="./donate.html" class="p-3 text-white font-bold hover:underline underline-offset-4">Donate
+              Animals</a></li>
+          <li><a href="./reportstary.html" class="p-3 text-white font-bold hover:underline underline-offset-4">SOS
+              Report</a></li>
+          <li><a href="#contact">
+              <button
+                class="inline-flex items-center bg-blue-200 hover:bg-blue-100 border-0 py-4 px-2 focus:outline-none text-gray-800 font-bold rounded text-base mt-4 md:mt-0">
+                Contact Us
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
   <section class=" flex flex-wrap justify-center items-center gap-2 px-2 py-12 flex-auto">
@@ -339,6 +360,7 @@
     </article>
   </section>
   <!--     Contact us section html ends here -->
+  <script src="index.js"></script>
 </body>
 
 </html>
