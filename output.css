@@ -53,13 +53,11 @@ html {
 2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
 */
 .bg {
-  background: url(Assets/Images/bg.jpg) no-repeat center center/cover;
-}
-.op {
-  opacity: 50%;
+  background: url(Assets/Images/bg1.jpg) no-repeat center center/cover;
 }
 .op:hover {
-  opacity: 80%;
+  transform: scale(1.04);
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
 }
 body {
   margin: 0;
