@@ -91,6 +91,8 @@ PetMe is licensed under the MIT License - see the [LICENSE](LICENSE) file for de
 <table>
   <tr>
 <td align="center"><a href="https://github.com/Susmita-Dey"><img src="https://avatars.githubusercontent.com/u/79099734?v=4" width="100px;" alt=""/><br /><sub><b>Susmita Dey</b></sub></a></td>
+
+<td align="center"><a href="https://github.com/akshitagupta15june"><img src="https://avatars0.githubusercontent.com/u/57909583?v=4" width="100px;" alt=""/><br /><sub><b>Akshita Gupta</b></sub></a></td>
  </tr>
 </table>
 
