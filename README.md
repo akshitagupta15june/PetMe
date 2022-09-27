@@ -1,5 +1,7 @@
 # PetMe
 
+![alt text](./Assets/Images/logo.jpg)
+
 <h3>Join official <a href="https://discord.gg/X3HZAPzykU">Discord Channel</a> for discussion</h3>
 
 ## Inspiration💡
