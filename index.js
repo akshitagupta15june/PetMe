@@ -4,3 +4,4 @@ const navBtn = document.getElementById('nav-button');
 navBtn.addEventListener('click', () => {
     navBar.classList.toggle('hidden');
 })
+
