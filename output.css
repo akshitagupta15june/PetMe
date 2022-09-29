@@ -54,6 +54,7 @@ html {
 */
 .bg {
   background: url(Assets/Images/bg1.jpg) no-repeat center center/cover;
+  /* //TODO: might need to change for light mode */
 }
 .op:hover {
   transform: scale(1.04);
