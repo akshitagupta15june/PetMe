@@ -8,8 +8,6 @@ Each year, it's estimated that more than one million adoptable dogs and cats are
 
 **The number of euthanized animals could be reduced dramatically if more people adopt pets instead of buying them. When you adopt dogs and cats, you save a loving animal by making them part of your family and open up shelter space for another animal who might desperately need it.**
 
-Researchers and animal welfare activists apprehend that in the wake of misinformation linking the disease to pets and local community animals, the stray animals may be deprived of food and essential veterinary care.
-
 We are following the policy of saving lives, saving animals and we built **PetMe** in this hackathon.
 
 ## What it does⚙️
