@@ -1,6 +1,8 @@
 # PetMe
 
-![alt text](./Assets/Images/logo.jpg)
+<p align="center">
+  <img src="./Assets/Images/logo.jpg" height="250px">
+</p>
 
 <h3>Join official <a href="https://discord.gg/X3HZAPzykU">Discord Channel</a> for discussion</h3>
 
