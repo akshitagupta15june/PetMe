@@ -11,3 +11,76 @@
   }
 }
 
+.contributors-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #131c2b;
+  padding-bottom: 2.75rem;
+  border-bottom: 1px solid gray;
+}
+
+.contributors-container h1 {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 2.5rem 0;
+}
+.contributors {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0 8%;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 4rem;
+}
+
+.contribute-btn {
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 3rem;
+  letter-spacing: 1.5px;
+  background-color: #003479;
+}
+
+.contribute-btn img {
+  width: 2.2rem;
+  color: black;
+  margin-right: 5px;
+}
+
+/*-------sos button ---------*/
+#mySBtn {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 25px; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#mySBtn:hover {
+  background-color: #fff; /* Add a dark-grey background on hover */
+  color: red;
+  font-weight: 700;
+}
+/*-----end of sos button----*/

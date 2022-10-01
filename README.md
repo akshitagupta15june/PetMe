@@ -8,8 +8,6 @@ Each year, it's estimated that more than one million adoptable dogs and cats are
 
 **The number of euthanized animals could be reduced dramatically if more people adopt pets instead of buying them. When you adopt dogs and cats, you save a loving animal by making them part of your family and open up shelter space for another animal who might desperately need it.**
 
-Researchers and animal welfare activists apprehend that in the wake of misinformation linking the disease to pets and local community animals, the stray animals may be deprived of food and essential veterinary care.
-
 We are following the policy of saving lives, saving animals and we built **PetMe** in this hackathon.
 
 ## What it does⚙️
@@ -31,21 +29,11 @@ We are following the policy of saving lives, saving animals and we built **PetMe
 
 ## How we built it ⚙️
 
-We have built this website using HTML, CSS, JavaScript and connected backend database with postman API's
-
-## Challenges we ran into 🙁
-
-**Brainstorming:** it took our team a while to develop a website that is unique and had a real societal influence. 
-
-**Building:**  It is also a challenging Hackathon that we need to work in new areas which we were unfamiliar with, such as handling databases to build a good project. Handling both backend and frontend at the same time within a weekend is also a big challenge for us. 
+We have built this website using HTML, CSS, JavaScript and connected backend database with postman API's.
 
 ## Accomplishments that we're proud of 😇
 
 We are proud that we built a website in which pet lovers can easily adopt stray animals through our website, which not only provides medical assistance to stray animals, but allows them to be adopted by their comrades in the community.
-
-## What we learned 🤔
-
-In addition to learning Tailwind CSS, we connected the backend API in order to store the information entered by donors and adopters.
 
 ## What's next for PetMe 📲
 
@@ -53,22 +41,18 @@ In the future, we plan to scale this application more to reach as many people as
 
 Furthermore, we plan to connect with the nearest government organization that provides medical assistance to stray animals.
 
-## How we have used **Github** in our project? 🚀
-
-We used Github in different ways:
-
-**Pull Requests and Issues:** We created pull requests on our GitHub repository as we were a team of three and we're working on our local repository. If any of our team members gets an idea for a new feature, she would suggest it for all members to see and receive their opinions on how to implement it.
-
-**Github Branches** Github branches helped a lot for beta testing of updated code before merging the new code into the original code. Our team approximately created 2-3  branches during the hackathon.
-
-**Github Pages** we deployed our website at https://akshitagupta15june.github.io/PetMe/ using Github pages. It was really simple to deploy our site through GitHub pages and we are planning to use this feature in future hackathons.
-
-**Github Templates** We used the Github default LICENSE template for adding an MIT license to our project.
-
-**Github Actions** Although implementing the actions was a kind of hectic task for our team but we tried to implement them for our pull requests. We still had to learn about GitHub's actions for future hackathons.
-
-
 ---
+
+## ⭐ How to get started with open source?
+<img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/isometric.png" height="290px" align="right"/>
+
+You can refer to the following articles on the basics of Git and Github.
+
+- [Watch this video to get started, if you have no clue about open source](https://youtu.be/SYtPC9tHYyQ)
+- [Forking a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
+- [Cloning a Repo](https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request)
+- [How to create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)
+- [Getting started with Git and GitHub](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
 
 ## Contributing 👨‍💻 
 
@@ -93,6 +77,8 @@ PetMe is licensed under the MIT License - see the [LICENSE](LICENSE) file for de
 <td align="center"><a href="https://github.com/Susmita-Dey"><img src="https://avatars.githubusercontent.com/u/79099734?v=4" width="100px;" alt=""/><br /><sub><b>Susmita Dey</b></sub></a></td>
 
 <td align="center"><a href="https://github.com/akshitagupta15june"><img src="https://avatars0.githubusercontent.com/u/57909583?v=4" width="100px;" alt=""/><br /><sub><b>Akshita Gupta</b></sub></a></td>
+ 
+<td align="center"><a href="https://github.com/muditchoudhary"><img src="https://avatars.githubusercontent.com/u/74391865?s=400&u=2944cf6cb540e3ba3a08653225406d0826e1c272&v=4" width="100px;" alt=""/><br /><sub><b>Mudit Choudhary</b></sub></a></td>
  </tr>
 </table>
 
