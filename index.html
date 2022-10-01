@@ -424,28 +424,35 @@
 
 
   <!--     Contact us section html starts from here -->
-  <section id="contact">
-    <div class="sectionheader">
-      <h1>CONTACT US</h1>
+
+  <section class="bg-white dark:bg-gray-900">
+    <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+      <p id="contact"></p>
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
+        <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Got a technical issue? Have a suggession? Need details about our platform? Any other doubts? Let us know.</p>
+        <form action="https://formspree.io/f/xayaokzl" class="space-y-8" method="post" id="contact_form">
+          <div class="relative z-0 mb-6 w-full group">
+            <input type="text" name="name" id="contact_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+            <label for="contact_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Name</label>
+          </div>
+            <div class="relative z-0 mb-6 w-full group">
+              <input type="email" name="email" id="contact_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+              <label for="contact_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email Address</label>
+          </div>
+          <div class="relative z-0 mb-6 w-full group">
+            <input type="text" name="subject" id="contact_subject" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+            <label for="contact_subject" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Subject</label>
+        </div>
+          <div class="relative z-0 mb-6 w-full group">
+            <textarea type="text" rows="3" name="message" id="message" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required ></textarea>
+            <label for="message" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Message</label>
+        </div>
+            <button id="contact_form_button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>
+            <p id="contact_form_status"></p>
+          </form>
     </div>
-    <article>
-      <p>Any issues! fill the form below and our team will contact you shortly.</p>
-
-      <label for="checkcontact" class="contactbutton">
-        <div class="mail"></div>
-      </label><input id="checkcontact" type="checkbox">
-
-      <form action="https://formspree.io/f/xayaokzl" method="post" class="contactform">
-        <p class="input_wrapper"><input type="text" name="contact_nom" value="" id="contact_nom"><label
-            for="contact_nom">NAME</label></p>
-        <p class="input_wrapper"><input type="text" name="contact_email" value="" id="contact_email"><label
-            for="contact_email">EMAIL</label></p>
-
-        <p class="textarea_wrapper"><textarea name="contact_message" id="contact_message"></textarea></p>
-        <p class="submit_wrapper"><input type="submit" value="SUBMIT"></p>
-      </form>
-    </article>
   </section>
+
   <!--     Contact us section html ends here -->
       
    <!--Contributors section -->
