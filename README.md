@@ -1,3 +1,13 @@
+<p align="center">
+    <img src="https://img.shields.io/github/issues/akshitagupta15june/PetMe"> 
+    <img src="https://img.shields.io/github/issues-pr/akshitagupta15june/PetMe">
+    <img src="https://img.shields.io/github/forks/akshitagupta15june/PetMe">
+    <img src="https://img.shields.io/github/stars/akshitagupta15june/PetMe">
+    <img src="https://img.shields.io/github/license/akshitagupta15june/PetMe">
+</p>
+
+
+
 # PetMe
 
 <h3>Join official <a href="https://discord.gg/X3HZAPzykU">Discord Channel</a> for discussion</h3>
