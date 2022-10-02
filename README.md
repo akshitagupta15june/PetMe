@@ -1,3 +1,12 @@
+## Open Source Programs
+<p align="center"> PetMe is ready for Hacktoberfest</p>
+ <a href="https://hacktoberfest.com/">
+ <img width="1200" alt="Email Banners-Dark" src="https://user-images.githubusercontent.com/79099734/189589410-ca17afb8-5855-4316-918a-054f27594809.png">
+ </a>
+-----
+
+
+<p align="center">About the project:</p>
 <p align="center">
     <img src="https://img.shields.io/github/issues/akshitagupta15june/PetMe"> 
     <img src="https://img.shields.io/github/issues-pr/akshitagupta15june/PetMe">
@@ -6,54 +15,59 @@
     <img src="https://img.shields.io/github/license/akshitagupta15june/PetMe">
 </p>
 
-
+<p align="center">Tech Stack:</p>
+<p align="center">
+    <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"> 
+    <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white">
+    <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
+    <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white">
+</p>
 
 # PetMe
 
 <p align="center">
   <img src="./Assets/Images/logo.jpg" height="250px">
-</p>
+  </p>
 
-<h3>Join official <a href="https://discord.gg/X3HZAPzykU">Discord Channel</a> for discussion</h3>
-
-## Inspiration💡
-
-Each year, it's estimated that more than one million adoptable dogs and cats are euthanized in the United States, simply because too many pets come into shelters and too few people consider adoption when looking for a pet.
-
-**The number of euthanized animals could be reduced dramatically if more people adopt pets instead of buying them. When you adopt dogs and cats, you save a loving animal by making them part of your family and open up shelter space for another animal who might desperately need it.**
-
-We are following the policy of saving lives, saving animals and we built **PetMe** in this hackathon.
-
-## What it does⚙️
-
-### Test here [PetMe](https://akshitagupta15june.github.io/PetMe/)
-
-**Our project is PetMe, a platform that allows animals to be adopted, donated to pet lovers, and provides emergency medical care to stray animals in need.**
-
-**You can also refer to  this ***[Video](https://www.youtube.com/embed/U1EQjtT-G8E)*** to know about PetMe.**
-
-🤖 The first feature is **Animal Adoption**, which allows users to choose an animal they want to adopt and submit their details so that the owner can reach out to them regarding adoption details. 
-
-🤖 The next feature is **Pet Donation**. In these hectic times, pet owners may not be able to provide proper care to their pets because of their business. In such instances, they donate the pet to another person who can adopt the animal.
-
-🤖 All the data will be stored in a database and as soon as a person add the details of a pet animal they want to donate so their details will be shown in the adoption menu.
-
-🤖  Our platform also provides **SOS reports**, as the population of stray animals is increasing, and stray animals cannot stand harsh weather conditions, and sometimes they are injured by accidents. Therefore, if a person notices any stray animal in harsh conditions, they can fill out the details and a representative will reach the location to assist the animal with medical aid. 
-
-🤖  Users can also **contact us** through the contact us form and one of our team members will contact them shortly.
+<p align="center"> Join our official <a href="https://discord.gg/X3HZAPzykU">Discord Channel</a> for discussion and updates. </p>
 
 
-## How we built it ⚙️
+## Inspiration for the Project:
 
-We have built this website using HTML, CSS, JavaScript and connected backend database with postman API's.
+It has been estimated that more than one million adoptable dogs and cats are euthanized in the United States each year. This happens for the reason that there are too many pets that are enrolled into shelters and only a few people consider adoption when they look out for a pet.
 
-## Accomplishments that we're proud of 😇
+**The number of euthanized animals can be reduced drastically if more people adopt pets instead of buying them from stores. When you adopt an animal, you save a lovely life by making them a part of your family as well as open up a shelter space for an animal who might be in need of one desperately.**
 
-We are proud that we built a website in which pet lovers can easily adopt stray animals through our website, which not only provides medical assistance to stray animals, but allows them to be adopted by their comrades in the community.
+When the team heard about the animals that were getting under danger each year, it became a goal for us to help these speechless being somehow. After brainstorming for a long time we came up with the idea of **PetMe**. We believe in the policy of saving animals and thus saving lives. Every life matters and we wish to be the part of the change that is making the same possible.
+
+
+## Features of PetMe at a Glance
+
+<a href="https://akshitagupta15june.github.io/PetMe/"><p align="center">The test site for the project can be found here.</p></a>
+
+
+| Function | Feature | Image |
+| --- | ----------- | -------|
+| Adopting a Pet | Allows user to choose an animal they wish to adopt and submit their details for contact purposes | ![image](https://user-images.githubusercontent.com/99717469/193424761-4c7f510f-b099-4e48-b0c8-d09eece32469.png) |
+| Donating a Pet | Pet owners can donate their pets if they are unable to take care of the ones they have | ![image](https://user-images.githubusercontent.com/99717469/193424675-328e10ed-78f8-49bf-8fa6-68d0db4a7fd1.png) |
+| Emergency care for Stray Animals | Provide contact details to get emergency medical services | ![image](https://user-images.githubusercontent.com/99717469/193424731-fa82b5a9-8c01-4648-a378-7c23bfb20427.png) |
+
+----
+
+For a brief explanation about PetMe, you can watch the following [video](https://www.youtube.com/embed/U1EQjtT-G8E). 
+
+Additional features:
+- All the data is stored in the database so when a person wishes to adopt or donate an animal, their information will be auto-filled using the database. 
+- Users can use the `Contact` page to drop in their details for a call with one of the team members. 
+
+
+## Accomplishments:
+
+We are proud that we built a website in which pet lovers can easily adopt stray animals through our website, which can not only provide medical assistance to stray animals, but also allow them to be adopted by their comrades in the community.
 
 ## What's next for PetMe 📲
 
-In the future, we plan to scale this application more to reach as many people as possible and facilitate adoption and donation of animals.
+In future, we plan to scale this application to reach as many people as possible and facilitate adoption and donation of animals.
 
 Furthermore, we plan to connect with the nearest government organization that provides medical assistance to stray animals.
 
@@ -72,21 +86,12 @@ You can refer to the following articles on the basics of Git and Github.
 
 ## Contributing 👨‍💻 
 
-- Contributions make the open source community such an amazing place to learn, inspire, and create.
+- Contributions make the open source community an amazing place to learn, inspire, and create.
 - Any contributions you make are **greatly appreciated**.
 - Check out our [contribution guidelines](/CONTRIBUTING.md) for more information.
 
 
-## License 🛡️ 
-
-PetMe is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Open Source Programs
- <a href="https://hacktoberfest.com/">
- <img width="1200" alt="Email Banners-Dark" src="https://user-images.githubusercontent.com/79099734/189589410-ca17afb8-5855-4316-918a-054f27594809.png">
- </a>
-
-## 😎 Project Maintainer
+## 😎 Project Maintainers
 
 <table>
   <tr>
@@ -103,3 +108,7 @@ PetMe is licensed under the MIT License - see the [LICENSE](LICENSE) file for de
 Thanks a lot for spending your time helping all-round-calculator grow. Thanks a lot! Keep rocking 🍻
 
 [![Contributors](https://contrib.rocks/image?repo=akshitagupta15june/PetMe)](https://github.com/akshitagupta15june/PetMe/graphs/contributors)
+
+## License 🛡️ 
+
+PetMe is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
