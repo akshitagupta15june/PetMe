@@ -54,7 +54,11 @@ When the team heard about the animals that were getting under danger each year, 
 
 ----
 
-For a brief explanation about PetMe, you can watch the following [video](https://www.youtube.com/embed/U1EQjtT-G8E). 
+
+## Watch the video:
+For a brief explanation about PetMe, you can watch the following
+[![video](https://i.imgur.com/8gEUuwt.png)](https://www.youtube.com/embed/U1EQjtT-G8E)
+
 
 Additional features:
 - All the data is stored in the database so when a person wishes to adopt or donate an animal, their information will be auto-filled using the database. 
