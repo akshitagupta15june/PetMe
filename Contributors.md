@@ -6,29 +6,6 @@ Project Maintainers
 
 Contributors
 
-- [AKSHITA GUPTA](https://github.com/akshitagupta15june)
-- [Dev](https://github.com/d3vsuthar)
-- [Ahnaf Anis](https://github.com/Ahnaf-codes)
-- [Advay Sagarkar](https://github.com/Aragorn-64)
-- [Susmita Dey](https://github.com/Susmita-Dey)
-- [Arghya Banerjee](https://github.com/Arghya-Banerjee)
-- [Anubhav Goel](https://github.com/anubhav047)
-- [Shreya Sarkar](https://github.com/zugzwang03)
-- [Mustafa Azad](https://github.com/Mustafa-Azad025)
-- [Douglas Evaristo](https://github.com/douglasevaristo)
-- [Om Thakare](https://github.com/omthakare16)
-- [Binnny](https://github.com/BinniesLite)
-- [Abit Salihu](https://github.com/abitsalihu)
-- [Sammriddh Gupta](https://github.com/SammriddhGupta)
-- [Mritul](https://github.com/mritul)
-- [omkar R](https://github.com/omk-coder)
-- [Krupali Trivedi](https://github.com/krupalitrivedi)
-- [sambhavgupta0705](https://github.com/sambhavgupta0705)
-- [Harsh Shukla](https://github.com/Harsh97x)
-- [Pranjal Mishra](https://github.com/Pranjalmishra30)
-- [Aswin Shailajan](https://github.com/aswin2108)
-- [Laxman B](https://github.com/laxmanbalaraman)
-- [Sairaj Yadav](https://github.com/yadavsairaj)
-- [ABHIGYAN MOHANTA](https://github.com/ABHIGYAN-MOHANTA)
-- [Mudit Choudhary](https://github.com/muditchoudhary)
-- [Roman Daru](https://github.com/Jokerko93)
+<a href="https://github.com/akshitagupta15june/PetMe/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=akshitagupta15june/PetMe&max=500" alt="Contributors list" width="100%"/>
+</a>
