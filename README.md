@@ -57,7 +57,7 @@ When the team heard about the animals that were getting under danger each year, 
 
 ## Watch the video:
 For a brief explanation about PetMe, you can watch the following
-[![video](https://imgur.com/8gEUuwt)](https://www.youtube.com/embed/U1EQjtT-G8E)
+[![video](https://i.imgur.com/8gEUuwt.png)](https://www.youtube.com/embed/U1EQjtT-G8E)
 
 
 Additional features:
