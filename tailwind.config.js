@@ -1,5 +1,6 @@
 module.exports = {
   content: ["index.html", "*"],
+  darkMode: "class",
   theme: {
     theme: {
       screens: {
@@ -37,5 +38,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: []
+  // darkMode: ['class', '[data-mode="dark"]']
+  
 };
