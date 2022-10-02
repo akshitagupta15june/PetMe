@@ -8,13 +8,14 @@
   <link rel="stylesheet" href="./output.css">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./introSection.css">
+  <link rel="stylesheet" href="./mobileView.css">
   <title>PetMe</title>
 </head>
 
 <body>
   <header
     class=" text-gray-400 bg-header-offwhite body-font flex flex-row items-center justify-center lg:justify-around">
-    <div class="flex flex-col items-center md:flex-row md:items-center p-5">
+    <div class="flex flex-col items-center md:flex-row md:items-center p-5" id="logo">
       <a class="logo-border" href="#">
         <img class="rounded-full logo-size" src="./Assets/Images/logo.jpg" alt="logo" />
       </a>
@@ -39,9 +40,11 @@
     <nav class="">
       <div class="hidden w-full lg:block z-0" id="navbar">
         <ul
-          class="absolute w-full h-1/2 top-0 right-0 p-4 text-center space-y-8 lg:space-y-0 lg:space-x-3 lg:static lg:w-auto flex flex-col bg-gray-800 rounded-lg border border-gray-100 items-center lg:bg-transparent lg:border-0 lg:flex-row justify-center">
+          class="w-[100vw] h-1/2 top-0 right-0 p-4 text-center space-y-8 lg:space-y-0 lg:space-x-3 lg:static lg:w-auto flex flex-col rounded-lg border border-gray-100 items-center lg:bg-transparent lg:border-0 lg:flex-row justify-center">
           <li><a href="./index.html"
               class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover">Home</a></li>
+          <li><a href="#About"
+              class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover">About Us</a></li>  
           <li><a href="./blog.html"
                 class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover">Blogs</a></li>
           <li><a href="./donate.html"
@@ -50,6 +53,7 @@
           <li><a href="./reportstary.html"
               class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover">SOS
               Report</a></li>
+            
           <li><a href="#contact">
               <button
                 class="inline-flex items-center bg-header-orange-light border-0 py-4 px-2 focus:outline-none text_4 font-bold rounded text-base mt-4 md:mt-0">
@@ -72,6 +76,7 @@
       </div>
       
     </nav>
+    
   </header>
   <section class="main-body-section">
     <div class="main-body-section-div">
@@ -91,7 +96,18 @@
     <!--end of SOS button -->
     
   </section>
+ <!-- About session  html starts from here --> 
 
+
+  <section class="bg-white dark:bg-gray-900">
+    <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+      <p id="About"></p>
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">About Us</h2>
+      <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">A Platform that allows animals to be adopted, donated to pet lovers, and provides emergency medical care to stray animals in need. This Platform also provide significant  features like <b>Animal Adoption</b>, <b>Pet Donation</b>. Also provides <b>SOS report</b> for stray animal in harsh conditions they can fill out the details and a representative will reach the location to assist the animal with medical aid.</p>
+   </div>
+  </section>
+
+<!-- About Us section  html ends here -->
   <div class="heading">
     <h1 class="meet-heading">
       Meet our Friends Here
@@ -315,7 +331,7 @@
         <div class="main-text">
           <div class="p-4 flex flex-col gap-2">
             <h5 class="text_3  md:text-[40px] font-bold mb-2 text-center">Riksy</h5>
-            <ul class=" grid sm:grid-cols-2 gap-5">
+            <ul class=" grid grid-cols-2 gap-5">
               <li class=" flex gap-2 text-xl justify-self-center">
                 <img class=" w-5 h-auto" src="Assets/Images/rabbit.png" alt="">
                 <span>Rabbit</span>
@@ -398,7 +414,7 @@
         <div class="main-text">
           <div class="p-4 flex flex-col gap-2">
             <h5 class="text_3  md:text-[40px] font-bold mb-2 text-center">Swaggy</h5>
-            <ul class=" grid sm:grid-cols-2 gap-5">
+            <ul class=" grid grid-cols-2 gap-5">
               <li class=" flex gap-2 text-xl justify-self-center">
                 <img class=" w-5 h-auto" src="Assets/Images/dog-icon.svg" alt="">
                 <span>Dog</span>
@@ -431,6 +447,7 @@
     </div>
   </section>
 
+ 
 
 
   <!--     Contact us section html starts from here -->
@@ -465,9 +482,9 @@
 
   <!--     Contact us section html ends here -->
       
-   <!--Contributors section -->
+  <!--Contributors section -->
 
-   <div class="contributors-container">
+  <div class="contributors-container">
     <h1>Our Contributors</h1>
     <div class="contributors" id="contributors" >
     </div>
@@ -475,11 +492,11 @@
     <button class="contribute-btn"> 
       <img src="Assets/Images/github-icon.png" alt="GitHub">
       Contribute </button></a>
-   </div>
+  </div>
 
-   <!-- Contributors section ends -->
+  <!-- Contributors section ends -->
   
-       <!-- Footer section  -->
+      <!-- Footer section  -->
 
   <footer class="footer text-gray-400 bg-gray-900 body-font flex justify-center">
       <div class="container flex pl-10 p-5 items-center">
@@ -500,7 +517,7 @@
           <button  class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 mt-1 rounded" type="submit">Subscibe</button> 
         </div>  
       </div>
-      <div class="container flex justify-center items-center ">
+      <div id="social-container" class="container flex justify-center items-center ">
         <a href="#" class=" w-10 ml-3">
           <img src="Assets/Images/facebook-icon.png" alt="">
         </a>

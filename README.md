@@ -1,4 +1,18 @@
+<p align="center">
+    <img src="https://img.shields.io/github/issues/akshitagupta15june/PetMe"> 
+    <img src="https://img.shields.io/github/issues-pr/akshitagupta15june/PetMe">
+    <img src="https://img.shields.io/github/forks/akshitagupta15june/PetMe">
+    <img src="https://img.shields.io/github/stars/akshitagupta15june/PetMe">
+    <img src="https://img.shields.io/github/license/akshitagupta15june/PetMe">
+</p>
+
+
+
 # PetMe
+
+<p align="center">
+  <img src="./Assets/Images/logo.jpg" height="250px">
+</p>
 
 <h3>Join official <a href="https://discord.gg/X3HZAPzykU">Discord Channel</a> for discussion</h3>
 
@@ -15,6 +29,8 @@ We are following the policy of saving lives, saving animals and we built **PetMe
 ### Test here [PetMe](https://akshitagupta15june.github.io/PetMe/)
 
 **Our project is PetMe, a platform that allows animals to be adopted, donated to pet lovers, and provides emergency medical care to stray animals in need.**
+
+**You can also refer to  this ***[Video](https://www.youtube.com/embed/U1EQjtT-G8E)*** to know about PetMe.**
 
 🤖 The first feature is **Animal Adoption**, which allows users to choose an animal they want to adopt and submit their details so that the owner can reach out to them regarding adoption details. 
 

@@ -2,6 +2,7 @@
 
 /* Base */
 
+
 :root {
 	--color-white: #000000;
 	--color-cyan: #b6e4f9;
@@ -180,4 +181,52 @@ form {
 	color: inherit;
 	border-radius: .25rem;
 	cursor: pointer;
+}
+
+nav{
+    /* margin-top: 1vh; */
+    font-weight: bold;
+    /* margin-right: 3px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+	margin-left: -12px;
+	text-align: center;
+	background-color: grey;
+}
+
+nav ul li{
+    display: inline-block ;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+nav ul li a{
+    color: rgb(51 50 49 / var(--tw-bg-opacity));
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 100px;
+    position: relative;
+
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul  li a:hover::after{
+    width: 100%;
+
+} 
+
+#portfolio-header{
+    margin-left: 120px;
 }
