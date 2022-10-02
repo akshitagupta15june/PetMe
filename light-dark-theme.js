@@ -12,10 +12,17 @@ bg_3 : bg-blue-600 dark:bg-blue-200
 */
 
 class element{
-    constructor(cssName, lightCss, darkCss){
+    constructor(cssNames, lightCss, darkCss){
         
-        this.cssName = cssName;
-        this.eles = document.querySelectorAll("."+cssName);
+        this.cssNames = cssNames; // list with css names
+        this.eles = []; // list of elements selected for which dark CSS will apply
+        cssNames.forEach(element => {
+            document.querySelectorAll("."+element).forEach(ele =>{
+                this.eles.push(ele);
+            });
+            
+        });
+        
         this.lightCss = lightCss;
         this.darkCss = darkCss;
         
@@ -25,13 +32,13 @@ class element{
 
         this.toggle = function(){
             this.eles.forEach(element => {
-                if(element.classList.contains(lightCss)){
-                    element.classList.remove(lightCss);
-                    element.classList.add(darkCss);
+                if(element.classList.contains(darkCss)){
+                    // element.classList.remove(lightCss);
+                    element.classList.remove(darkCss);
                 }
                 else{
-                    element.classList.remove(darkCss);
-                    element.classList.add(lightCss);
+                    element.classList.add(darkCss);
+                    // element.classList.add(lightCss);
                 }
             });
             
@@ -41,19 +48,24 @@ class element{
     
 }
 
-let t1 = new element("text_1", "text-slate-50", "text-gray-900");
-let t2 = new element("text_2", "text-blue-600", "text-blue-200");
-let t3 = new element("text_3", "text-gray-900", "text-slate-50");
-let t4 = new element("text_4", "text-slate-800", "text-gray-400");
-let b1 = new element("bg_1", "bg-slate-50", "bg-slate-400");
-let b2 = new element("bg_2", "bg-blue-300", "bg-gray-900");
-let b3 = new element("bg_3", "bg-blue-600", "bg-blue-200");
+let t1 = new element(["text_1"], "text-slate-50", "text-gray-900");
+let t2 = new element(["text_2"], "text-blue-600", "text-blue-200");
+let t3 = new element(["text_3","meet-heading","main-body-section-div","turn-white-hover", "text-custom-heading"], "text-gray-900", "text-slate-50");
+let t4 = new element(["text_4"], "text-slate-800", "text-gray-400");
+// let b1 = new element("bg_1", "bg-slate-50", "bg-slate-400");
+let b1 = new element(["bg-header-offwhite", "main-card", "b_1"], "bg-slate-100", "bg-amber-900");
+// bg-header-offwhite
+let b2 = new element(["bg_2", "meet-heading", "pet-card-flex"], "bg-blue-300", "bg-yellow-900");
+let b3 = new element(["bg_3"], "bg-blue-600", "bg-blue-200");
+
+
 
 
 let toggler = document.querySelector("#theme-toggle");
 // let body = document.querySelector("body");
 // let heading = document.querySelector("#heading-adopt-me");
 toggler.addEventListener("click", ()=>{
+    // console.log(b1.eles);
     t1.toggle();
     t2.toggle();
     t3.toggle();
@@ -61,18 +73,6 @@ toggler.addEventListener("click", ()=>{
     b1.toggle();
     b2.toggle();
     b3.toggle();
-    // if(body.classList.contains("dark")){
-    //     body.classList.remove("dark");
-    //     heading.style.color = "white";
-    //     // console.log("removed");
-
-    // }
-    // else{
-    //     body.classList.add("dark");
-    //     heading.style.color = "black";
-    //     // console.log("added");
-    // } 
-
 })
 
 
