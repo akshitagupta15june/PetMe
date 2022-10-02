@@ -1,15 +1,4 @@
-/* Light dark theme : v1 */
-/* 
-to use in html:
-text_1 : text-slate-50 dark:text-gray-900 
-text_2 : text-blue-600 dark:text-blue-200 
-text_3 : text-gray-900 dark:text-slate-50  
-text_4 : text-slate-800 dark:text-gray-400 
-bg_1 : bg-slate-50 dark:bg-slate-400 
-bg_2 : bg-blue-300 dark:bg-gray-900 
-bg_3 : bg-blue-600 dark:bg-blue-200 
 
-*/
 
 class element{
     constructor(cssNames, lightCss, darkCss){
