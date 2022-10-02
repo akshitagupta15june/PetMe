@@ -39,8 +39,9 @@ class element{
 
 let t1 = new element(["text_1"], "text-slate-50", "text-gray-900");
 let t2 = new element(["text_2"], "text-blue-600", "text-blue-200");
-let t3 = new element(["text_3","meet-heading","main-body-section-div","turn-white-hover", "text-custom-heading"], "text-gray-900", "text-slate-50");
+let t3 = new element(["text_3","meet-heading","main-body-section-div","turn-white-hover", "text-custom-heading"], "text-gray-900", "text-white");
 let t4 = new element(["text_4"], "text-slate-800", "text-white");
+
 // let b1 = new element("bg_1", "bg-slate-50", "bg-slate-400");
 let b1 = new element(["bg-header-offwhite", "main-card", "b_1"], "bg-slate-100", "bg-amber-900");
 // bg-header-offwhite
