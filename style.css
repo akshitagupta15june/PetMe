@@ -90,3 +90,12 @@
     margin: auto;
   }
 }
+
+.contributors {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.contributors-container{
+    padding-top:20px;
+}
