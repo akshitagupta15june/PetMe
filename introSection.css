@@ -142,9 +142,36 @@
 }
 
 .main-img {
-  padding-left: 30px;
+  position: relative;
   background-color: rgb(255, 231, 202);
   border-radius: 50px;
+  overflow: hidden;
+  transition: all 300ms;
+}
+
+.hv {
+  position: relative;
+  background-size: cover;
+  transition: all 300ms;
+}
+
+.hv::after {
+  transition: all 300ms;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 231, 202);
+  top: 0;
+  opacity: 0;
+}
+
+.hv:hover::after {
+  opacity: 0.2;
+}
+
+.hv:hover {
+  transform: scale(1.1);
 }
 
 .card-img-div {
@@ -165,20 +192,13 @@
   height: 330px;
 }
 
-.card-img-center-round {
-  border-radius: 50px;
-  overflow: hidden;
-  background-color: rgb(255, 231, 202);
-  border: 6px antiquewhite solid;
-}
-
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background-color: antiquewhite;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-clip: content-box;
   border: 2px transparent solid;
   background-color: brown;
