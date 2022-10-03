@@ -32,3 +32,4 @@ Contributors
 - [ABHIGYAN MOHANTA](https://github.com/ABHIGYAN-MOHANTA)
 - [Mudit Choudhary](https://github.com/muditchoudhary)
 - [Roman Daru](https://github.com/Jokerko93)
+- [Dan Schenker](https://github.com/danschenker)
