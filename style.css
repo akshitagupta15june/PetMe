@@ -45,7 +45,7 @@
   .contribute-btn {
     display: flex;
     align-items: center;
-    color: whitesmoke;
+    color: Green;
     padding: 5px 10px;
     border-radius: 20px;
     font-size: 1.25rem;
@@ -57,7 +57,7 @@
 
   .contribute-btn img {
     width: 2.2rem;
-    color: green;
+    color: black;
     margin-right: 5px;
   }
 
