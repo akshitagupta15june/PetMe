@@ -99,3 +99,10 @@
 .contributors-container{
     padding-top:20px;
 }
+/*-----end of sos button----*/
+
+/*make the icons white*/
+.icon {
+  filter: invert(99%) sepia(1%) saturate(200%) hue-rotate(190deg) brightness(117%) contrast(100%);
+}
+
