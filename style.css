@@ -38,28 +38,28 @@
   }
 
   .avatar {
-    border-radius: 50%;
-    width: 4rem;
-  }
+  border-radius: 50%;
+  width: 4rem;
+}
 
   .contribute-btn {
-    display: flex;
-    align-items: center;
-    color: Green;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-top: 3rem;
-    letter-spacing: 1.5px;
-    background-color: #003479;
-  }
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 3rem;
+  letter-spacing: 1.5px;
+  background-color: #003479;
+}
 
   .contribute-btn img {
-    width: 2.2rem;
-    color: black;
-    margin-right: 5px;
-  }
+  width: 2.2rem;
+  color: black;
+  margin-right: 5px;
+}
 
   /*-------sos button ---------*/
   #mySBtn {
