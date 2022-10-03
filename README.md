@@ -104,6 +104,9 @@ You can refer to the following articles on the basics of Git and Github.
 <td align="center"><a href="https://github.com/akshitagupta15june"><img src="https://avatars0.githubusercontent.com/u/57909583?v=4" width="100px;" alt=""/><br /><sub><b>Akshita Gupta</b></sub></a></td>
  
 <td align="center"><a href="https://github.com/muditchoudhary"><img src="https://avatars.githubusercontent.com/u/74391865?s=400&u=2944cf6cb540e3ba3a08653225406d0826e1c272&v=4" width="100px;" alt=""/><br /><sub><b>Mudit Choudhary</b></sub></a></td>
+   
+<td align="center"><a href="https://github.com/akshaaatt"><img src="https://avatars.githubusercontent.com/u/51470769?v=4" width="100px;" alt=""/><br /><sub><b>Akshat Tiwari</b></sub></a></td>
+   
  </tr>
 </table>
 
