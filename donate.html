@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PetMe : Donate Animals</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header class="text-gray-400 bg-gray-900 body-font flex flex-col items-start">
+    <div class="container mx-auto flex  p-5 items-center">
+      <a class="flex-auto grow-[0] pr-[25px]" href="#">
+        <img class="rounded-full w-[80px] h-[80px]" src="./Assets/Images/logo.jpg" alt="logo" />
+      </a>
+      <div class="flex flex-col justify-start flex-auto grow-[2]">
+        <span class="text-4xl text-gray-100 pb-[8px]">Adopt today</span>
+        <span class="text-lg text-gray-400">Give life to a needed animal</span>
+      </div>
+    </div>
+    <nav class="flex flex-wrap items-center text-base justify-center p-5">
+      <a href="./index.html" class="mr-5 hover:text-white">Home</a>
+      <a href="./donate.html" class="mr-5 hover:text-white">Donate Animals</a>
+      <a href="./reportstary.html" class="mr-5 hover:text-white">Emergency Report</a>
+      <a href="./index.html#contact">
+        <button
+          class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Contact
+          Us
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </a>
+    </nav>
+  </header>
+
+  <section class="text-gray-600 body-font relative bg-[url('Assets/Images/pet-don.jpg')] bg-center bg-no-repeat
+        bg-cover">
+    <div class="container px-5 py-24 mx-auto card backdrop-blur-sm">
+      <div class="flex flex-col text-center w-full mb-12">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+          Donate Animals
+        </h1>
+        <p class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-90">
+          Fill up the form below and donate your pets.
+        </p>
+      </div>
+      <form id="survey-form" action="https://formspree.io/f/xayaokzl" method="POST">
+        <div class="lg:w-1/2 md:w-2/3 mx-auto">
+          <div class="flex flex-wrap -m-2">
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="name" class="leading-7 text-sm text-gray-900">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  required />
+              </div>
+            </div>
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="email" class="leading-7 text-sm text-gray-900">Email</label>
+                <input type="email" id="email" name="email" placeholder="youremail@gmail.com"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  required />
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <div class="relative">
+                <label for="address" class="leading-7 text-sm text-gray-900">Address</label>
+                <input type="text" id="address" name="address" placeholder="Your Address"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  required />
+              </div>
+            </div>
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="city" class="leading-7 text-sm text-gray-900">City</label>
+                <input type="text" id="city" name="city" placeholder="Agra"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  required />
+              </div>
+            </div>
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="state" class="leading-7 text-sm text-gray-900">State</label>
+                <input type="text" id="state" name="state" placeholder="Uttar Pradesh"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  required />
+              </div>
+            </div>
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="country" class="leading-7 text-sm text-gray-900">Country</label>
+                <input type="text" id="country" name="country" placeholder="India"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  required />
+              </div>
+            </div>
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="number" class="leading-7 text-sm text-gray-900">Contact Number</label>
+                <input type="tel" id="number" name="number" placeholder="+91 0123456789"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  required />
+              </div>
+            </div>
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="pet-type" class="leading-7 text-sm text-gray-900">Pet Type</label>
+                <input type="text" id="pet-type" name="pet-type" placeholder="Dog"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  required />
+              </div>
+            </div>
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="name" class="leading-7 text-sm text-gray-900">Pet Name</label>
+                <input type="text" id="name" name="name" placeholder="Charlie"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+              </div>
+            </div>
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="pet-color" class="leading-7 text-sm text-gray-900">Pet Color</label>
+                <input type="text" id="pet-color" name="pet-color" placeholder="Yellow"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  required />
+              </div>
+            </div>
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="color" class="leading-7 text-sm text-gray-900">Pet Breed</label>
+                <input type="text" id="breed" name="color" placeholder="German Shepherd"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  required />
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <div class="relative">
+                <label for="message" class="leading-7 text-sm text-gray-900">Your Pet's Image</label>
+                <div class="max-w-3xl">
+                  <label
+                    class="flex justify-center w-full h-32 px-4 transition bg-white border-2 border-gray-300 border-dashed rounded-md appearance-none cursor-pointer hover:border-gray-400 focus:outline-none">
+                    <span class="flex items-center space-x-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-900" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                      </svg>
+                      <span class="font-medium text-gray-600">
+                        Drop files to Attach, or
+                        <span class="text-blue-600 underline">Browse</span>
+                      </span>
+                    </span>
+                    <input type="file" name="file_upload" class="hidden" />
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <input type="checkbox" name="check" id="check" required>
+              <span class="p-1 font-medium text-gray-900">
+                I've read and agree to the Terms and Conditions of PetMe.
+              </span>
+            </div>
+            <div class="p-4 w-full">
+              <button type="submit"
+                class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+    </div>
+    </form>
+  </section>
+</body>
+
+</html>

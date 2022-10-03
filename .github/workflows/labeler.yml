@@ -1,0 +1,5 @@
+extension-files:
+- assets/*
+
+workflow:
+- .github/**/*

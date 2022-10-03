@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reportstary.css">
+    
+    
+    <title>Report Critical stray animal</title>
+</head>
+<body>
+   
+    <nav class=" bg-gray-800 flex items-center justify-between md:h-16 md:px-2">
+        
+        <div id="container">
+            <nav>
+               
+                <ul id="sidemenu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="index.html#contact">Contact</a></li>
+                  <li><a href="donate.html">Donate</a></li>
+                 
+             
+                </ul>
+                
+              </nav>
+        </div>
+    </nav>
+    <div class="container">
+        <header>
+            <h1 id="title">Report any Critical stray animal to the nearest Animal Care centres</h1>
+            <p id="description">The details you provide with this form will be used to reach the nearest authority at the location of the stray animal.</p>
+        </header>
+        <form id="survey-form" action="https://formspree.io/f/xayaokzl" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input 
+                    type="text" 
+                    name="name" 
+                    id="name"
+                    class="form-control"
+                    placeholder="Enter your name"
+                    required
+                />
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input 
+                    type="email" 
+                    name="email" 
+                    id="email"
+                    class="form-control"
+                    placeholder="Enter your email"
+                    required
+                />
+            </div>
+            <div class="form-group">
+                <label for="address">
+                    Address(street address,City, pincode)
+                    <span class="hint">(optional)</span>
+                </label>
+                <input 
+                    type="address"
+                  
+                    name="first address" 
+                    id="first address"
+                    class="form-control"
+                    placeholder="Enter your correct address (eg. Meenawati marg, Lucknow, 209087)" />
+            </div>
+            <div class="form-group">
+                <label for="landmark">
+                    Landmark
+                    <span class="hint">(optional)</span>
+                </label>
+                <input 
+                    type="address"
+                  min="1"
+                    name="address" 
+                    id="address"
+                    class="form-control"
+                    placeholder="Enter the nearest landmark to identify the location." />
+            </div>
+            <div class="form-group">
+                <label for="email">Which type of stray animal?</label>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select stray animal</option>
+                    <option value="student">Dog</option>
+                    <option value="artist">Cat</option>
+                    <option value="graphic_designer">Cow</option>
+                    <option value="other">Pig</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <p>What is the condition of the animal currently?</p>
+                <label>
+            <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />
+                    Extremely Critical
+                </label>
+                <label>
+            <input name="user-recommend" value="maybe" type="radio" class="input-radio" />
+                    Critical
+                </label>
+                <label>
+            <input name="user-recommend" value="no" type="radio" class="input-radio" />
+                    Moderate health
+                </label>
+            </div>
+        
+            
+            <div class="form-group">
+                <label for="comment">Would you like to share any additional information about the stray animal's condition?</label>
+                <textarea id="comment" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
