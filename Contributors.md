@@ -33,3 +33,4 @@ Contributors
 - [Mudit Choudhary](https://github.com/muditchoudhary)
 - [Roman Daru](https://github.com/Jokerko93)
 - [Dan Schenker](https://github.com/danschenker)
+- [Vanshita Mathur](https://github.com/Vanshiii203)
