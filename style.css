@@ -9,41 +9,40 @@
     padding: theme("spacing.6");
     box-shadow: theme("boxShadow.xl");
   }
-}
 
-.contributors-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #131c2b;
-  padding-bottom: 2.75rem;
-  border-bottom: 1px solid gray;
-}
+  .contributors-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #131c2b;
+    padding-bottom: 2.75rem;
+    border-bottom: 1px solid gray;
+  }
 
-.contributors-container h1 {
-  color: whitesmoke;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 600;
-  margin: 2.5rem 0;
-}
-.contributors {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin: 0 8%;
-}
+  .contributors-container h1 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 2.5rem 0;
+  }
+  .contributors {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0 8%;
+  }
 
-.avatar {
+  .avatar {
   border-radius: 50%;
   width: 4rem;
 }
 
-.contribute-btn {
+  .contribute-btn {
   display: flex;
   align-items: center;
   color: whitesmoke;
@@ -56,32 +55,49 @@
   background-color: #003479;
 }
 
-.contribute-btn img {
+  .contribute-btn img {
   width: 2.2rem;
   color: black;
   margin-right: 5px;
 }
 
-/*-------sos button ---------*/
-#mySBtn {
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: red; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 25px; /* Some padding */
-  border-radius: 50%; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  /*-------sos button ---------*/
+  #mySBtn {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 25px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+
+  #mySBtn:hover {
+    background-color: #fff; /* Add a dark-grey background on hover */
+    color: red;
+    font-weight: 700;
+  }
+  /*-----end of sos button----*/
+
+  .contact-form-container {
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+  }
 }
 
-#mySBtn:hover {
-  background-color: #fff; /* Add a dark-grey background on hover */
-  color: red;
-  font-weight: 700;
+.contributors {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.contributors-container{
+    padding-top:20px;
 }
 /*-----end of sos button----*/
 
@@ -89,3 +105,4 @@
 .icon {
   filter: invert(99%) sepia(1%) saturate(200%) hue-rotate(190deg) brightness(117%) contrast(100%);
 }
+
