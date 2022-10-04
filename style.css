@@ -27,6 +27,7 @@
     font-weight: 600;
     margin: 2.5rem 0;
   }
+
   .contributors {
     display: flex;
     flex-direction: row;
@@ -38,50 +39,64 @@
   }
 
   .avatar {
-  border-radius: 50%;
-  width: 4rem;
-}
+    border-radius: 50%;
+    width: 4rem;
+  }
 
   .contribute-btn {
-  display: flex;
-  align-items: center;
-  color: whitesmoke;
-  padding: 5px 10px;
-  border-radius: 20px;
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-top: 3rem;
-  letter-spacing: 1.5px;
-  background-color: #003479;
-}
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    letter-spacing: 1.5px;
+    background-color: #003479;
+  }
 
   .contribute-btn img {
-  width: 2.2rem;
-  color: black;
-  margin-right: 5px;
-}
+    width: 2.2rem;
+    color: black;
+    margin-right: 5px;
+  }
 
   /*-------sos button ---------*/
   #mySBtn {
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 25px; /* Some padding */
-    border-radius: 50%; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: red;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 25px;
+    /* Some padding */
+    border-radius: 50%;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
   }
 
   #mySBtn:hover {
-    background-color: #fff; /* Add a dark-grey background on hover */
+    background-color: #fff;
+    /* Add a dark-grey background on hover */
     color: red;
     font-weight: 700;
   }
+
   /*-----end of sos button----*/
 
   .contact-form-container {
@@ -92,13 +107,14 @@
 }
 
 .contributors {
-    margin-top:20px;
-    margin-bottom:20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.contributors-container{
-    padding-top:20px;
+.contributors-container {
+  padding-top: 20px;
 }
+
 /*-----end of sos button----*/
 
 /*make the icons white*/
@@ -111,7 +127,7 @@
   border: 2px solid #fff;
   color: #fff;
   cursor: pointer;
-  background-color:  #ffac46;
+  background-color: #ffac46;
   box-shadow: inset 0 0 0 0 #ffac46;
   border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -143,4 +159,15 @@
   box-shadow: inset 200px 0 0 0 #ffac46;
   /* background-color:  #ffac46; */
   color: #fff;
+}
+
+.flex-footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90vw;
+}
+
+.fix {
+  margin-left: -260px;
 }
