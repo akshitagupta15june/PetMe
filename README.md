@@ -90,7 +90,7 @@ You can refer to the following articles on the basics of Git and Github.
 
 ## Contributing 👨‍💻 
 
-### 💥 How to Contribute
+### 💥 How to contribute
 - Take a look at the existing [Issues](https://github.com/akshitagupta15june/PetMe/issues) or [create a new issue](https://github.com/akshitagupta15june/PetMe/issues/new/choose)!
 - [Fork the Repo](https://github.com/Susmita-Dey/all-round-calculator/fork). Then, create a branch for any issue that you are working on. Finally, commit your work.
 - Create a **[Pull Request](https://github.com/akshitagupta15june/PetMe/compare)** (_PR_), which will be promptly reviewed and given suggestions for improvements by the community.
