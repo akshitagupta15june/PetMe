@@ -102,3 +102,41 @@
 /*-----end of sos button----*/
 
 
+.btn {
+  margin-top: 18px;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  background-color:  #ffac46;
+  box-shadow: inset 0 0 0 0 #ffac46;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  transition: ease-out 0.4s;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  -ms-transition: ease-out 0.4s;
+  -o-transition: ease-out 0.4s;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  height: 3rem;
+  width: 12rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  border: 2px solid #fff;
+  box-shadow: inset 200px 0 0 0 #ffac46;
+  /* background-color:  #ffac46; */
+  color: #fff;
+}
