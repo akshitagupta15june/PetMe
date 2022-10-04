@@ -44,18 +44,18 @@ body::before {
   background-position: center;
 }
 
-h1 {
+#title {
   font-weight: 500;
   line-height: 1.1;
   font-size: 2.2rem;
 }
 
-p {
+#description {
   font-size: 1.12rem;
 }
 
-h1,
-p {
+#title,
+#description {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
@@ -98,17 +98,17 @@ button {
   }
 }
 
-header {
+.info {
   padding: 0 1rem;
   margin-bottom: 1.5rem;
   text-align: center;
 }
 
-header h1 {
-  font-weight: 600;
+.info #title {
+  font-weight: 600 ;
 }
 
-header p {
+.info #description {
   font-style: italic;
   font-weight: 200;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
@@ -130,6 +130,7 @@ form {
 @media (min-width: 480px) {
   form {
     padding: 2.5rem;
+    width: max-content;
   }
 }
 
@@ -177,16 +178,17 @@ form {
   display: block;
   width: 100%;
   padding: 0.75rem;
-  background: var(--color-green);
+   background: var(--color-green);
   color: inherit;
   border-radius: 0.25rem;
   cursor: pointer;
 }
 
+/* 
 nav {
-  /* margin-top: 1vh; */
+  margin-top: 1vh;
   font-weight: bold;
-  /* margin-right: 3px; */
+  margin-right: 3px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -222,7 +224,7 @@ nav ul li a::after {
 
 nav ul li a:hover::after {
   width: 100%;
-}
+} */
 
 #portfolio-header {
   margin-left: 120px;
