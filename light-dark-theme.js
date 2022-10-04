@@ -32,9 +32,16 @@ class element{
             });
             
         }
+    }   
+}
+function changeToBW() {
+    let Image = document.getElementById("switch");
+    if (Image.getAttribute('src') === "Assets/Images/sun.svg") {
+        Image.setAttribute('src', "Assets/Images/moon.svg");
     }
-
-    
+    else {
+        Image.setAttribute('src', "Assets/Images/sun.svg");
+    }
 }
 
 let t1 = new element(["text_1"], "text-slate-50", "text-gray-900");
@@ -63,6 +70,7 @@ toggler.addEventListener("click", ()=>{
     b1.toggle();
     b2.toggle();
     b3.toggle();
+    changeToBW();
 })
 
 
