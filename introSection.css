@@ -41,11 +41,7 @@
 }
 
 .pet-card-flex {
-  background: linear-gradient(
-    180deg,
-    rgb(255, 220, 170) 0%,
-    rgb(255, 195, 122) 100%
-  );
+  background-image: url('./Assets/Images/pattern\ doodle.png');
   display: flex;
   flex-direction: column;
   padding-top: 20px;
