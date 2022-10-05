@@ -29,9 +29,32 @@
 
 .main-body-section-div h1 {
   font-size: 64px;
-  padding-left: 2%;
+  /* padding-left: 2%; */
   color: azure;
   font-weight: 700;
+}
+
+.main-body-section-div .adopt-btn {
+  margin-top: 1%;
+  border-radius: 10px;
+  padding: 0 20px;
+  box-shadow: 1px 1px 5px rgb(255, 249, 208);
+  transition: all 0.3s ease-in;
+}
+
+.main-body-section-div .adopt-btn:hover {
+  background: rgb(255, 249, 208);
+  color: brown;
+  box-shadow: 1px 1px 5px brown;
+}
+
+.main-body-section-div .adopt-btn i {
+  transition: all 0.3s ease;
+  padding: 0px 10px;
+}
+
+.main-body-section-div .adopt-btn:hover i {
+  transform: translate(10px);
 }
 
 .main-body-section-div div {
