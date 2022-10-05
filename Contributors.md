@@ -35,3 +35,5 @@ Contributors
 - [Dan Schenker](https://github.com/danschenker)
 - [Vanshita Mathur](https://github.com/Vanshiii203)
 - [Wes Vinson](https://github.com/wvinson43)
+- [Shubham Rawat](https://github.com/shubhamrawat090)
+
