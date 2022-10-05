@@ -1,6 +1,6 @@
 Project Maintainers
 
-- akshitagupta15june
+- [AKSHITA GUPTA](https://github.com/akshitagupta15june)
 - Susmita-Dey
 - muditchoudhary
 
