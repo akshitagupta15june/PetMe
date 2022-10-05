@@ -10,7 +10,7 @@ import createEmotionCache from '../config/createEmotionCache';
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
 
-function MyApp({ Component, pageProps }) {
+function MyApp(props) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
 
   return(
