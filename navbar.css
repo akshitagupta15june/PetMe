@@ -11,7 +11,7 @@
   
   .turn-red-hover:hover {
     --tw-text-opacity: 0.65;
-    color: rgb(255 0 0 / var(--tw-text-opacity));
+    color: rgb(0 0 0 / var(--tw-text-opacity));
     transition-duration: 0.3s;
   }
   
@@ -61,12 +61,21 @@
   }
   
   .logo-border {
-    border: 4px solid black;
+    border: 3px solid black;
     border-radius: 9999px;
   }
   
   .logo-size {
     width: 50px;
+  }
+
+  .logo-size:hover{
+    animation: pulse 1s 1s infinite;
+  }
+  @keyframes pulse{
+    25%{transform: scale(1.5);}
+    50%{transform: scale(1);}
+    75%{transform: scale(1.5);}
   }
 
 /*make the icons white*/
@@ -75,17 +84,17 @@
   }
   .mission-1 {
     display: flex;
-    color: #F8FAFC;
+    color: #000;
     margin: 0.5rem;
     width: 3.5rem;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
   }
   .mission-2 {
     display: flex;
-    color: #F8FAFC;
+    color: #000;
     margin: 0.7rem;
     width: 3.5rem;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
   }
