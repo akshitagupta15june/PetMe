@@ -95,6 +95,7 @@ You can refer to the following articles on the basics of Git and Github.
 - [Fork the Repo](https://github.com/Susmita-Dey/all-round-calculator/fork). Then, create a branch for any issue that you are working on. Finally, commit your work.
 - Create a **[Pull Request](https://github.com/akshitagupta15june/PetMe/compare)** (_PR_), which will be promptly reviewed and given suggestions for improvements by the community.
 - Add screenshots or screen captures to your Pull Request to help us understand the effects of the changes proposed in your PR.
+- **DON'T CREATE PRs WITHOUT CREATING ISSUE AND GETTING ASSIGNED**
 
 ### ⭐ How to make a pull request (PR)
 **1.** Start by making a Fork of the [**PetMe**](https://github.com/akshitagupta15june/PetMe/) repository. Click on the <a href="https://github.com/akshitagupta15june/PetMe/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="21" width="21"></a>Fork symbol at the top right corner.
