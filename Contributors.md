@@ -36,4 +36,4 @@ Contributors
 - [Vanshita Mathur](https://github.com/Vanshiii203)
 - [Wes Vinson](https://github.com/wvinson43)
 - [Shubham Rawat](https://github.com/shubhamrawat090)
-
+- [Rishab Dugar](https://github.com/DugarRishab)
