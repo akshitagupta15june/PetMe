@@ -9,7 +9,7 @@
     padding: theme("spacing.6");
     box-shadow: theme("boxShadow.xl");
   }
-
+ 
   .contributors-container {
     display: flex;
     flex-direction: column;
