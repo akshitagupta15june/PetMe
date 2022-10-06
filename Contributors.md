@@ -37,3 +37,4 @@ Contributors
 - [Wes Vinson](https://github.com/wvinson43)
 - [Shubham Rawat](https://github.com/shubhamrawat090)
 - [Rishab Dugar](https://github.com/DugarRishab)
+- [Disha Goel](https://github.com/disha100)
