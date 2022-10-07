@@ -38,4 +38,6 @@ Contributors
 - [Shubham Rawat](https://github.com/shubhamrawat090)
 - [Rishab Dugar](https://github.com/DugarRishab)
 - [Disha Goel](https://github.com/disha100)
+- [Gopu K Raju](https://github.com/gopukr)
 - [Mohd Haider](https://github.com/mohdhaider07)
+
