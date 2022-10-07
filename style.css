@@ -160,3 +160,31 @@
 .fix {
   margin-left: -260px;
 }
+
+ /* underline animation for anchor tag in about us section */
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #9ca3af;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #9ca3af;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* anchor animation ends  */
