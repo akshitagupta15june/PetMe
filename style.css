@@ -76,13 +76,13 @@
     /* Remove borders */
     outline: none;
     /* Remove outline */
-    background-color: red;
+    background-color: red !important;
     /* Set a background color */
-    color: white;
+    color: white !important;
     /* Text color */
     cursor: pointer;
     /* Add a mouse pointer on hover */
-    padding: 25px;
+    padding: 25px !important;
     /* Some padding */
     border-radius: 50%;
     /* Rounded corners */
@@ -91,10 +91,10 @@
   }
 
   #mySBtn:hover {
-    background-color: #fff;
+    background-color: #fff !important;
     /* Add a dark-grey background on hover */
-    color: red;
-    font-weight: 700;
+    color: red !important;
+    font-weight: 700 !important;
   }
 
   /*-----end of sos button----*/
@@ -116,7 +116,6 @@
 }
 
 /*-----end of sos button----*/
-
 
 .btn {
   margin-top: 18px;
