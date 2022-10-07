@@ -157,12 +157,6 @@
   color: #fff;
 }
 
-.flex-footer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 90vw;
-}
 
 .fix {
   margin-left: -260px;
