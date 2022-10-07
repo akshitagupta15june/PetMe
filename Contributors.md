@@ -1,8 +1,8 @@
 Project Maintainers
 
-- [AKSHITA GUPTA](https://github.com/akshitagupta15june)
-- Susmita-Dey
-- muditchoudhary
+-  [AKSHITA GUPTA](https://github.com/akshitagupta15june)
+-  Susmita-Dey
+-  muditchoudhary
 
 Contributors
 
@@ -39,3 +39,5 @@ Contributors
 - [Rishab Dugar](https://github.com/DugarRishab)
 - [Disha Goel](https://github.com/disha100)
 - [Gopu K Raju](https://github.com/gopukr)
+- [Mohd Haider](https://github.com/mohdhaider07)
+
