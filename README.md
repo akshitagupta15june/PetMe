@@ -187,3 +187,8 @@ Thanks a lot for spending your time helping all-round-calculator grow. Thanks a 
 ## License 🛡️ 
 
 PetMe is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Socials 
+
+[<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"/>](https://github.com/akshitagupta15june/PetMe)
+
