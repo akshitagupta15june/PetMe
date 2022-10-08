@@ -120,32 +120,46 @@
     </div>
     <form class="flex flex-col  md:w-2/3 max-w-[775px] w-auto sm:mx-6 mx-2" id="survey-form"
       action="https://formspree.io/f/xayaokzl" method="POST">
-      <div class="form-group">
-        <label for="name">Name</label>
+      <div class="form-group mb-2">
+        <label for="name">Name
+          <span class="hint text-red-600">*</span>
+        </label>
         <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
       </div>
-      <div class="form-group">
-        <label for="email">Email</label>
+      <div class="form-group mb-2">
+        <label for="email">Email
+          <span class="hint text-red-600">*</span>
+        </label>
         <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required />
       </div>
-      <div class="form-group">
+      <div class="form-group mb-2">
         <label for="address">
           Address(street address,City, pincode)
-          <span class="hint">(optional)</span>
+          <span class="hint text-red-600">*</span>
         </label>
         <input type="address" name="first address" id="first address" class="form-control"
-          placeholder="Enter your correct address (eg. Meenawati marg, Lucknow, 209087)" />
+          placeholder="Enter your correct address (eg. Meenawati marg, Lucknow, 209087)" required/>
       </div>
-      <div class="form-group">
+      <div class="form-group mb-2">
         <label for="landmark">
           Landmark
-          <span class="hint">(optional)</span>
+          <span class="hint text-red-600">*</span>
         </label>
         <input type="address" min="1" name="address" id="address" class="form-control"
-          placeholder="Enter the nearest landmark to identify the location." />
+          placeholder="Enter the nearest landmark to identify the location." required/>
       </div>
-      <div class="form-group">
-        <label for="email">Which type of stray animal?</label>
+      <div class="form-group mb-2">
+        <label for="contact-no">
+          Contact number
+          <span class="hint text-red-600">*</span>
+        </label>
+        <input type="tel" name="contact-no" id="contact" class="form-control"
+          placeholder="Enter an active contact number" required/>
+      </div>
+      <div class="form-group mb-4">
+        <label for="email">Which type of stray animal?
+          <span class="hint text-red-600">*</span>
+        </label>
         <select id="dropdown" name="role" class="form-control" required>
           <option disabled selected value>Select stray animal</option>
           <option value="student">Dog</option>
@@ -157,7 +171,7 @@
       </div>
 
       <div class="form-group">
-        <p>What is the condition of the animal currently?</p>
+        <label>What is the condition of the animal currently?</label>
         <label>
           <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />
           Extremely Critical
@@ -173,7 +187,7 @@
       </div>
 
 
-      <div class="form-group">
+      <div class="form-group mt-2">
         <label for="comment">Would you like to share any additional information about the stray animal's
           condition?</label>
         <textarea id="comment" class="input-textarea focus:outline-green-400 border-2 border-gray-200" name="comment"
