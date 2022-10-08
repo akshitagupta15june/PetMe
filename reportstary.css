@@ -11,7 +11,7 @@
 
 *,
 *::before,
-*::after {
+*::after { 
   box-sizing: border-box;
 }
 
@@ -132,10 +132,9 @@ form {
     padding: 2.5rem;
     width: max-content;
   }
-}
+} 
 
 .form-group {
-  margin: 0 auto 1.25rem auto;
   padding: 0.25rem;
 }
 
