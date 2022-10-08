@@ -59,14 +59,17 @@ When the team heard about the animals that were getting under danger each year, 
 For a brief explanation about PetMe, you can watch the following
 [![video](https://i.imgur.com/8gEUuwt.png)](https://www.youtube.com/embed/U1EQjtT-G8E)
 
-## View our Website:
 
-[<img src="https://cdn.discordapp.com/attachments/1004464884773306368/1028310089364406363/unknown.png"/>](https://akshitagupta15june.github.io/PetMe/)
 
 Additional features:
 - All the data is stored in the database so when a person wishes to adopt or donate an animal, their information will be auto-filled using the database. 
 - Users can use the `Contact` page to drop in their details for a call with one of the team members. 
 
+## View our Website:
+
+Click the image below to view our website!
+
+[<img src="https://cdn.discordapp.com/attachments/1004464884773306368/1028310089364406363/unknown.png"/>](https://akshitagupta15june.github.io/PetMe/)
 
 ## Accomplishments:
 
