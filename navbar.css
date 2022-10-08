@@ -1,6 +1,6 @@
 .bg-header-offwhite {
   --tw-bg-opacity: 0.5;
-  background-color: rgb(237 224 211 / var(--tw-bg-opacity));
+  background-color: rgb(237 224 211);
 }
 
 .text-custom-heading {
@@ -100,4 +100,18 @@
 
 #theme-toggle{
   cursor: pointer;
+}
+
+/* make the header sticky on scroll */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.add_border{
+  border-bottom: 2px solid #ae642c;
+  /* give a bottom shadow */
+  box-shadow:  0px 10px 10px 0px rgba(0, 0, 0, 0.4);
 }
