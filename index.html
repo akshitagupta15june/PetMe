@@ -25,7 +25,7 @@
     class=" text-gray-400 bg-header-offwhite body-font flex flex-row items-center justify-center lg:justify-around">
     <div class="flex flex-row items-center md:flex-row md:items-center p-5" id="logo">
       <span class="mission-1 mission-dark"> Saving Lives </span>
-      <a class="logo-border" href="#">
+      <a class="logo-border" href="index.html">
         <img class="rounded-full logo-size" src="./Assets/Images/logo.jpg" alt="logo" />
       </a>
       <span class="mission-2 mission-dark"> Saving Animals </span>
@@ -51,7 +51,7 @@
       <div class="hidden w-full lg:block z-0" id="navbar">
         <ul
           class="w-[100vw] h-1/2 top-0 right-0 p-4 text-center space-y-8 lg:space-y-0 lg:space-x-3 lg:static lg:w-auto flex flex-col rounded-lg border border-gray-100 items-center lg:bg-transparent lg:border-0 lg:flex-row justify-center">
-          <li><a href="#"
+          <li><a href="./index.html"
               class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Home</a>
           </li>
           <li><a href="#About"
@@ -140,14 +140,18 @@
       </h2>
       <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl text_4">A Platform that
         allows animals to be adopted, donated to pet lovers, and provides emergency medical care to stray animals in
-        need. This Platform also provide significant features like <b>Animal Adoption</b>, <b>Pet Donation</b>. Also
-        provides <b>SOS report</b> for stray animal in harsh conditions they can fill out the details and a
+        need. This Platform also provide significant features like <a class="hover-underline-animation"
+          href="#adopt"><b>Animal Adoption</b></a>, <a class="hover-underline-animation" href="./donate.html"><b>Pet
+            Donation</b></a>. Also
+        provides <a class="hover-underline-animation" href="./reportstary.html"><b>SOS report</b></a> for stray animal
+        in harsh conditions they can fill
+        out the details and a
         representative will reach the location to assist the animal with medical aid.</p>
     </div>
   </section>
 
   <!-- About Us section  html ends here -->
-  <div class="heading">
+  <div class="heading" id="adopt">
     <h1 class="meet-heading">
       Meet our Friends Here
     </h1>
@@ -493,7 +497,7 @@
         </p>
         <br />
         <div class="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="contact_nom">
+          <label class="block text-gray-300 text-sm font-bold mb-2" for="contact_nom">
             Name
           </label>
           <input
@@ -501,7 +505,7 @@
             id="contact_nom" name="contact_nom" type="text" placeholder="Name">
         </div>
         <div class="mb-6">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="contact_email">
+          <label class="block text-gray-300 text-sm font-bold mb-2" for="contact_email">
             Email
           </label>
           <input
@@ -509,14 +513,14 @@
             id="contact_email" name="contact_email" type="email" required placeholder="hello@petme">
         </div>
         <div class="mb-6">
-          <label for="contact_message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+          <label for="contact_message" class="block text-gray-300 text-sm font-bold mb-2">Message</label>
           <textarea
             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
             id="contact_message" name="contact_message" required rows="6" placeholder="Your message"></textarea>
         </div>
-        <div class="flex mx-72">
+        <div class="flex justify-center">
           <button
-            class="bg-gray-500 hover:bg-gray-700 text-center text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            class="bg-gray-800 hover:bg-gray-900 text-center text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="submit">
             Contact Us
           </button>
@@ -533,43 +537,40 @@
     <h1>Our Contributors</h1>
     <div class="contributors" id="contributors">
     </div>
-    <a href="https://github.com/akshitagupta15june/PetMe" target="_blank" class=" w-10">
-      <!-- Github icon -->
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="fill-white" viewBox="0 0 20 20">
-        <path
-          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-      </svg>
+    <a href="https://github.com/akshitagupta15june/PetMe" target="_blank" class=" w-10"> </a>
+    <!-- Github icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="fill-white" viewBox="0 0 20 20">
+      <path
+        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+    </svg>
   </div>
 
   <!-- Contributors section ends -->
 
   <!-- Footer section  -->
 
-  <footer class="bg-gray-900 p-5 text-white dark:text-white grid grid-cols-1 lg:grid-cols-3 justify-items-center">
-    <div class="flex-footer">
-      <div class="footer-component">
+  <footer class="bg-black  text-white ">
 
-        <div class="flex flex-row space-x-5 fix">
-          <div>
+    <div class=" flex p-5 justify-between ">
 
-            <img class="rounded-full w-24 hover:shadow-md cursor-pointer" src="./Assets/Images/logo.jpg" alt="logo" />
-            </a>
-          </div>
-          <div>
-            <div class="space-y-2">
-              <h3 class="text-2xl">Adopt a pet</h3>
-              <div>Give life to an animal in need</div>
-            </div>
-          </div>
 
+      <div class="flex flex-1  flex-col text-center sm:flex-row items-center justify-center space-x-3">
+        <div>
+          <img class="rounded-full w-24 cursor-pointer" src="./Assets/Images/logo.jpg" alt="logo" />
         </div>
-
+        <div>
+          <div class="space-y-2">
+            <h3 class="text-2xl">Adopt a pet</h3>
+            <div>Give life to an animal in need</div>
+          </div>
+        </div>
       </div>
 
+
       <!-- Subscribe column -->
-      <div class="footer-component">
-        <div class="m-5 md:m-0 space-y-2">
-          <h3 class="text-2xl text-center">Subscribe to our newsletter</h3>
+      <div class=" md:flex flex-col hidden text-center items-center flex-1 ">
+        <div class=" space-y-2">
+          <h3 class="text-2xl ">Subscribe to our newsletter</h3>
           <div class="text-md">Get the latest news and updates delivered straight to your indox.</div>
           <div class="text-center">
             <input class="my-1 mr-2 p-2 rounded-md" type="email" id="email" name="email"
@@ -580,10 +581,11 @@
       </div>
       <!-- Subscribe column end -->
 
+
       <!-- Social icons  -->
-      <div class="m-5 lg:m-0 footer-component">
+      <div class=" flex-1 flex flex-col items-center justify-center ">
         <div class="text-2xl">Follow us on</div>
-        <div class="flex flex-row space-x-3 my-0">
+        <div class="flex mt-2 flex-row space-x-3 my-0">
           <div>
             <a href="#" class=" w-5 ml-3">
               <!-- Facebook icon -->
@@ -615,6 +617,18 @@
       </div>
       <!-- Social icons end -->
 
+    </div>
+
+    <div class=" bg-gray-900 pt-5 pb-8 flex flex-col text-center md:hidden mt-8 items-center flex-1 ">
+      <div class=" space-y-2">
+        <h3 class="text-2xl text-center">Subscribe to our newsletter</h3>
+        <div class="text-md">Get the latest news and updates delivered straight to your indox.</div>
+        <div class="text-center">
+          <input class="my-1 mr-2 p-2 rounded-md" type="email" id="email" name="email"
+            placeholder="Enter your email address">
+          <button class="bg-red-600 hover:bg-red-500 text-white py-2 px-4 rounded-md" type="submit">Subscribe</button>
+        </div>
+      </div>
     </div>
 
   </footer>

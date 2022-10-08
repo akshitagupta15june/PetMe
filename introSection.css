@@ -3,14 +3,13 @@
   padding: 0;
 }
 
-
 .meet-heading {
   font-size: 60px;
   background-color: rgb(255, 240, 234);
   text-align: center;
   font-weight: 800;
   padding-top: 30px;
-  padding-bottom: 30px; 
+  padding-bottom: 30px;
 }
 
 .main-body-section-div {
@@ -23,7 +22,7 @@
 }
 
 .main-body-heading-text {
-  padding-top: 12.5%;
+  padding-top: 2%;
   padding-left: 5%;
 }
 
@@ -41,7 +40,7 @@
 }
 
 .pet-card-flex {
-  background-image: url('./Assets/Images/pattern\ doodle.png');
+  background-image: url("./Assets/Images/pattern\ doodle.png");
   display: flex;
   flex-direction: column;
   padding-top: 20px;
