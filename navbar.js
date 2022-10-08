@@ -5,15 +5,21 @@ const navBtn = document.getElementById("nav-button");
 let prevScrollPos =  window.pageYOffset
 
 navBtn.addEventListener("click", () => {
-  navBar.classList.toggle("hidden");
-  logo.classList.toggle("hidden");
+	navBar.classList.toggle("hidden");
+	logo.classList.toggle("hidden");
 });
 
 window.onscroll = function() {
-	myFunction()
-	let currentScrollPos =  window.pageYOffset
-	toggleNavBar(currentScrollPos > prevScrollPos, currentScrollPos)
-};
+	if(header!==null){
+		try{
+			myFunction()
+			let currentScrollPos =  window.pageYOffset
+			toggleNavBar(currentScrollPos > prevScrollPos, currentScrollPos)
+		}
+		catch (e) {
+			console.log(e);
+		}
+	}};
 
 var header = document.getElementById("header");
 // var sticky = header.offsetTop;
