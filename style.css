@@ -117,6 +117,24 @@
 
 /*-----end of sos button----*/
 
+.bg-amber-900 .btn {
+  color: white;
+  border: 1px solid white;
+}
+
+/**
+fixes contact us button
+**/
+.bg-header-orange-light {
+  color: #000;
+}
+/**
+Fixes contant form color when theme changes
+**/
+.bg-amber-900 .contact-form-container .text-black, .bg-amber-900 .contact-form-container .text-gray-700 {
+  color: #fff;
+}
+
 
 .bg-amber-900 .btn {
   color: white;
