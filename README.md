@@ -190,5 +190,5 @@ PetMe is licensed under the MIT License - see the [LICENSE](LICENSE) file for de
 
 ## Socials 
 
-[<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"/>](https://github.com/akshitagupta15june/PetMe)
+[<img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" height="80"/>](https://github.com/akshitagupta15june/PetMe)
 
