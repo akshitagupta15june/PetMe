@@ -18,6 +18,7 @@
     <link rel="icon" type="image/x-icon" href="/Assets/Images/logo.ico">
     <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./autcomplete.css" />
     <title>Donate animals: PetMe</title>
   </head>
 
@@ -146,9 +147,7 @@
             <div class="p-2 w-full">
               <div class="relative">
                 <label for="address" class="leading-7 text-sm text-gray-900">Address</label>
-                <input type="text" id="address" name="address" placeholder="Your Address"
-                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                  required />
+        <div id="autocomplete" class="autocomplete-container"></div>
               </div>
             </div>
             <div class="p-2 w-1/2">
@@ -255,6 +254,7 @@
   </section>
   <script src="navbar.js"></script>
   <script src="light-dark-theme.js"></script>
+  <script src="./completeAddress.js"></script>
 </body>
 
 </html>
