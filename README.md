@@ -56,14 +56,20 @@ When the team heard about the animals that were getting under danger each year, 
 
 
 ## Watch the video:
-For a brief explanation about PetMe, you can watch the following
-[![video](https://i.imgur.com/8gEUuwt.png)](https://www.youtube.com/embed/U1EQjtT-G8E)
 
+For a brief explanation about PetMe, you can watch the following video.
 
+[<img src="https://i.imgur.com/8gEUuwt.png" width="50%">](https://youtu.be/U1EQjtT-G8E)
+ 
 Additional features:
 - All the data is stored in the database so when a person wishes to adopt or donate an animal, their information will be auto-filled using the database. 
 - Users can use the `Contact` page to drop in their details for a call with one of the team members. 
 
+## View our Website:
+
+Click the image below to view our website!
+
+[<img src="https://cdn.discordapp.com/attachments/1004464884773306368/1028310089364406363/unknown.png"/>](https://akshitagupta15june.github.io/PetMe/)
 
 ## Accomplishments:
 
@@ -181,3 +187,8 @@ Thanks a lot for spending your time helping all-round-calculator grow. Thanks a 
 ## License 🛡️ 
 
 PetMe is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Socials 
+
+[<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" height="80"/>](https://github.com/akshitagupta15june/PetMe)
+

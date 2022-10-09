@@ -1,203 +1,209 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./reportstary.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="./navbar.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="./output.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./introSection.css">
+  <link rel="stylesheet" href="./navbar.css">
+  <link rel="stylesheet" href="./mobileView.css">
+  <link rel="stylesheet" href="./reportstary.css">
+  <link rel="icon" type="image/x-icon" href="/Assets/Images/logo.ico">
   <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
-    
-    
-    <title>Report Critical stray animal</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <title>Report critical stray animal: PetMe</title>
 </head>
-<header
-  class=" text-gray-400 bg-header-offwhite body-font flex flex-row items-center justify-center lg:justify-around">
-  <div class="flex flex-row items-center md:flex-row md:items-center p-5" id="logo">
-    <span class="mission-1"> Saving Lives </span>
-    <a class="logo-border" href="./index.html">
-      <img class="rounded-full logo-size" src="./Assets/Images/logo.jpg" alt="logo" />
-    </a>
-    <span class="mission-2"> Saving Animals </span>
-    <!--
+
+<body>
+  <header id="header"
+    class=" text-gray-400 bg-header-offwhite body-font flex flex-row items-center justify-center lg:justify-around">
+    <div class="flex flex-row items-center md:flex-row md:items-center p-5" id="logo">
+      <span class="mission-1 mission-dark"> Saving Lives </span>
+      <a class="logo-border" href="index.html">
+        <img class="rounded-full logo-size" src="./Assets/Images/logo.jpg" alt="logo" />
+      </a>
+      <span class="mission-2 mission-dark"> Saving Animals </span>
+      <!--
     <div class="w-full mt-8 md:mt-0">
       <h1 class="text-4xl text_2  text-center md:text-left md:ml-12 uppercase font-serif font-bold " id = "heading-adopt-me">Adopt
         today!</h1>
       <p class="text-lg text-gray-400 text-center md:text-left md:ml-12 mt-2">Give life to a needed animal</p>
     </div> -->
-  </div>
-  <button data-collapse-toggle="navbar-default" type="button"
-  class="absolute top-4 right-4 sm:inline-flex sm:items-center p-2 lg:hidden focus:outline-none  text_4 "
-    aria-controls="navbar-default" aria-expanded="false" id="nav-button">
-    <span class="sr-only">Open main menu</span>
-    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-      xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd"
-        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-        clip-rule="evenodd"></path>
-    </svg>
-  </button>
-  <nav class="">
-    <div class="hidden w-full lg:block z-0" id="navbar">
-      <ul
-        class="w-[100vw] h-1/2 top-0 right-0 p-4 text-center space-y-8 lg:space-y-0 lg:space-x-3 lg:static lg:w-auto flex flex-col rounded-lg border border-gray-100 items-center lg:bg-transparent lg:border-0 lg:flex-row justify-center">
-        <li><a href="./index.html"
-            class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Home</a></li>
-        <li><a href="./index.html#About"
-            class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">About Us</a>
-        </li>
-        <li><a href="./blog.html"
-            class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Blogs</a></li>
-        <li><a href="./donate.html"
-            class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Donate
-            Animals</a></li>
-        <li>
-          <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
-            <a @mouseover="open = true"
-              class="p-3 text-custom-heading flex font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">
-              Support Us
-              <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" class="mt-1">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
+    </div>
+    <button data-collapse-toggle="navbar-default" type="button"
+      class="absolute top-4 right-4 sm:inline-flex sm:items-center p-2 lg:hidden focus:outline-none  text_4 "
+      aria-controls="navbar-default" aria-expanded="false" id="nav-button">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+          clip-rule="evenodd"></path>
+      </svg>
+    </button>
+    <nav class="">
+      <div class="hidden w-full lg:block z-0" id="navbar">
+        <ul
+          class="w-[100vw] h-1/2 top-0 right-0 p-4 text-center space-y-8 lg:space-y-0 lg:space-x-3 lg:static lg:w-auto flex flex-col rounded-lg border border-gray-100 items-center lg:bg-transparent lg:border-0 lg:flex-row justify-center">
+          <li><a href="index.html"
+              class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Home</a>
+          </li>
+          <li><a href="index.html#About"
+              class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">About
+              Us</a>
+          </li>
+          <li><a href="blog.html"
+              class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Blogs</a>
+          </li>
+          <li><a href="donate.html"
+              class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Donate
+              Animals</a></li>
+          <li>
+            <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
+              <a @mouseover="open = true"
+                class="p-3 text-custom-heading flex font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">
+                Support Us
+                <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" class="mt-1">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </a>
+
+              <div x-show="open" class="z-20 absolute -left-1 w-[7.5rem] py-2 bg-gray-100 rounded-md shadow-xl">
+
+                <a href="volunteer.html"
+                  class=" block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">Become
+                  a Volunteer</a>
+
+              </div>
+            </div>
+          </li>
+          <li><a href="#"
+              class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">SOS
+              Report</a></li>
+
+
+
+          <li><a href="index.html#contact">
+              <button
+                class="inline-flex items-center bg-header-orange-light border-0 py-4 px-2 focus:outline-none text_4 font-bold rounded text-base mt-4 md:mt-0">
+                Contact Us
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
             </a>
+          </li>
+          <li>
+            <a id="theme-toggle"><img src="Assets/Images/sun.svg" width="50px" id="switch"></a>
+          </li>
+        </ul>
 
-            <div x-show="open" class="z-20 absolute -left-1 w-[7.5rem] py-2 bg-gray-100 rounded-md shadow-xl">
+      </div>
 
-              <a href="volunteer.html"
-                class=" block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">Become
-                a Volunteer</a>
+    </nav>
 
-            </div>
-          </div>
-        </li>
-        <li><a href="#"
-            class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">SOS
-            Report</a></li>
-
-
-
-        <li><a href="./index.html#contact">
-            <button
-              class="inline-flex items-center bg-header-orange-light border-0 py-4 px-2 focus:outline-none text_4 font-bold rounded text-base mt-4 md:mt-0">
-              Contact Us
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </button>
-          </a>
-        </li>
-
-        <li>
-
-          <button id="theme-toggle" class=" text_4">
-            Toggle Theme
-          </button>
-        </li>
-      </ul>
-      
+  </header>
+  <div class=" flex flex-col items-center ">
+    <div class="info my-4 max-w-[625px]">
+      <h1 id="title">Report any Critical stray animal to the nearest Animal Care centres</h1>
+      <p id="description">The details you provide with this form will be used to reach the nearest authority at the
+        location of the stray animal.</p>
     </div>
+    <form class="flex flex-col  md:w-2/3 max-w-[775px] w-auto sm:mx-6 mx-2" id="survey-form"
+      action="https://formspree.io/f/xayaokzl" method="POST">
+      <div class="form-group mb-2">
+        <label for="name">Name
+          <span class="hint text-red-600">*</span>
+        </label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+      </div>
+      <div class="form-group mb-2">
+        <label for="email">Email
+          <span class="hint text-red-600">*</span>
+        </label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required />
+      </div>
+      <div class="form-group mb-2">
+        <label for="address">
+          Address(street address,City, pincode)
+          <span class="hint text-red-600">*</span>
+        </label>
+        <input type="address" name="first address" id="first address" class="form-control"
+          placeholder="Enter your correct address (eg. Meenawati marg, Lucknow, 209087)" required/>
+      </div>
+      <div class="form-group mb-2">
+        <label for="landmark">
+          Landmark
+          <span class="hint text-red-600">*</span>
+        </label>
+        <input type="address" min="1" name="address" id="address" class="form-control"
+          placeholder="Enter the nearest landmark to identify the location." required/>
+      </div>
+      <div class="form-group mb-2">
+        <label for="contact-no">
+          Contact number
+          <span class="hint text-red-600">*</span>
+        </label>
+        <input type="tel" name="contact-no" id="contact" class="form-control"
+          placeholder="Enter an active contact number" required/>
+      </div>
+      <div class="form-group mb-4">
+        <label for="email">Which type of stray animal?
+          <span class="hint text-red-600">*</span>
+        </label>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select stray animal</option>
+          <option value="student">Dog</option>
+          <option value="artist">Cat</option>
+          <option value="graphic_designer">Cow</option>
+          <option value="other">Pig</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
 
-  </nav>
+      <div class="form-group">
+        <label>What is the condition of the animal currently?</label>
+        <label>
+          <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />
+          Extremely Critical
+        </label>
+        <label>
+          <input name="user-recommend" value="maybe" type="radio" class="input-radio" />
+          Critical
+        </label>
+        <label>
+          <input name="user-recommend" value="no" type="radio" class="input-radio" />
+          Moderate health
+        </label>
+      </div>
 
-</header>
-    <div class="container">
-        <div class="info">
 
-            <h1 id="title">Report any Critical stray animal to the nearest Animal Care centres</h1>
-            <p id="description">The details you provide with this form will be used to reach the nearest authority at the location of the stray animal.</p>
-        </div>
-        <form  class="sm:w-2/3 h-min  mx-auto" id="survey-form" action="https://formspree.io/f/xayaokzl" method="POST">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input 
-                    type="text" 
-                    name="name" 
-                    id="name"
-                    class="form-control"
-                    placeholder="Enter your name"
-                    required
-                />
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input 
-                    type="email" 
-                    name="email" 
-                    id="email"
-                    class="form-control"
-                    placeholder="Enter your email"
-                    required
-                />
-            </div>
-            <div class="form-group">
-                <label for="address">
-                    Address(street address,City, pincode)
-                    <span class="hint">(optional)</span>
-                </label>
-                <input 
-                    type="address"
-                  
-                    name="first address" 
-                    id="first address"
-                    class="form-control"
-                    placeholder="Enter your correct address (eg. Meenawati marg, Lucknow, 209087)" />
-            </div>
-            <div class="form-group">
-                <label for="landmark">
-                    Landmark
-                    <span class="hint">(optional)</span>
-                </label>
-                <input 
-                    type="address"
-                  min="1"
-                    name="address" 
-                    id="address"
-                    class="form-control"
-                    placeholder="Enter the nearest landmark to identify the location." />
-            </div>
-            <div class="form-group">
-                <label for="email">Which type of stray animal?</label>
-                <select id="dropdown" name="role" class="form-control" required>
-                    <option disabled selected value>Select stray animal</option>
-                    <option value="student">Dog</option>
-                    <option value="artist">Cat</option>
-                    <option value="graphic_designer">Cow</option>
-                    <option value="other">Pig</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-            
-            <div class="form-group">
-                <p>What is the condition of the animal currently?</p>
-                <label>
-            <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />
-                    Extremely Critical
-                </label>
-                <label>
-            <input name="user-recommend" value="maybe" type="radio" class="input-radio" />
-                    Critical
-                </label>
-                <label>
-            <input name="user-recommend" value="no" type="radio" class="input-radio" />
-                    Moderate health
-                </label>
-            </div>
-        
-            
-            <div class="form-group">
-                <label for="comment">Would you like to share any additional information about the stray animal's condition?</label>
-                <textarea id="comment" class="input-textarea border border-black border-slate-600/90" name="comment" placeholder="Enter your comment here..."></textarea>
-            </div>
-            
-            <div class="form-group">
-                <button type="submit" id="submit" class="block w-full h-min text-center bg-green-500 my-px p-3 rounded">Submit</button>
-            </div>
-        </form>
-    </div>
+      <div class="form-group mt-2">
+        <label for="comment">Would you like to share any additional information about the stray animal's
+          condition?</label>
+        <textarea id="comment" class="input-textarea focus:outline-green-400 border-2 border-gray-200" name="comment"
+          placeholder="Enter your comment here..."></textarea>
+      </div>
 
-    <script src="./navbar.js"></script>
-<script src="./light-dark-theme.js"></script>
+      <div class="form-group text-white">
+        <button type="submit" id="submit"
+          class="block w-full h-min text-center bg-green-500 hover:bg-green-600 my-px p-3 rounded">Submit</button>
+      </div>
+
+    </form>
+  </div>
+
+  <script src="./navbar.js"></script>
+  <script src="./light-dark-theme.js"></script>
 </body>
+
 </html>
