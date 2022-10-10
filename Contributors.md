@@ -7,7 +7,7 @@ Project Maintainers
 Contributors
 
 - [AKSHITA GUPTA](https://github.com/akshitagupta15june)
-- [KARAN BANJADE](https://github.com/karanbanjade)
+- [Karan Banjade](https://github.com/karanbanjade)
 - [Dev](https://github.com/d3vsuthar)
 - [Ahnaf Anis](https://github.com/Ahnaf-codes)
 - [Advay Sagarkar](https://github.com/Aragorn-64)
