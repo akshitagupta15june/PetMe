@@ -116,20 +116,21 @@
 
 
 <!---Blogs container-->
-  <section class="main-body-section py-10 bg-amber-50">
+  <section class="main-body-section bg-amber-50">
     <div class="container max-w-5xl mx-auto">
-        <h1 class="mt-2 mb-2 text-black text-4xl leading-tight font-bold text-center w-full">
+      <img src="./cats-dogs-3.jpg" class="mt-3 ">
+        <h1 class="xl:-mt-7 mb-2 text-black text-4xl leading-tight font-bold text-center w-full">
           Blogs
         </h1>
-        <p class="text-center w-full bold text-amber-900 " >A Blog For Pet Lovers And Their Pet Stories</p>
+        <p class="text-center w-full bold text-amber-900 " ><b>A Blog For Pet Lovers And Their Pet Stories</b></p>
     </div>
     
     
     
     <!---Blogs card-->
-    <div class="relative flex flex-wrap items-center justify-center grid-cols-1 mx-0 z-2 my-7 ">
+    <div class="relative flex flex-wrap items-center justify-center grid-cols-1 mx-0 z-2 my-7" id="data-output">
       
-      <div class="relative flex items-center m-10 bg-black shadow-2xl shadow-slate-500 grid-items group z-2 w-min h-min bg-opacity-5 rounded-2xl justify-conten backdrop-filter backdrop-blur-md">
+      <!-- <div class="relative flex items-center m-10 bg-black shadow-2xl shadow-slate-500 grid-items group z-2 w-min h-min bg-opacity-5 rounded-2xl justify-conten backdrop-filter backdrop-blur-md">
         <div class="relative w-[17.5rem] sm:w-[15.5rem] md:w-[19rem] lg:w-[27rem] xl:w-[35rem] h-80 flex justify-center items-center flex-col opacity-80  hover:opacity-100">
           <div class="relative w-4/5 truncate duration-500 border-8 border-solid rounded-2xl border-black/25 group-hover:-translate-y-6">
             <img src="Assets/Images/porme.jpg" alt="blog image" class="relative top-0 left-0 object-cover w-full h-full"/>
@@ -144,24 +145,9 @@
             </h3>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <div class="relative flex items-center m-10 bg-black shadow-2xl shadow-slate-500 grid-items group z-2 w-min h-min bg-opacity-5 rounded-2xl justify-conten backdrop-filter backdrop-blur-md">
-        <div class="relative w-[17.5rem] sm:w-[15.5rem] md:w-[19rem] lg:w-[27rem] xl:w-[35rem] h-80 flex justify-center items-center flex-col opacity-80  hover:opacity-100">
-          <div class="relative w-4/5 truncate duration-500 border-8 border-solid rounded-2xl border-black/25 group-hover:-translate-y-6">
-            <img src="Assets/Images/porme.jpg" alt="blog image" class="relative top-0 left-0 object-cover w-full h-full"/>
-          </div>
-          <div class="relative flex-wrap items-center justify-center mx-0 my-0 text-center">
-            <h3 class="group-hover:-translate-y-6 duration-500 text-black uppercase font-medium text-sm text-center tracking-wider mt-5 mr-2.5 ml-2.5 mb-2.5 leading-4">
-              <b>Title</b><br><br>
-              <spam class="text-xs font-light lowercase">Description: It's a dog...</spam>
-              <a href={curElem.url} target="_blank" rel="noopener noreferrer" class="pl-4 pr-4 m-auto mt-0 mb-0 text-base font-normal bg-orange-500 hover:bg-orange-400 rounded-md">
-                <b>Read</b>
-              </a>
-            </h3>
-          </div>
-        </div>
-      </div>
+
     </div>
   </section>
 
@@ -254,5 +240,6 @@
   
   <script src="index.js"></script>
   <script src="light-dark-theme.js"></script>
+  <script src="blog.js"></script>
 </body>
 </html>
