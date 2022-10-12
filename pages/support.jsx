@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 
-const ReportStrays = () => {
+const Support = () => {
     const router = useRouter()
     const [mounted, setMounted] = useState(false)
     const { theme, setTheme } = useTheme()
@@ -18,7 +18,7 @@ const ReportStrays = () => {
     return (
         <>
             <Head>
-                <title>Report Strays</title>
+                <title>Support</title>
             </Head>
             <div>
 
@@ -27,4 +27,4 @@ const ReportStrays = () => {
     )
 }
 
-export default ReportStrays
+export default Support
