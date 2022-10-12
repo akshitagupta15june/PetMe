@@ -45,7 +45,7 @@ const ReportStrays = () => {
                     </div>
                     <div className="form-group mb-2">
                         <label for="address">
-                            Address(street address,City, pincode)
+                            Address(street address,City, pin code)
                             <span className="hint text-red-600">*</span>
                         </label>
                         <input type="address" name="first address" id="first address" className="form-control"
@@ -99,7 +99,7 @@ const ReportStrays = () => {
 
 
                     <div className="form-group mt-2">
-                        <label for="comment">Would you like to share any additional information about the stray animal's
+                        <label for="comment">Would you like to share any additional information about the stray animal&apos;s
                             condition?</label>
                         <textarea id="comment" className="input-textarea focus:outline-green-400 border-2 border-gray-200" name="comment"
                                   placeholder="Enter your comment here..."></textarea>
