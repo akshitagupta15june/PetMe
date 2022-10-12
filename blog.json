@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "poster": "./blogs/img/b1-poster.png",
+        "title": "Adopting A Chihuahua/Beagle Mix",
+        "description": "I know, I was surprised to find out that a Chihuahua/beagle mix was a thing, too, but lo and behold, the Cheagle is very much a thing....",
+        "read": "https://docs.google.com/document/d/14W-uGQFLrQySVddv-jzwPRu2vCVYpkRahCgOB34wApY/edit"
+    },
+    {
+        "id": 2,
+        "poster": "./blogs/img/b2-poster.png",
+        "title": "Kafka's blog:",
+        "description": "Today, I'm writing down this blog to introduce you to Kafka, my cat. Though, we rarely use this name. It's either Bibou or Bibouch....",
+        "read": "https://docs.google.com/document/d/1ttkonrd7inrBiKTDADwAyL-D5-bLUprrrvlepM8Rcio/edit?usp=sharing"
+    },
+    {
+        "id": 3,
+        "poster": "./blogs/img/b3-poster.png",
+        "title": "Kafka's blog:",
+        "description": "Today, I'm writing down this blog to introduce you to Kafka, my cat. Though, we rarely use this name. It's either Bibou or Bibouch....",
+        "read": "https://docs.google.com/document/d/1ttkonrd7inrBiKTDADwAyL-D5-bLUprrrvlepM8Rcio/edit"
+    },
+    {
+        "id": 4,
+        "poster": "./blogs/img/b4-poster.png",
+        "title": "KEEPING DOGS HAPPY",
+        "description": "Dogs are great pets, wonderful companions and show you love no matter what! It isn't really hard to keep your dog happy....",
+        "read": "https://docs.google.com/document/d/11GzP1wqC2Tisl8ephmDbQsKOUlsKIfMT/edit?usp=sharing&ouid=114625165569816128749&rtpof=true&sd=true"
+    },
+    {
+        "id": 5,
+        "poster": "./blogs/img/b5-poster.png",
+        "title": "Pets are not Toys",
+        "description": "Most people view pets as toys rather than living beings with real feelings. Firstly, instead of adopting them....",
+        "read": "https://docs.google.com/document/d/1nqnVFhfdtN6NpBSoiXTXGYabf65po2MInIwqHmkty4o/edit?usp=drivesdk"
+    },
+    {
+        "id": 6,
+        "poster": "./blogs/img/b6-poster.png",
+        "title": "All about pet ownership, love, caring, helping stray dogs",
+        "description": "So lets begin with my story. I know no one is going to ask this question but still I ask you this question how do you feel being a pet owner?...",
+        "read": "https://omk.hashnode.dev/all-about-pet-ownership-love-caring-helping-stray-dogs"
+    },
+    {
+        "id": 7,
+        "poster": "./blogs/img/b7-poster.png",
+        "title": "Tips For New Feral Rescue Kitten Owners",
+        "description": "Have you just adopted your first feral rescue kitten? Or maybe you’ve fallen in love with one but are unsure how to help them become confident, happy domestic cats....",
+        "read": "https://gingerkiwi-dev.medium.com/tips-for-new-feral-rescue-kitten-owners-part-1-of-3-bc6d21da2dd9"
+    }
+    
+]
