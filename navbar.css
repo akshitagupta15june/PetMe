@@ -74,8 +74,8 @@
   width: 80px;
 }
 
-/*make the icons white*/
-.icon {
+/*make the icons white only for darker theme*/
+.text-white .icon {
   filter: invert(99%) sepia(1%) saturate(200%) hue-rotate(190deg)
     brightness(117%) contrast(100%);
 }

@@ -42,4 +42,6 @@ Contributors
 - [Sriram R](https://github.com/19sriram)
 - [Gopu K Raju](https://github.com/gopukr)
 - [Mohd Haider](https://github.com/mohdhaider07)
+- [Elizabeth McCready - GingerKiwi](https://github.com/GingerKiwi)
+- [Tannistha Biswas](https://github.com/TannisthaBiswas)
 
