@@ -44,4 +44,5 @@ Contributors
 - [Mohd Haider](https://github.com/mohdhaider07)
 - [Elizabeth McCready - GingerKiwi](https://github.com/GingerKiwi)
 - [Tannistha Biswas](https://github.com/TannisthaBiswas)
+- [Elise Richardsson](https://github.com/azulverdosa)
 
