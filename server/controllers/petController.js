@@ -5,7 +5,7 @@ const catchAsync = require('../utils/catchAsync');
 exports.addPet = catchAsync(async (req, res, next) => {
 	const pet = await Pet.create({
         name: req.body.name,
-        img: req.body.img || null,
+        image: req.body.image || null,
         breed: req.body.breed,
         color: req.body.color,
         location: req.body.location,
