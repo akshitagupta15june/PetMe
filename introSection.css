@@ -3,76 +3,6 @@
   padding: 0;
 }
 
-.bg-header-offwhite {
-  --tw-bg-opacity: 0.5;
-  background-color: rgb(237 224 211 / var(--tw-bg-opacity));
-}
-
-.text-custom-heading {
-  --tw-bg-opacity: 0.8;
-  color: rgb(51 50 49 / var(--tw-bg-opacity));
-}
-
-.turn-red-hover:hover {
-  --tw-text-opacity: 0.65;
-  color: rgb(255 0 0 / var(--tw-text-opacity));
-  transition-duration: 0.3s;
-}
-
-.bg-header-orange-light {
-  --tw-bg-opacity: 0.4;
-  background-color: rgb(255 171 87 / var(--tw-bg-opacity));
-}
-
-.bg-header-orange-dark {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 195 122 / var(--tw-bg-opacity));
-}
-
-.bg-header-orange-dark:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 180 92 / var(--tw-bg-opacity));
-  transition-duration: 0.3s;
-}
-
-.bg-header-orange-light:hover {
-  --tw-bg-opacity: 0.7;
-  background-color: rgb(255 171 87 / var(--tw-bg-opacity));
-  transition-duration: 0.3s;
-}
-
-.turn-white-hover {
-  color: rgb(62, 62, 62);
-}
-
-.turn-white-hover:hover {
-  color: rgb(255, 255, 255);
-  transition-duration: 0.2s;
-}
-
-.bg-color-btn {
-  background-color: rgb(255, 193, 117);
-  border: 2px white solid;
-}
-
-.bg-color-btn:hover {
-  background-color: rgb(255, 172, 70);
-  transition-duration: 0.3s;
-}
-
-.bold-500 {
-  font-weight: 500;
-}
-
-.logo-border {
-  border: 4px solid black;
-  border-radius: 9999px;
-}
-
-.logo-size {
-  width: 50px;
-}
-
 .meet-heading {
   font-size: 60px;
   background-color: rgb(255, 240, 234);
@@ -89,32 +19,31 @@
   background-position: center;
   min-height: 650px;
   opacity: 0.9;
+  padding-top: 80px;
 }
 
 .main-body-heading-text {
-  padding-top: 12.5%;
+  padding-top: 2%;
   padding-left: 5%;
 }
 
 .main-body-section-div h1 {
   font-size: 64px;
-  padding-left: 2%;
+  padding-left: 18.8%;
+  padding-top: 16.6%;
   color: azure;
   font-weight: 700;
 }
 
 .main-body-section-div div {
+  padding-left: 14.3%;
   font-size: 32px;
   color: azure;
   font-weight: 400;
 }
 
 .pet-card-flex {
-  background: linear-gradient(
-    180deg,
-    rgb(255, 220, 170) 0%,
-    rgb(255, 195, 122) 100%
-  );
+  background-image: url("./Assets/Images/pattern\ doodle.png");
   display: flex;
   flex-direction: column;
   padding-top: 20px;
@@ -142,9 +71,36 @@
 }
 
 .main-img {
-  padding-left: 30px;
+  position: relative;
   background-color: rgb(255, 231, 202);
   border-radius: 50px;
+  overflow: hidden;
+  transition: all 300ms;
+}
+
+.hv {
+  position: relative;
+  background-size: cover;
+  transition: all 300ms;
+}
+
+.hv::after {
+  transition: all 300ms;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 231, 202);
+  top: 0;
+  opacity: 0;
+}
+
+.hv:hover::after {
+  opacity: 0.2;
+}
+
+.hv:hover {
+  transform: scale(1.1);
 }
 
 .card-img-div {
@@ -165,9 +121,15 @@
   height: 330px;
 }
 
-.card-img-center-round {
-  border-radius: 50px;
-  overflow: hidden;
-  background-color: rgb(255, 231, 202);
-  border: 6px antiquewhite solid;
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: antiquewhite;
+}
+::-webkit-scrollbar-thumb {
+  background-clip: content-box;
+  border: 2px transparent solid;
+  background-color: brown;
+  border-radius: 13px;
 }

@@ -1,0 +1,121 @@
+.bg-header-offwhite {
+  --tw-bg-opacity: 0.5;
+  background-color: rgb(237 224 211);
+}
+
+.text-custom-heading {
+  --tw-bg-opacity: 0.8;
+  color: rgb(51 50 49 / var(--tw-bg-opacity));
+}
+
+.turn-red-hover:hover {
+  --tw-text-opacity: 0.65;
+  color: rgb(255 0 0 / var(--tw-text-opacity));
+  transition-duration: 0.3s;
+}
+
+.turn-yellow-hover:hover {
+  --tw-text-opacity: 0.65;
+  color: rgb(255 177 0 / var(--tw-text-opacity));
+  transition-duration: 0.3s;
+}
+
+.bg-header-orange-light {
+  --tw-bg-opacity: 0.4;
+  background-color: rgb(255 171 87 / var(--tw-bg-opacity));
+}
+
+.bg-header-orange-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 195 122 / var(--tw-bg-opacity));
+}
+
+.bg-header-orange-dark:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 180 92 / var(--tw-bg-opacity));
+  transition-duration: 0.3s;
+}
+
+.bg-header-orange-light:hover {
+  --tw-bg-opacity: 0.7;
+  background-color: rgb(255 171 87 / var(--tw-bg-opacity));
+  transition-duration: 0.3s;
+}
+
+.turn-white-hover {
+  color: rgb(62, 62, 62);
+}
+
+.turn-white-hover:hover {
+  color: rgb(255, 255, 255);
+  transition-duration: 0.2s;
+}
+
+.bg-color-btn {
+  background-color: rgb(255, 193, 117);
+  border: 2px white solid;
+}
+
+.bg-color-btn:hover {
+  background-color: rgb(255, 172, 70);
+  transition-duration: 0.3s;
+}
+
+.bold-500 {
+  font-weight: 500;
+}
+
+.logo-border {
+  border: 2px solid black;
+  border-radius: 9999px;
+}
+
+.logo-size {
+  width: 80px;
+}
+
+/*make the icons white only for darker theme*/
+.text-white .icon {
+  filter: invert(99%) sepia(1%) saturate(200%) hue-rotate(190deg)
+    brightness(117%) contrast(100%);
+}
+
+#logo{
+  transition: 0.3s ease;
+}
+
+#logo:hover{
+  transform: scale(1.05);
+}
+
+.mission-dark{
+  color: rgb(62, 62, 62);
+  cursor: default;
+}
+
+.mission-light{
+  color: rgb(255, 255, 255);
+  cursor: default;
+}
+
+#theme-toggle{
+  cursor: pointer;
+}
+
+/* make the header sticky on scroll */
+.header {
+	position: fixed;
+	top: 0;
+	transition: 0.25s;
+	width: 100%;
+	z-index: 100;
+}
+
+.add_border{
+  border-bottom: 2px solid #ae642c;
+  /* give a bottom shadow */
+  box-shadow:  0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+.nav-hidden{
+	top: -100px;
+}

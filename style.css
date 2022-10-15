@@ -9,78 +9,219 @@
     padding: theme("spacing.6");
     box-shadow: theme("boxShadow.xl");
   }
+ 
+  .contributors-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #131c2b;
+    padding-bottom: 2.75rem;
+    border-bottom: 1px solid gray;
+  }
+
+  .contributors-container h1 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 2.5rem 0;
+  }
+
+  .contributors {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0 8%;
+  }
+
+  .avatar {
+    border-radius: 50%;
+    width: 4rem;
+  }
+
+  .contribute-btn {
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    letter-spacing: 1.5px;
+    background-color: #003479;
+  }
+
+  .contribute-btn img {
+    width: 2.2rem;
+    color: black;
+    margin-right: 5px;
+  }
+
+  /*-------sos button ---------*/
+  #mySBtn {
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: red !important;
+    /* Set a background color */
+    color: white !important;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 25px !important;
+    /* Some padding */
+    border-radius: 50%;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+  }
+
+  #mySBtn:hover {
+    background-color: #fff !important;
+    /* Add a dark-grey background on hover */
+    color: red !important;
+    font-weight: 700 !important;
+  }
+
+  /*-----end of sos button----*/
+
+  .contact-form-container {
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.contributors {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .contributors-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #131c2b;
-  padding-bottom: 2.75rem;
-  border-bottom: 1px solid gray;
+  padding-top: 20px;
 }
 
-.contributors-container h1 {
-  color: whitesmoke;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 600;
-  margin: 2.5rem 0;
-}
-.contributors {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin: 0 8%;
-}
-
-.avatar {
-  border-radius: 50%;
-  width: 4rem;
-}
-
-.contribute-btn {
-  display: flex;
-  align-items: center;
-  color: whitesmoke;
-  padding: 5px 10px;
-  border-radius: 20px;
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-top: 3rem;
-  letter-spacing: 1.5px;
-  background-color: #003479;
-}
-
-.contribute-btn img {
-  width: 2.2rem;
-  color: black;
-  margin-right: 5px;
-}
-
-/*-------sos button ---------*/
-#mySBtn {
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: red; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 25px; /* Some padding */
-  border-radius: 50%; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-}
-
-#mySBtn:hover {
-  background-color: #fff; /* Add a dark-grey background on hover */
-  color: red;
-  font-weight: 700;
-}
 /*-----end of sos button----*/
+
+.bg-amber-900 .btn {
+  color: white;
+  border: 1px solid white;
+}
+
+/**
+fixes contact us button
+**/
+.bg-header-orange-light {
+  color: #000;
+}
+/**
+Fixes contant form color when theme changes
+**/
+.bg-amber-900 .contact-form-container .text-black, .bg-amber-900 .contact-form-container .text-gray-700 {
+  color: #fff;
+}
+
+
+.bg-amber-900 .btn {
+  color: white;
+  border: 1px solid white;
+}
+
+/**
+fixes contact us button
+**/
+.bg-header-orange-light {
+  color: #000;
+}
+/**
+Fixes contant form color when theme changes
+**/
+.bg-amber-900 .contact-form-container .text-black, .bg-amber-900 .contact-form-container .text-gray-700 {
+  color: #fff;
+}
+
+.btn {
+  margin-top: 18px;
+  border: 2px solid #000;
+  color: #000;
+  cursor: pointer;
+  background-color: #ffac46;
+  box-shadow: inset 0 0 0 0 #ffac46;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  transition: ease-out 0.4s;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  -ms-transition: ease-out 0.4s;
+  -o-transition: ease-out 0.4s;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  height: 3rem;
+  width: 12rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  border: 2px solid #fff;
+  box-shadow: inset 200px 0 0 0 #ffac46;
+  /* background-color:  #ffac46; */
+  color: #fff;
+}
+
+
+.fix {
+  margin-left: -260px;
+}
+
+ /* underline animation for anchor tag in about us section */
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #9ca3af;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #9ca3af;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* anchor animation ends  */

@@ -1,28 +1,31 @@
 @media only screen and (max-width: 768px) {
-	.meet-heading {
-		font-size: 45px;
-	}
+  .meet-heading {
+    font-size: 45px;
+  }
 
-	.one-line-card {
-		flex-direction: column;
-	}
+  .one-line-card {
+    flex-direction: column;
+  }
+  .card-height {
+    height: fit-content;
+  }
+  .footer {
+    flex-direction: column;
+  }
+}
 
-	.main-card {
-		width: 96%;
-		max-width: 400px;
-		margin: 10px auto;
-		flex-direction: column;
-	}
-
-	.card-height {
-		height: fit-content;
-	}
-
-	.main-img {
-		padding: 0;
-	}
-
-	.footer {
-		flex-direction: column;
-	}
+@media only screen and (max-width:1225px){
+  .main-img {
+    padding: 0;
+    margin-top: 1rem;
+  }
+  .card-height {
+    height: fit-content;
+  }
+  .main-card {
+    width: 96%;
+    max-width: 400px;
+    margin: 10px auto;
+    flex-direction: column;
+  }
 }
