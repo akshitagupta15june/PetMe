@@ -4,6 +4,7 @@ const repo = "PetMe";
 const owner = "akshitagupta15june";
 const apiURL = `https://api.github.com/repos/${owner}/${repo}/contributors`;
 
+
 function displayContributors(contributorsList) {
   contributorsList.forEach((contributor) => {
     // create anchor tag and set relevant attributes
@@ -35,3 +36,4 @@ async function getContributorsList() {
 }
 
 getContributorsList();
+
