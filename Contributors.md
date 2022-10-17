@@ -45,4 +45,5 @@ Contributors
 - [Elizabeth McCready - GingerKiwi](https://github.com/GingerKiwi)
 - [Tannistha Biswas](https://github.com/TannisthaBiswas)
 - [Elise Richardsson](https://github.com/azulverdosa)
+- [Santanu Jana](https://github.com/Santanujana2001)
 
