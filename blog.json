@@ -52,8 +52,29 @@
         "id": 8,
         "poster": "./blogs/img/b8-poster.png",
         "title": "Stray Dogs are Social Responsibility",
-        "description": "We often thinks how we should live but didn't ever realises how stray animals live",
+        "description": "We often thinks how we should live but didn't ever realises how stray animals live...",
         "read": "./blogs/pagsum.html"
+    },
+    {
+        "id": 9,
+        "poster": "./blogs/img/b9-poster.png",
+        "title": "DOGS ARE NOT PERILOUS",
+        "description": "Dogs only exhibit aggressive behavior when there is a good reason for it...",
+        "read": "./blogs/abhinav.html"
+    },
+    {
+        "id": 10,
+        "poster": "./blogs/img/b10-poster.png",
+        "title": "MY MEMORABLE ENCOUNTERS WITH ANIMALS",
+        "description": "Having strict parents, I was never allowed to have pets inside the house. But I had my fair share of experience playing with strays, feeding them, and bonding with them...",
+        "read": "./blogs/tannistha.html"
+    },
+    {
+        "id": 11,
+        "poster": "./blogs/img/b11-poster.png",
+        "title": "Who names a dog Darryl?",
+        "description": "I’ve been fostering dogs with my local humane society for the last 20 years, and my first ‘foster fail’ happened 2 years ago with a dog named Darryl...",
+        "read": "./blogs/elise.html"
     }
     
 ]
