@@ -225,3 +225,31 @@ Fixes contant form color when theme changes
 }
 
 /* anchor animation ends  */
+
+
+
+/* Back to top button */
+#bttbutton {
+  position: fixed;
+  bottom: 120px;
+  right: 45px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #ae642c;
+  color: white !important;
+  cursor: pointer;
+  padding: 18px !important;
+  border-radius: 20%;
+  font-size: 12px;
+ }
+
+#bttbutton:hover {
+  background-color:#ffac46;
+  color: #ffac46;
+  font-weight: 700 !important;
+}
+
+
+/* End of Back to top button */
+
