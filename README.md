@@ -180,7 +180,7 @@ git push origin YourBranchName
 
 ## Thanks to all Contributors 💪 
 
-Thanks a lot for spending your time helping all-round-calculator grow. Thanks a lot! Keep rocking 🍻
+Thanks a lot for spending your time helping PetMe grow. Thanks a lot! Keep rocking 🍻
 
 [![Contributors](https://contrib.rocks/image?repo=akshitagupta15june/PetMe)](https://github.com/akshitagupta15june/PetMe/graphs/contributors)
 
