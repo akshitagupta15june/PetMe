@@ -47,6 +47,13 @@
         "title": "Tips For New Feral Rescue Kitten Owners",
         "description": "Have you just adopted your first feral rescue kitten? Or maybe you’ve fallen in love with one but are unsure how to help them become confident, happy domestic cats....",
         "read": "./blogs/elizabeth.html"
+    },
+    {
+        "id": 8,
+        "poster": "./blogs/img/b8-poster.png",
+        "title": "Stray Dogs are Social Responsibility",
+        "description": "We often thinks how we should live but didn't ever realises how stray animals live",
+        "read": "./blogs/pagsum.html"
     }
     
 ]
