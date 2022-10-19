@@ -38,7 +38,7 @@ It has been estimated that more than one million adoptable dogs and cats are eut
 
 **The number of euthanized animals can be reduced drastically if more people adopt pets instead of buying them from stores. When you adopt an animal, you save a lovely life by making them a part of your family as well as open up a shelter space for an animal who might be in need of one desperately.**
 
-When the team heard about the animals that were getting under danger each year, it became a goal for us to help these speechless being somehow. After brainstorming for a long time we came up with the idea of **PetMe**. We believe in the policy of saving animals and thus saving lives. Every life matters and we wish to be the part of the change that is making the same possible.
+When the team heard about the animals that were getting in danger each year, it became a goal for us to help these speechless beings somehow. After brainstorming for a long time we came up with the idea of **PetMe**. We believe in the policy of saving animals and thus saving lives. Every life matters and we wish to be the part of the change that is making the same possible.
 
 
 ## Features of PetMe at a Glance
