@@ -73,7 +73,7 @@ Click the image below to view our website!
 
 ## Accomplishments:
 
-We are proud that we built a website in which pet lovers can easily adopt stray animals through our website, which can not only provide medical assistance to stray animals, but also allow them to be adopted by their comrades in the community.
+We are proud to build a website where pet lovers can easily adopt animals that need a home. They can not only provide medical assistance to them but can also allow their comrades in the community to adopt them.
 
 ## What's next for PetMe 📲
 
