@@ -1,8 +1,8 @@
 Project Maintainers
 
--  [AKSHITA GUPTA](https://github.com/akshitagupta15june)
--  Susmita-Dey
--  muditchoudhary
+- [AKSHITA GUPTA](https://github.com/akshitagupta15june)
+- Susmita-Dey
+- muditchoudhary
 
 Contributors
 
@@ -46,4 +46,4 @@ Contributors
 - [Tannistha Biswas](https://github.com/TannisthaBiswas)
 - [Elise Richardsson](https://github.com/azulverdosa)
 - [Santanu Jana](https://github.com/Santanujana2001)
-
+- [Eli Cohen](https://github.com/elijahlc)
