@@ -151,7 +151,8 @@ fixes contact us button
 Fixes contant form color when theme changes
 **/
 .bg-amber-900 .contact-form-container .text-black, .bg-amber-900 .contact-form-container .text-gray-700 {
-  color: #fff;
+  /* color: #fff; */
+  color: #000;
 }
 
 .btn {
@@ -252,4 +253,3 @@ Fixes contant form color when theme changes
 
 
 /* End of Back to top button */
-
