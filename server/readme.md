@@ -25,7 +25,7 @@ The following details need to be given in the body of `POST` request
 3. Now `npm start` to start the server. 
 
 
-Donate pet section 
+# Donate pet section 
 
 ## Details
 
