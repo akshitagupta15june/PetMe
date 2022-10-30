@@ -75,6 +75,13 @@
         "title": "Who names a dog Darryl?",
         "description": "I’ve been fostering dogs with my local humane society for the last 20 years, and my first ‘foster fail’ happened 2 years ago with a dog named Darryl...",
         "read": "./blogs/elise.html"
+    },
+    {
+        "id": 12,
+        "poster": "./blogs/img/b12-poster.png",
+        "title": "Rescue Rooster",
+        "description": "‘Has anyone lost a chicken? We’ve one at the shop!’ This was the facebook post we saw...",
+        "read": "./blogs/alexis.html"
     }
     
 ]
