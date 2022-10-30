@@ -82,6 +82,20 @@
         "title": "Rescue Rooster",
         "description": "‘Has anyone lost a chicken? We’ve one at the shop!’ This was the facebook post we saw...",
         "read": "./blogs/alexis.html"
+    },
+    {
+        "id": 13,
+        "poster": "./blogs/img/b13-poster.png",
+        "title": "The best pet is a guinea pig",
+        "description": "This is about my experience owning guinea pigs as pets. I grew up owning dogs that were Collies, Jack Russell Terriers, and mutts...",
+        "read": "./blogs/shelby.html"
+    },
+    {
+        "id": 14,
+        "poster": "./blogs/img/b14-poster.png",
+        "title": "Rantings of a pet-lover who hasn’t had a pet yet",
+        "description": "This article might be pretty different from the other articles you will find here. Just like the title says, this will be me ranting about my dream of having a pet companion(s)...",
+        "read": "./blogs/nalowa.html"
     }
     
 ]
