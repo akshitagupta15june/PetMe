@@ -47,3 +47,5 @@ Contributors
 - [Elise Richardsson](https://github.com/azulverdosa)
 - [Santanu Jana](https://github.com/Santanujana2001)
 - [Eli Cohen](https://github.com/elijahlc)
+- [Bookish](https://github.com/bookish)
+- [Alexis Pendleton](littlemissbuttons.github.io)
