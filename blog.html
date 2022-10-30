@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,116 +18,132 @@
   <link rel="icon" type="image/x-icon" href="/Assets/Images/logo.ico">
   <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <title>Blogs</title>
+  <title>Blogs</title>
 </head>
+
 <body>
   <header
-  class="header text-gray-400 bg-header-offwhite body-font flex flex-row items-center justify-center lg:justify-around" id="header">
-  <div class="flex flex-row items-center md:flex-row md:items-center p-2" id="logo">
-    <span class="mission-1 mission-dark"> Saving Lives </span>
-    <a class="logo-border" href="index.html">
-      <img class="rounded-full logo-size" src="./Assets/Images/logo.jpg" alt="logo" />
-    </a>
-    <span class="mission-2 mission-dark"> Saving Animals </span>
-  </div>
-  <button data-collapse-toggle="navbar-default" type="button"
-  class="absolute top-4 right-4 sm:inline-flex sm:items-center p-2 lg:hidden focus:outline-none  text_4 "
-    aria-controls="navbar-default" aria-expanded="false" id="nav-button">
-    <span class="sr-only">Open main menu</span>
-    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-      xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd"
-        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-        clip-rule="evenodd"></path>
-    </svg>
-  </button>
-  <nav class="">
-    <div class="hidden w-full lg:block z-0" id="navbar">
-      <ul
-      class="w-[100vw] h-1/2 top-0 right-0 p-4 text-center space-y-8 lg:space-y-0 lg:space-x-3 lg:static lg:w-auto flex flex-col rounded-lg border border-gray-100 items-center lg:bg-transparent lg:border-0 lg:flex-row justify-center">
-        <li><a href="./index.html"
-            class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Home</a></li>
-        <li><a href="./index.html#About"
-            class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">About Us</a>
-        </li>
-        <li><a href="./blog.html"
-            class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Blogs</a></li>
-        <li><a href="./donate.html"
-            class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Donate
-            Animals</a></li>
-        <li>
-          <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
-            <a @mouseover="open = true"
-              class="p-3 text-custom-heading flex font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">
-              Support Us
-              <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" class="mt-1">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
-            </a>
-
-            <div x-show="open" class="z-20 absolute -left-1 w-[7.5rem] py-2 bg-gray-100 rounded-md shadow-xl">
-
-              <a href="volunteer.html"
-                class=" block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">Become
-                a Volunteer</a>
-
-            </div>
-          </div>
-        </li>
-        <li><a href="./reportstary.html"
-            class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">SOS
-            Report</a></li>
-
-
-
-        <li><a href="#contact">
-            <button
-              class="inline-flex items-center bg-header-orange-light border-0 py-4 px-2 focus:outline-none text_4 font-bold rounded text-base mt-4 md:mt-0">
-              Contact Us
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </button>
-          </a>
-        </li>
-
-        <li>
-          <a id="theme-toggle"><img src="Assets/Images/sun.svg" width="50px" id="switch"></a>
-        </li>
-      </ul>
-      <br>
+    class="header text-gray-400 bg-header-offwhite body-font flex flex-row items-center justify-center lg:justify-around"
+    id="header">
+    <div class="flex flex-row items-center md:flex-row md:items-center p-2" id="logo">
+      <span class="mission-1 mission-dark"> Saving Lives </span>
+      <a class="logo-border" href="index.html">
+        <img class="rounded-full logo-size" src="./Assets/Images/logo.jpg" alt="logo" />
+      </a>
+      <span class="mission-2 mission-dark"> Saving Animals </span>
     </div>
+    <button data-collapse-toggle="navbar-default" type="button"
+      class="absolute top-4 right-4 sm:inline-flex sm:items-center p-2 lg:hidden focus:outline-none  text_4 "
+      aria-controls="navbar-default" aria-expanded="false" id="nav-button">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+          clip-rule="evenodd"></path>
+      </svg>
+    </button>
+    <nav class="">
+      <div class="hidden w-full lg:block z-0" id="navbar">
+        <ul
+          class="w-[100vw] h-1/2 top-0 right-0 p-4 text-center space-y-8 lg:space-y-0 lg:space-x-3 lg:static lg:w-auto flex flex-col rounded-lg border border-gray-100 items-center lg:bg-transparent lg:border-0 lg:flex-row justify-center">
+          <li><a href="./index.html"
+              class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Home</a>
+          </li>
+          <li><a href="./index.html#About"
+              class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">About
+              Us</a>
+          </li>
+          <li><a href="./blog.html"
+              class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Blogs</a>
+          </li>
+          <li><a href="./donate.html"
+              class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Donate
+              Animals</a></li>
+          <li>
+            <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
+              <a @mouseover="open = true"
+                class="p-3 text-custom-heading flex font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">
+                Support Us
+                <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" class="mt-1">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </a>
 
-  </nav>
+              <div x-show="open" class="z-20 absolute -left-1 w-[7.5rem] py-2 bg-gray-100 rounded-md shadow-xl">
 
-</header>
+                <a href="volunteer.html"
+                  class=" block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">Become
+                  a Volunteer</a>
+
+              </div>
+            </div>
+          </li>
+          <li><a href="./reportstary.html"
+              class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">SOS
+              Report</a></li>
 
 
 
-<!---Blogs container-->
+          <li><a href="#contact">
+              <button
+                class="inline-flex items-center bg-header-orange-light border-0 py-4 px-2 focus:outline-none text_4 font-bold rounded text-base mt-4 md:mt-0">
+                Contact Us
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+            </a>
+          </li>
+
+          <li>
+            <a id="theme-toggle"><img src="Assets/Images/sun.svg" width="50px" id="switch"></a>
+          </li>
+        </ul>
+        <br>
+      </div>
+
+    </nav>
+
+  </header>
+
+ 
+
+  <!---Blogs container-->
   <section class="main-body-section">
     <div class="container max-w-5xl mx-auto">
       <img src="./Assets/cats-dogs.jpg" class="mt-32 ">
-        <h1 class="xl:-mt-7 mb-2 text-black text-4xl leading-tight font-bold text-center w-full">
-          Blogs
-        </h1>
-        <p class="text-center w-full bold text-amber-900 " ><b>A Blog For Pet Lovers And Their Pet Stories</b></p>
+      <h1 class="xl:-mt-7 mb-2 text-black text-4xl leading-tight font-bold text-center w-full">
+        Blogs
+      </h1>
+      <p class="text-center w-full bold text-amber-900 "><b>A Blog For Pet Lovers And Their Pet Stories</b></p>
     </div>
-    
-    
-    
+
+
+
     <!---Blogs card-->
     <div class="relative flex flex-wrap items-center justify-center grid-cols-1 mx-0 z-2 my-7" id="data-output">
-      
+
 
 
     </div>
   </section>
 
-  <!-- Footer section  -->
+   <!-- back to top button -->
+   <li>
+    <a href="#top">
+      <button id="bttbutton" title="backtotop">
+        <img src="Assets/Images/uparrow.png" width="20" height="25" />
+      </button>
+    </a>
+  </li>
+
+  <!--end of back to top button -->
   
+  <!-- Footer section  -->
+
 
   <footer class="bg-black text-white ">
 
@@ -211,10 +228,11 @@
     </div>
 
   </footer>
-  
+
   <script src="index.js"></script>
   <script src="light-dark-theme.js"></script>
   <script src="blog.js"></script>
   <script src="navbar.js"></script>
 </body>
+
 </html>
