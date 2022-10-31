@@ -7,6 +7,7 @@ Project Maintainers
 Contributors
 
 - [AKSHITA GUPTA](https://github.com/akshitagupta15june)
+- [Manish Pokhrel](https://github.com/manishpoko)
 - [Karan Banjade](https://github.com/karanbanjade)
 - [Dev](https://github.com/d3vsuthar)
 - [Ahnaf Anis](https://github.com/Ahnaf-codes)
