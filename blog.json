@@ -96,6 +96,13 @@
         "title": "Rantings of a pet-lover who hasn’t had a pet yet",
         "description": "This article might be pretty different from the other articles you will find here. Just like the title says, this will be me ranting about my dream of having a pet companion(s)...",
         "read": "./blogs/nalowa.html"
+    },
+    {
+        "id": 15,
+        "poster": "./blogs/img/b15-poster.png",
+        "title": "A Dog’s Perspective:",
+        "description": "Hi, I’m Kalu, and I just survived a disaster called the festival of lights!..",
+        "read": "./blogs/manish.html"
     }
     
 ]
