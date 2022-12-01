@@ -43,7 +43,7 @@
 }
 
 .pet-card-flex {
-  background-image: url("./Assets/Images/pattern\ doodle.png");
+  background-image: url("./Assets/Images/pets2.jpg");
   display: flex;
   flex-direction: column;
   padding-top: 20px;
