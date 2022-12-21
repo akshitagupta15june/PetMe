@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,28 +15,22 @@
   <link rel="stylesheet" href="./introSection.css">
   <link rel="stylesheet" href="./navbar.css">
   <link rel="stylesheet" href="./mobileView.css">
-  <link rel="stylesheet" href="./reportstary.css">
   <link rel="icon" type="image/x-icon" href="/Assets/Images/logo.ico">
   <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-  <title>Report critical stray animal: PetMe</title>
+  <title>Pet News</title>
 </head>
 
 <body>
-  <header id="header"
-    class=" text-gray-400 bg-header-offwhite body-font flex flex-row items-center justify-center lg:justify-around">
-    <div class="flex flex-row items-center md:flex-row md:items-center p-5" id="logo">
+  <header
+    class="header text-gray-400 bg-header-offwhite body-font flex flex-row items-center justify-center lg:justify-around"
+    id="header">
+    <div class="flex flex-row items-center md:flex-row md:items-center p-2" id="logo">
       <span class="mission-1 mission-dark"> Saving Lives </span>
       <a class="logo-border" href="index.html">
         <img class="rounded-full logo-size" src="./Assets/Images/logo.jpg" alt="logo" />
       </a>
       <span class="mission-2 mission-dark"> Saving Animals </span>
-      <!--
-    <div class="w-full mt-8 md:mt-0">
-      <h1 class="text-4xl text_2  text-center md:text-left md:ml-12 uppercase font-serif font-bold " id = "heading-adopt-me">Adopt
-        today!</h1>
-      <p class="text-lg text-gray-400 text-center md:text-left md:ml-12 mt-2">Give life to a needed animal</p>
-    </div> -->
     </div>
     <button data-collapse-toggle="navbar-default" type="button"
       class="absolute top-4 right-4 sm:inline-flex sm:items-center p-2 lg:hidden focus:outline-none  text_4 "
@@ -52,20 +47,20 @@
       <div class="hidden w-full lg:block z-0" id="navbar">
         <ul
           class="w-[100vw] h-1/2 top-0 right-0 p-4 text-center space-y-8 lg:space-y-0 lg:space-x-3 lg:static lg:w-auto flex flex-col rounded-lg border border-gray-100 items-center lg:bg-transparent lg:border-0 lg:flex-row justify-center">
-          <li><a href="index.html"
+          <li><a href="./index.html"
               class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Home</a>
           </li>
-          <li><a href="index.html#About"
+          <li><a href="./index.html#About"
               class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">About
               Us</a>
           </li>
-          <li><a href="news.html"
+          <li><a href="./news.html"
             class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Pet News</a>
-          </li>
-          <li><a href="blog.html"
+        </li>
+          <li><a href="./blog.html"
               class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Blogs</a>
           </li>
-          <li><a href="donate.html"
+          <li><a href="./donate.html"
               class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Donate
               Animals</a></li>
           <li>
@@ -88,13 +83,13 @@
               </div>
             </div>
           </li>
-          <li><a href="#"
+          <li><a href="./reportstary.html"
               class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">SOS
               Report</a></li>
 
 
 
-          <li><a href="index.html#contact">
+          <li><a href="#contact">
               <button
                 class="inline-flex items-center bg-header-orange-light border-0 py-4 px-2 focus:outline-none text_4 font-bold rounded text-base mt-4 md:mt-0">
                 Contact Us
@@ -105,108 +100,38 @@
               </button>
             </a>
           </li>
+
           <li>
             <a id="theme-toggle"><img src="Assets/Images/sun.svg" width="50px" id="switch"></a>
           </li>
         </ul>
-
+        <br>
       </div>
 
     </nav>
 
   </header>
-  <div class=" flex flex-col items-center ">
-    <div class="info my-4 max-w-[625px]">
-      <h1 id="title">Report any Critical stray animal to the nearest Animal Care centres</h1>
-      <p id="description">The details you provide with this form will be used to reach the nearest authority at the
-        location of the stray animal.</p>
+
+  <!-- Pet news -->
+    <div class="relative w-[17.5rem] sm:w-[15.5rem] md:w-[19rem] lg:w-[27rem] xl:w-[35rem] h-80 flex justify-center items-center flex-col opacity-80">
+        <h1 class="text-3xl mt-28 ml-10">World’s oldest dog living confirmed as 22-year-old Toy Fox Terrier.</h1>
     </div>
-    <form class="flex flex-col  md:w-2/3 max-w-[775px] w-auto sm:mx-6 mx-2" id="survey-form"
-      action="https://formspree.io/f/xayaokzl" method="POST">
-      <div class="form-group mb-2">
-        <label for="name">Name
-          <span class="hint text-red-600">*</span>
-        </label>
-        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
-      </div>
-      <div class="form-group mb-2">
-        <label for="email">Email
-          <span class="hint text-red-600">*</span>
-        </label>
-        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required />
-      </div>
-      <div class="form-group mb-2">
-        <label for="address">
-          Address(street address,City, pincode)
-          <span class="hint text-red-600">*</span>
-        </label>
-        <input type="address" name="first address" id="first address" class="form-control"
-          placeholder="Enter your correct address (eg. Meenawati marg, Lucknow, 209087)" required/>
-      </div>
-      <div class="form-group mb-2">
-        <label for="landmark">
-          Landmark
-          <span class="hint text-red-600">*</span>
-        </label>
-        <input type="address" min="1" name="address" id="address" class="form-control"
-          placeholder="Enter the nearest landmark to identify the location." required/>
-      </div>
-      <div class="form-group mb-2">
-        <label for="contact-no">
-          Contact number
-          <span class="hint text-red-600">*</span>
-        </label>
-        <input type="tel" name="contact-no" id="contact" class="form-control"
-          placeholder="Enter an active contact number" required/>
-      </div>
-      <div class="form-group mb-4">
-        <label for="email">Which type of stray animal?
-          <span class="hint text-red-600">*</span>
-        </label>
-        <select id="dropdown" name="role" class="form-control" required>
-          <option disabled selected value>Select stray animal</option>
-          <option value="student">Dog</option>
-          <option value="artist">Cat</option>
-          <option value="graphic_designer">Cow</option>
-          <option value="other">Pig</option>
-          <option value="other">Other</option>
-        </select>
-      </div>
+    <div>
+       <img class="relative ml-14 w-56 h-56  object-cover rounded-2xl shadow-lg shadow-red-700/50 " src="Assets/Images/oldestdog.jpg" > 
+    </div>
 
-      <div class="form-group">
-        <label>What is the condition of the animal currently?</label>
-        <label>
-          <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />
-          Extremely Critical
-        </label>
-        <label>
-          <input name="user-recommend" value="maybe" type="radio" class="input-radio" />
-          Critical
-        </label>
-        <label>
-          <input name="user-recommend" value="no" type="radio" class="input-radio" />
-          Moderate health
-        </label>
-      </div>
+    <div class="text-lg ml-10 mt-8 mb-28 w-10/12">
+        <p>The oldest dog living is Gino Wolf (USA, b. 24 September 2000), who is 22 years 52 days as verified in Los Angeles, California, USA, on 15 November 2022.</p>
+        <p>Gino was adopted by Alex Wolf in Boulder, Colorado, in 2002. "I've taken great care of him over the years and he is still in relatively very good shape...and really cute still which is surprising considering his age!"</p>
+    </div>
 
 
-      <div class="form-group mt-2">
-        <label for="comment">Would you like to share any additional information about the stray animal's
-          condition?</label>
-        <textarea id="comment" class="input-textarea focus:outline-green-400 border-2 border-gray-200" name="comment"
-          placeholder="Enter your comment here..."></textarea>
-      </div>
+  
 
-      <div class="form-group text-white">
-        <button type="submit" id="submit"
-          class="block w-full h-min text-center bg-green-500 hover:bg-green-600 my-px p-3 rounded">Submit</button>
-      </div>
-
-    </form>
-  </div>
-
-  <script src="./navbar.js"></script>
-  <script src="./light-dark-theme.js"></script>
+  <script src="index.js"></script>
+  <script src="light-dark-theme.js"></script>
+  <script src="blog.js"></script>
+  <script src="navbar.js"></script>
 </body>
 
 </html>
