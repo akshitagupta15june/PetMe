@@ -243,6 +243,9 @@ Fixes contant form color when theme changes
   padding: 18px !important;
   border-radius: 20%;
   font-size: 12px;
+  opacity: 0;
+  transition: all 0.5s;
+  transform: translateY(500px);
  }
 
 #bttbutton:hover {
@@ -250,6 +253,8 @@ Fixes contant form color when theme changes
   color: #ffac46;
   font-weight: 700 !important;
 }
+
+
 
 
 /* End of Back to top button */
