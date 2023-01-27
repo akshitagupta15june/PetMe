@@ -24,6 +24,20 @@ function displayContributors(contributorsList) {
   });
 }
 
+function hideBackToTopButton() {
+  const bttButton = document.getElementById("bttbutton");
+
+  window.addEventListener("scroll", function() {
+    if (window.pageYOffset > 0) {
+      bttButton.style.opacity = "1";
+      bttButton.style.transform = 'translateY(0px)';
+    } else {
+      bttButton.style.opacity = "0";
+      bttButton.style.transform = 'translateY(500px)';
+    }
+  });
+}
+
 // get contributors list  from github API
 async function getContributorsList() {
   try {
@@ -35,5 +49,7 @@ async function getContributorsList() {
   }
 }
 
+hideBackToTopButton()
 getContributorsList();
+
 
