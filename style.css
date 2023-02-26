@@ -9,7 +9,7 @@
     padding: theme("spacing.6");
     box-shadow: theme("boxShadow.xl");
   }
-
+ 
   .contributors-container {
     display: flex;
     flex-direction: column;
@@ -131,10 +131,10 @@ fixes contact us button
 /**
 Fixes contant form color when theme changes
 **/
-.bg-amber-900 .contact-form-container .text-black,
-.bg-amber-900 .contact-form-container .text-gray-700 {
+.bg-amber-900 .contact-form-container .text-black, .bg-amber-900 .contact-form-container .text-gray-700 {
   color: #fff;
 }
+
 
 .bg-amber-900 .btn {
   color: white;
@@ -150,8 +150,7 @@ fixes contact us button
 /**
 Fixes contant form color when theme changes
 **/
-.bg-amber-900 .contact-form-container .text-black,
-.bg-amber-900 .contact-form-container .text-gray-700 {
+.bg-amber-900 .contact-form-container .text-black, .bg-amber-900 .contact-form-container .text-gray-700 {
   /* color: #fff; */
   color: #000;
 }
@@ -195,11 +194,12 @@ Fixes contant form color when theme changes
   color: #fff;
 }
 
+
 .fix {
   margin-left: -260px;
 }
 
-/* underline animation for anchor tag in about us section */
+ /* underline animation for anchor tag in about us section */
 
 .hover-underline-animation {
   display: inline-block;
@@ -208,7 +208,7 @@ Fixes contant form color when theme changes
 }
 
 .hover-underline-animation:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -227,6 +227,8 @@ Fixes contant form color when theme changes
 
 /* anchor animation ends  */
 
+
+
 /* Back to top button */
 #bttbutton {
   position: fixed;
@@ -244,12 +246,15 @@ Fixes contant form color when theme changes
   opacity: 0;
   transition: all 0.5s;
   transform: translateY(500px);
-}
+ }
 
 #bttbutton:hover {
-  background-color: #ffac46;
+  background-color:#ffac46;
   color: #ffac46;
   font-weight: 700 !important;
 }
+
+
+
 
 /* End of Back to top button */
