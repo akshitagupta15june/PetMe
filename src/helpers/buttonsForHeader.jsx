@@ -39,11 +39,6 @@ const buttons = [
     name: 'SOS Report',
     link: '/sosreport',
   },
-  {
-    id: 9,
-    name: 'Contact Us',
-    link: '/contact',
-  },
 ];
 
 export default buttons;

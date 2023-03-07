@@ -5,7 +5,7 @@ function AnimalsCard() {
   return (
     <section className="grid grid-cols-1 mx-auto gap-10 mt-14 lg:grid-cols-3 mb-10 md:grid-cols-2">
       { animals.map((animal) => (
-        <section className="flex flex-col">
+        <section className="flex flex-col" key={animal.name}>
           <img
             src={animal.image}
             alt={animal.name}

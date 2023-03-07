@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Footer > renders Footer with snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      Footer
+    </h1>
+  </div>
+</DocumentFragment>
+`;

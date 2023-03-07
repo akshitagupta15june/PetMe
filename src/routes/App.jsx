@@ -1,23 +1,27 @@
 import React from 'react';
-import TopBar from '../components/TopBar';
+import Header from '../components/Header';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import TitleSection from '../components/TitleSection';
 import AnimalsCard from '../components/AnimalsCard';
 import ContactForms from '../components/ContacForms';
 import Contributors from '../components/Contributors';
+import Footer from '../components/Footer';
 
 function App() {
   return (
-    <main className="flex flex-col w-screen">
-      <TopBar />
-      <Hero />
-      <About />
-      <TitleSection title="Meet our Friends Here!" />
-      <AnimalsCard />
-      <ContactForms />
-      <Contributors />
-    </main>
+    <>
+      <Header />
+      <main className="flex flex-col w-full">
+        <Hero />
+        <About />
+        <TitleSection title="Meet our Friends Here!" />
+        <AnimalsCard />
+        <ContactForms />
+        <Contributors />
+      </main>
+      <Footer />
+    </>
   );
 }
 

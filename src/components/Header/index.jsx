@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import buttons from '../../helpers/buttonsForHeader';
 import logo from '../../assets/images/logo.jpg';
 
-function TopBar() {
+function Header() {
   return (
     <header
       id="header"
@@ -19,26 +20,32 @@ function TopBar() {
       </div>
 
       <nav className="flex items-center justify-center">
-        { buttons.map((button, index) => (
+        { buttons.map((button) => (
           <a
             key={button.id}
             href={button.link}
-            className={index !== 8 ? 'p-2 hover:text-orange-300 hover:underline' : null}
+            className="p-2 hover:text-orange-300 hover:underline"
           >
-            { index === 8 ? (
-              <button
-                type="button"
-                className="bg-[#C57837] p-4 focus:outline-none font-bold rounded mt-4 md:mt-0"
-              >
-                {button.name}
-              </button>
-            ) : (button.name)}
+            {button.name}
           </a>
         ))}
+
+        <Link
+          to="/contact"
+          className="p-2 hover:text-orange-300 hover:underline"
+        >
+          <button
+            type="button"
+            className="bg-[#C57837] p-4 focus:outline-none font-bold rounded mt-4 md:mt-0"
+          >
+            Contact Us
+          </button>
+
+        </Link>
       </nav>
 
     </header>
   );
 }
 
-export default TopBar;
+export default Header;

@@ -1,0 +1,286 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AnimalsCard > renders AnimalsCard with snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="grid grid-cols-1 mx-auto gap-10 mt-14 lg:grid-cols-3 mb-10 md:grid-cols-2"
+  >
+    <section
+      class="flex flex-col"
+    >
+      <img
+        alt="Bongo"
+        class="rounded-md w-[20rem] h-[20rem]"
+        src="/src/assets/animalsImages/bongo.jpg"
+      />
+      <h1
+        class="self-center text-3xl"
+      >
+        Bongo
+      </h1>
+      <div
+        class="grid grid-cols-2 gap-4 p-2 place-items-center"
+      >
+        <h2>
+          Dog
+        </h2>
+        <h2>
+          Golden Retriever
+        </h2>
+        <h2>
+          male
+        </h2>
+        <h2>
+          Golden
+        </h2>
+        <h2>
+          2 years
+        </h2>
+        <h2>
+          Bucharest
+        </h2>
+        <button
+          class="bg-[#C57837] text-white w-52 p-4 focus:outline-none font-bold rounded md:mt-0 col-span-2"
+          type="button"
+        >
+          <a
+            href="/adopt"
+          >
+            Adopt
+          </a>
+        </button>
+      </div>
+    </section>
+    <section
+      class="flex flex-col"
+    >
+      <img
+        alt="Roblet"
+        class="rounded-md w-[20rem] h-[20rem]"
+        src="/src/assets/animalsImages/roblet.jpg"
+      />
+      <h1
+        class="self-center text-3xl"
+      >
+        Roblet
+      </h1>
+      <div
+        class="grid grid-cols-2 gap-4 p-2 place-items-center"
+      >
+        <h2>
+          Dog
+        </h2>
+        <h2>
+          Pug
+        </h2>
+        <h2>
+          male
+        </h2>
+        <h2>
+          Brown
+        </h2>
+        <h2>
+          2 years
+        </h2>
+        <h2>
+          Lucknow
+        </h2>
+        <button
+          class="bg-[#C57837] text-white w-52 p-4 focus:outline-none font-bold rounded md:mt-0 col-span-2"
+          type="button"
+        >
+          <a
+            href="/adopt"
+          >
+            Adopt
+          </a>
+        </button>
+      </div>
+    </section>
+    <section
+      class="flex flex-col"
+    >
+      <img
+        alt="Sipper"
+        class="rounded-md w-[20rem] h-[20rem]"
+        src="/src/assets/animalsImages/sipper.jpg"
+      />
+      <h1
+        class="self-center text-3xl"
+      >
+        Sipper
+      </h1>
+      <div
+        class="grid grid-cols-2 gap-4 p-2 place-items-center"
+      >
+        <h2>
+          Dog
+        </h2>
+        <h2>
+          Husky
+        </h2>
+        <h2>
+          male
+        </h2>
+        <h2>
+          Brown and white
+        </h2>
+        <h2>
+          6 years
+        </h2>
+        <h2>
+          Mogi das Cruzes
+        </h2>
+        <button
+          class="bg-[#C57837] text-white w-52 p-4 focus:outline-none font-bold rounded md:mt-0 col-span-2"
+          type="button"
+        >
+          <a
+            href="/adopt"
+          >
+            Adopt
+          </a>
+        </button>
+      </div>
+    </section>
+    <section
+      class="flex flex-col"
+    >
+      <img
+        alt="Russia"
+        class="rounded-md w-[20rem] h-[20rem]"
+        src="/src/assets/animalsImages/russia.jpg"
+      />
+      <h1
+        class="self-center text-3xl"
+      >
+        Russia
+      </h1>
+      <div
+        class="grid grid-cols-2 gap-4 p-2 place-items-center"
+      >
+        <h2>
+          Cat
+        </h2>
+        <h2>
+          Persian
+        </h2>
+        <h2>
+          Female
+        </h2>
+        <h2>
+          White
+        </h2>
+        <h2>
+          2.5 years
+        </h2>
+        <h2>
+          Manchester
+        </h2>
+        <button
+          class="bg-[#C57837] text-white w-52 p-4 focus:outline-none font-bold rounded md:mt-0 col-span-2"
+          type="button"
+        >
+          <a
+            href="/adopt"
+          >
+            Adopt
+          </a>
+        </button>
+      </div>
+    </section>
+    <section
+      class="flex flex-col"
+    >
+      <img
+        alt="Mia"
+        class="rounded-md w-[20rem] h-[20rem]"
+        src="/src/assets/animalsImages/mia.jpg"
+      />
+      <h1
+        class="self-center text-3xl"
+      >
+        Mia
+      </h1>
+      <div
+        class="grid grid-cols-2 gap-4 p-2 place-items-center"
+      >
+        <h2>
+          Rabit
+        </h2>
+        <h2>
+          Rabbit
+        </h2>
+        <h2>
+          Female
+        </h2>
+        <h2>
+          White
+        </h2>
+        <h2>
+          1 year
+        </h2>
+        <h2>
+          Bucharest
+        </h2>
+        <button
+          class="bg-[#C57837] text-white w-52 p-4 focus:outline-none font-bold rounded md:mt-0 col-span-2"
+          type="button"
+        >
+          <a
+            href="/adopt"
+          >
+            Adopt
+          </a>
+        </button>
+      </div>
+    </section>
+    <section
+      class="flex flex-col"
+    >
+      <img
+        alt="Zombo"
+        class="rounded-md w-[20rem] h-[20rem]"
+        src="/src/assets/animalsImages/zombo.webp"
+      />
+      <h1
+        class="self-center text-3xl"
+      >
+        Zombo
+      </h1>
+      <div
+        class="grid grid-cols-2 gap-4 p-2 place-items-center"
+      >
+        <h2>
+          Cat
+        </h2>
+        <h2>
+          Persian
+        </h2>
+        <h2>
+          Female
+        </h2>
+        <h2>
+          White
+        </h2>
+        <h2>
+          3 years
+        </h2>
+        <h2>
+          Bucharest
+        </h2>
+        <button
+          class="bg-[#C57837] text-white w-52 p-4 focus:outline-none font-bold rounded md:mt-0 col-span-2"
+          type="button"
+        >
+          <a
+            href="/adopt"
+          >
+            Adopt
+          </a>
+        </button>
+      </div>
+    </section>
+  </section>
+</DocumentFragment>
+`;

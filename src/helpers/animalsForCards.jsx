@@ -54,6 +54,7 @@ const animals = [
     image: '/src/assets/animalsImages/zombo.webp',
     type: 'Cat',
     race: 'Persian',
+    gender: 'Female',
     age: '3 years',
     color: 'White',
     location: 'Bucharest',
