@@ -1,0 +1,3 @@
+tailwind.config.cjs
+.eslintrc.cjs
+postcss.config.cjs
