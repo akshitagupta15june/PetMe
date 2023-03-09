@@ -12,6 +12,25 @@
   .footer {
     flex-direction: column;
   }
+
+  
+.big {
+  width: 400px;
+  height: 450px;
+  margin-left: -10em;
+  margin-top: -10em;
+} 
+
+.black {
+  height: 1500vw;
+} 
+
+#iccon-close {
+  margin-top: -13em;
+  margin-left: 12em;
+}
+
+
 }
 
 @media only screen and (max-width:1225px){
@@ -28,4 +47,20 @@
     margin: 10px auto;
     flex-direction: column;
   }
+ 
+.big {
+  width: 500px;
+  height: 550px;
+  margin-left: -10em;
+  margin-top: -14em;
+} 
+
+.black {
+  height: 550vw;
+} 
+
+#iccon-close {
+  margin-top: -16em;
+  margin-left: 19em;
+}
 }
