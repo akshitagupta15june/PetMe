@@ -15,15 +15,6 @@ describe('Header', () => {
     expect(linkElement).toBeInTheDocument();
   });
 
-  test('renders Header with snapshot', () => {
-    const { asFragment } = render(
-      <BrowserRouter>
-        <Header />
-      </BrowserRouter>,
-    );
-    expect(asFragment()).toMatchSnapshot();
-  });
-
   test('check if buttons and links of header are rendered', () => {
     const { getAllByRole } = render(
       <BrowserRouter>

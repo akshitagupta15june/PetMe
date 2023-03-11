@@ -1,9 +1,30 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, waitFor } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
+import { vi } from 'vitest';
 import Contributors from '.';
 
 describe('Contributors', () => {
+  beforeEach(() => {
+    vi.spyOn(global, 'fetch').mockImplementation(() => {
+      const contributors = [
+        {
+          id: 1,
+          login: 'test',
+          avatar_url: 'https://avatars.githubusercontent.com/u/1?v=4',
+          html_url: '',
+        },
+      ];
+      return Promise.resolve({
+        json: () => Promise.resolve(contributors),
+      });
+    });
+  });
+
+  afterEach(() => {
+    vi.restoreAllMocks();
+  });
+
   test('renders Contributors', () => {
     const { getByText } = render(
       <BrowserRouter>
@@ -14,12 +35,13 @@ describe('Contributors', () => {
     expect(linkElement).toBeInTheDocument();
   });
 
-  test('renders Contributors with snapshot', () => {
-    const { asFragment } = render(
+  test('renders img of contributors', async () => {
+    const { findAllByTestId } = render(
       <BrowserRouter>
         <Contributors />
       </BrowserRouter>,
     );
-    expect(asFragment()).toMatchSnapshot();
+    const divElement = await findAllByTestId('contributor-img');
+    expect(divElement).not.toHaveLength(0);
   });
 });

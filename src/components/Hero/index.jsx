@@ -6,7 +6,7 @@ function index() {
     <img
       src={hero}
       alt=""
-      className="w-[100vw] h-[50rem] object-cover"
+      className="w-[100vw] xl:max-h-[50rem] object-cover"
     />
   );
 }

@@ -4,7 +4,7 @@ import Hero from '../components/Hero';
 import About from '../components/About';
 import TitleSection from '../components/TitleSection';
 import AnimalsCard from '../components/AnimalsCard';
-import ContactForms from '../components/ContacForms';
+import ContactForms from '../components/ContactForms';
 import Contributors from '../components/Contributors';
 import Footer from '../components/Footer';
 

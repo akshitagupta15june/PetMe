@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1678158270099" clover="3.2.0">
-  <project timestamp="1678158270099" name="All files">
-    <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7" elements="16" coveredelements="16" complexity="0" loc="9" ncloc="9" packages="6" files="7" classes="7"/>
+<coverage generated="1678540134714" clover="3.2.0">
+  <project timestamp="1678540134715" name="All files">
+    <metrics statements="35" coveredstatements="29" conditionals="6" coveredconditionals="3" methods="17" coveredmethods="14" elements="58" coveredelements="46" complexity="0" loc="35" ncloc="35" packages="7" files="8" classes="8"/>
     <package name="components.About">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="index.jsx" path="/home/ramon/open-source/PetMe/src/components/About/index.jsx">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="4" count="3" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
       </file>
     </package>
     <package name="components.AnimalsCard">
@@ -18,25 +18,57 @@
       </file>
     </package>
     <package name="components.Contributors">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="9" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
       <file name="index.jsx" path="/home/ramon/open-source/PetMe/src/components/Contributors/index.jsx">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="5" count="2" type="stmt"/>
+        <metrics statements="9" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
       </file>
     </package>
     <package name="components.Footer">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="index.jsx" path="/home/ramon/open-source/PetMe/src/components/Footer/index.jsx">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
       </file>
     </package>
     <package name="components.Header">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <metrics statements="16" coveredstatements="14" conditionals="4" coveredconditionals="3" methods="6" coveredmethods="5"/>
       <file name="index.jsx" path="/home/ramon/open-source/PetMe/src/components/Header/index.jsx">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="24" count="24" type="stmt"/>
+        <metrics statements="16" coveredstatements="14" conditionals="4" coveredconditionals="3" methods="6" coveredmethods="5"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="27" count="2" type="cond" truecount="3" falsecount="1"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="50" count="16" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Header.components.MobileHeader">
+      <metrics statements="4" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="index.jsx" path="/home/ramon/open-source/PetMe/src/components/Header/components/MobileHeader/index.jsx">
+        <metrics statements="4" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="74" count="1" type="stmt"/>
       </file>
     </package>
     <package name="helpers">
