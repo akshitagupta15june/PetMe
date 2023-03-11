@@ -10,7 +10,7 @@
     "test": "vitest",
     "test:ui": "vitest --ui",
     "coverage": "vitest run --coverage",
-    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js,.jsx",
+    "lint": "eslint -c .eslintrc.cjs . --ext .js,.jsx",
     "lint:styles": "npx stylelint '**/*.css'"
   },
   "dependencies": {
