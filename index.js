@@ -58,7 +58,7 @@ getContributorsList();
 
 const bigImg = Array.from(document.getElementsByClassName("big"));
 const pets = Array.from(document.getElementsByClassName("main-img"));
-const petis = bigImg.slice(1,9); 
+const petis = bigImg.slice(1,9); // utilizo este metodo para acomodar la array.. se me estaba corriendo el foreach cogiendo los elementos
 const closen = document.getElementById("iccon-close");
 
  petis.forEach(function(img, idx) {
@@ -69,7 +69,7 @@ const closen = document.getElementById("iccon-close");
     document.getElementById("black").style.display = "block";
     document.getElementById("imgbigs").style.display = "block"
   }
-});
+}); // foreach para que por acada elemento de pets al que le doy click... me muestre uno de petis
 
 closen.addEventListener("click", function() {
     closen.style.display = "none"; 
