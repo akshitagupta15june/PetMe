@@ -8,3 +8,9 @@
 html {
     font-family: 'Sora', sans-serif;
 }
+
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

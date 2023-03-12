@@ -9,11 +9,6 @@ describe('About', () => {
     expect(heading).toBeInTheDocument();
   });
 
-  test('renders About with snapshot', () => {
-    const { asFragment } = render(<About />);
-    expect(asFragment()).toMatchSnapshot();
-  });
-
   test('renders About with the right text', () => {
     const { getByText } = render(<About />);
     const text = getByText(

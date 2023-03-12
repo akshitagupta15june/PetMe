@@ -1,0 +1,22 @@
+.grid-template {
+    display: flex;
+    flex-direction: column;
+    width: full;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+.grid-template {
+    display: grid;
+    grid-template-rows:
+        auto
+        1fr
+        auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+
+    height: 100vh;
+    }
+}

@@ -4,17 +4,17 @@ import logo from '../../assets/images/logo.jpg';
 
 function Footer() {
   return (
-    <footer className="bg-[#010001] h-full grid grid-flow-row grid-cols-3 text-white ">
+    <footer className="bg-[#010001] h-full lg:grid lg:grid-flow-row lg:grid-cols-3 text-white ">
 
-      <div className="flex flex-row gap-10 md:flex-row justify-center py-10">
+      <div className="flex flex-col lg:flex-row lg:gap-10 justify-center items-center py-10">
 
         <img
           src={logo}
-          alt=""
+          alt="PetMe logo"
           className="w-20 h-20 rounded-full mb-4"
         />
 
-        <div>
+        <div className="text-center">
 
           <h2 className="text-sm mt-4">
             ADOPT A PET

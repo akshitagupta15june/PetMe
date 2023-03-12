@@ -5,12 +5,17 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 import App from './routes/App';
+import Donate from './routes/Donate';
 import './index.css';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+  },
+  {
+    path: '/donateanimals',
+    element: <Donate />,
   },
 ]);
 
