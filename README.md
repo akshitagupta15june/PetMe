@@ -22,8 +22,11 @@
     <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
     <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white">
 </p>
-
+<p align="center">PetMe</p>
 # PetMe
+       is a simple web application for pet lovers to  connect them with pets in need of a forever home, also to provide emergency medical care for stray animals in distress.<br>
+       This website aims to make a difference in the lives of these innocent creatures by offering options to Adopt, Donate and through our SOS feature Report stray animals in need of immediate assistance.
+       
 
 <p align="center">
   <img src="./Assets/Images/logo.jpg" height="250px">
@@ -95,13 +98,20 @@ You can refer to the following articles on the basics of Git and Github.
 - [Getting started with Git and GitHub](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
 
 ## Contributing 👨‍💻 
-
+We welcome contributions to PetMe. If you want to contribute to this project, please follow these guidelines:
 ### 💥 How to contribute
 - Take a look at the existing [Issues](https://github.com/akshitagupta15june/PetMe/issues) or [create a new issue](https://github.com/akshitagupta15june/PetMe/issues/new/choose)!
 - [Fork the Repo](https://github.com/Susmita-Dey/all-round-calculator/fork). Then, create a branch for any issue that you are working on. Finally, commit your work.
 - Create a **[Pull Request](https://github.com/akshitagupta15june/PetMe/compare)** (_PR_), which will be promptly reviewed and given suggestions for improvements by the community.
 - Add screenshots or screen captures to your Pull Request to help us understand the effects of the changes proposed in your PR.
 - **DON'T CREATE PRs WITHOUT CREATING ISSUE AND GETTING ASSIGNED**
+## getting started
+### 💥 How to start
+To get started with PetMe, follow these steps:
+
+1. Clone the repository: git clone https://github.com/akshitagupta15june/PetMe.git
+2. Install the dependencies: npm install
+3. Start the development server: npm start
 
 ### ⭐ How to make a pull request (PR)
 **1.** Start by making a Fork of the [**PetMe**](https://github.com/akshitagupta15june/PetMe/) repository. Click on the <a href="https://github.com/akshitagupta15june/PetMe/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="21" width="21"></a>Fork symbol at the top right corner.
