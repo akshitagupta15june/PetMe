@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import buttons from '../../helpers/buttonsForHeader';
 import logo from '../../assets/images/logo.jpg';
 import MobileMenu from './components/MobileHeader';
@@ -9,7 +10,7 @@ function Header() {
   const [isMobile, setIsMobile] = React.useState(false);
   const MOBILE_WIDTH = 1022;
 
-  React.useEffect(() => {
+  useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= MOBILE_WIDTH);
     };
@@ -31,7 +32,7 @@ function Header() {
   }
 
   return (
-    <header
+    <motion.header
       id="header"
       className="text-white bg-orange-900 flex items-center justify-around"
     >
@@ -70,7 +71,7 @@ function Header() {
         </Link>
       </nav>
 
-    </header>
+    </motion.header>
   );
 }
 
