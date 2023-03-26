@@ -1,10 +1,36 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 
 function index() {
+  const whileInView = {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: 'spring',
+      stiffness: 80,
+      damping: 20,
+      duration: 1,
+    },
+  };
+
+  const animateDiv = {
+    x: 100,
+    transition: {
+      duration: 1,
+      ease: 'easeInOut',
+    },
+  };
+
   return (
-    <section className="bg-[#111827]">
+    <motion.div
+      className="bg-[#111827]"
+      initial={{ opacity: 0 }}
+      whileInView={whileInView}
+      animate={animateDiv}
+      viewport={{ once: true }}
+    >
       <section className="max-w-screen-xl mx-auto p-6 flex flex-col items-center">
-        <h1 className="text-white font-bold text-3xl lg:text-5xl py-4">
+        <h1 className="text-white text-3xl lg:text-5xl py-4">
           About
         </h1>
         <p className="text-[#696C72] text-center pb-4 text-sm lg:text-xl">
@@ -17,7 +43,7 @@ function index() {
           Together, we can create a better world for all animals.
         </p>
       </section>
-    </section>
+    </motion.div>
   );
 }
 
