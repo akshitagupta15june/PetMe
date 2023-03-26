@@ -3,7 +3,7 @@ import Error from '../components/Error';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 
-function Blog() {
+function Report() {
   return (
     <section className="grid-template">
       <Header />
@@ -15,4 +15,4 @@ function Blog() {
   );
 }
 
-export default Blog;
+export default Report;

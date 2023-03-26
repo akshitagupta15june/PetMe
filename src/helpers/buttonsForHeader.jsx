@@ -27,12 +27,12 @@ const buttons = [
   {
     id: 7,
     name: 'Suport Us',
-    link: '/donatemoney',
+    link: '/donate',
   },
   {
     id: 8,
     name: 'SOS Report',
-    link: '/sosreport',
+    link: '/report',
   },
 ];
 
