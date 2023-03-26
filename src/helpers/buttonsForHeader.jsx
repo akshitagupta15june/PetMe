@@ -7,12 +7,7 @@ const buttons = [
   {
     id: 2,
     name: 'About',
-    link: '/about',
-  },
-  {
-    id: 3,
-    name: 'Contact',
-    link: '/contact',
+    link: '',
   },
   {
     id: 4,

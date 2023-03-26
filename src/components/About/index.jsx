@@ -1,7 +1,12 @@
 import { motion } from 'framer-motion';
-import React from 'react';
+import React, { useContext } from 'react';
+import HeaderContext from '../../context/HeaderContext';
 
 function index() {
+  const {
+    aboutSection,
+  } = useContext(HeaderContext);
+
   const whileInView = {
     opacity: 1,
     x: 0,
@@ -30,7 +35,10 @@ function index() {
       viewport={{ once: true }}
     >
       <section className="max-w-screen-xl mx-auto p-6 flex flex-col items-center">
-        <h1 className="text-white text-3xl lg:text-5xl py-4">
+        <h1
+          ref={aboutSection}
+          className="text-white text-3xl lg:text-5xl py-4"
+        >
           About
         </h1>
         <p className="text-[#696C72] text-center pb-4 text-sm lg:text-xl">

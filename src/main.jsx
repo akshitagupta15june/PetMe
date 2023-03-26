@@ -7,6 +7,7 @@ import {
 import App from './routes/App';
 import Donate from './routes/Donate';
 import './index.css';
+import HeaderProvider from './context/HeaderProvider';
 
 const router = createBrowserRouter([
   {
@@ -20,5 +21,7 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router} />,
+  <HeaderProvider>
+    <RouterProvider router={router} />
+  </HeaderProvider>,
 );
