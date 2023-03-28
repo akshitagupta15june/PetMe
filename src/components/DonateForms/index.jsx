@@ -4,7 +4,7 @@ import inputs from '../../helpers/inputsForDonateForms';
 
 function DonateForms() {
   return (
-    <section className="flex flex-col items-center gap-10">
+    <section className="flex flex-col items-center gap-10 p-10 w-full">
 
       <div className="text-center my-10">
 
@@ -21,7 +21,7 @@ function DonateForms() {
         id="survey-form"
         action="https://formspree.io/f/xayaokzl"
         method="POST"
-        className="grid grid-cols-2 w-3/4 gap-4 lg:w-1/2 md:w-2/3"
+        className="w-full lg:grid lg:grid-cols-2 gap-4 lg:w-1/2 md:w-2/3"
       >
         { inputs
           .map((inputText, index) => <FormsInput text={inputText} key={inputText} index={index} />)}

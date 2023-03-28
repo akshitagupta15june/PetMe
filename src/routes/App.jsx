@@ -2,7 +2,6 @@ import React from 'react';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import About from '../components/About';
-import TitleSection from '../components/TitleSection';
 import AnimalsCard from '../components/AnimalsCard';
 import ContactForms from '../components/ContactForms';
 import Contributors from '../components/Contributors';
@@ -15,7 +14,6 @@ function App() {
       <main className="flex flex-col w-full">
         <Hero />
         <About />
-        <TitleSection title="Meet our Friends Here!" />
         <AnimalsCard />
         <ContactForms />
         <Contributors />

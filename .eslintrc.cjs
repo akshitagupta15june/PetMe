@@ -42,5 +42,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'no-undef': 'off',
     'label-has-associated-control': 'off',
+    'jsx-a11y/label-has-associated-control': 'off',
+    'import/no-extraneous-dependencies': 'off',
   },
 };

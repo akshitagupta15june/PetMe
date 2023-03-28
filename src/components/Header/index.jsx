@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import buttons from '../../helpers/buttonsForHeader';
 import logo from '../../assets/images/logo.jpg';
 import MobileMenu from './components/MobileHeader';
+import HeaderContext from '../../context/HeaderContext';
 
 function Header() {
+  const { scrollDown } = useContext(HeaderContext);
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobile, setIsMobile] = React.useState(false);
   const MOBILE_WIDTH = 1022;
 
-  React.useEffect(() => {
+  useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= MOBILE_WIDTH);
     };
@@ -31,7 +34,7 @@ function Header() {
   }
 
   return (
-    <header
+    <motion.header
       id="header"
       className="text-white bg-orange-900 flex items-center justify-around"
     >
@@ -49,8 +52,9 @@ function Header() {
         { buttons.map((button) => (
           <a
             key={button.id}
-            href={button.link}
-            className="p-2 hover:text-orange-300 hover:underline lg:text-[0.8rem] xl:text-[1rem]"
+            href={button.link === '' ? undefined : button.link}
+            onClick={button.name !== 'About' ? (() => {}) : scrollDown}
+            className="p-2 cursor-pointer hover:text-orange-300 hover:underline lg:text-[0.8rem] xl:text-[1rem]"
           >
             {button.name}
           </a>
@@ -70,7 +74,7 @@ function Header() {
         </Link>
       </nav>
 
-    </header>
+    </motion.header>
   );
 }
 

@@ -7,12 +7,7 @@ const buttons = [
   {
     id: 2,
     name: 'About',
-    link: '/about',
-  },
-  {
-    id: 3,
-    name: 'Contact',
-    link: '/contact',
+    link: '',
   },
   {
     id: 4,
@@ -32,12 +27,12 @@ const buttons = [
   {
     id: 7,
     name: 'Suport Us',
-    link: '/donatemoney',
+    link: '/donate',
   },
   {
     id: 8,
     name: 'SOS Report',
-    link: '/sosreport',
+    link: '/report',
   },
 ];
 

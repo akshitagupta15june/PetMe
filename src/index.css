@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Ubuntu:wght@500&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,7 +6,7 @@
 
 
 html {
-    font-family: 'Sora', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 :root {
