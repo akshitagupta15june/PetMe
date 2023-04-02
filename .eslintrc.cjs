@@ -44,5 +44,6 @@ module.exports = {
     'label-has-associated-control': 'off',
     'jsx-a11y/label-has-associated-control': 'off',
     'import/no-extraneous-dependencies': 'off',
+    'import/prefer-default-export': 'off',
   },
 };

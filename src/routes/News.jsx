@@ -1,17 +1,17 @@
 import React from 'react';
-import Error from '../components/Error';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import NewsTemplate from '../components/News';
 
 function News() {
   return (
-    <section className="grid-template">
+    <>
       <Header />
       <main className="flex flex-col w-full justify-center">
-        <Error />
+        <NewsTemplate />
       </main>
       <Footer />
-    </section>
+    </>
   );
 }
 
