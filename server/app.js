@@ -10,6 +10,7 @@ const dotenv = require('dotenv');
 
 const petRouter = require('./routes/petRoutes');
 const donationRouter = require('./routes/donationRoutes');
+const strayAnimalReportRouter = require('./routes/strayAnimalReportRoutes')
 const AppError = require('./utils/appError');
 const errorController = require('./controllers/errorController');
 
@@ -59,6 +60,7 @@ app.use(compression());
 
 app.use('/api/v1/pet', petRouter); // <- Calling the router
 app.use('/api/v1/donation', donationRouter);
+app.use('/api/v1/reportAnimal', strayAnimalReportRouter);
 
 app.all('*', (req, res, next) => {	// <- Middleware to handle Non-existing Routes
 	next(new AppError(`Can't find ${req.originalUrl} on the server`, 404));
