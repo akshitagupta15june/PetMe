@@ -58,6 +58,9 @@ app.use(xss()); // <- Data Sanitization against xss
 
 app.use(compression());
 
+// routs for images
+app.use('/api/v1/AnimalReportImage',express.static('public/Images/RportedAnimals'))
+
 app.use('/api/v1/pet', petRouter); // <- Calling the router
 app.use('/api/v1/donation', donationRouter);
 app.use('/api/v1/reportAnimal', strayAnimalReportRouter);
