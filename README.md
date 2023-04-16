@@ -112,7 +112,7 @@ You can refer to the following articles on the basics of Git and Github.
 git clone https://github.com/<your-github-username>/PetMe
 ```
 
-**3.** Navigate to the newly created LinkFree project directory:
+**3.** Navigate to the newly created Petme project directory:
 
 ```bash
 cd PetMe
