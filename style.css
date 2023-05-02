@@ -54,6 +54,7 @@
     margin-top: 3rem;
     letter-spacing: 1.5px;
     background-color: #003479;
+   
   }
 
   .contribute-btn img {
@@ -129,7 +130,7 @@ fixes contact us button
   color: #000;
 }
 /**
-Fixes contant form color when theme changes
+Fixes contact form color when theme changes
 **/
 .bg-amber-900 .contact-form-container .text-black,
 .bg-amber-900 .contact-form-container .text-gray-700 {
@@ -148,7 +149,7 @@ fixes contact us button
   color: #000;
 }
 /**
-Fixes contant form color when theme changes
+Fixes contact form color when theme changes
 **/
 .bg-amber-900 .contact-form-container .text-black,
 .bg-amber-900 .contact-form-container .text-gray-700 {
