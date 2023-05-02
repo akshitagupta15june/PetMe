@@ -2,39 +2,35 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="stylesheet" href="./output.css">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./introSection.css">
-  <link rel="stylesheet" href="./navbar.css">
-  <link rel="stylesheet" href="./mobileView.css">
-  <link rel="icon" type="image/x-icon" href="/Assets/Images/logo.ico">
-  <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-  <title>Pet News</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./introSection.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./mobileView.css">
+    <link rel="icon" type="image/x-icon" href="/Assets/Images/logo.ico">
+    <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Pet News</title>
 </head>
 
-<body>
-  <header
-    class="header text-gray-400 bg-header-offwhite body-font flex flex-row items-center justify-center lg:justify-around"
-    id="header">
-    <div class="flex flex-row items-center md:flex-row md:items-center p-2" id="logo">
-      <span class="mission-1 mission-dark"> Saving Lives </span>
-      <a class="logo-border" href="index.html">
-        <img class="rounded-full logo-size" src="./Assets/Images/logo.jpg" alt="logo" />
-      </a>
-      <span class="mission-2 mission-dark"> Saving Animals </span>
-    </div>
-    <button data-collapse-toggle="navbar-default" type="button"
-      class="absolute top-4 right-4 sm:inline-flex sm:items-center p-2 lg:hidden focus:outline-none  text_4 "
-      aria-controls="navbar-default" aria-expanded="false" id="nav-button">
+<>
+    <header class="header text-gray-400 bg-header-offwhite body-font flex flex-row items-center justify-center lg:justify-around" id="header">
+        <div class="flex flex-row items-center md:flex-row md:items-center p-2" id="logo">
+            <span class="mission-1 mission-dark"> Saving Lives </span>
+            <a class="logo-border" href="index.html">
+                <img class="rounded-full logo-size" src="./Assets/Images/logo.jpg" alt="logo" />
+            </a>
+            <span class="mission-2 mission-dark"> Saving Animals </span>
+        </div>
+        <button data-collapse-toggle="navbar-default" type="button" class="absolute top-4 right-4 sm:inline-flex sm:items-center p-2 lg:hidden focus:outline-none  text_4 " aria-controls="navbar-default" aria-expanded="false" id="nav-button">
       <span class="sr-only">Open main menu</span>
       <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
         xmlns="http://www.w3.org/2000/svg">
@@ -43,30 +39,23 @@
           clip-rule="evenodd"></path>
       </svg>
     </button>
-    <nav class="">
-      <div class="hidden w-full lg:block z-0" id="navbar">
-        <ul
-          class="w-[100vw] h-1/2 top-0 right-0 p-4 text-center space-y-8 lg:space-y-0 lg:space-x-3 lg:static lg:w-auto flex flex-col rounded-lg border border-gray-100 items-center lg:bg-transparent lg:border-0 lg:flex-row justify-center">
-          <li><a href="./index.html"
-              class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Home</a>
-          </li>
-          <li><a href="./index.html#About"
-              class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">About
+        <nav class="">
+            <div class="hidden w-full lg:block z-0" id="navbar">
+                <ul class="w-[100vw] h-1/2 top-0 right-0 p-4 text-center space-y-8 lg:space-y-0 lg:space-x-3 lg:static lg:w-auto flex flex-col rounded-lg border border-gray-100 items-center lg:bg-transparent lg:border-0 lg:flex-row justify-center">
+                    <li><a href="./index.html" class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Home</a>
+                    </li>
+                    <li><a href="./index.html#About" class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">About
               Us</a>
-          </li>
-          <li><a href="./news.html"
-            class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Pet News</a>
-        </li>
-          <li><a href="./blog.html"
-              class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Blogs</a>
-          </li>
-          <li><a href="./donate.html"
-              class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Donate
+                    </li>
+                    <li><a href="./news.html" class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Pet News</a>
+                    </li>
+                    <li><a href="./blog.html" class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Blogs</a>
+                    </li>
+                    <li><a href="./donate.html" class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Donate
               Animals</a></li>
-          <li>
-            <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
-              <a @mouseover="open = true"
-                class="p-3 text-custom-heading flex font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">
+                    <li>
+                        <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
+                            <a @mouseover="open = true" class="p-3 text-custom-heading flex font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">
                 Support Us
                 <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor" class="mt-1">
@@ -74,64 +63,75 @@
                 </svg>
               </a>
 
-              <div x-show="open" class="z-20 absolute -left-1 w-[7.5rem] py-2 bg-gray-100 rounded-md shadow-xl">
+                            <div x-show="open" class="z-20 absolute -left-1 w-[7.5rem] py-2 bg-gray-100 rounded-md shadow-xl">
 
-                <a href="volunteer.html"
-                  class=" block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">Become
+                                <a href="volunteer.html" class=" block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">Become
                   a Volunteer</a>
 
-              </div>
-            </div>
-          </li>
-          <li><a href="./reportstary.html"
-              class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">SOS
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="./reportstary.html" class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">SOS
               Report</a></li>
 
 
 
-          <li><a href="#contact">
-              <button
-                class="inline-flex items-center bg-header-orange-light border-0 py-4 px-2 focus:outline-none text_4 font-bold rounded text-base mt-4 md:mt-0">
+                    <li>
+                        <a href="#contact">
+                            <button class="inline-flex items-center bg-header-orange-light border-0 py-4 px-2 focus:outline-none text_4 font-bold rounded text-base mt-4 md:mt-0">
                 Contact Us
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   class="w-4 h-4 ml-1" viewBox="0 0 24 24">
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
               </button>
-            </a>
-          </li>
+                        </a>
+                    </li>
 
-          <li>
-            <a id="theme-toggle"><img src="Assets/Images/sun.svg" width="50px" id="switch"></a>
-          </li>
-        </ul>
-        <br>
-      </div>
+                    <li>
+                        <a id="theme-toggle"><img src="Assets/Images/sun.svg" width="50px" id="switch"></a>
+                    </li>
+                </ul>
+                <br>
+            </div>
 
-    </nav>
+        </nav>
 
-  </header>
+    </header>
 
-  <!-- Pet news -->
-    <div class="relative w-[17.5rem] sm:w-[15.5rem] md:w-[19rem] lg:w-[27rem] xl:w-[35rem] h-80 flex justify-center items-center flex-col opacity-80">
-        <h1 class="text-3xl mt-28 ml-10">World’s oldest dog living confirmed as 22-year-old Toy Fox Terrier.</h1>
+    <!-- Pet news -->
+    <div class="news-container">
+
+        <div class="relative w-[17.5rem] sm:w-[15.5rem] md:w-[19rem] lg:w-[27rem] xl:w-[35rem] h-80 flex justify-center items-center flex-col opacity-80">
+            <h1 class="text-3xl mt-28 ml-10">World’s oldest dog living confirmed as 22-year-old Toy Fox Terrier.</h1>
+        </div>
+        <div>
+            <img class="relative ml-14 w-56 h-56  object-cover rounded-2xl shadow-lg shadow-red-700/50 " src="Assets/Images/oldestdog.jpg">
+        </div>
+
+        <div class="text-lg ml-10 mt-8 mb-28 w-10/12">
+            <p>The oldest dog living is Gino Wolf (USA, b. 24 September 2000), who is 22 years 52 days as verified in Los Angeles, California, USA, on 15 November 2022.</p>
+            <p>Gino was adopted by Alex Wolf in Boulder, Colorado, in 2002. "I've taken great care of him over the years and he is still in relatively very good shape...and really cute still which is surprising considering his age!"</p>
+        </div>
+        <div class="relative w-[17.5rem] sm:w-[15.5rem] md:w-[19rem] lg:w-[27rem] xl:w-[35rem] h-80 flex justify-center items-center flex-col opacity-80">
+            <h1 class="text-3xl mt-28 ml-10">Meet Pearl, the pocket-sized chihuahua named shortest dog by Guinness World Records</h1>
+        </div>
+        <div>
+            <img class="relative ml-14 w-56 h-56  object-cover rounded-2xl shadow-lg shadow-red-700/50 " src="Assets/Images/pearl-worlds-shortest-dog-041223-3-4adec9d684de473ab43eaaf3dc8ca6c3.jpg">
+        </div>
+
+        <div class="text-lg ml-10 mt-8 mb-28 w-10/12">
+            <p>Measuring at 3.59 inches tall and just five inches in length, Pearl is shorter than a popsicle stick and around the same size as a dollar bill, according to the Guinness World Records. When the chihuahua was born in September 2020 at Crystal
+                Creek Animal Hospital in Orlando, Florida, she weighed less than an ounce at birth.</p>
+        </div>
     </div>
-    <div>
-       <img class="relative ml-14 w-56 h-56  object-cover rounded-2xl shadow-lg shadow-red-700/50 " src="Assets/Images/oldestdog.jpg" > 
-    </div>
-
-    <div class="text-lg ml-10 mt-8 mb-28 w-10/12">
-        <p>The oldest dog living is Gino Wolf (USA, b. 24 September 2000), who is 22 years 52 days as verified in Los Angeles, California, USA, on 15 November 2022.</p>
-        <p>Gino was adopted by Alex Wolf in Boulder, Colorado, in 2002. "I've taken great care of him over the years and he is still in relatively very good shape...and really cute still which is surprising considering his age!"</p>
-    </div>
 
 
-  
 
-  <script src="index.js"></script>
-  <script src="light-dark-theme.js"></script>
-  <script src="blog.js"></script>
-  <script src="navbar.js"></script>
-</body>
+    <script src="index.js"></script>
+    <script src="light-dark-theme.js"></script>
+    <script src="blog.js"></script>
+    <script src="navbar.js"></script>
+    </body>
 
 </html>
