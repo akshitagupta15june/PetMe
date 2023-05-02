@@ -130,7 +130,9 @@
 
 .card-img-size {
   width: 330px;
-  height: 330px;
+  height: 330px; 
+  object-fit: cover;
+  object-position: 25% 75%;;
 }
 
 ::-webkit-scrollbar {
