@@ -29,7 +29,8 @@ It became a goal for us to help these speechless beings somehow. After brainstor
 </p>
 <p align="center">Community:</p>
   <p align="center"> Join the community on Discord for recent updates and discussion <a href="https://discord.gg/X3HZAPzykU">Discord off Channel </a> </p>
----
+
+
 #Open Source Programs
 
 <p align="center"> PetMe is ready for Hacktoberfest</p>
@@ -38,13 +39,14 @@ It became a goal for us to help these speechless beings somehow. After brainstor
  
  <img width="1000" alt="Email Banners-Dark" src="https://user-images.githubusercontent.com/79099734/189589410-ca17afb8-5855-4316-918a-054f27594809.png">
  </a>
----
+
+
  # View our Website:
  
 <p align="center"> Click the image below to view the website!</p>
 
 [<img src="https://cdn.discordapp.com/attachments/1004464884773306368/1028310089364406363/unknown.png"/>](https://akshitagupta15june.github.io/PetMe/)
----
+
 
 # Features of PetMe at a Glance
 
@@ -55,13 +57,13 @@ It became a goal for us to help these speechless beings somehow. After brainstor
 | Adopting a Pet | Allows user to choose an animal they wish to adopt and submit their details for contact purposes | ![image](https://user-images.githubusercontent.com/99717469/193424761-4c7f510f-b099-4e48-b0c8-d09eece32469.png) |
 | Donating a Pet | Pet owners can donate their pets if they are unable to take care of the ones they have | ![image](https://user-images.githubusercontent.com/99717469/193424675-328e10ed-78f8-49bf-8fa6-68d0db4a7fd1.png) |
 | Emergency care for Stray Animals | Provide contact details to get emergency medical services | ![image](https://user-images.githubusercontent.com/99717469/193424731-fa82b5a9-8c01-4648-a378-7c23bfb20427.png) |
-----
 
-## Additional features
+
+# Additional features
 
 - Users can use the `Contact` page for a call with one of the team members. 
 
----
+
 # Explanation video:
 
 For a brief explanation about PetMe, you can watch the following video.
@@ -74,7 +76,7 @@ For a brief explanation about PetMe, you can watch the following video.
 
 -They can not only provide medical assistance to them but can also allow their comrades in the community to adopt them.
 
- ---
+
  
 # What's next for PetMe 📲
 
