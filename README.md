@@ -5,20 +5,10 @@
 <p> The platform connects animal lovers with pets in need, it's purpose is making difference in the lives of these innocent creatures with technology.
 Together, we can create a better world for all animals.</p>
 
-
-<p align="center">
-
- <img src="./Assets/Images/Logo pet me.PNG>
-</p>
----
-
 # Inspiration for the Project:
 
 It has been estimated that more than one million adoptable dogs and cats are euthanized in the United States each year. This happens for the reason that there are too many pets that are enrolled into shelters and only a few people consider adoption when they look out for a pet.
-
-**The number of euthanized animals can be reduced drastically if more people adopt pets instead of buying them from stores. When you adopt an animal, you save a lovely life by making them a part of your family as well as open up a shelter space for an animal who might be in need of one desperately.**
-
-When the team heard about the animals that were getting in danger each year, it became a goal for us to help these speechless beings somehow. After brainstorming for a long time we came up with the idea of **PetMe**. We believe in the policy of saving animals and thus saving lives. Every life matters and we wish to be the part of the change that is making the same possible.
+It became a goal for us to help these speechless beings somehow. After brainstorming for a long time we came up with the idea of **PetMe**. We believe in the policy of saving animals and thus saving lives. Every life matters and we wish to be the part of the change that is making the same possible.
 ---
 
 <p align="center">About the project:</p>
