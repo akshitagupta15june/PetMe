@@ -1,4 +1,4 @@
-const navBar = document.getElementById("navbar");
+var navBar = document.getElementById("navbar");
 const logo = document.getElementById("logo");
 const navBtn = document.getElementById("nav-button");
 
@@ -10,20 +10,18 @@ navBtn.addEventListener("click", () => {
 });
 
 window.onscroll = function() {
-	myFunction()
-	let currentScrollPos =  window.pageYOffset
-	toggleNavBar(currentScrollPos > prevScrollPos, currentScrollPos)
-};
+	myFunction()};
 
 var header = document.getElementById("header");
-// var sticky = header.offsetTop;
+var sticky = header.offsetTop;
+var sticky = navbar.offsetTop;
 
 function myFunction() {
-  if (window.pageYOffset > 10) {
-    header.classList.add("add_border");
+  if (window.pageYOffset >= sticky) { 
+    navbar.classList.add("sticky");
   }
   else {  
-    header.classList.remove("add_border");
+    header.classList.remove("sticky");
   }
 }
 function toggleNavBar(scrollDir, currPos){
