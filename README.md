@@ -5,18 +5,22 @@
 <p> The platform connects animal lovers with pets in need, it's purpose is making difference in the lives of these innocent creatures with technology.
 Together, we can create a better world for all animals.</p>
 
+
 <p align="center">
-<img src="./Assets/Images/Logo pet me.PNG>
+
+ <img src="./Assets/Images/Logo pet me.PNG>
 </p>
------
-## Inspiration for the Project:
+---
+
+# Inspiration for the Project:
 
 It has been estimated that more than one million adoptable dogs and cats are euthanized in the United States each year. This happens for the reason that there are too many pets that are enrolled into shelters and only a few people consider adoption when they look out for a pet.
 
 **The number of euthanized animals can be reduced drastically if more people adopt pets instead of buying them from stores. When you adopt an animal, you save a lovely life by making them a part of your family as well as open up a shelter space for an animal who might be in need of one desperately.**
 
 When the team heard about the animals that were getting in danger each year, it became a goal for us to help these speechless beings somehow. After brainstorming for a long time we came up with the idea of **PetMe**. We believe in the policy of saving animals and thus saving lives. Every life matters and we wish to be the part of the change that is making the same possible.
------
+---
+
 <p align="center">About the project:</p>
 <p align="center">
     <img src="https://img.shields.io/github/issues/akshitagupta15june/PetMe"> 
@@ -34,19 +38,26 @@ When the team heard about the animals that were getting in danger each year, it 
     <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white">
 </p>
 <p align="center">Community:</p>
-<p align="center"> Join the community on Discord for recent updates and discussion <a href="https://discord.gg/X3HZAPzykU">Discord off Channel </a> </p>
------
-## Open Source Programs
+  <p align="center"> Join the community on Discord for recent updates and discussion <a href="https://discord.gg/X3HZAPzykU">Discord off Channel </a> </p>
+---
+#Open Source Programs
+
 <p align="center"> PetMe is ready for Hacktoberfest</p>
+
  <a href="https://hacktoberfest.com/">
+ 
  <img width="1000" alt="Email Banners-Dark" src="https://user-images.githubusercontent.com/79099734/189589410-ca17afb8-5855-4316-918a-054f27594809.png">
  </a>
- -----
- ## View our Website:
-Click the image below to view the website!
+---
+ # View our Website:
+ 
+<p align="center"> Click the image below to view the website!</p>
+
 [<img src="https://cdn.discordapp.com/attachments/1004464884773306368/1028310089364406363/unknown.png"/>](https://akshitagupta15june.github.io/PetMe/)
------
-## Features of PetMe at a Glance
+---
+
+# Features of PetMe at a Glance
+
 <a href="https://akshitagupta15june.github.io/PetMe/"><p align="center">The test site for the project can be found here.</p></a>
 
 | Function | Feature | Image |
@@ -54,27 +65,34 @@ Click the image below to view the website!
 | Adopting a Pet | Allows user to choose an animal they wish to adopt and submit their details for contact purposes | ![image](https://user-images.githubusercontent.com/99717469/193424761-4c7f510f-b099-4e48-b0c8-d09eece32469.png) |
 | Donating a Pet | Pet owners can donate their pets if they are unable to take care of the ones they have | ![image](https://user-images.githubusercontent.com/99717469/193424675-328e10ed-78f8-49bf-8fa6-68d0db4a7fd1.png) |
 | Emergency care for Stray Animals | Provide contact details to get emergency medical services | ![image](https://user-images.githubusercontent.com/99717469/193424731-fa82b5a9-8c01-4648-a378-7c23bfb20427.png) |
------
-## Additional features
-- Users can use the `Contact` page for a call with one of the team members. 
 ----
-## Explanation video:
+
+## Additional features
+
+- Users can use the `Contact` page for a call with one of the team members. 
+
+---
+# Explanation video:
 
 For a brief explanation about PetMe, you can watch the following video.
-[<img src="https://i.imgur.com/8gEUuwt.png" width="50%">](https://youtu.be/U1EQjtT-G8E)
- ----
-## Accomplishments:
 
-We are proud to build a website where pet lovers can easily adopt animals that need a home.
-They can not only provide medical assistance to them but can also allow their comrades in the community to adopt them.
- ----
-## What's next for PetMe 📲
+[<img src="https://i.imgur.com/8gEUuwt.png" width="50%">](https://youtu.be/U1EQjtT-G8E)
+ ---
+# Accomplishments:
+
+-We are proud to build a website where pet lovers can easily adopt animals that need a home.
+
+-They can not only provide medical assistance to them but can also allow their comrades in the community to adopt them.
+
+ ---
+ 
+# What's next for PetMe 📲
 
 In future, we plan to scale this application to reach as many people as possible and facilitate adoption and donation of animals.
 
 Furthermore, we plan to connect with the nearest government organization that provides medical assistance to stray animals.
 
----
+
 
 ## ⭐ How to get started with open source?
 <img src="https://github.com/Vi1234sh12/Face-X/blob/master/.github/Assests/isometric.png" height="290px" align="right"/>
