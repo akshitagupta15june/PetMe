@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer components {
   .card {
     background-color: theme("colors.white");
@@ -27,7 +28,29 @@
     font-weight: 600;
     margin: 2.5rem 0;
   }
-
+  #search-form {
+    display: flex;
+    align-items: center;
+ 
+  }
+  
+  #search-input {
+    width: 200px;
+    padding: 5px;
+    border-radius: 5rem !important;
+    background-color: #ffd8d8 !important;
+    color: #131c2b !important;
+  }
+  
+  #search-form button {
+    margin-left: 10px;
+    color: white !important;
+    font-weight: bolder !important;
+    padding-left:5px !important ;
+  }
+  
+}
+  
   .contributors {
     display: flex;
     flex-direction: row;
