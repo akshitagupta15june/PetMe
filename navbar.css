@@ -119,3 +119,8 @@
 .nav-hidden{
 	top: -100px;
 }
+.navbar-dark {
+  background-color: black; /* Change to your desired background color for dark mode */
+  color: white; /* Change to your desired text color for dark mode */
+  /* Add any other styling for the dark mode navbar */
+}
