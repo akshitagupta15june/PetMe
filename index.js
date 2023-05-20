@@ -52,4 +52,11 @@ async function getContributorsList() {
 hideBackToTopButton()
 getContributorsList();
 
+function ScrollBottomtoTop() {
+  const button = document.getElementById("footer-logo")
+  button.addEventListener('click', ()=>{
+    window.scrollTo({top:0,behavior:"smooth"});
+  })
+}
 
+ScrollBottomtoTop()
