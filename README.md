@@ -1,5 +1,5 @@
 ## Open Source Programs
-<p align="center"> PetMe is ready for Hacktoberfest</p>
+<p align="center"> petme is an open source project aimed at facilitating the adoption and donation of pets, as we as providing emergency care for stray animals. Yhe project provides a platform where pet lovers can easily find and adopt animals in need of a loving home. By adoptinga pet, uses not only save a life but also create space in shelters for other animals in need.</p>
  <a href="https://hacktoberfest.com/">
  <img width="1200" alt="Email Banners-Dark" src="https://user-images.githubusercontent.com/79099734/189589410-ca17afb8-5855-4316-918a-054f27594809.png">
  </a>
