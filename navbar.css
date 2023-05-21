@@ -104,7 +104,7 @@
 
 /* make the header sticky on scroll */
 .header {
-	position: fixed;
+	position: sticky;
 	top: 0;
 	transition: 0.25s;
 	width: 100%;
