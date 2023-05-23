@@ -51,3 +51,4 @@ Contributors
 - [Eli Cohen](https://github.com/elijahlc)
 - [Bookish](https://github.com/bookish)
 - [Alexis Pendleton](littlemissbuttons.github.io)
+- [Sai Prasad Wali](https://github.com/saiwali)
