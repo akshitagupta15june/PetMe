@@ -52,4 +52,11 @@ async function getContributorsList() {
 hideBackToTopButton()
 getContributorsList();
 
+function googleTranslateElementInit() {  
+  new google.translate.TranslateElement(  
+      {pageLanguage: 'en'},  
+      'google_translate_element'  
+  );  
+}
+
 
