@@ -18,3 +18,13 @@ main .p {
     color: #5b5963;
 
 }
+.desc{
+    width:100%;
+}
+.imageClass{
+    /* margin-top: 70px; */
+    /* object-fit: cover; */
+    margin-left: 30vw;
+    border-radius: 10%;
+    /* height: fit-content; */
+}

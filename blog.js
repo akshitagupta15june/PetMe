@@ -17,9 +17,11 @@ fetch("blog.json")
             <h3 class="group-hover:-translate-y-6 duration-500 text-black uppercase font-medium text-sm text-center tracking-wider py-2 mt-5 mr-2.5 ml-2.5 mb-2.5 leading-4">
               <b>${blog.title}</b><br><br>
               <spam class="text-xs font-light lowercase py-3">${blog.description}</spam>
-              <a href="${blog.read}" rel="noopener noreferrer" class="pl-4 pr-4 m-auto mt-0 mb-0 text-base font-normal bg-orange-500 hover:bg-orange-400 rounded-md">
-                <b>Read</b>
-              </a>
+              <div>
+                <a href="${blog.read}" rel="noopener noreferrer" class="pl-4 pr-4 m-auto mt-0 mb-0 text-base font-normal bg-orange-500 hover:bg-orange-400 rounded-md">
+                  <b>Read</b>
+                </a>
+              </div>
             </h3>
           </div>
         </div>
