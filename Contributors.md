@@ -8,6 +8,7 @@ Contributors
 
 - [AKSHITA GUPTA](https://github.com/akshitagupta15june)
 - [Manish Pokhrel](https://github.com/manishpoko)
+- [Himanshu](https://github.com/heyhimansh)
 - [Karan Banjade](https://github.com/karanbanjade)
 - [Dev](https://github.com/d3vsuthar)
 - [Ahnaf Anis](https://github.com/Ahnaf-codes)
@@ -51,3 +52,4 @@ Contributors
 - [Bookish](https://github.com/bookish)
 - [Alexis Pendleton](littlemissbuttons.github.io)
 - [Sk Muneeruddin](https://github.com/SHAIK-MUNEERUDDIN)
+- [Sai Prasad Wali](https://github.com/saiwali)

@@ -420,6 +420,7 @@ img,
 video {
   max-width: 100%;
   height: auto;
+  width: fit-content;
 }
 
 *,
@@ -2207,3 +2208,15 @@ video {
     background-color: transparent;
   }
 }
+.text-lg {
+  
+  
+  transition: width 2s, transform 2s;
+}
+.text-lg:hover {
+  width: 1500px;
+  
+  border-radius:8px;
+  
+}
+
