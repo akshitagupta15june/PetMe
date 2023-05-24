@@ -29,7 +29,7 @@
   <img src="./Assets/Images/logo.jpg" height="250px">
   </p>
 
-<p align="center"> Join our official <a href="https://discord.gg/X3HZAPzykU">Discord Channel</a> for discussion and updates. </p>
+<p align="center"> Join our official <a href="https://discord.gg/X3HZAPzykU">Discord Channel</a> for discussions and updates. </p>
 
 
 ## Inspiration for the Project:
@@ -38,7 +38,7 @@ It has been estimated that more than one million adoptable dogs and cats are eut
 
 **The number of euthanized animals can be reduced drastically if more people adopt pets instead of buying them from stores. When you adopt an animal, you save a lovely life by making them a part of your family as well as open up a shelter space for an animal who might be in need of one desperately.**
 
-When the team heard about the animals that were getting in danger each year, it became a goal for us to help these speechless beings somehow. After brainstorming for a long time we came up with the idea of **PetMe**. We believe in the policy of saving animals and thus saving lives. Every life matters and we wish to be the part of the change that is making the same possible.
+When our team heard about the animals that were in danger each year, it became a goal for us to help these speechless beings somehow. After brainstorming for a long time we came up with the idea of **PetMe**. We believe in the policy of saving animals and thus saving lives. Every life matters and we wish to be the part of the change that is making the same possible.
 
 
 ## Features of PetMe at a Glance
@@ -73,7 +73,7 @@ Click the image below to view our website!
 
 ## Accomplishments:
 
-We are proud to build a website where pet lovers can easily adopt animals that need a home. They can not only provide medical assistance to them but can also allow their comrades in the community to adopt them.
+We are proud to build a website where pet lovers can easily adopt animals that need a home. They can not only provide medical assistance to them but can also allow their fellow comrades in the community to adopt them.
 
 ## What's next for PetMe 📲
 
