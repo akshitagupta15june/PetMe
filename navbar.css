@@ -119,3 +119,7 @@
 .nav-hidden{
 	top: -100px;
 }
+/* give img a fix size */
+img#switch{
+  width: 50px;
+}
