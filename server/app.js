@@ -13,7 +13,7 @@ const donationRouter = require('./routes/donationRoutes');
 const strayAnimalReportRouter = require('./routes/strayAnimalReportRoutes')
 const AppError = require('./utils/appError');
 const errorController = require('./controllers/errorController');
-
+const { userRoute } = require('./routes/userRoutes');
 const app = express();
 
 dotenv.config({ path: './config.env' }); // <- connecting the enviroment variables
@@ -58,12 +58,14 @@ app.use(xss()); // <- Data Sanitization against xss
 
 app.use(compression());
 
-// routs for images
+// routes for images
 app.use('/api/v1/AnimalReportImage',express.static('public/Images/RportedAnimals'))
-
 app.use('/api/v1/pet', petRouter); // <- Calling the router
 app.use('/api/v1/donation', donationRouter);
 app.use('/api/v1/reportAnimal', strayAnimalReportRouter);
+
+// user route
+app.use('/api/v1/user', userRoute);
 
 app.all('*', (req, res, next) => {	// <- Middleware to handle Non-existing Routes
 	next(new AppError(`Can't find ${req.originalUrl} on the server`, 404));
