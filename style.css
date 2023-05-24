@@ -98,7 +98,11 @@
   }
 
   /*-----end of sos button----*/
-
+  #icons:hover path {
+    fill: greyd;
+    transition-property: fill;
+    transition-duration: 300ms;
+  }
   .contact-form-container {
     max-width: 700px;
     width: 100%;
@@ -117,5 +121,4 @@
 
 /*-----end of sos button----*/
 
-.bg-
 
