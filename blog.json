@@ -103,6 +103,27 @@
         "title": "A Dog’s Perspective:",
         "description": "Hi, I’m Kalu, and I just survived a disaster called the festival of lights!..",
         "read": "./blogs/manish.html"
+    },
+    {
+        "id": 16,
+        "poster": "./blogs/img/b16-poster.jpeg",
+        "title": "The Benefits of Owning a Pet:",
+        "description": "The Unbreakable Bond: Exploring the Joy and Benefits of Owning a Pet..",
+        "read": "./blogs/rayarka26.html"
+    },
+    {
+        "id": 17,
+        "poster": "./blogs/img/b17-poster.jpeg",
+        "title": "The Importance of Pet Adoption and Rescue:",
+        "description": "Rescue, Rehome, Rejoice: The Power of Pet Adoption and Building Connections..",
+        "read": "./blogs/rayarka2.html"
+    },
+    {
+        "id": 18,
+        "poster": "./blogs/img/b18-poster.jpeg",
+        "title": "Creating a Safe and Enriching Environment for Your Pet:",
+        "description": "Setting the stage for a happy and thriving pet..",
+        "read": "./blogs/rayarka3.html"
     }
     
 ]
