@@ -103,7 +103,7 @@
 }
 
 /* make the header sticky on scroll */
-.header {
+#header {
 	position: fixed;
 	top: 0;
 	transition: 0.25s;
@@ -118,8 +118,9 @@
 }
 .nav-hidden{
 	top: -100px;
-}
+  
 /* give img a fix size */
 img#switch{
   width: 50px;
 }
+

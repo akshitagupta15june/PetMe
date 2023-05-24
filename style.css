@@ -115,7 +115,22 @@
   padding-top: 20px;
 }
 
+.hover-button {
+  /* Button styles */
+  margin-top: 1rem;
+  display: inline-block;
+  padding:.8rem 3rem;
+  font-size: 1.7rem;
+  border-radius: .5rem;
+  border:.2rem solid black;
+  color:#ffc82c;
+  cursor: pointer;
+  background: #ffc82c;
+}
+
+.hover-button:hover {
+  /* Hover styles */
+  background: #ffc82c ;
+  color:#fff;
+}
 /*-----end of sos button----*/
-
-.bg-
-
