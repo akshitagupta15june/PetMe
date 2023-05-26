@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="./output.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./introSection.css">
-    <link rel="stylesheet" href="./navbar.css">
-    <link rel="stylesheet" href="./mobileView.css">
-    <link rel="icon" type="image/x-icon" href="/Assets/Images/logo.ico">
-    <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <title>Donate animals: PetMe</title>
-    <style>
-      .donate-section form .relative:has(input:required) label::after {
-        content: '*';
-        color: red;
-        margin-left: 0.2rem;
-      }
-    </style>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="./output.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./introSection.css">
+  <link rel="stylesheet" href="./navbar.css">
+  <link rel="stylesheet" href="./mobileView.css">
+  <link rel="icon" type="image/x-icon" href="/Assets/Images/logo.ico">
+  <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <title>Donate animals: PetMe</title>
+  <style>
+    .donate-section form .relative:has(input:required) label::after {
+      content: '*';
+      color: red;
+      margin-left: 0.2rem;
+    }
+  </style>
+</head>
 
 <body>
   <header id="header"
@@ -67,8 +67,9 @@
               Us</a>
           </li>
           <li><a href="news.html"
-            class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Pet News</a>
-        </li>
+              class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Pet
+              News</a>
+          </li>
           <li><a href="blog.html"
               class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Blogs</a>
           </li>
@@ -189,10 +190,7 @@
               <div class="relative">
                 <label for="number" class="leading-7 text-sm text-gray-900">Contact Number</label>
 
-                <input type="text" id="number" name="number" placeholder="+91 0123456789" 
-
-                
-
+                <input type="text" id="number" name="number" placeholder="+91 0123456789"
                   class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   oninput="this.value = this.value.replace(/[^0-9\+\.]/g, '').replace(/(\..*)\./g, '$1');" required />
 
@@ -232,6 +230,7 @@
             <div class="p-2 w-full">
               <div class="relative">
                 <label for="message" class="leading-7 text-sm text-gray-900">Your Pet's Image</label>
+                <div id="imageContt" style="display: flex; flex-wrap:wrap;"></div>
                 <div class="max-w-3xl">
                   <label
                     class="flex justify-center w-full h-32 px-4 transition bg-white border-2 border-gray-300 border-dashed rounded-md appearance-none cursor-pointer hover:border-gray-400 focus:outline-none">
@@ -246,7 +245,8 @@
                         <span class="text-blue-600 underline">Browse</span>
                       </span>
                     </span>
-                    <input type="file" name="file_upload" class="hidden" accept="image/*"/>
+                    <input type="file" name="file_upload" onchange="loadFile(event)" class="hidden" accept="image/*" />
+
                   </label>
                 </div>
               </div>
@@ -270,6 +270,21 @@
   </section>
   <script src="navbar.js"></script>
   <script src="light-dark-theme.js"></script>
+  <script>
+    const loadFile = (event) => {
+      var image = document.createElement("img");
+      image.setAttribute("alt", "Uploaded image");
+      var aspectRatio = 16 / 9; // Desired aspect ratio (e.g., 16:9)
+      // Calculate the height based on the aspect ratio
+      var width = "150"
+      var height = width / aspectRatio;
+      image.style.width = width + "px";
+      image.style.height = height + "px";
+      image.setAttribute("src", URL.createObjectURL(event.target.files[0]))
+      var imageCont = document.getElementById("imageContt");
+      imageCont.appendChild(image);
+    }
+  </script>
 </body>
 
 </html>
