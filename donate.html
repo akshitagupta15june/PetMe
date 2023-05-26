@@ -232,7 +232,7 @@
                 <label for="message" class="leading-7 text-sm text-gray-900">Your Pet's Image</label>
                 <div id="imageContt" style="display: flex; flex-wrap:wrap;"></div>
                 <div class="max-w-3xl">
-                  <label
+                  <label id="drop-image-area" ondrop="dropImage(event)" ondragover="allowDrop(event)"
                     class="flex justify-center w-full h-32 px-4 transition bg-white border-2 border-gray-300 border-dashed rounded-md appearance-none cursor-pointer hover:border-gray-400 focus:outline-none">
                     <span class="flex items-center space-x-2">
                       <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-900" fill="none"
@@ -245,7 +245,8 @@
                         <span class="text-blue-600 underline">Browse</span>
                       </span>
                     </span>
-                    <input type="file" name="file_upload" onchange="loadFile(event)" class="hidden" accept="image/*" />
+                    <input onChange="loadFile(event)" type="file" id="imageUploadInput" name="file_upload"
+                      class="hidden" accept="image/*" multiple />
 
                   </label>
                 </div>
@@ -271,19 +272,62 @@
   <script src="navbar.js"></script>
   <script src="light-dark-theme.js"></script>
   <script>
+    // Calculate the height based on the aspect ratio
+    var aspectRatio = 16 / 9; // Desired aspect ratio (e.g., 16:9)
+    // Calculate the height based on the aspect ratio
+    var width = "150"
+    var height = width / aspectRatio;
     const loadFile = (event) => {
-      var image = document.createElement("img");
-      image.setAttribute("alt", "Uploaded image");
-      var aspectRatio = 16 / 9; // Desired aspect ratio (e.g., 16:9)
-      // Calculate the height based on the aspect ratio
-      var width = "150"
-      var height = width / aspectRatio;
-      image.style.width = width + "px";
-      image.style.height = height + "px";
-      image.setAttribute("src", URL.createObjectURL(event.target.files[0]))
       var imageCont = document.getElementById("imageContt");
-      imageCont.appendChild(image);
+      var files = event.target.files;
+      for (var i = 0; i < files.length; i++) {
+        console.log("inside lop")
+        var file = files[i];
+        var imagePath = URL.createObjectURL(file);
+        var image = document.createElement("img");
+        image.setAttribute("alt", "Uploaded image");
+        image.style.width = width + "px";
+        image.style.height = height + "px";
+        image.setAttribute("src", imagePath);
+        imageCont.appendChild(image);
+      }
+      
+      var fileInput = document.getElementById("imageUploadInput")
+      console.log(fileInput.files)
     }
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+
+
+    function dropImage(ev) {
+      ev.preventDefault();
+      var fileInput = document.getElementById("imageUploadInput")
+      var files = ev.dataTransfer.files;
+      var dataTransfer = new DataTransfer();
+      var imageCont = document.getElementById("imageContt");
+
+      // Add each dropped file to the DataTransfer object
+      for (var i = 0; i < files.length; i++) {
+        dataTransfer.items.add(files[i]);
+      }
+
+      // Set the DataTransfer object to the file input
+      fileInput.files = dataTransfer.files;
+      var uplaodedImages = fileInput.files;
+      for (var i = 0; i < uplaodedImages.length; i++) {
+        console.log("inside lop")
+        var file = uplaodedImages[i];
+        var imagePath = URL.createObjectURL(file);
+        var image = document.createElement("img");
+        image.setAttribute("alt", "Uploaded image");
+        image.style.width = width + "px";
+        image.style.height = height + "px";
+        image.setAttribute("src", imagePath);
+        imageCont.appendChild(image);
+      }
+    }
+
   </script>
 </body>
 
