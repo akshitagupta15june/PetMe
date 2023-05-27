@@ -134,3 +134,13 @@
   color:#fff;
 }
 /*-----end of sos button----*/
+
+#vol-btn {
+  width: 120px;
+  
+}
+
+#vol-btn:hover {
+  width: 120px;
+  border-radius: 5px;
+}
