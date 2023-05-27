@@ -13,9 +13,9 @@
   color: rgb(255 0 0 / var(--tw-text-opacity));
   transition-duration: 0.3s;
 }
-
+ 
 .turn-yellow-hover:hover {
-  --tw-text-opacity: 0.65;
+  --tw-text-opacity: 0.65; 
   color: rgb(255 177 0 / var(--tw-text-opacity));
   transition-duration: 0.3s;
 }

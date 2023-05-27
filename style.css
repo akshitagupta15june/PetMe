@@ -117,20 +117,23 @@
 
 .hover-button {
   /* Button styles */
-  margin-top: 1rem;
   display: inline-block;
-  padding:.8rem 3rem;
+  padding: 1rem 3rem;
   font-size: 1.7rem;
-  border-radius: .5rem;
-  border:.2rem solid black;
-  color:#ffc82c;
-  cursor: pointer;
+  border-radius: 0.5rem;
+  border: 0.2rem solid black;
+  color: #ffc82c;
   background: #ffc82c;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s; 
 }
 
 .hover-button:hover {
   /* Hover styles */
-  background: #ffc82c ;
-  color:#fff;
+  background: #f9bd18;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+  transform: scale(1); 
 }
+
 /*-----end of sos button----*/
