@@ -1,0 +1,45 @@
+:root {
+    --color-white: #000000;
+    --color-cyan: #b6e4f9;
+    --color-cyan-alpha: rgba(254, 254, 254, 0.75);
+    --color-green: #31b564;
+}
+  
+body{
+    background: var(--color-cyan);
+  background-image: linear-gradient(
+      115deg,
+      var(--color-cyan-alpha),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(https://i.pinimg.com/736x/44/d9/8c/44d98cccb725fd3a80c0446b9b2e646d.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.Head{
+  position: relative;
+  bottom: 40px;
+  color: #21a754;
+}
+.subHead{
+  font-style: italic;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 125px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+  }
