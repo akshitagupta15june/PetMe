@@ -102,6 +102,11 @@
   cursor: pointer;
 }
 
+#theme-toggle img{
+  height: 50px;
+  width: 50px;
+}
+
 /* make the header sticky on scroll */
 #header {
 	position: fixed;
