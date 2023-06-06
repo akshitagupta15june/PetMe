@@ -65,10 +65,11 @@
 #bttbutton{
   position: fixed;
     bottom: 20px;
-    left: 50px;
+    left: 40px;
     z-index: 9999;
     border: none;
     outline: none;
+    width: 55px;
 }
 
   /*-------sos button ---------*/
