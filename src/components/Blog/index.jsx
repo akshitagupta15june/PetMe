@@ -16,7 +16,7 @@ export function BlogTemplate() {
         <h2 className="text-xl font-bold text-center md:text-3xl">A Blog For Pet Lovers And Their Pet Stories</h2>
       </div>
 
-      <div className="grid grid-cols-1 mx-auto my-5 gap-4 md:grid-cols-2 md:w-[700px] md:my-0 xl:grid-cols-3 xl:w-[1120px]">
+      <div className="grid grid-cols-1 mx-auto mt-5 mb-10 gap-4 md:grid-cols-2 md:w-[700px] md:mt-0 xl:grid-cols-3 xl:w-[1120px]">
         {posts.map((post) => (
           <div key={post.id} className="grid gap-4 justify-items-center mx-20 md:mx-0">
             <img

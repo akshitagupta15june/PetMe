@@ -26,7 +26,7 @@ const buttons = [
   },
   {
     id: 7,
-    name: 'Suport Us',
+    name: 'Support Us',
     link: '/donate',
   },
   {

@@ -4,14 +4,14 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from 'react-router-dom';
-import App from './routes/App';
-import Donate from './routes/Donate';
+import App from './pages/App';
+import Donate from './pages/Donate';
 import './index.css';
 import HeaderProvider from './context/HeaderProvider';
-import News from './routes/News';
-import Blog from './routes/Blog';
-import SupportUs from './routes/SupportUs';
-import Report from './routes/Report';
+import News from './pages/News';
+import Blog from './pages/Blog';
+import SupportUs from './pages/SupportUs';
+import Report from './pages/Report';
 
 const router = createBrowserRouter([
   {
