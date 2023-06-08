@@ -60,3 +60,53 @@ function googleTranslateElementInit() {
 }
 
 
+// Javascript for Testimonial Section
+
+let swiperRef = null;
+let scrollInterval = null;
+
+function initializeSwiper() {
+  swiperRef = new Swiper('.mySwiper', {
+    slidesPerView: getSlidesPerView(),
+    spaceBetween: 30,
+    slidesPerGroup: getSlidesPerGroup(),
+    loop: true,
+    loopFillGroupWithBlank: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+  });
+}
+
+function getSlidesPerView() {
+  return window.innerWidth < 800 ? 1 : 3;
+}
+
+function getSlidesPerGroup() {
+  return window.innerWidth < 800 ? 1 : 3;
+}
+
+function handleResize() {
+  if (swiperRef) {
+    swiperRef.params.slidesPerView = getSlidesPerView();
+    swiperRef.params.slidesPerGroup = getSlidesPerGroup();
+    swiperRef.update();
+  }
+}
+
+initializeSwiper();
+
+
+function cleanup() {
+  window.removeEventListener('resize', handleResize);
+  clearInterval(scrollInterval);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  initialize();
+});
+
+window.addEventListener('beforeunload', () => {
+  cleanup();
+});

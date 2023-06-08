@@ -119,18 +119,127 @@
   /* Button styles */
   margin-top: 1rem;
   display: inline-block;
-  padding:.8rem 3rem;
+  padding: .8rem 3rem;
   font-size: 1.7rem;
   border-radius: .5rem;
-  border:.2rem solid black;
-  color:#ffc82c;
+  border: .2rem solid black;
+  color: #ffc82c;
   cursor: pointer;
   background: #ffc82c;
 }
 
 .hover-button:hover {
   /* Hover styles */
-  background: #ffc82c ;
-  color:#fff;
+  background: #ffc82c;
+  color: #fff;
 }
+
 /*-----end of sos button----*/
+
+
+/* CSS Start for testimonial Section */
+
+.customer-card {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customers {
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+}
+
+@media screen and (min-width:1400px) and (max-width:1600px) {
+  .customer-card {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.customer {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.customer-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.customer-message p {
+  font-family: 'montserrat';
+  margin: 0 auto;
+}
+
+.rating img {
+  margin: 0 auto;
+}
+
+.customer-name p {
+  color: #ABABAB;
+  font-family: 'montserrat';
+  margin: 0 auto;
+}
+
+.my-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+}
+
+.swiper {
+  padding: 0 10px !important;
+}
+
+.card-slide {
+  background: #fff;
+  margin: 20px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.card-slide .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  gap: 15px;
+}
+
+
+.card-slide .rating i {
+  font-size: 18px;
+  margin: 0 2px;
+  color: #ffc82c;
+}
+
+.my-content {
+  display: flex;
+}
+
+#new-img{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+/* CSS Ends for testimonial Section */
