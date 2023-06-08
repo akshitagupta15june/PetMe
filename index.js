@@ -27,7 +27,7 @@ function displayContributors(contributorsList) {
 function hideBackToTopButton() {
   const bttButton = document.getElementById("bttbutton");
 
-  window.addEventListener("scroll", function() {
+  window.addEventListener("scroll", function () {
     if (window.pageYOffset > 0) {
       bttButton.style.opacity = "1";
       bttButton.style.transform = 'translateY(0px)';
@@ -52,11 +52,11 @@ async function getContributorsList() {
 hideBackToTopButton()
 getContributorsList();
 
-function googleTranslateElementInit() {  
-  new google.translate.TranslateElement(  
-      {pageLanguage: 'en'},  
-      'google_translate_element'  
-  );  
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    { pageLanguage: 'en' },
+    'google_translate_element'
+  );
 }
 
 
@@ -95,16 +95,14 @@ function handleResize() {
   }
 }
 
-initializeSwiper();
-
-
 function cleanup() {
   window.removeEventListener('resize', handleResize);
   clearInterval(scrollInterval);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  initialize();
+  initializeSwiper();
+  window.addEventListener('resize', handleResize);
 });
 
 window.addEventListener('beforeunload', () => {
