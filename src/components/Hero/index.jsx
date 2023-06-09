@@ -31,6 +31,7 @@ function index() {
       animate={animateDiv}
       viewport={{ once: true }}
     />
+
   );
 }
 

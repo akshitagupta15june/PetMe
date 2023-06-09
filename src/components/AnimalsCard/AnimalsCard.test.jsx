@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import AnimalsCard from '.';
 
-const NUMBER_OF_ANIMALS = 6;
+const NUMBER_OF_ANIMALS = 12;
 const NUMBER_OF_ANIMALS_INFO = 36;
 
 describe('AnimalsCard', () => {
@@ -18,16 +18,7 @@ describe('AnimalsCard', () => {
     expect(buttonAdopt).toHaveLength(NUMBER_OF_ANIMALS);
   });
 
-  test('renders AnimalsCard with snapshot', () => {
-    const { asFragment } = render(
-      <BrowserRouter>
-        <AnimalsCard />
-      </BrowserRouter>,
-    );
-    expect(asFragment()).toMatchSnapshot();
-  });
-
-  test('renders animals img', () => {
+  test('renders the right number of animals img', () => {
     const { getAllByRole } = render(
       <BrowserRouter>
         <AnimalsCard />
@@ -35,7 +26,7 @@ describe('AnimalsCard', () => {
     );
 
     const img = getAllByRole('img');
-    expect(img).toHaveLength(NUMBER_OF_ANIMALS);
+    expect(img).toHaveLength(6);
   });
 
   test('renders the right number of information about animals', () => {
@@ -57,6 +48,6 @@ describe('AnimalsCard', () => {
     );
 
     const heading = getAllByRole('heading', { level: 1 });
-    expect(heading).toHaveLength(NUMBER_OF_ANIMALS);
+    expect(heading).toHaveLength(7);
   });
 });

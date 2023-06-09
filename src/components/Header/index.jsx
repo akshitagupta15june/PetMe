@@ -52,9 +52,10 @@ function Header() {
         { buttons.map((button) => (
           <a
             key={button.id}
+            id={button.id}
             href={button.link === '' ? undefined : button.link}
             onClick={button.name !== 'About' ? (() => {}) : scrollDown}
-            className="p-2 cursor-pointer hover:text-orange-300 hover:underline lg:text-[0.8rem] xl:text-[1rem]"
+            className="items p-2 cursor-pointer hover:text-orange-300 hover:underline lg:text-[0.8rem] xl:text-[1rem]"
           >
             {button.name}
           </a>
