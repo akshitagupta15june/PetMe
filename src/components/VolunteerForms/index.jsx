@@ -116,7 +116,7 @@ function VolunteerForms() {
               <div className="p-2 w-full">
                 <input type="checkbox" name="check" id="check" required />
                 <span className="p-1 font-medium text-gray-900">
-                  I've read and agree to the Terms and Conditions for volunteering this organisation.
+                  I&apos;ve read and agree to the Terms and Conditions for volunteering this organisation.
                 </span>
               </div>
               <div className="p-4 w-full">

@@ -12,6 +12,7 @@ import News from './pages/News';
 import Blog from './pages/Blog';
 import SupportUs from './pages/SupportUs';
 import Report from './pages/Report';
+import ContactUs from './pages/ContactUs';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
   {
     path: '/report',
     element: <Report />,
+  },
+  {
+    path: '/contact',
+    element: <ContactUs />,
   },
 ]);
 
