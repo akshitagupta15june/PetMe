@@ -1,5 +1,4 @@
 import React from 'react';
-import Error from '../components/Error';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import VolunteerForms from '../components/VolunteerForms';
