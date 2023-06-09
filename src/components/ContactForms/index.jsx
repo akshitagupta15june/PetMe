@@ -32,6 +32,7 @@ function ContactForms() {
                     placeholder="Richard Zeus"
                     className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     required
+                    data-testid="nameInputField"
                   />
                 </div>
               </div>
@@ -45,6 +46,7 @@ function ContactForms() {
                     placeholder="youremail@gmail.com"
                     className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                     required
+                    data-testid="emailInputField"
                   />
                 </div>
               </div>
@@ -62,6 +64,7 @@ function ContactForms() {
                   required
                   rows="6"
                   placeholder="Your message"
+                  data-testid="messageInputField"
                 />
               </div>
               <div className="p-4 w-full">
