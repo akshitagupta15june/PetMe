@@ -17,7 +17,7 @@ function Contributors() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center dark:bg-gray-900 pb-5">
+    <div className="flex flex-col items-center dark:bg-gray-900 pt-5 pb-5">
 
       <h1 className="text-xl text-white">
         Our Contributors

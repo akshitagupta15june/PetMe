@@ -11,13 +11,13 @@ function ContactForms() {
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
             Contact Us
           </h1>
-          <p className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-90">
-            Any issues?
-          </p>
-          <p className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-90">
-            Fill the form below and our team will
-            contact you shortly.
-          </p>
+          <div className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-90">
+            <p>Any issues?</p>
+            <p className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-90">
+              Fill the form below and our team will
+              contact you shortly.
+            </p>
+          </div>
         </div>
         <form id="survey-form" action="https://formspree.io/f/xayaokzl" method="POST">
           <div className="lg:w-1/2 md:w-2/3 mx-auto">
@@ -72,7 +72,7 @@ function ContactForms() {
                   type="submit"
                   className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
                 >
-                  Submit
+                  Contact Us
                 </button>
               </div>
             </div>
