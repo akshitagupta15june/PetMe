@@ -61,6 +61,16 @@
     color: black;
     margin-right: 5px;
   }
+/* back to top button */
+#bttbutton{
+  position: fixed;
+    bottom: 20px;
+    left: 40px;
+    z-index: 9999;
+    border: none;
+    outline: none;
+    width: 55px;
+}
 
   /*-------sos button ---------*/
   #mySBtn {
