@@ -36,7 +36,7 @@ function Footer() {
         </p>
         <div className="text-center">
           <input
-            className="my-1 mr-2 p-2 rounded-md"
+            className="  bg-opacity-50 my-1 mr-2 p-2 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
             type="email"
             id="email"
             name="email"
