@@ -630,6 +630,96 @@
 
 		<!--     Contact us section html starts from here -->
 		<section class="dark:bg-gray-900 b_1 pt-20 pb-20">
+			<div
+			  class="w-full contact-form-container mx-auto max-w-screen-md"
+			  id="contactFormContainer"
+			  style="opacity: 0; transform: translateX(50px); transition: opacity 1s ease, transform 1s ease;"
+			>
+			  <form
+				action="https://formspree.io/f/xayaokzl"
+				method="POST"
+				class="bg-gray-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100 px-8 pt-6 pb-8"
+			  >
+				<p id="contact"></p>
+				<h2 class="text-3xl mt-1 mb-2 text-center bold-500 text_3">
+				  CONTACT US
+				</h2>
+				<p class="text-base text-center text_3">
+				  Any issues! Fill the form below and our team will contact you shortly.
+				</p>
+				<br />
+				<div class="mb-4">
+				  <label
+					class="block text-white text-sm font-bold mb-2"
+					for="contact_nom"
+				  >
+					Name
+				  </label>
+				  <input
+					class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
+					id="contact_nom"
+					name="contact_nom"
+					type="text"
+					placeholder="Name"
+				  />
+				</div>
+				<div class="mb-6">
+				  <label
+					class="block text-white text-sm font-bold mb-2"
+					for="contact_email"
+				  >
+					Email
+				  </label>
+				  <input
+					class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
+					id="contact_email"
+					name="contact_email"
+					type="email"
+					required
+					placeholder="hello@petme"
+				  />
+				</div>
+				<div class="mb-6">
+				  <label
+					for="contact_message"
+					class="block text-white text-sm font-bold mb-2"
+					>Message</label
+				  >
+				  <textarea
+					class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
+					id="contact_message"
+					name="contact_message"
+					required
+					rows="6"
+					placeholder="Your message"
+				  ></textarea>
+				</div>
+				<div class="flex justify-center">
+				  <button
+					class="bg-gray-800 hover:bg-gray-900 text-center text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+					type="submit"
+				  >
+					Contact Us
+				  </button>
+				</div>
+			  </form>
+			</div>
+		  </section>
+		  
+		  <script>
+			window.addEventListener("scroll", function () {
+			  var contactFormContainer = document.getElementById("contactFormContainer");
+			  var scrollPosition = window.scrollY + window.innerHeight;
+			  var contactFormOffset = contactFormContainer.offsetTop;
+		  
+			  if (scrollPosition > contactFormOffset) {
+				contactFormContainer.style.opacity = "1";
+				contactFormContainer.style.transform = "translateX(0)";
+			  }
+			});
+		  </script>
+		  
+		<!-- <section class="dark:bg-gray-900 b_1 pt-20 pb-20">
 			<div class="w-full contact-form-container mx-auto max-w-screen-md">
 				<form
 					action="https://formspree.io/f/xayaokzl"
@@ -701,7 +791,7 @@
 					</div>
 				</form>
 			</div>
-		</section>
+		</section> -->
 
 		<!--     Contact us section html ends here -->
 
