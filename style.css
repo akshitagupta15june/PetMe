@@ -128,21 +128,22 @@
 .hover-button {
   /* Button styles */
   margin-top: 1rem;
+  font-weight: 600;
   display: inline-block;
   padding: .8rem 3rem;
   font-size: 1.7rem;
   border-radius: .5rem;
   border: .2rem solid black;
-  color: #ffc82c;
+  color: #000000;
   cursor: pointer;
-  background: #ffc82c;
+  background: #c89b1e;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .hover-button:hover {
   /* Hover styles */
   background: #ffc82c;
-  color: #fff;
+  color: #000000;
 }
 
 @keyframes fade-in-right {
