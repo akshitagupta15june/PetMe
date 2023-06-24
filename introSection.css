@@ -13,17 +13,22 @@
 }
 
 /* CORRECT THE HERO IMAGE: I also changed the height to a 850px to give clearer view of the cute puppies */
-.main-body-section-div {
-  background: url("./Assets/Images/main-heading-body-bg.jpg") no-repeat center
-    center/cover;
+.main-body-section-div{
+  /* background: url("./Assets/Images/main-heading-body-bg.jpg") no-repeat center
+    center/cover; */
+  background-repeat: no-repeat!important;
+  background-size: cover!important;
   min-height: 850px;
   opacity: 0.9;
   padding-top: 80px;
+  transition: background 0.6s ease-in-out;
 }
 
 .main-body-heading-text {
-  padding-top: 2%;
+  padding-top: 8%;
   padding-left: 5%;
+
+
 }
 
 /* CORRECT THE HERO IMAGE: The list element style was causing the whitespace. Removing it succesfully fixes the problem */
@@ -41,17 +46,18 @@
 .main-body-section-div h1 {
   font-size: 64px;
   /* padding-left: 18.8%; */
-  padding-top: 16.6%;
   color: azure;
-  font-weight: 700;
+  font-weight: bold;
+  letter-spacing: 4px;
 }
-
-/* CORRECT THE HERO IMAGE: Removed padding so .main-body-heading-text flex all the way to the flex start */
-.main-body-section-div div {
-  /* padding-removed */
-  font-size: 32px;
-  color: azure;
+.main-body-section-div p {
+  font-size: 20px;
   font-weight: 400;
+  letter-spacing: 3px;
+}
+.main-body-heading-text span{
+  color: #c97f06;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
 }
 
 .pet-card-flex {

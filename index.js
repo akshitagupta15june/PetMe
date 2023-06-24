@@ -52,4 +52,27 @@ async function getContributorsList() {
 hideBackToTopButton()
 getContributorsList();
 
+function googleTranslateElementInit() {  
+  new google.translate.TranslateElement(  
+      {pageLanguage: 'en'},  
+      'google_translate_element'  
+  );  
+}
 
+var imageIndex = 0;
+var imagesArray = [
+    "url('./Assets/Images/main-heading-body-bg.jpg') center",
+    "url('./Assets/Images/main-heading-body-bg2.png') center",
+    "url('./Assets/Images/main-heading-body-bg3.png') center",
+    "url('./Assets/Images/main-heading-body-bg4.png') center"
+];
+
+function changeBackground() {
+    var index = imageIndex++ % imagesArray.length;
+    document.querySelector(".main-body-section-div").style.background = imagesArray[index];
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelector(".main-body-section-div").style.background = imagesArray[0];
+  setInterval(changeBackground, 2000);
+});
