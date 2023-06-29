@@ -230,3 +230,65 @@ nav ul li a:hover::after {
 #portfolio-header {
   margin-left: 120px;
 }
+
+/* help css */
+.help_btn{
+  position: fixed;
+  left:80%;
+  bottom: 10%;
+  font-size: 1.2rem;
+  padding: 0.9em 2em;
+  color: #F5F5DC;
+  /* color: #FFD700; */
+  font-weight: 700;
+  --tw-bg-opacity: 0.87;
+  background-color: rgb(120 53 15 / var(--tw-bg-opacity));
+  border-radius: 25px;
+}
+.popup {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+dialog  .Head{
+  font-size: 1.5em;
+  margin-bottom: 0.4em;
+  color: #21a754;
+}
+dialog > .subHead{
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+dialog> .Head > .Head_text{
+  display: inline-block;
+}
+dialog> .Head > #close{
+  position: absolute;
+  right: 9%;
+}
+dialog > [type="text"] {
+    width: 100%;
+    border: 1px solid;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 125px;
+    margin-bottom: 15px;
+    margin-top: 34px;
+  }
+dialog > #GoButton{
+  padding: 0.4em 0.7em;
+  border: 1px solid;
+  border-radius: 100px;
+}
+dialog > #GoButton:hover{
+  background-color: rgb(250, 250, 215);
+  border: 2px solid;
+}
