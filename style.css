@@ -190,4 +190,10 @@
 
 
 /*-----end of sos button----*/
-
+/* copy right  */
+  #copyright{
+    text-align: center;
+    padding: 2px 2px 2px 2px;
+    background-color: black;
+    color: white;
+  }
