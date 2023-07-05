@@ -1,14 +1,13 @@
 fetch("blog.json")
-.then(function(response){
+  .then(function(response){
     return response.json();
-})
-.then(function(blogs){
+  })
+  .then(function(blogs){
     let placeholder = document.querySelector("#data-output");
     let out = "";
     for(let blog of blogs){
-        out += `
-
-        <div class="relative flex items-center m-10 bg-black shadow-2xl shadow-slate-500 grid-items group z-2 w-min h-min bg-opacity-5 rounded-2xl justify-conten backdrop-filter backdrop-blur-md">
+      out += `
+      <div class="relative flex items-center m-10 bg-black shadow-2xl shadow-slate-500 grid-items group z-2 w-min h-min bg-opacity-5 rounded-2xl justify-conten backdrop-filter backdrop-blur-md">
         <div class="relative w-[17.5rem] sm:w-[15.5rem] md:w-[19rem] lg:w-[27rem] xl:w-[35rem] h-80 flex justify-center items-center flex-col opacity-80  hover:opacity-100">
           <div class="relative w-4/5 truncate duration-500 border-8 border-solid rounded-2xl border-black/25 group-hover:-translate-y-6">
             <img src="${blog.poster}" alt="blog image" class="relative top-0 left-0 object-cover w-full h-full"/>
@@ -23,10 +22,20 @@ fetch("blog.json")
             </h3>
           </div>
         </div>
-      </div>
-        
-        `;
+      </div>`;
     }
 
     placeholder.innerHTML = out;
-})
+
+    // Smooth scroll functionality
+    const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
+    smoothScrollLinks.forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        target.scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  });

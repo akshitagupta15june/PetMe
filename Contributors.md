@@ -54,3 +54,5 @@ Contributors
 - [Sk Muneeruddin](https://github.com/SHAIK-MUNEERUDDIN)
 - [Sai Prasad Wali](https://github.com/saiwali)
 - [Hritik Singhal](https://github.com/Hritik1503)
+- [Aakshita Singh](https://github.com/aakshitaa)
+- [Sayantan Choudhury](https://github.com/Sch476)

@@ -61,6 +61,16 @@
     color: black;
     margin-right: 5px;
   }
+/* back to top button */
+#bttbutton{
+  position: fixed;
+    bottom: 20px;
+    left: 40px;
+    z-index: 9999;
+    border: none;
+    outline: none;
+    width: 55px;
+}
 
   /*-------sos button ---------*/
   #mySBtn {
@@ -119,18 +129,71 @@
   /* Button styles */
   margin-top: 1rem;
   display: inline-block;
-  padding:.8rem 3rem;
+  padding: .8rem 3rem;
   font-size: 1.7rem;
   border-radius: .5rem;
-  border:.2rem solid black;
-  color:#ffc82c;
+  border: .2rem solid black;
+  color: #ffc82c;
   cursor: pointer;
   background: #ffc82c;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .hover-button:hover {
   /* Hover styles */
-  background: #ffc82c ;
-  color:#fff;
+  background: #ffc82c;
+  color: #fff;
 }
+
+@keyframes fade-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.anima-fade-in-right {
+  animation: fade-in-right 0.5s ease-in-out;
+}
+
+@keyframes scroll-fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-100px);
+  }
+}
+
+.scroll-fade-in {
+  animation: scroll-fade-in 0.5s ease-in-out both;
+}
+
+.scroll {
+  animation: scroll 0.5s ease-in-out both;
+}
+
+
 /*-----end of sos button----*/
+/* copy right  */
+  #copyright{
+    text-align: center;
+    padding: 2px 2px 2px 2px;
+    background-color: black;
+    color: white;
+  }
