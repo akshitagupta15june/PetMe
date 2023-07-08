@@ -4,12 +4,22 @@
 }
 
 .meet-heading {
-  font-size: 60px;
-  background-color: rgb(255, 240, 234);
+  font-size: 90px;
   text-align: center;
   font-weight: 800;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.m-heading {
+  font-size: 70px;
+				background-color: rgb(123, 53, 15);
+				text-align: center;
+        margin-left: 20%;
+        margin-right: 20%;
+				font-weight: 800;
+				color: aliceblue;
+				padding-top: 30px;
+				padding-bottom: 30px;
 }
 
 /* CORRECT THE HERO IMAGE: I also changed the height to a 850px to give clearer view of the cute puppies */
