@@ -1641,6 +1641,9 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.text-choco{
+  color: chocolate;
+}
 
 .text-gray-100 {
   --tw-text-opacity: 1;
