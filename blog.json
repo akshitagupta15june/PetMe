@@ -117,6 +117,13 @@
         "title": "Creating a Safe and Enriching Environment for Your Pet",
         "description": "Setting the stage for a happy and thriving pet..",
         "read": "./blogs/rayarka3.html"
+    },  {
+        "id": 18,
+        "poster": "./blogs/img/b21-poster.jpg",
+        "title": "FINDING FOREVER HOMES: THE JOY OF PET ADOPTION",
+        "description": "Discover the transformative power of pet adoption and how it brings joy, love, and a sense of purpose to both animals and their human companions...",
+        "read": "./blogs/arvind.html"
     }
+    
     
 ]
