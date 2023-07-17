@@ -50,7 +50,7 @@ let t3 = new element(
   "text-gray-900",
   "text-white"
 );
-let t4 = new element(["text_4"], "text-slate-800", "text-white");
+let t4 = new element(["text_4"], "text-choco", "text-white");
 
 // let b1 = new element("bg_1", "bg-slate-50", "bg-slate-400");
 let b1 = new element(
