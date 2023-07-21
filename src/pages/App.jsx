@@ -5,6 +5,7 @@ import About from '../components/About';
 import AnimalsCard from '../components/AnimalsCard';
 import Contributors from '../components/Contributors';
 import Footer from '../components/Footer';
+import ScrollToTop from '../components/ScrollToTop';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Contributors />
       </main>
       <Footer />
+      <ScrollToTop />
     </>
   );
 }
