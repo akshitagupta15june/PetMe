@@ -56,3 +56,4 @@ Contributors
 - [Hritik Singhal](https://github.com/Hritik1503)
 - [Aakshita Singh](https://github.com/aakshitaa)
 - [Sayantan Choudhury](https://github.com/Sch476)
+- [Swapnil Jadhav](https://github.com/Swapnil-2503)
