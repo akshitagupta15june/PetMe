@@ -75,34 +75,21 @@
   /*-------sos button ---------*/
   #mySBtn {
     position: fixed;
-    /* Fixed/sticky position */
     bottom: 20px;
-    /* Place the button at the bottom of the page */
     right: 30px;
-    /* Place the button 30px from the right */
     z-index: 99;
-    /* Make sure it does not overlap */
     border: none;
-    /* Remove borders */
     outline: none;
-    /* Remove outline */
     background-color: red !important;
-    /* Set a background color */
     color: white !important;
-    /* Text color */
     cursor: pointer;
-    /* Add a mouse pointer on hover */
     padding: 25px !important;
-    /* Some padding */
     border-radius: 50%;
-    /* Rounded corners */
     font-size: 18px;
-    /* Increase font size */
   }
 
   #mySBtn:hover {
     background-color: #fff !important;
-    /* Add a dark-grey background on hover */
     color: red !important;
     font-weight: 700 !important;
   }
@@ -126,7 +113,6 @@
 }
 
 .hover-button {
-  /* Button styles */
   margin-top: 1rem;
   display: inline-block;
   padding: .8rem 3rem;
@@ -140,7 +126,6 @@
 }
 
 .hover-button:hover {
-  /* Hover styles */
   background: #ffbb00;
   color: #fff;
 }
@@ -190,7 +175,6 @@
 
 
 /*-----end of sos button----*/
-/* copy right  */
   #copyright{
     text-align: center;
     padding: 2px 2px 2px 2px;

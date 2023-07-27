@@ -74,7 +74,6 @@
   width: 80px;
 }
 
-/*make the icons white only for darker theme*/
 .text-white .icon {
   filter: invert(99%) sepia(1%) saturate(200%) hue-rotate(190deg)
     brightness(117%) contrast(100%);
@@ -113,7 +112,6 @@
 
 .add_border{
   border-bottom: 2px solid #ae642c;
-  /* give a bottom shadow */
   box-shadow:  0px 10px 10px 0px rgba(0, 0, 0, 0.4);
 }
 .nav-hidden{

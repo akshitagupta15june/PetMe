@@ -16,7 +16,6 @@ window.onscroll = function() {
 };
 
 var header = document.getElementById("header");
-// var sticky = header.offsetTop;
 
 function myFunction() {
   if (window.pageYOffset > 10) {

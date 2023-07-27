@@ -22,10 +22,7 @@
 				padding-bottom: 30px;
 }
 
-/* CORRECT THE HERO IMAGE: I also changed the height to a 850px to give clearer view of the cute puppies */
 .main-body-section-div{
-  /* background: url("./Assets/Images/main-heading-body-bg.jpg") no-repeat center
-    center/cover; */
   background-repeat: no-repeat!important;
   background-size: cover!important;
   min-height: 850px;
@@ -41,12 +38,10 @@
 
 }
 
-/* CORRECT THE HERO IMAGE: The list element style was causing the whitespace. Removing it succesfully fixes the problem */
 .main-body-section > li {
   list-style: none;
 }
 
-/*CORRECT THE HERO IMAGE: Added display flex property to move image element to the top left  */
 .heading-main-body {
   display: flex;
   justify-content: start;
@@ -55,7 +50,6 @@
 
 .main-body-section-div h1 {
   font-size: 64px;
-  /* padding-left: 18.8%; */
   color: azure;
   font-weight: bold;
   letter-spacing: 4px;

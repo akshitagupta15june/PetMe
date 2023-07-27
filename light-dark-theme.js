@@ -18,11 +18,9 @@ class element {
     this.toggle = function () {
       this.eles.forEach((element) => {
         if (element.classList.contains(darkCss)) {
-          // element.classList.remove(lightCss);
           element.classList.remove(darkCss);
         } else {
           element.classList.add(darkCss);
-          // element.classList.add(lightCss);
         }
       });
     };
@@ -52,13 +50,11 @@ let t3 = new element(
 );
 let t4 = new element(["text_4"], "text-choco", "text-white");
 
-// let b1 = new element("bg_1", "bg-slate-50", "bg-slate-400");
 let b1 = new element(
   ["bg-header-offwhite", "main-card", "b_1"],
   "bg-slate-100",
   "bg-amber-900"
 );
-// bg-header-offwhite
 let b2 = new element(
   ["bg_2", "meet-heading", "pet-card-flex"],
   "bg-blue-300",
@@ -76,8 +72,6 @@ let navbarItem = new element(
 );
 
 let toggler = document.querySelector("#theme-toggle");
-// let body = document.querySelector("body");
-// let heading = document.querySelector("#heading-adopt-me");
 toggler.addEventListener("click", () => {
   t1.toggle();
   t2.toggle();
