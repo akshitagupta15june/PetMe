@@ -61,15 +61,25 @@
     color: black;
     margin-right: 5px;
   }
+
 /* back to top button */
-#bttbutton{
+#bttbutton {
   position: fixed;
-    bottom: 20px;
-    left: 40px;
-    z-index: 9999;
-    border: none;
-    outline: none;
-    width: 55px;
+  bottom: 20px;
+  left: 40px;
+  z-index: 9999;
+  border: none;
+  outline: none;
+  width: 55px;
+  transition: all 0.5s ease;
+}
+
+.hover-effect img {
+  transition: opacity 0.3s ease;
+}
+
+.hover-effect img:hover {
+  opacity: 0.75;
 }
 
   /*-------sos button ---------*/
@@ -197,3 +207,5 @@
     background-color: black;
     color: white;
   }
+
+
