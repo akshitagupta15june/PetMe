@@ -3,6 +3,11 @@
  <a href="https://hacktoberfest.com/">
  <img width="1200" alt="Email Banners-Dark" src="https://user-images.githubusercontent.com/79099734/189589410-ca17afb8-5855-4316-918a-054f27594809.png">
  </a>
+ <p align="center"> PetMe is a part of GSSoC'23</p>
+ <a href="https://gssoc.girlscript.tech/">
+ <img width="600" align="center" alt="Email Banners-Dark" src="https://pbs.twimg.com/media/Fu32RgZacAAVat3?format=jpg&name=medium">
+ </a>
+ 
 -----
 
 
