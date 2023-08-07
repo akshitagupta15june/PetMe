@@ -123,13 +123,13 @@
   </section>
 
    <!-- back to top button -->
-   <li>
-    <a href="#top">
-      <button id="bttbutton" title="backtotop">
-        <img src="Assets/Images/uparrow.png" width="20" height="25" />
-      </button>
-    </a>
-  </li>
+   <!-- <div class="md:pr-8 hover-effect">
+					<a href="#top">
+						<button id="bttbutton" title="backtotop">
+							<img src="./image.svg" class="w-6 md:w-10 md:object-left"/>
+						</button>
+					</a>
+				</div> -->
 
   <!--end of back to top button -->
   
@@ -140,6 +140,13 @@
 
     <div class=" flex p-5 justify-between ">
 
+      <div class="md:pr-8 hover-effect">
+        <a href="#top">
+          <button id="bttbutton" title="backtotop">
+            <img src="./image.svg" class="w-6 md:w-10 md:object-left"/>
+          </button>
+        </a>
+      </div>
 
       <div class="flex flex-1  flex-col text-center sm:flex-row items-center justify-center space-x-3">
         <div>
@@ -221,6 +228,15 @@
 			<p>Copyright &copy; 2022 [PetMe] All Right Reserved.</p>
 		</div>
   </footer>
+  <script>
+    document.getElementById("bttbutton").addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    });
+  </script>
+  
 
   <script src="index.js"></script>
   <script src="light-dark-theme.js"></script>
