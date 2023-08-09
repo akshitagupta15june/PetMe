@@ -57,3 +57,4 @@ Contributors
 - [Aakshita Singh](https://github.com/aakshitaa)
 - [Sayantan Choudhury](https://github.com/Sch476)
 - [Swapnil Jadhav](https://github.com/Swapnil-2503)
+- [Emily Cruz Gutierrez](https://github.com/emily883)
