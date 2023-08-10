@@ -74,6 +74,13 @@
   transition: all 0.5s ease;
 }
 
+/* Add this CSS code to hide the meet cards initially */
+.main-card {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
 .hover-effect img {
   transition: opacity 0.3s ease;
 }
@@ -124,6 +131,13 @@
     width: 100%;
     margin: auto;
   }
+}
+
+/* Add this CSS code to hide the About content initially */
+#about .fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 .contributors {
