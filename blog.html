@@ -214,8 +214,8 @@
     <!-- back to top button -->
     <li>
       <a href="#top">
-        <button id="bttbutton" title="backtotop">
-          <img src="Assets/Images/uparrow.png" width="20" height="25" />
+        <button id="bttbutton" onclick="topFunction()" title="backtotop">
+          <img src="./image.svg" class="w-6 md:w-10 md:object-left" />
         </button>
       </a>
     </li>
@@ -367,6 +367,30 @@
       const year = date.getFullYear();
       document.getElementById("date").innerHTML = year;
     </script>
+    <script>
+      let mybutton = document.getElementById("bttbutton");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
     <script src="index.js"></script>
     <script src="light-dark-theme.js"></script>
     <script src="blog.js"></script>
