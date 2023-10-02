@@ -226,3 +226,18 @@
     
   }
 
+#facebook-i:hover .fill-white {
+  fill: #4267B2;
+}
+@keyframes instagramColors {
+  0% { fill: #833ab4; } /* Start with a shade of purple */
+  20% { fill: #c13584; } /* Pink */
+  40% { fill: #fd1d1d; } /* Red */
+  60% { fill: #f56040; } /* Orange */
+  80% { fill: #ffdc80; } /* Yellow */
+  100% { fill: #405de6; } /* End with a shade of blue */
+}
+
+#instagram-icon:hover .fill-white {
+  animation: instagramColors 2s infinite alternate; 
+}

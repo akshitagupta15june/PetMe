@@ -135,8 +135,8 @@ form {
 }
 
 .form-group {
-  padding: 0.625rem 0;
-  display: flex;
+ width: 100%;
+ margin-top: 10px;
 }
 
 .form-control {
