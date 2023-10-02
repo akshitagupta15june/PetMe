@@ -1,0 +1,77 @@
+/* Here is all the styles for Chatbot Functionality */
+
+.chatbot-icon{
+  max-height: 100px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index:1000;
+  cursor: pointer;
+}
+
+.user-options {
+  display: none;
+}
+
+.user-options h1{
+  color: black;
+  font-weight: bold;
+}
+
+.chat-interface {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  width: 300px;
+  max-height: 80%;
+  background-color: white;
+  border: 1px solid rgb(204, 204, 204);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow-y: auto; 
+  font-family: Arial, sans-serif;
+  display: none;
+}
+
+
+.chat-header {
+  background-color: grey;
+  color: #131111;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.chat-messages {
+  padding: 10px;
+}
+
+.user-options {
+  padding: 10px;
+}
+
+.option-button {
+  background-color: rgb(191, 208, 227);
+  color: #121313;
+  border: none;
+  border-radius: 50px;
+  padding: 5px 10px;
+  margin: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.option-button:hover {
+  background-color: #0056b3;
+}
+
+.user-message,
+.chatbot-response {
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.chatbot-response {
+  background-color: #007bff;
+  color: #fff;
+}
