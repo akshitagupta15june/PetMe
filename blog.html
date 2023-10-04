@@ -143,7 +143,10 @@
 
       <div class="flex flex-1  flex-col text-center sm:flex-row items-center justify-center space-x-3">
         <div>
-          <img class="rounded-full w-24 cursor-pointer" src="./Assets/Images/logo.jpg" alt="logo" />
+          <a href="#top">
+            <img class="rounded-full w-24 cursor-pointer" src="./Assets/Images/logo.jpg"  alt="logo" 
+            onclick="scrollToTop();" />
+          </a>
         </div>
         <div>
           <div class="space-y-2">
@@ -227,5 +230,13 @@
   <script src="blog.js"></script>
   <script src="navbar.js"></script>
 </body>
-
+<script>
+  // This script was added to make the footer LOGO scroll to top
+  function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+  }
+</script>
 </html>
