@@ -224,6 +224,7 @@
 
     <!-- Footer section  -->
 
+
     <footer class="bg-black text-white">
       <div class="flex p-5 justify-between">
         <div
@@ -234,6 +235,7 @@
               class="rounded-full w-24 cursor-pointer"
               src="./Assets/Images/logo.jpg"
               alt="logo"
+              onclick="scrollToTop();"
             />
           </div>
           <div>
@@ -242,6 +244,7 @@
               <div>Give life to an animal in need</div>
             </div>
           </div>
+
         </div>
 
         <!-- Subscribe column -->
@@ -384,11 +387,20 @@
         }
       }
 
+
       // When the user clicks on the button, scroll to the top of the document
       function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       }
+    
+    // This script was added to make the footer LOGO scroll to top
+  function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+  }
     </script>
 
     <script src="index.js"></script>
@@ -397,3 +409,4 @@
     <script src="navbar.js"></script>
   </body>
 </html>
+
