@@ -6,6 +6,8 @@
 .text-custom-heading {
   --tw-bg-opacity: 0.8;
   color: rgb(51 50 49 / var(--tw-bg-opacity));
+  /* Font size */
+  font-size: 1.25rem;
 }
 
 .turn-red-hover:hover {
