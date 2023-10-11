@@ -158,7 +158,7 @@
   font-size: 1.7rem;
   border-radius: 0.5rem;
   border: 0.2rem solid rgb(99, 99, 99);
-  color: #fff;
+  color: black;
   cursor: pointer;
   background: #ffc82c;
   transition: background-color 0.3s ease, color 0.3s ease;

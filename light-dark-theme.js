@@ -51,6 +51,7 @@ let t3 = new element(
   "text-white"
 );
 let t4 = new element(["text_4"], "text-choco", "text-white");
+let t5 = new element(["text_5"], "text-gray-900", "text-white");
 
 // let b1 = new element("bg_1", "bg-slate-50", "bg-slate-400");
 let b1 = new element(
@@ -83,6 +84,7 @@ toggler.addEventListener("click", () => {
   t2.toggle();
   t3.toggle();
   t4.toggle();
+  t5.toggle();
   b1.toggle();
   b2.toggle();
   b3.toggle();
