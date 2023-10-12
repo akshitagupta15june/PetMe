@@ -903,6 +903,7 @@
 
         <!-- Subscribe column -->
         <div class="md:flex flex-col hidden text-center items-center flex-1">
+          <form id="subscription-form">
           <div class="space-y-2">
             <h3 class="text-2xl">Subscribe to our newsletter</h3>
             <div class="text-md">
@@ -916,14 +917,17 @@
                 name="email"
                 placeholder="Enter your email address"
               />
+              <div id="error-message" class="text-red-500 hidden">Email address is required.</div>
               <button
                 class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md"
                 type="submit"
+                id="subscribe-button"
               >
                 Subscribe
               </button>
             </div>
           </div>
+        </form>
         </div>
         <!-- Subscribe column end -->
 
