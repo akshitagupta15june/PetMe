@@ -1062,7 +1062,12 @@
 
       nav_links.forEach((link) => {
         link.addEventListener('click', () => {
-          menu_btn.click();
+          const currentWidth = window.innerWidth;
+          console.log(currentWidth);
+          if(currentWidth <= 1024) {
+            menu_btn.click();
+          }
+          
         })
       })
 
