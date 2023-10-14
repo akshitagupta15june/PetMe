@@ -224,6 +224,30 @@
 
 #facebook {
 }
+.facebook-icon {
+  fill: rgb(91, 90, 179); 
+  transition: fill 0.3s; 
+}
+
+.facebook-icon:hover {
+  fill: blue;
+}
+.instagram-icon {
+  fill: #bc2a8d; 
+  transition: fill 0.3s; 
+}
+
+.instagram-icon:hover {
+  fill: #405de6; 
+}
+.github-icon {
+  fill: #181717; 
+  transition: fill 0.3s; 
+}
+
+.github-icon:hover {
+  fill: #6e5494; 
+}
 
 #google_translate_element select {
   font-size: 14px;
