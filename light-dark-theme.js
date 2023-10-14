@@ -26,6 +26,21 @@ class element {
         }
       });
     };
+
+    this.toggle_adopt_btn = function () {
+      this.eles.forEach((element) => {
+        if (element.classList.contains(darkCss)) {
+          element.classList.remove(darkCss);
+          element.style.setProperty('color', 'black', 'important');
+        } else {
+          element.classList.add(darkCss);
+        }
+      });
+    };
+
+    
+    
+
   }
 }
 function changeToBW() {
@@ -78,6 +93,11 @@ let navbarItem = new element(
 let toggler = document.querySelector("#theme-toggle");
 // let body = document.querySelector("body");
 // let heading = document.querySelector("#heading-adopt-me");
+
+const AdoptMeBtn = new element(["hover-button"], "text-black", "text-white");
+
+
+
 toggler.addEventListener("click", () => {
   t1.toggle();
   t2.toggle();
@@ -90,4 +110,8 @@ toggler.addEventListener("click", () => {
   mission1.toggle();
   mission2.toggle();
   changeToBW();
+
+
+  AdoptMeBtn.toggle_adopt_btn();
+
 });
