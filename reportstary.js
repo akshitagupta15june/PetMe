@@ -23,3 +23,6 @@ close.addEventListener("click", () => {
 });
 
 Gobtn.addEventListener("click", Gotopage);
+
+// Change to the stored current theme.
+changeToCurrTheme()

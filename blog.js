@@ -39,3 +39,6 @@ fetch("blog.json")
       });
     });
   });
+
+// Change to the stored current theme.
+changeToCurrTheme()

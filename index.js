@@ -108,3 +108,5 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+// Change to the stored current theme.
+changeToCurrTheme()
