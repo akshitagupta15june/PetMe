@@ -35,19 +35,16 @@ class element {
 
 /**
  * Switch the icon between sun and moon, presenting light and dark theme.
+ * Switch the current theme.
  */
 function changeToBW() {
   let Image = document.getElementById("switch");
   if (Image.getAttribute("src") === "Assets/Images/sun.svg") {
     Image.setAttribute("src", "Assets/Images/moon.svg");
     localStorage.setItem("currentTheme", "light")
-    console.log("light now")
-
   } else {
     Image.setAttribute("src", "Assets/Images/sun.svg");
     localStorage.setItem("currentTheme", "dark")
-    console.log("dark now")
-
   }
 }
 
