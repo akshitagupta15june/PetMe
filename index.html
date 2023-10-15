@@ -168,7 +168,7 @@
             <li>
               <a href="#contact">
                 <button
-                  class="inline-flex items-center bg-header-orange-light border-0 py-2 lg:py-2 text-choco text-base px-2 focus:outline-none text_4 font-bold rounded text-base mt-4 md:mt-0"
+                  class="inline-flex items-center bg-header-orange-light border-0 py-2 lg:py-2 text-choco text-base px-2 focus:outline-none text_4 font-bold rounded text-base mt-4 md:mt-0 hover:translate-x-2 transition-transform"
                 >
                   Contact Us
                   <svg
@@ -177,7 +177,7 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    class="w-4 h-4 ml-1"
+                    class="w-4 h-4 ml-1 transform translate-x-0 transition-transform"
                     viewBox="0 0 24 24"
                   >
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -224,7 +224,7 @@
 		</div> -->
       <!-- Scroll to top -->
 
-      <!-- SOS button 
+      <!-- SOS button
 			<div>
 				<form action="./reportstary.html" method="get" target="_blank">
 					<button id="mySBtn" title="SOS">SOS</button>
@@ -611,7 +611,7 @@
               </a>
             </div>
           </div>
-          <div class="main-text shadow-xl">
+          <div class="main-text">
             <div class="p-4 flex flex-col gap-2">
               <h5 class="text_3 md:text-[40px] font-bold mb-2 text-center">
                 Sheru
@@ -903,6 +903,7 @@
 
         <!-- Subscribe column -->
         <div class="md:flex flex-col hidden text-center items-center flex-1">
+          <form id="subscription-form">
           <div class="space-y-2">
             <h3 class="text-2xl">Subscribe to our newsletter</h3>
             <div class="text-md">
@@ -916,14 +917,17 @@
                 name="email"
                 placeholder="Enter your email address"
               />
+              <div id="error-message" class="text-red-500 hidden">Email address is required.</div>
               <button
                 class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md"
                 type="submit"
+                id="subscribe-button"
               >
                 Subscribe
               </button>
             </div>
           </div>
+        </form>
         </div>
         <!-- Subscribe column end -->
 
