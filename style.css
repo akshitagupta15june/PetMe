@@ -226,7 +226,7 @@
 #facebook {
 }
 .facebook-icon {
-  fill: rgb(91, 90, 179); 
+  fill: lightgray; 
   transition: fill 0.3s; 
 }
 
@@ -234,15 +234,15 @@
   fill: blue;
 }
 .instagram-icon {
-  fill: #bc2a8d; 
+  fill: lightgray; 
   transition: fill 0.3s; 
 }
 
 .instagram-icon:hover {
-  fill: #405de6; 
+  fill: rgb(251, 72, 254); 
 }
 .github-icon {
-  fill: #181717; 
+  fill: lightgray; 
   transition: fill 0.3s; 
 }
 
