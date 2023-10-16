@@ -35,15 +35,15 @@ class element {
 
 /**
  * Switch the icon between sun and moon, presenting light and dark theme.
- * Switch the current theme.
  */
 function changeToBW() {
-  let Image = document.getElementById("switch");
-  if (Image.getAttribute("src") === "Assets/Images/sun.svg") {
-    Image.setAttribute("src", "Assets/Images/moon.svg");
+  var icon = document.getElementById("switch");
+  document.body.classList.toggle("dark-theme");
+  if (document.body.classList.contains("dark-theme")) {
+    icon.className="ri-moon-line turn-red-hover dark-theme";
     localStorage.setItem("currentTheme", "light")
   } else {
-    Image.setAttribute("src", "Assets/Images/sun.svg");
+    icon.className="ri-sun-line turn-yellow-hover light-theme";
     localStorage.setItem("currentTheme", "dark")
   }
 }
@@ -52,13 +52,14 @@ function changeToBW() {
  * Match the moon and sun icon with the current theme.
  */
 function matchIcon() {
-  let Image = document.getElementById("switch");
+  var icon = document.getElementById("switch");
+  document.body.classList.toggle("dark-theme");
   if (localStorage.getItem("currentTheme") == "light" 
-        && Image.getAttribute("src") === "Assets/Images/sun.svg") {
-    Image.setAttribute("src", "Assets/Images/moon.svg");
+        && document.body.classList.contains("dark-theme")) {
+    icon.className="ri-moon-line turn-red-hover dark-theme";
   } else if (localStorage.getItem("currentTheme") == "dark" 
-              && Image.getAttribute("src") === "Assets/Images/moon.svg"){
-    Image.setAttribute("src", "Assets/Images/sun.svg");
+              && document.body.classList.contains("light-theme")){
+    icon.className="ri-sun-line turn-yellow-hover light-theme";
   }
 }
 

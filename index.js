@@ -27,15 +27,17 @@ function displayContributors(contributorsList) {
 function hideBackToTopButton() {
   const bttButton = document.getElementById("bttbutton");
 
-  window.addEventListener("scroll", function() {
-    if (window.pageYOffset > 0) {
-      bttButton.style.opacity = "1";
-      bttButton.style.transform = 'translateY(0px)';
-    } else {
-      bttButton.style.opacity = "0";
-      bttButton.style.transform = 'translateY(500px)';
-    }
-  });
+  bttButton.addEventListener("click", e => {
+    window.scrollTo({
+      top:0,
+      left:0,
+      behavior:"smooth"
+    })
+  })
+
+  window.addEventListener("scroll", e => {
+    bttButton.style.display = window.scrollY > 20 ? 'block' : 'none';
+  })
 }
 
 // get contributors list  from github API
@@ -107,6 +109,7 @@ document.addEventListener("DOMContentLoaded", function() {
 }
 });
 
+// scroll to top function
 
 // Change to the stored current theme.
 changeToCurrTheme()

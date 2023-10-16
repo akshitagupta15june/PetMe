@@ -9,6 +9,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
         <link rel="stylesheet" href="./output.css">
         <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="./introSection.css">
@@ -24,9 +25,9 @@
             color: red;
             margin-left: 0.2rem;
           }
-          
+
      #submit_button{
-            
+
             display: flex;
             margin-left: auto;
             margin-right: auto;
@@ -41,10 +42,10 @@
             border-radius: 0.25rem;
             font-size: 1.125rem;
           }
-          
+
           #submit_button:hover {
             background-color: #4338C6;
-            
+
           }
         </style>
       </head>
@@ -107,7 +108,7 @@
         </li>
         <li>
           <a id="theme-toggle">
-          <img src="Assets/Images/sun.svg" width="50px" id="switch"/>
+            <i class="ri-sun-line turn-yellow-hover light-theme" id="switch"></i>
           </a>
         </li>
         <!-- google translate -->
@@ -126,13 +127,13 @@
             Fill up the form below and donate your pets.
         </p>
       </div>
-  
+
       <div class="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
         <form action="" class="space-y-4">
           <div>
             <label class="sr-only" for="name">Name</label>
             <input
-              class="w-full rounded-lg border-gray-200 p-3 text-sm"
+              class="w-full rounded-lg border border-gray-200 p-3 text-sm"
               placeholder="Full Name"
               type="text"
               id="name"
@@ -143,7 +144,7 @@
             <div>
               <label class="sr-only" for="email">Email</label>
               <input
-                class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                class="w-full rounded-lg border border-gray-200 p-3 text-sm"
                 placeholder="Email address"
                 type="email"
                 id="email"
@@ -153,7 +154,7 @@
             <div>
               <label class="sr-only" for="phone">Phone</label>
               <input
-                class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                class="w-full rounded-lg border border-gray-200 p-3 text-sm"
                 placeholder="Phone Number"
                 type="tel"
                 id="phone"
@@ -162,7 +163,7 @@
             <div>
               <label class="sr-only" for="message">Message</label>
               <textarea
-                class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                class="w-full rounded-lg border border-gray-200 p-3 text-sm"
                 placeholder="Address"
                 rows="3"
                 style="resize: none;"
@@ -173,67 +174,67 @@
             <div>
               <label class="sr-only" for="city">City</label>
               <input
-                  class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                  class="w-full rounded-lg border border-gray-200 p-3 text-sm"
                   placeholder="City"
                   type="text"
                   id="city"
               />
           </div>
-      
+
           <div>
               <label class="sr-only" for="state">State</label>
               <input
-                  class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                  class="w-full rounded-lg border border-gray-200 p-3 text-sm"
                   placeholder="State"
                   type="text"
                   id="state"
               />
           </div>
-      
+
           <div>
               <label class="sr-only" for="country">Country</label>
               <input
-                  class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                  class="w-full rounded-lg border border-gray-200 p-3 text-sm"
                   placeholder="Country"
                   type="text"
                   id="country"
               />
           </div>
-      
+
           <div>
               <label class="sr-only" for="petType">Pet Type</label>
               <input
-                  class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                  class="w-full rounded-lg border border-gray-200 p-3 text-sm"
                   placeholder="Pet Type"
                   type="text"
                   id="petType"
               />
           </div>
-      
+
           <div>
               <label class="sr-only" for="petName">Pet Name</label>
               <input
-                  class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                  class="w-full rounded-lg border border-gray-200 p-3 text-sm"
                   placeholder="Pet Name"
                   type="text"
                   id="petName"
               />
           </div>
-      
+
           <div>
               <label class="sr-only" for="petColor">Pet Color</label>
               <input
-                  class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                  class="w-full rounded-lg border border-gray-200 p-3 text-sm"
                   placeholder="Pet Color"
                   type="text"
                   id="petColor"
               />
           </div>
-      
+
           <div>
               <label class="sr-only" for="petBreed">Pet Breed</label>
               <input
-                  class="w-full rounded-lg border-gray-200 p-3 text-sm"
+                  class="w-full rounded-lg border border-gray-200 p-3 text-sm"
                   placeholder="Pet Breed"
                   type="text"
                   id="petBreed"
@@ -261,7 +262,7 @@
               </label>
             </div>
           </div>
-          
+
           </div>
           <div class="p-2 w-full">
             <input type="checkbox" name="check" id="check" required>
@@ -281,7 +282,7 @@
         </form>
       </div>
     </div>
-  
+
     <div class="relative h-64 w-full sm:h-96 lg:h-full lg:w-1/2">
       <img
         alt="Welcome"
