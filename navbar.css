@@ -20,6 +20,20 @@
   transition-duration: 0.3s;
 }
 
+.light-theme {
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  transition: color .3s;
+}
+
+.dark-theme {
+  font-size: 1.5rem;
+  color: rgb(62, 62, 62);;
+  cursor: pointer;
+  transition: color .3s;
+}
+
 .bg-header-orange-light {
   --tw-bg-opacity: 0.4;
   background-color: rgb(255 171 87 / var(--tw-bg-opacity));
