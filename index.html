@@ -1052,6 +1052,22 @@
       });
     </script>
     <script>
+      
+      // close the menu when a nav link is clicked
+      const menu_btn = document.querySelector('#nav-button')
+      const nav_links = document.querySelectorAll('nav ul li')
+
+      nav_links.forEach((link) => {
+        link.addEventListener('click', () => {
+          const currentWidth = window.innerWidth;
+          console.log(currentWidth);
+          if(currentWidth <= 1024) {
+            menu_btn.click();
+          }
+          
+        })
+      })
+
       // Add this JavaScript code to trigger the animation when About content comes into view
       window.addEventListener("scroll", function () {
         const aboutSection = document.querySelector("#about");
