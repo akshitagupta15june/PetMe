@@ -110,3 +110,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // scroll to top function
+
+// Change to the stored current theme.
+changeToCurrTheme()
