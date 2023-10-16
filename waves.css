@@ -1,0 +1,46 @@
+.waves {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    margin-bottom: -7px;
+    min-height: 20px;
+    max-height: 400px;
+    background-color: #131c2b;
+  }
+  
+  .wave-creation>use {
+    animation: movement 25s cubic-bezier(.55, .5, .45, .5) infinite alternate;
+  }
+  .wave-creation>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .wave-creation>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .wave-creation>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 10s;
+  }
+  .wave-creation>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 7s;
+  }
+  
+  @keyframes movement {
+    0% {
+      transform: translate3d(-110px, 0, 0);
+    }
+    100% {
+      transform: translate3d(105px, 0, 0);
+    }
+  }
+  
+  
+  
+  
+  .abcd{
+    display:flex;
+    flex-direction:column;
+  }
