@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
     <link rel="stylesheet" href="./output.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./introSection.css" />
@@ -79,14 +80,11 @@
       </button>
       <nav class="">
         <div class="hidden w-full lg:block z-2" id="navbar">
-          <ul
-            class="w-[100vw] h-1/2 top-0 right-0 p-8 lg:p-4 mt-12 lg:mt-0 text-center text-base lg:text-lg space-y-4 lg:space-y-0 lg:space-x-5 lg:static lg:w-auto flex flex-col rounded-lg items-start lg:items-center lg:bg-transparent lg:border-0 lg:flex-row justify-between"
-          >
+          <ul class="w-[100vw] h-1/2 top-0 right-0 p-8 lg:p-4 mt-12 lg:mt-0 text-center text-base lg:text-lg space-y-4 lg:space-y-0 lg:space-x-5 lg:static lg:w-auto flex flex-col rounded-lg items-center lg:items-center lg:bg-transparent lg:border-0 lg:flex-row justify-between">
             <li>
               <a
                 href="#meet"
                 class="lg:p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item"
-                style=""
                 >Meet Pets</a
               >
             </li>
@@ -187,7 +185,7 @@
             </li>
             <li>
               <a id="theme-toggle">
-                <img src="Assets/Images/sun.svg" width="50px" id="switch" />
+                <i class="ri-sun-line turn-yellow-hover light-theme" id="switch"></i>
               </a>
             </li>
             <!-- google translate -->
@@ -779,7 +777,7 @@
               class="bg-gray-800 hover:bg-gray-900 text-center text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="submit"
             >
-              Contact Us
+              Submit
             </button>
           </div>
         </form>
@@ -942,7 +940,7 @@
                   xmlns="http://www.w3.org/2000/svg"
                   width="40"
                   height="40"
-                  class="fill-white"
+                  class="fill-white facebook-icon"
                   viewBox="0 0 20 20"
                 >
                   <path
@@ -958,7 +956,7 @@
                   xmlns="http://www.w3.org/2000/svg"
                   width="40"
                   height="40"
-                  class="fill-white"
+                  class="instagram-icon"
                   viewBox="0 0 20 20"
                 >
                   <path
@@ -978,7 +976,7 @@
                   xmlns="http://www.w3.org/2000/svg"
                   width="40"
                   height="40"
-                  class="fill-white"
+                  class="github-icon"
                   viewBox="0 0 20 20"
                 >
                   <path
@@ -1055,6 +1053,22 @@
       });
     </script>
     <script>
+      
+      // close the menu when a nav link is clicked
+      const menu_btn = document.querySelector('#nav-button')
+      const nav_links = document.querySelectorAll('nav ul li')
+
+      nav_links.forEach((link) => {
+        link.addEventListener('click', () => {
+          const currentWidth = window.innerWidth;
+          console.log(currentWidth);
+          if(currentWidth <= 1024) {
+            menu_btn.click();
+          }
+          
+        })
+      })
+
       // Add this JavaScript code to trigger the animation when About content comes into view
       window.addEventListener("scroll", function () {
         const aboutSection = document.querySelector("#about");
