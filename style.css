@@ -73,6 +73,7 @@
     outline: none;
     width: 55px;
     transition: all 0.5s ease;
+    display: none;
   }
 
   /* Add this CSS code to hide the meet cards initially */
