@@ -226,12 +226,12 @@
 #facebook {
 }
 .facebook-icon {
-  fill: rgb(91, 90, 179); 
+  fill: #ccc; 
   transition: fill 0.3s; 
 }
 
 .facebook-icon:hover {
-  fill: blue;
+  fill: #0866FF;
 }
 .instagram-icon {
   fill: #bc2a8d; 
@@ -242,12 +242,12 @@
   fill: #405de6; 
 }
 .github-icon {
-  fill: #181717; 
+  fill: #ccc; 
   transition: fill 0.3s; 
 }
 
 .github-icon:hover {
-  fill: #6e5494; 
+  fill: white; 
 }
 
 #google_translate_element select {
