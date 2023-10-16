@@ -123,6 +123,12 @@
         "title": "FINDING FOREVER HOMES: THE JOY OF PET ADOPTION",
         "description": "Discover the transformative power of pet adoption and how it brings joy, love, and a sense of purpose to both animals and their human companions...",
         "read": "./blogs/arvind.html"
+    },{
+        "id": 19,
+        "poster": "./blogs/img/shruti-cover.jpg",
+        "title": "How a basic school assignment instilled in me a sense of compassion for stray dogs",
+        "description": "It is a real-life story that took place in the year 2020..........",
+        "read": "./blogs/shruti.html"
     }
     
     
