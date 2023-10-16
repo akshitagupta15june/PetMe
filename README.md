@@ -22,14 +22,14 @@
     <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
     <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white">
 </p>
-
-# PetMe
-
+<br>
+<h1 align="center">PetMe</h1>
+<h3 align="center">"Bringing Hearts and Paws Together"</h3>
 <p align="center">
   <img src="./Assets/Images/logo.jpg" height="250px">
   </p>
 
-<p align="center"> Join our official <a href="https://discord.gg/X3HZAPzykU">Discord Channel</a> for discussions and updates. </p>
+<p align="center"> Don't forget to join our official <a href="https://discord.gg/X3HZAPzykU">Discord Channel</a> for discussions and updates. </p>
 
 
 ## Inspiration for the Project:
