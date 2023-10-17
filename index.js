@@ -19,8 +19,8 @@ function displayContributors(contributorsList) {
     avatar.setAttribute("title", contributor.login);
     avatar.setAttribute("alt", contributor.login);
 
-    link.appendChild(avatar);
-    contributors.appendChild(link);
+    link?.appendChild(avatar);
+    contributors?.appendChild(link);
   });
 }
 

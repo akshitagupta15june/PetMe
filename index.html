@@ -7,7 +7,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
     <link rel="stylesheet" href="./output.css" />
     <link rel="stylesheet" href="./style.css" />
@@ -48,12 +47,7 @@
           />
         </a>
         <span class="mission-2 mission-dark"> Saving Animals </span>
-        <!--
-      <div class="w-full mt-8 md:mt-0">
-        <h1 class="text-4xl text_2  text-center md:text-left md:ml-12 uppercase font-serif font-bold " id = "heading-adopt-me">Adopt
-          today!</h1>
-        <p class="text-lg text-gray-400 text-center md:text-left md:ml-12 mt-2">Give life to a needed animal</p>
-      </div> -->
+
       </div>
       <button
         data-collapse-toggle="navbar-default"
@@ -212,26 +206,9 @@
         </div>
       </div>
 
-      <!-- Scroll to top -->
-      <!-- <div class="md:pr-8">
-			<a href="#top">
-				<button id="bttbutton" title="backtotop">
-					<img alt="scroll-to-top-feature" src="./Assets/Images/uparrow.png"/>
-				</button>
-			</a>
-		</div> -->
-      <!-- Scroll to top -->
-
-      <!-- SOS button
-			<div>
-				<form action="./reportstary.html" method="get" target="_blank">
-					<button id="mySBtn" title="SOS">SOS</button>
-				</form>
-			</div>
-			  end of SOS button -->
     </section>
     <!-- About session  html starts from here -->
-
+<!-- //TODO: fade-in section -->
     <section class="bg-white dark:bg-gray-900 b_1 shadow-2xl">
       <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
         <p id="About"></p>
@@ -799,84 +776,6 @@
       });
     </script>
 
-    <!-- <section class="dark:bg-gray-900 b_1 pt-20 pb-20">
-			<div class="w-full contact-form-container mx-auto max-w-screen-md">
-				<form
-					action="https://formspree.io/f/xayaokzl"
-					method="POST"
-					class="bg-gray-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100 px-8 pt-6 pb-8"
-				>
-					<p id="contact"></p>
-					<h2 class="text-3xl mt-1 mb-2 text-center bold-500 text_3">
-						CONTACT US
-					</h2>
-					<p class="text-base text-center text_3">
-						Any issues! Fill the form below and our team will contact you
-						shortly.
-					</p>
-					<br />
-					<div class="mb-4">
-						<label
-							class="block text-white text-sm font-bold mb-2"
-							for="contact_nom"
-						>
-							Name
-						</label>
-						<input
-							class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
-							id="contact_nom"
-							name="contact_nom"
-							type="text"
-							placeholder="Name"
-						/>
-					</div>
-					<div class="mb-6">
-						<label
-							class="block text-white text-sm font-bold mb-2"
-							for="contact_email"
-						>
-							Email
-						</label>
-						<input
-							class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
-							id="contact_email"
-							name="contact_email"
-							type="email"
-							required
-							placeholder="hello@petme"
-						/>
-					</div>
-					<div class="mb-6">
-						<label
-							for="contact_message"
-							class="block text-white text-sm font-bold mb-2"
-							>Message</label
-						>
-						<textarea
-							class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
-							id="contact_message"
-							name="contact_message"
-							required
-							rows="6"
-							placeholder="Your message"
-						></textarea>
-					</div>
-					<div class="flex justify-center">
-						<button
-							class="bg-gray-800 hover:bg-gray-900 text-center text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-							type="submit"
-						>
-							Contact Us
-						</button>
-					</div>
-				</form>
-			</div>
-		</section> -->
-
-    <!--     Contact us section html ends here -->
-
-    <!-- Footer section  -->
-
     <footer class="bg-black text-white shadow-inner pt-4 pb-8">
       <div class="flex p-5 justify-between">
         <div
@@ -1070,17 +969,17 @@
       })
 
       // Add this JavaScript code to trigger the animation when About content comes into view
-      window.addEventListener("scroll", function () {
-        const aboutSection = document.querySelector("#about");
-        const aboutContent = aboutSection.querySelector(".fade-in");
-        const scrollPosition = window.scrollY + window.innerHeight;
-        const contentOffset = aboutContent.offsetTop;
+      // window.addEventListener("scroll", function () {
+      //   const aboutSection = document.querySelector("#about");
+      //   const aboutContent = aboutSection.querySelector(".fade-in");
+      //   const scrollPosition = window.scrollY + window.innerHeight;
+      //   const contentOffset = aboutContent.offsetTop;
 
-        if (scrollPosition > contentOffset) {
-          aboutContent.style.opacity = "1";
-          aboutContent.style.transform = "translateY(0)";
-        }
-      });
+      //   if (scrollPosition > contentOffset) {
+      //     aboutContent.style.opacity = "1";
+      //     aboutContent.style.transform = "translateY(0)";
+      //   }
+      // });
     </script>
     <script src="index.js"></script>
     <script src="navbar.js"></script>
