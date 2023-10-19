@@ -1052,21 +1052,6 @@
       document.getElementById("date").innerHTML = year;
     </script>
     <script>
-      // Add this JavaScript code to trigger the animation when meet cards come into view
-      window.addEventListener("scroll", function () {
-        const meetCards = document.querySelectorAll(".main-card");
-        const scrollPosition = window.scrollY + window.innerHeight;
-
-        meetCards.forEach((card) => {
-          const cardOffset = card.offsetTop;
-          if (scrollPosition > cardOffset) {
-            card.style.opacity = "1";
-            card.style.transform = "translateY(0)";
-          }
-        });
-      });
-    </script>
-    <script>
       // close the menu when a nav link is clicked
       const menu_btn = document.querySelector("#nav-button");
       const nav_links = document.querySelectorAll("nav ul li");
@@ -1081,18 +1066,29 @@
         });
       });
 
-      // Add this JavaScript code to trigger the animation when About content comes into view
       window.addEventListener("scroll", function () {
-        const aboutSection = document.querySelector("#about");
-        const aboutContent = aboutSection.querySelector(".fade-in");
-        const scrollPosition = window.scrollY + window.innerHeight;
-        const contentOffset = aboutContent.offsetTop;
+          const meetCards = document.querySelectorAll(".main-card");
+          const aboutSection = document.querySelector("#about");
+          const aboutContent = aboutSection.querySelector(".fade-in");
+          const scrollPosition = window.scrollY + window.innerHeight;
 
-        if (scrollPosition > contentOffset) {
-          aboutContent.style.opacity = "1";
-          aboutContent.style.transform = "translateY(0)";
-        }
-      });
+          //  when meet cards come into view
+          meetCards.forEach((card) => {
+            const cardOffset = card.offsetTop;
+            if (scrollPosition > cardOffset) {
+              card.style.opacity = "1";
+              card.style.transform = "translateY(0)";
+            }
+          });
+
+          // when About content comes into view
+          const contentOffset = aboutContent.offsetTop;
+          if (scrollPosition > contentOffset) {
+            aboutContent.style.opacity = "1";
+            aboutContent.style.transform = "translateY(0)";
+          }
+        });
+
     </script>
     <script src="light-dark-theme.js"></script>
     <script src="index.js"></script>
