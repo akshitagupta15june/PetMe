@@ -8,7 +8,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
+      crossorigin=""
+    />
     <link rel="stylesheet" href="./output.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./introSection.css" />
@@ -80,7 +84,9 @@
       </button>
       <nav class="">
         <div class="hidden w-full lg:block z-2" id="navbar">
-          <ul class="w-[100vw] h-1/2 top-0 right-0 p-8 lg:p-4 mt-12 lg:mt-0 text-center text-base lg:text-lg space-y-4 lg:space-y-0 lg:space-x-5 lg:static lg:w-auto flex flex-col rounded-lg items-center lg:items-center lg:bg-transparent lg:border-0 lg:flex-row justify-between">
+          <ul
+            class="w-[100vw] h-1/2 top-0 right-0 p-8 lg:p-4 mt-12 lg:mt-0 text-center text-base lg:text-lg space-y-4 lg:space-y-0 lg:space-x-5 lg:static lg:w-auto flex flex-col rounded-lg items-center lg:items-center lg:bg-transparent lg:border-0 lg:flex-row justify-between"
+          >
             <li>
               <a
                 href="#meet"
@@ -185,7 +191,10 @@
             </li>
             <li>
               <a id="theme-toggle">
-                <i class="ri-sun-line turn-yellow-hover light-theme" id="switch"></i>
+                <i
+                  class="ri-sun-line turn-yellow-hover light-theme"
+                  id="switch"
+                ></i>
               </a>
             </li>
             <!-- google translate -->
@@ -718,10 +727,12 @@
           class="bg-gray-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100 px-8 pt-8 pb-10"
         >
           <p id="contact"></p>
-          <h2 class="text-3xl mt-1 mb-2 text-center bold-500 text_3">
+          <h2
+            class="text-3xl mt-1 mb-2 text-center bold-500 text_3 text-gray-400"
+          >
             CONTACT US
           </h2>
-          <p class="text-base text-center text_3">
+          <p class="text-base text-center text_3 text-gray-400">
             Any issues! Fill the form below and our team will contact you
             shortly.
           </p>
@@ -902,30 +913,33 @@
         <!-- Subscribe column -->
         <div class="md:flex flex-col hidden text-center items-center flex-1">
           <form id="subscription-form">
-          <div class="space-y-2">
-            <h3 class="text-2xl">Subscribe to our newsletter</h3>
-            <div class="text-md">
-              Get the latest news and updates delivered straight to your inbox.
+            <div class="space-y-2">
+              <h3 class="text-2xl">Subscribe to our newsletter</h3>
+              <div class="text-md">
+                Get the latest news and updates delivered straight to your
+                inbox.
+              </div>
+              <div class="text-center">
+                <input
+                  class="my-1 mr-2 p-2 rounded-md text-black"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email address"
+                />
+                <div id="error-message" class="text-red-500 hidden">
+                  Email address is required.
+                </div>
+                <button
+                  class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md"
+                  type="submit"
+                  id="subscribe-button"
+                >
+                  Subscribe
+                </button>
+              </div>
             </div>
-            <div class="text-center">
-              <input
-                class="my-1 mr-2 p-2 rounded-md text-black"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter your email address"
-              />
-              <div id="error-message" class="text-red-500 hidden">Email address is required.</div>
-              <button
-                class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md"
-                type="submit"
-                id="subscribe-button"
-              >
-                Subscribe
-              </button>
-            </div>
-          </div>
-        </form>
+          </form>
         </div>
         <!-- Subscribe column end -->
 
@@ -1053,21 +1067,19 @@
       });
     </script>
     <script>
-      
       // close the menu when a nav link is clicked
-      const menu_btn = document.querySelector('#nav-button')
-      const nav_links = document.querySelectorAll('nav ul li')
+      const menu_btn = document.querySelector("#nav-button");
+      const nav_links = document.querySelectorAll("nav ul li");
 
       nav_links.forEach((link) => {
-        link.addEventListener('click', () => {
+        link.addEventListener("click", () => {
           const currentWidth = window.innerWidth;
           console.log(currentWidth);
-          if(currentWidth <= 1024) {
+          if (currentWidth <= 1024) {
             menu_btn.click();
           }
-          
-        })
-      })
+        });
+      });
 
       // Add this JavaScript code to trigger the animation when About content comes into view
       window.addEventListener("scroll", function () {
