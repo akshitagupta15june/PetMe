@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./navbar.css" />
     <link rel="stylesheet" href="./mobileView.css" />
     <link rel="icon" type="image/x-icon" href="/Assets/Images/logo.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
     <script
       defer
       src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"
@@ -175,7 +176,7 @@
             </li>
             <li>
               <a id="theme-toggle">
-                <img src="Assets/Images/sun.svg" width="50px" id="switch" />
+                <i class="ri-sun-line turn-yellow-hover light-theme" id="switch"></i>
               </a>
             </li>
             <!-- google translate -->
@@ -224,7 +225,6 @@
 
     <!-- Footer section  -->
 
-
     <footer class="bg-black text-white">
       <div class="flex p-5 justify-between">
         <div
@@ -244,7 +244,6 @@
               <div>Give life to an animal in need</div>
             </div>
           </div>
-
         </div>
 
         <!-- Subscribe column -->
@@ -273,8 +272,8 @@
         </div>
         <!-- Subscribe column end -->
 
-        <!-- Social icons  -->
-        <div class="flex-1 flex flex-col items-center justify-center">
+         <!-- Social icons  -->
+         <div class="flex-1 flex flex-col items-center justify-center">
           <div class="text-2xl">Follow us on</div>
           <div class="flex mt-2 flex-row space-x-3 my-0">
             <div class="hover:scale-110 transition-all">
@@ -284,7 +283,7 @@
                   xmlns="http://www.w3.org/2000/svg"
                   width="40"
                   height="40"
-                  class="fill-white"
+                  class="fill-white facebook-icon"
                   viewBox="0 0 20 20"
                 >
                   <path
@@ -300,7 +299,7 @@
                   xmlns="http://www.w3.org/2000/svg"
                   width="40"
                   height="40"
-                  class="fill-white"
+                  class="instagram-icon"
                   viewBox="0 0 20 20"
                 >
                   <path
@@ -320,7 +319,7 @@
                   xmlns="http://www.w3.org/2000/svg"
                   width="40"
                   height="40"
-                  class="fill-white"
+                  class="github-icon"
                   viewBox="0 0 20 20"
                 >
                   <path
@@ -387,26 +386,23 @@
         }
       }
 
-
       // When the user clicks on the button, scroll to the top of the document
       function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       }
-    
-    // This script was added to make the footer LOGO scroll to top
-  function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-  }
-    </script>
 
-    <script src="index.js"></script>
+      // This script was added to make the footer LOGO scroll to top
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+    </script>
     <script src="light-dark-theme.js"></script>
+    <script src="index.js"></script>
     <script src="blog.js"></script>
     <script src="navbar.js"></script>
   </body>
 </html>
-

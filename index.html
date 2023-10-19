@@ -8,6 +8,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
+      crossorigin=""
+    />
     <link rel="stylesheet" href="./output.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./introSection.css" />
@@ -80,13 +85,12 @@
       <nav class="">
         <div class="hidden w-full lg:block z-2" id="navbar">
           <ul
-            class="w-[100vw] h-1/2 top-0 right-0 p-8 lg:p-4 mt-12 lg:mt-0 text-center text-base lg:text-lg space-y-4 lg:space-y-0 lg:space-x-5 lg:static lg:w-auto flex flex-col rounded-lg items-start lg:items-center lg:bg-transparent lg:border-0 lg:flex-row justify-between"
+            class="w-[100vw] h-1/2 top-0 right-0 p-8 lg:p-4 mt-12 lg:mt-0 text-center text-base lg:text-lg space-y-4 lg:space-y-0 lg:space-x-5 lg:static lg:w-auto flex flex-col rounded-lg items-center lg:items-center lg:bg-transparent lg:border-0 lg:flex-row justify-between"
           >
             <li>
               <a
                 href="#meet"
-                class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item"
-                style=""
+                class="lg:p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item"
                 >Meet Pets</a
               >
             </li>
@@ -113,7 +117,7 @@
             </li>
             <li>
               <a
-                href="./donate1.html"
+                href="./donate.html"
                 class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item"
                 >Donate</a
               >
@@ -168,7 +172,7 @@
             <li>
               <a href="#contact">
                 <button
-                  class="inline-flex items-center bg-header-orange-light border-0 py-2 lg:py-2 text-choco text-base px-2 focus:outline-none text_4 font-bold rounded text-base mt-4 md:mt-0"
+                  class="inline-flex items-center bg-header-orange-light border-0 py-2 lg:py-2 text-choco text-base px-2 focus:outline-none text_4 font-bold rounded text-base mt-4 md:mt-0 hover:translate-x-2 transition-transform"
                 >
                   Contact Us
                   <svg
@@ -177,7 +181,7 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    class="w-4 h-4 ml-1"
+                    class="w-4 h-4 ml-1 transform translate-x-0 transition-transform"
                     viewBox="0 0 24 24"
                   >
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -187,7 +191,10 @@
             </li>
             <li>
               <a id="theme-toggle">
-                <img src="Assets/Images/sun.svg" width="50px" id="switch" />
+                <i
+                  class="ri-sun-line turn-yellow-hover light-theme"
+                  id="switch"
+                ></i>
               </a>
             </li>
             <!-- google translate -->
@@ -224,7 +231,7 @@
 		</div> -->
       <!-- Scroll to top -->
 
-      <!-- SOS button 
+      <!-- SOS button
 			<div>
 				<form action="./reportstary.html" method="get" target="_blank">
 					<button id="mySBtn" title="SOS">SOS</button>
@@ -250,7 +257,7 @@
           pets in need of a forever home, while also providing emergency medical
           care for stray animals in distress. We strive to make a difference in
           the lives of these innocent creatures by offering options to
-          <a class="hover-underline-animation" href="#adopt"><b>Adopt</b></a
+          <a class="hover-underline-animation" href="#meet"><b>Adopt</b></a
           >,
           <a class="hover-underline-animation" href="./donate.html"
             ><b>Donate</b></a
@@ -611,7 +618,7 @@
               </a>
             </div>
           </div>
-          <div class="main-text shadow-xl">
+          <div class="main-text">
             <div class="p-4 flex flex-col gap-2">
               <h5 class="text_3 md:text-[40px] font-bold mb-2 text-center">
                 Sheru
@@ -720,10 +727,12 @@
           class="bg-gray-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100 px-8 pt-8 pb-10"
         >
           <p id="contact"></p>
-          <h2 class="text-3xl mt-1 mb-2 text-center bold-500 text_3">
+          <h2
+            class="text-3xl mt-1 mb-2 text-center bold-500 text_3 text-gray-400"
+          >
             CONTACT US
           </h2>
-          <p class="text-base text-center text_3">
+          <p class="text-base text-center text_3 text-gray-400">
             Any issues! Fill the form below and our team will contact you
             shortly.
           </p>
@@ -779,7 +788,7 @@
               class="bg-gray-800 hover:bg-gray-900 text-center text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="submit"
             >
-              Contact Us
+              Submit
             </button>
           </div>
         </form>
@@ -903,27 +912,34 @@
 
         <!-- Subscribe column -->
         <div class="md:flex flex-col hidden text-center items-center flex-1">
-          <div class="space-y-2">
-            <h3 class="text-2xl">Subscribe to our newsletter</h3>
-            <div class="text-md">
-              Get the latest news and updates delivered straight to your inbox.
+          <form id="subscription-form">
+            <div class="space-y-2">
+              <h3 class="text-2xl">Subscribe to our newsletter</h3>
+              <div class="text-md">
+                Get the latest news and updates delivered straight to your
+                inbox.
+              </div>
+              <div class="text-center">
+                <input
+                  class="my-1 mr-2 p-2 rounded-md text-black"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email address"
+                />
+                <div id="error-message" class="text-red-500 hidden">
+                  Email address is required.
+                </div>
+                <button
+                  class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md"
+                  type="submit"
+                  id="subscribe-button"
+                >
+                  Subscribe
+                </button>
+              </div>
             </div>
-            <div class="text-center">
-              <input
-                class="my-1 mr-2 p-2 rounded-md text-black"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter your email address"
-              />
-              <button
-                class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md"
-                type="submit"
-              >
-                Subscribe
-              </button>
-            </div>
-          </div>
+          </form>
         </div>
         <!-- Subscribe column end -->
 
@@ -1051,6 +1067,20 @@
       });
     </script>
     <script>
+      // close the menu when a nav link is clicked
+      const menu_btn = document.querySelector("#nav-button");
+      const nav_links = document.querySelectorAll("nav ul li");
+
+      nav_links.forEach((link) => {
+        link.addEventListener("click", () => {
+          const currentWidth = window.innerWidth;
+          console.log(currentWidth);
+          if (currentWidth <= 1024) {
+            menu_btn.click();
+          }
+        });
+      });
+
       // Add this JavaScript code to trigger the animation when About content comes into view
       window.addEventListener("scroll", function () {
         const aboutSection = document.querySelector("#about");
@@ -1064,8 +1094,8 @@
         }
       });
     </script>
+    <script src="light-dark-theme.js"></script>
     <script src="index.js"></script>
     <script src="navbar.js"></script>
-    <script src="light-dark-theme.js"></script>
   </body>
 </html>

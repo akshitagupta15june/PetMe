@@ -27,15 +27,17 @@ function displayContributors(contributorsList) {
 function hideBackToTopButton() {
   const bttButton = document.getElementById("bttbutton");
 
-  window.addEventListener("scroll", function() {
-    if (window.pageYOffset > 0) {
-      bttButton.style.opacity = "1";
-      bttButton.style.transform = 'translateY(0px)';
-    } else {
-      bttButton.style.opacity = "0";
-      bttButton.style.transform = 'translateY(500px)';
-    }
-  });
+  bttButton.addEventListener("click", e => {
+    window.scrollTo({
+      top:0,
+      left:0,
+      behavior:"smooth"
+    })
+  })
+
+  window.addEventListener("scroll", e => {
+    bttButton.style.display = window.scrollY > 20 ? 'block' : 'none';
+  })
 }
 
 // get contributors list  from github API
@@ -76,3 +78,38 @@ document.addEventListener("DOMContentLoaded", function() {
   document.querySelector(".main-body-section-div").style.background = imagesArray[0];
   setInterval(changeBackground, 2000);
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById("subscription-form");
+  const emailInput = document.getElementById("email");
+  const errorMessage = document.getElementById("error-message");
+  const subscribeButton = document.getElementById("subscribe-button");
+
+  subscribeButton.addEventListener("click", function(event) {
+      event.preventDefault();
+
+      if (emailInput.value.trim() === '') {
+        alert('Email address is required.');
+     } 
+     else if (!isValidEmail(emailInput.value)) {
+      alert('Invalid email address format.'); 
+    }
+    else {
+        form.submit();
+    }
+
+  });
+
+    
+  function isValidEmail(email) {
+    // Regular expression for email validation
+    const emailRegex = /^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
+    return emailRegex.test(email);
+}
+});
+
+// scroll to top function
+
+// Change to the stored current theme.
+changeToCurrTheme()

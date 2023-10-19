@@ -22,14 +22,14 @@
     <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
     <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white">
 </p>
-
-# PetMe
-
+<br>
+<h1 align="center">PetMe</h1>
+<h3 align="center">"Bringing Hearts and Paws Together"</h3>
 <p align="center">
   <img src="./Assets/Images/logo.jpg" height="250px">
   </p>
 
-<p align="center"> Join our official <a href="https://discord.gg/X3HZAPzykU">Discord Channel</a> for discussions and updates. </p>
+<p align="center"> Don't forget to join our official <a href="https://discord.gg/X3HZAPzykU">Discord Channel</a> for discussions and updates. </p>
 
 
 ## Inspiration for the Project:
@@ -48,9 +48,9 @@ When our team heard about the animals that were in danger each year, it became a
 
 | Function | Feature | Image |
 | --- | ----------- | -------|
-| Adopting a Pet | Allows user to choose an animal they wish to adopt and submit their details for contact purposes | ![image](https://user-images.githubusercontent.com/99717469/193424761-4c7f510f-b099-4e48-b0c8-d09eece32469.png) |
-| Donating a Pet | Pet owners can donate their pets if they are unable to take care of the ones they have | ![image](https://user-images.githubusercontent.com/99717469/193424675-328e10ed-78f8-49bf-8fa6-68d0db4a7fd1.png) |
-| Emergency care for Stray Animals | Provide contact details to get emergency medical services | ![image](https://user-images.githubusercontent.com/99717469/193424731-fa82b5a9-8c01-4648-a378-7c23bfb20427.png) |
+| Adopting a Pet | Allows user to choose an animal they wish to adopt and submit their details for contact purposes | ![docfix1](https://github.com/5h0ov/PetMe/assets/83227649/df6cbd93-421c-45d2-b11a-9f61b7bba8f8) |
+| Donating a Pet | Pet owners can donate their pets if they are unable to take care of the ones they have | ![docfix2](https://github.com/5h0ov/PetMe/assets/83227649/6e18e6d7-1df5-41fc-841e-866f767763f7) |
+| Emergency care for Stray Animals | Provide contact details to get emergency medical services | ![docfix3](https://github.com/5h0ov/PetMe/assets/83227649/5ad9418b-5991-4495-b7a5-1b4fdcb5528d) |
 
 ----
 

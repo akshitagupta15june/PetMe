@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -62,32 +63,33 @@
     margin-right: 5px;
   }
 
-/* back to top button */
-#bttbutton {
-  position: fixed;
-  bottom: 20px;
-  left: 40px;
-  z-index: 9999;
-  border: none;
-  outline: none;
-  width: 55px;
-  transition: all 0.5s ease;
-}
+  /* back to top button */
+  #bttbutton {
+    position: fixed;
+    bottom: 20px;
+    left: 40px;
+    z-index: 9999;
+    border: none;
+    outline: none;
+    width: 55px;
+    transition: all 0.5s ease;
+    display: none;
+  }
 
-/* Add this CSS code to hide the meet cards initially */
-.main-card {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 1s ease, transform 1s ease;
-}
+  /* Add this CSS code to hide the meet cards initially */
+  .main-card {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
 
-.hover-effect img {
-  transition: opacity 0.3s ease;
-}
+  .hover-effect img {
+    transition: opacity 0.3s ease;
+  }
 
-.hover-effect img:hover {
-  opacity: 0.75;
-}
+  .hover-effect img:hover {
+    opacity: 0.75;
+  }
 
   /*-------sos button ---------*/
   #mySBtn {
@@ -153,10 +155,10 @@
   /* Button styles */
   margin-top: 1rem;
   display: inline-block;
-  padding: .8rem 3rem;
+  padding: 0.8rem 3rem;
   font-size: 1.7rem;
-  border-radius: .5rem;
-  border: .2rem solid rgb(99, 99, 99);
+  border-radius: 0.5rem;
+  border: 0.2rem solid rgb(99, 99, 99);
   color: #fff;
   cursor: pointer;
   background: #ffc82c;
@@ -212,17 +214,54 @@
   animation: scroll 0.5s ease-in-out both;
 }
 
-
 /*-----end of sos button----*/
 /* copy right  */
-  #copyright{
-    text-align: center;
-    padding: 2px 2px 2px 2px;
-    background-color: black;
-    color: white;
-  }
+#copyright {
+  text-align: center;
+  padding: 2px 2px 2px 2px;
+  background-color: black;
+  color: white;
+}
 
-  #facebook {
-    
-  }
+#facebook {
+}
+.facebook-icon {
+  fill: lightgray; 
+  transition: fill 0.3s; 
+}
 
+.facebook-icon:hover {
+  fill: blue;
+}
+.instagram-icon {
+  fill: lightgray; 
+  transition: fill 0.3s; 
+}
+
+.instagram-icon:hover {
+  fill: rgb(251, 72, 254); 
+}
+.github-icon {
+  fill: lightgray; 
+  transition: fill 0.3s; 
+}
+
+.github-icon:hover {
+  fill: #6e5494; 
+}
+
+#google_translate_element select {
+  font-size: 14px;
+  border-radius: 20px;
+  padding: 8px;
+  padding-inline: 12px;
+  outline: none;
+  border: brown;
+  color: gray;
+  font-family: "Poppins";
+}
+#google_translate_element div {
+  color: white;
+}
+#google_translate_element span {
+}
