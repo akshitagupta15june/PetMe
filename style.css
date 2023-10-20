@@ -155,20 +155,20 @@
   /* Button styles */
   margin-top: 1rem;
   display: inline-block;
-  padding: 0.8rem 3rem;
-  font-size: 1.7rem;
+  padding: 0.8rem 2rem;
+  font-size: 1.5rem;
   border-radius: 0.5rem;
-  border: 0.2rem solid rgb(99, 99, 99);
+  border: 0.1rem solid rgb(68,38,0);
   color: #fff;
   cursor: pointer;
-  background: #ffc82c;
+  background: #895a21 !important;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .hover-button:hover {
   /* Hover styles */
-  background: #ffbb00;
-  color: #fff;
+  background: #ffbb00 !important;
+  color: #000000;
 }
 
 @keyframes fade-in-right {
@@ -264,4 +264,8 @@
   color: white;
 }
 #google_translate_element span {
+}
+
+.copyright1{
+  margin-left: 50%;
 }
