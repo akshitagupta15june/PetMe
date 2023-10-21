@@ -269,3 +269,7 @@
 .copyright1{
   margin-left: 50%;
 }
+
+.ok1{
+  background-image: linear-gradient(to bottom , rgba(12, 185, 110, 0.636) , rgb(37, 118, 211));
+}
