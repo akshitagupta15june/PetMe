@@ -7,7 +7,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="manifest" href="/site.webmanifest.json" />
+    <link rel="manifest" href="./manifest.json" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
@@ -1112,7 +1114,6 @@
       nav_links.forEach((link) => {
         link.addEventListener("click", () => {
           const currentWidth = window.innerWidth;
-          console.log(currentWidth);
           if (currentWidth <= 1024) {
             menu_btn.click();
           }
@@ -1124,7 +1125,7 @@
         const aboutSection = document.querySelector("#about");
         const aboutContent = aboutSection.querySelector(".fade-in");
         const scrollPosition = window.scrollY + window.innerHeight;
-        const contentOffset = aboutContent.offsetTop;
+        const contentOffset = aboutContent?.offsetTop;
 
         if (scrollPosition > contentOffset) {
           aboutContent.style.opacity = "1";
