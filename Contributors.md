@@ -60,3 +60,4 @@ Contributors
 - [Emily Cruz Gutierrez](https://github.com/emily883)
 - [Vivek Sati](https://github.com/Viveksati5143)
 - [Soundarya Koutharapu](https://github.com/SoundaryaKoutharapu)
+- [Rohan Sharma](https://github.com/RS-labhub)
