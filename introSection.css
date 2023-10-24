@@ -10,12 +10,13 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.m-heading {				background-color: rgb(123, 53, 15);
+.m-heading {				
+        /*background-color: rgb(123, 53, 15);*/
 				text-align: center;
         margin-left: 20%;
         margin-right: 20%;
 				font-weight: 800;
-				color: aliceblue;
+				color: rgb(0, 0, 0);
 				padding-top: 30px;
 				padding-bottom: 30px;
 }
@@ -51,6 +52,17 @@
   width: 100%;
 }
 
+.main-text h5{
+  color: black;
+}
+
+
+.main-text span{
+  color: black;
+  font-weight: 600;
+}
+
+
 .main-body-section-div h1 {
   font-size: 64px;
   /* padding-left: 18.8%; */
@@ -69,7 +81,7 @@
 }
 
 .pet-card-flex {
-  background-image: url("./Assets/Images/pattern\ doodle.png");
+  background-image: url("./Assets/Images/pinkpetme.jpg");
   display: flex;
   flex-direction: column;
   padding-top: 20px;

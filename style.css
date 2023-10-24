@@ -29,6 +29,8 @@
     margin: 2.5rem 0;
   }
 
+  
+
   .contributors {
     display: flex;
     flex-direction: row;
@@ -83,6 +85,10 @@
     transition: opacity 1s ease, transform 1s ease;
   }
 
+  .main-text{
+    color: #000000;
+  }
+
   .hover-effect img {
     transition: opacity 0.3s ease;
   }
@@ -90,6 +96,8 @@
   .hover-effect img:hover {
     opacity: 0.75;
   }
+
+
 
   /*-------sos button ---------*/
   #mySBtn {
