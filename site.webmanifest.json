@@ -1,0 +1,36 @@
+{
+    "name": "PetMe",
+    "short_name": "PetMe",
+    "description": "An all-in-one platform for pet adoption, donations, and emergency care for stray animals.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4CAF50",
+    "icons": [
+      {
+        "src": "Assets/Images/logo.jpg",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ],
+    "scope": "/",
+    "splash_pages": null,
+    "screenshots": [],
+    "prefer_related_applications": false,
+    "related_applications": [],
+    "orientation": "any",
+    "dir": "ltr",
+    "lang": "en-US",
+    "display_override": [],
+    "share_target": {
+      "action": "/share/",
+      "method": "GET",
+      "enctype": "application/x-www-form-urlencoded", 
+      "params": {
+        "title": "PetMe",
+        "text": "Check out PetMe - the platform for pet lovers!",
+        "url": "/"
+      }
+    }
+  }
+  
