@@ -69,7 +69,8 @@
 }
 
 .pet-card-flex {
-  background-image: url("./Assets/Images/pattern\ doodle.png");
+/*   background-image: url("./Assets/Images/pattern\ doodle.png"); */
+	background-image:url("https://www.shutterstock.com/image-illustration/dog-paw-prints-seamless-pattern-260nw-327943214.jpg");
   display: flex;
   flex-direction: column;
   padding-top: 20px;
