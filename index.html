@@ -248,14 +248,14 @@
           pets in need of a forever home, while also providing emergency medical
           care for stray animals in distress. We strive to make a difference in
           the lives of these innocent creatures by offering options to
-          <a class="hover-underline-animation" href="#meet"><b>Adopt</b></a
+          <a class="hover-underline-animation" href="#meet"><b><em>Adopt</em></b></a
           >,
           <a class="hover-underline-animation" href="./donate.html"
-            ><b>Donate</b></a
+            ><b><em>Donate</em></b></a
           >
           and through our SOS feature
           <a class="hover-underline-animation" href="./reportstary.html"
-            ><b>Report</b></a
+            ><b><em>Report</em></b></a
           >
           stray animals in need of immediate assistance. Together, we can create
           a better world for all animals.
@@ -707,83 +707,7 @@
     </section>
     <!-- style="opacity: 0; transform: translateX(50px); transition: opacity 1s ease, transform 1s ease;"   -->
     <!--     Contact us section html starts from here -->
-    <section id="contact" class="dark:bg-gray-900 b_1 pt-40 pb-20">
-      <div
-        class="w-full contact-form-container mx-auto max-w-screen-md"
-        id="contactFormContainer"
-      >
-        <form
-          action="https://formspree.io/f/xayaokzl"
-          method="POST"
-          class="bg-gray-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100 px-8 pt-8 pb-10"
-        >
-          <p id="contact"></p>
-          <h2 class="text-3xl mt-1 mb-2 text-center bold-500 text_3">
-            CONTACT US
-          </h2>
-          <p class="text-base text-center text_3">
-            Any issues! Fill the form below and our team will contact you
-            shortly.
-          </p>
-          <br />
-          <div class="mb-4">
-            <label
-              class="block text-white text-sm font-bold mb-2"
-              for="contact_nom"
-            >
-              Name
-            </label>
-            <input
-              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
-              id="contact_nom"
-              name="contact_nom"
-              type="text"
-              placeholder="Name"
-            />
-          </div>
-          <div class="mb-6">
-            <label
-              class="block text-white text-sm font-bold mb-2"
-              for="contact_email"
-            >
-              Email
-            </label>
-            <input
-              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
-              id="contact_email"
-              name="contact_email"
-              type="email"
-              required
-              placeholder="hello@petme"
-            />
-          </div>
-          <div class="mb-6">
-            <label
-              for="contact_message"
-              class="block text-white text-sm font-bold mb-2"
-              >Message</label
-            >
-            <textarea
-              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
-              id="contact_message"
-              name="contact_message"
-              required
-              rows="6"
-              placeholder="Your message"
-            ></textarea>
-          </div>
-          <div class="flex justify-center">
-            <button
-              class="bg-amber-800 hover:bg-amber-700 text-center text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-              type="submit"
-            >
-              Submit
-            </button>
-          </div>
-        </form>
-      </div>
-    </section>
-
+    
     <script>
       window.addEventListener("scroll", function () {
         var contactFormContainer = document.getElementById(
@@ -877,7 +801,7 @@
 
     <!-- Footer section  -->
 
-    <footer class="bg-black text-white shadow-inner pt-4 pb-8">
+    <footer class="bg-black text-white shadow-inner pt-4 pb-8" style="background-color:#662200;">
       <div class="flex p-5 justify-between">
         <div
           class="flex flex-1 flex-col text-center sm:flex-row items-center justify-center space-x-3"
@@ -897,38 +821,7 @@
               <div>Give life to an animal in need</div>
             </div>
           </div>
-        </div>
-
-        <!-- Subscribe column -->
-        <div class="md:flex flex-col hidden text-center items-center flex-1">
-          <form id="subscription-form">
-          <div class="space-y-2">
-            <h3 class="text-2xl">Subscribe to our newsletter</h3>
-            <div class="text-md">
-              Get the latest news and updates delivered straight to your inbox.
-            </div>
-            <div class="text-center">
-              <input
-                class="my-1 mr-2 p-2 rounded-md text-black"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter your email address"
-              />
-              <div id="error-message" class="text-red-500 hidden">Email address is required.</div>
-              <button
-                class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md"
-                type="submit"
-                id="subscribe-button"
-              >
-                Subscribe
-              </button>
-            </div>
-          </div>
-        </form>
-        </div>
-        <!-- Subscribe column end -->
-
+          
         <!-- Social icons  -->
         <div class="flex-1 flex flex-col items-center justify-center">
           <div class="text-2xl">Follow us on</div>
@@ -987,7 +880,115 @@
             </div>
           </div>
         </div>
+
+        <!-- Subscribe column -->
+        <div class="md:flex flex-col hidden text-center items-center flex-1">
+          <form id="subscription-form">
+          <div class="space-y-2">
+            <h3 class="text-2xl">Subscribe to our newsletter</h3>
+            <div class="text-md">
+              Get the latest news and updates delivered straight to your inbox.
+            </div>
+            <div class="text-center">
+              <input
+                class="my-1 mr-2 p-2 rounded-md text-black"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+              />
+              <div id="error-message" class="text-red-500 hidden">Email address is required.</div>
+              <button
+                class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md"
+                type="submit"
+                id="subscribe-button"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </form>
+        <form
+        action="https://formspree.io/f/xayaokzl"
+        method="POST"
+        class="bg-gray-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100 px-8 pt-8 pb-10"
+      >
+        <p id="contact"></p>
+        <h2 class="text-3xl mt-1 mb-2 text-center bold-500 text_3">
+          CONTACT US
+        </h2>
+        <p class="text-base text-center text_3">
+          Any issues! Fill the form below and our team will contact you
+          shortly.
+        </p>
+        <br />
+        <div class="mb-4">
+          <label
+            class="block text-white text-sm font-bold mb-2"
+            for="contact_nom"
+          >
+            Name
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
+            id="contact_nom"
+            name="contact_nom"
+            type="text"
+            placeholder="Name"
+          />
+        </div>
+        <div class="mb-6">
+          <label
+            class="block text-white text-sm font-bold mb-2"
+            for="contact_email"
+          >
+            Email
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
+            id="contact_email"
+            name="contact_email"
+            type="email"
+            required
+            placeholder="hello@petme"
+          />
+        </div>
+        <div class="mb-6">
+          <label
+            for="contact_message"
+            class="block text-white text-sm font-bold mb-2"
+            >Message</label
+          >
+          <textarea
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
+            id="contact_message"
+            name="contact_message"
+            required
+            rows="6"
+            placeholder="Your message"
+          ></textarea>
+        </div>
+        <div class="flex justify-center">
+          <button
+            class="bg-amber-800 hover:bg-amber-700 text-center text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            type="submit"
+          >
+            Submit
+          </button>
+        
+      </form>
+    </div>
+        </div>
+        <!-- Subscribe column end -->
+
+        </div>
         <!-- Social icons end -->
+
+       
+          
+           
+        
+    
 
         <!-- Scroll to top -->
         <div class="md:pr-8 hover-effect">
