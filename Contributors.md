@@ -1,8 +1,8 @@
 Project Maintainers
 
 - [AKSHITA GUPTA](https://github.com/akshitagupta15june)
-- Susmita-Dey
-- muditchoudhary
+- [Susmita-Dey](https://github.com/Susmita-Dey)
+- [muditchoudhary](https://github.com/muditchoudhary)
 
 Contributors
 - [AKSHITA GUPTA](https://github.com/akshitagupta15june)
