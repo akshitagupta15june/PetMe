@@ -1,7 +1,7 @@
 ## Open Source Programs
 <p align="center"> PetMe is ready for Hacktoberfest</p>
  <a href="https://hacktoberfest.com/">
- <img width="1200" alt="Email Banners-Dark" src="https://user-images.githubusercontent.com/79099734/189589410-ca17afb8-5855-4316-918a-054f27594809.png">
+ <img width="1200" alt="Email Banners-Dark" src="PetMe/Assets/Images/Hacktoberfest 2023.png">
  </a>
 -----
 
@@ -69,7 +69,7 @@ Additional features:
 
 Click the image below to view our website!
 
-[<img src="https://cdn.discordapp.com/attachments/1004464884773306368/1028310089364406363/unknown.png"/>](https://akshitagupta15june.github.io/PetMe/)
+[<img src="PetMe/Assets/Images/PetMe Website.png"/>](https://akshitagupta15june.github.io/PetMe/)
 
 ## Accomplishments:
 
