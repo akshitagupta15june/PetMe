@@ -5,7 +5,6 @@
  </a>
 -----
 
-
 <p align="center">About the project:</p>
 <p align="center">
     <img src="https://img.shields.io/github/issues/akshitagupta15june/PetMe"> 
@@ -31,38 +30,32 @@
 
 <p align="center"> Don't forget to join our official <a href="https://discord.gg/X3HZAPzykU">Discord Channel</a> for discussions and updates. </p>
 
-
 ## Inspiration for the Project:
 
-It has been estimated that more than one million adoptable dogs and cats are euthanized in the United States each year. This happens for the reason that there are too many pets that are enrolled into shelters and only a few people consider adoption when they look out for a pet.
+It has been estimated that more than one million adoptable dogs and cats are euthanized in the United States each year. This happens for the reason that there are too many pets that are enrolled in shelters, and only a few people consider adoption when they look out for a pet.
 
 **The number of euthanized animals can be reduced drastically if more people adopt pets instead of buying them from stores. When you adopt an animal, you save a lovely life by making them a part of your family as well as open up a shelter space for an animal who might be in need of one desperately.**
 
-When our team heard about the animals that were in danger each year, it became a goal for us to help these speechless beings somehow. After brainstorming for a long time we came up with the idea of **PetMe**. We believe in the policy of saving animals and thus saving lives. Every life matters and we wish to be the part of the change that is making the same possible.
-
+When our team heard about the animals that were in danger each year, it became a goal for us to help these speechless beings somehow. After brainstorming for a long time, we came up with the idea of **PetMe**. We believe in the policy of saving animals and thus saving lives. Every life matters, and we wish to be part of the change that is making the same possible.
 
 ## Features of PetMe at a Glance
 
 <a href="https://akshitagupta15june.github.io/PetMe/"><p align="center">The test site for the project can be found here.</p></a>
 
-
 | Function | Feature | Image |
 | --- | ----------- | -------|
-| Adopting a Pet | Allows user to choose an animal they wish to adopt and submit their details for contact purposes | ![docfix1](https://github.com/5h0ov/PetMe/assets/83227649/df6cbd93-421c-45d2-b11a-9f61b7bba8f8) |
+| Adopting a Pet | Allows users to choose an animal they wish to adopt and submit their details for contact purposes | ![docfix1](https://github.com/5h0ov/PetMe/assets/83227649/df6cbd93-421c-45d2-b11a-9f61b7bba8f8) |
 | Donating a Pet | Pet owners can donate their pets if they are unable to take care of the ones they have | ![docfix2](https://github.com/5h0ov/PetMe/assets/83227649/6e18e6d7-1df5-41fc-841e-866f767763f7) |
 | Emergency care for Stray Animals | Provide contact details to get emergency medical services | ![docfix3](https://github.com/5h0ov/PetMe/assets/83227649/5ad9418b-5991-4495-b7a5-1b4fdcb5528d) |
-
-----
-
 
 ## Watch the video:
 
 For a brief explanation about PetMe, you can watch the following video.
 
 [<img src="https://i.imgur.com/8gEUuwt.png" width="50%">](https://youtu.be/U1EQjtT-G8E)
- 
+
 Additional features:
-- All the data is stored in the database so when a person wishes to adopt or donate an animal, their information will be auto-filled using the database. 
+- All the data is stored in the database, so when a person wishes to adopt or donate an animal, their information will be auto-filled using the database. 
 - Users can use the `Contact` page to drop in their details for a call with one of the team members. 
 
 ## View our Website:
@@ -77,9 +70,7 @@ We are proud to build a website where pet lovers can easily adopt animals that n
 
 ## What's next for PetMe 📲
 
-In future, we plan to scale this application to reach as many people as possible and facilitate adoption and donation of animals.
-
-Furthermore, we plan to connect with the nearest government organization that provides medical assistance to stray animals.
+In the future, we plan to scale this application to reach as many people as possible and facilitate the adoption and donation of animals.
 
 ---
 
