@@ -1,8 +1,8 @@
 Project Maintainers
 
 - [AKSHITA GUPTA](https://github.com/akshitagupta15june)
-- Susmita-Dey
-- muditchoudhary
+- [Susmita-Dey](https://github.com/Susmita-Dey)
+- [muditchoudhary](https://github.com/muditchoudhary)
 
 Contributors
 - [AKSHITA GUPTA](https://github.com/akshitagupta15june)
@@ -60,3 +60,4 @@ Contributors
 - [Emily Cruz Gutierrez](https://github.com/emily883)
 - [Vivek Sati](https://github.com/Viveksati5143)
 - [Soundarya Koutharapu](https://github.com/SoundaryaKoutharapu)
+- [Prince Gupta](https://github.com/myselfprincee)
