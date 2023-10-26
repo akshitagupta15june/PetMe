@@ -264,3 +264,7 @@
 }
 #google_translate_element span {
 }
+.navbar-item:hover {
+  color: red; /* Change the text color to red on hover */
+  text-decoration: underline; /* Add an underline on hover */
+}
