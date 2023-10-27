@@ -78,6 +78,10 @@ let navbarItem = new element(
   "turn-yellow-hover"
 );
 
+//Blog cards part
+let blogCard = new element(["blog-card"], "bg-yellow-900", "bg-slate-100");
+let blogText = new element(["blog-heading"], "text-slate-50	", "text-black");
+
 let toggler = document.querySelector("#theme-toggle");
 // let body = document.querySelector("body");
 // let heading = document.querySelector("#heading-adopt-me");
@@ -92,5 +96,7 @@ toggler.addEventListener("click", () => {
   navbarItem.toggle();
   mission1.toggle();
   mission2.toggle();
+  blogCard.toggle();
+  blogText.toggle();
   changeToBW();
 });
