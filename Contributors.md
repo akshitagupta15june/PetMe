@@ -5,6 +5,7 @@ Project Maintainers
 - [muditchoudhary](https://github.com/muditchoudhary)
 
 Contributors
+
 - [AKSHITA GUPTA](https://github.com/akshitagupta15june)
 - [KRISHNA KALANI](https://github.com/Krishnakalani111)
 - [Manish Pokhrel](https://github.com/manishpoko)
@@ -61,3 +62,4 @@ Contributors
 - [Vivek Sati](https://github.com/Viveksati5143)
 - [Soundarya Koutharapu](https://github.com/SoundaryaKoutharapu)
 - [Prince Gupta](https://github.com/myselfprincee)
+- [Hari Raghav](https://github.com/hariraghav10)
