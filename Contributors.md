@@ -10,6 +10,7 @@ Contributors
 - [Manish Pokhrel](https://github.com/manishpoko)
 - [Himanshu](https://github.com/heyhimansh)
 - [Karan Banjade](https://github.com/karanbanjade)
+- [Srishty M](https://github.com/Srish-ty)
 - [Dev](https://github.com/d3vsuthar)
 - [Ahnaf Anis](https://github.com/Ahnaf-codes)
 - [Advay Sagarkar](https://github.com/Aragorn-64)
