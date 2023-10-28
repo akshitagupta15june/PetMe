@@ -15,7 +15,11 @@
     <link rel="stylesheet" href="./navbar.css" />
     <link rel="stylesheet" href="./mobileView.css" />
     <link rel="icon" type="image/x-icon" href="/Assets/Images/logo.ico" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
+      crossorigin=""
+    />
     <script
       defer
       src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"
@@ -125,13 +129,27 @@
       <nav class="">
         <div class="hidden w-full lg:block z-2" id="navbar">
           <ul
-            class="w-[100vw] h-1/2 top-0 right-0 p-8 lg:p-4 mt-12 lg:mt-0 text-center text-base lg:text-lg space-y-4 lg:space-y-0 lg:space-x-5 lg:static lg:w-auto flex flex-col rounded-lg items-start lg:items-center lg:bg-transparent lg:border-0 lg:flex-row justify-between"
+            class="w-[100vw] h-1/2 top-0 right-0 p-8 lg:p-4 mt-12 lg:mt-0 text-center text-base lg:text-[18px] space-y-4 lg:space-y-0 lg:space-x-5 lg:static lg:w-auto flex flex-col rounded-lg items-start lg:items-center lg:bg-transparent lg:border-0 lg:flex-row justify-between"
           >
             <li>
               <a
                 href="./index.html"
                 class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item"
                 >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="./index.html#meet"
+                class="lg:p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item"
+                >Meet Pets</a
+              >
+            </li>
+            <li>
+              <a
+                href="./index.html#About"
+                class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item"
+                >About Us</a
               >
             </li>
             <li>
@@ -205,7 +223,7 @@
             <li>
               <a href="./index.html#contact">
                 <button
-                  class="inline-flex items-center bg-header-orange-light border-0 py-2 lg:py-2 text-base px-2 focus:outline-none text_4 font-bold rounded text-base mt-4 md:mt-0"
+                  class="inline-flex items-center bg-header-orange-light border-0 py-2 lg:py-2 text-choco text-base px-2 focus:outline-none text_4 font-bold rounded mt-4 md:mt-0 hover:translate-x-2 transition-transform"
                 >
                   Contact Us
                   <svg
@@ -214,7 +232,7 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    class="w-4 h-4 ml-1"
+                    class="w-4 h-4 ml-1 transform translate-x-0 transition-transform"
                     viewBox="0 0 24 24"
                   >
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -224,7 +242,10 @@
             </li>
             <li>
               <a id="theme-toggle">
-                <i class="ri-sun-line turn-yellow-hover light-theme" id="switch"></i>
+                <i
+                  class="ri-sun-line turn-yellow-hover light-theme"
+                  id="switch"
+                ></i>
               </a>
             </li>
             <!-- google translate -->
@@ -399,6 +420,7 @@
 				</div>
 				<!-- Social icons end -->
 
+
         <!-- Scroll to top -->
         <div class="md:pr-8 hover-effect">
           <a href="#top">
@@ -438,7 +460,7 @@
       </div>
       <div id="copyright">
         <p>
-          Copyright &copy; <span id="date"></span> [PetMe] All Right Reserved.
+          Copyright &copy; <span id="date"></span> PetMe All Right Reserved.
         </p>
       </div>
     </footer>

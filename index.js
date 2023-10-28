@@ -20,7 +20,7 @@ function displayContributors(contributorsList) {
     avatar.setAttribute("alt", contributor.login);
 
     link.appendChild(avatar);
-    contributors.appendChild(link);
+    contributors?.appendChild(link);
   });
 }
 
@@ -36,7 +36,7 @@ function hideBackToTopButton() {
   })
 
   window.addEventListener("scroll", e => {
-    bttButton.style.display = window.scrollY > 20 ? 'block' : 'none';
+    bttButton.style.display = window.scrollY > 15 ? 'block' : 'none';
   })
 }
 
@@ -110,3 +110,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // scroll to top function
+
+// Change to the stored current theme.
+changeToCurrTheme()
