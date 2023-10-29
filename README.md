@@ -1,4 +1,4 @@
-## Open Source Programs
+# Open Source Programs
 <p align="center"> PetMe is ready for Hacktoberfest</p>
  <a href="https://hacktoberfest.com/">
  <img width="1200" alt="Email Banners-Dark" src="https://user-images.githubusercontent.com/79099734/189589410-ca17afb8-5855-4316-918a-054f27594809.png">
