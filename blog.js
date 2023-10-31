@@ -15,11 +15,11 @@ fetch("blog.json")
           <div class="relative flex-wrap items-center justify-center mx-0 my-0 text-center">
             <h3 class="group-hover:-translate-y-6 duration-500 text-black uppercase font-medium text-sm text-center tracking-wider py-2 mt-5 mr-2.5 ml-2.5 mb-2.5 leading-4">
               <b>${blog.title}</b><br><br>
-              <span class="text-base font-light lowercase py-3">${blog.description}</span>
-              <a href="${blog.read}" rel="noopener noreferrer" class="pl-4 pr-4 m-auto mt-0 mb-0 text-base font-normal bg-amber-800 hover:bg-amber-900 rounded-md">
-                <b>Read</b>
+              <div class="text-base font-light lowercase py-3">${blog.description}</div><br>
+              <a href="${blog.read}" rel="noopener noreferrer" target="_blank" class="pl-4 pr-4 m-auto py-2 mt-0 mb-0 text-base font-normal bg-amber-800 hover:bg-amber-900 rounded-md">
+                <button>Read</button>
               </a>
-            </h3>
+            </h3> 
           </div>
         </div>
       </div>`;
