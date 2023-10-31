@@ -33,7 +33,7 @@
 git clone https://github.com/<your-github-username>/PetMe
 ```
 
-**3.** Navigate to the newly created PetMe project directory:
+**3.** Navigate to the newly created PetMe directory:
 
 ```bash
 cd PetMe
