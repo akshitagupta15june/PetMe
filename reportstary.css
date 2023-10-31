@@ -172,7 +172,6 @@ form {
 }
 
 .form-control {
-  text-shadow: #000000 0 0 0.025rem;
   display: block;
   width: 100%;
   height: 2.375rem;
