@@ -3,7 +3,6 @@
  <a href="https://hacktoberfest.com/">
  <img width="1200" alt="Email Banners-Dark" src="https://user-images.githubusercontent.com/79099734/189589410-ca17afb8-5855-4316-918a-054f27594809.png">
  </a>
------
 
 
 <p align="center">About the project:</p>
@@ -176,7 +175,7 @@ git push origin YourBranchName
 
 ## Thanks to all Contributors 💪 
 
-Thanks a lot for spending your time helping PetMe grow. Thanks a lot! Keep rocking 🍻
+Thanks a lot for spending your time and helping PetMe grow. Thanks a lot! Keep rocking 🍻
 
 <p>
   <img src="https://api.vaunt.dev/v1/github/entities/akshitagupta15june/repositories/PetMe/contributors?format=svg&limit=54" width="600" height"250" />
