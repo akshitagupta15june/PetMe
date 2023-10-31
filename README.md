@@ -36,8 +36,6 @@
 
 It has been estimated that more than one million adoptable dogs and cats are euthanized in the United States each year. This happens for the reason that there are too many pets that are enrolled into shelters and only a few people consider adoption when they look out for a pet.
 
-**The number of euthanized animals can be reduced drastically if more people adopt pets instead of buying them from stores. When you adopt an animal, you save a lovely life by making them a part of your family as well as open up a shelter space for an animal who might be in need of one desperately.**
-
 When our team heard about the animals that were in danger each year, it became a goal for us to help these speechless beings somehow. After brainstorming for a long time we came up with the idea of **PetMe**. We believe in the policy of saving animals and thus saving lives. Every life matters and we wish to be the part of the change that is making the same possible.
 
 
@@ -179,6 +177,10 @@ git push origin YourBranchName
 ## Thanks to all Contributors 💪 
 
 Thanks a lot for spending your time helping PetMe grow. Thanks a lot! Keep rocking 🍻
+
+<p>
+  <img src="https://api.vaunt.dev/v1/github/entities/akshitagupta15june/repositories/PetMe/contributors?format=svg&limit=54" width="600" height"250" />
+</p>
 
 [![Contributors](https://contrib.rocks/image?repo=akshitagupta15june/PetMe)](https://github.com/akshitagupta15june/PetMe/graphs/contributors)
 
