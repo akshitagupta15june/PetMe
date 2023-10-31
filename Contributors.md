@@ -61,4 +61,3 @@ Contributors
 - [Vivek Sati](https://github.com/Viveksati5143)
 - [Soundarya Koutharapu](https://github.com/SoundaryaKoutharapu)
 - [Prince Gupta](https://github.com/myselfprincee)
-- [Leo Tran](https://github.com/leotran20)
