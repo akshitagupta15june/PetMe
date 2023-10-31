@@ -33,10 +33,12 @@
       type="image/x-icon"
       href="/PetMe/Assets/Images/logo.jpg"
     />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <title>Blogs</title>
   </head>
 
-  <body>
+  <body data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="0">
     <header
       class="header text-gray-400 bg-header-offwhite body-font flex flex-row items-center justify-center lg:justify-around"
       id="header"
@@ -227,7 +229,7 @@
       </div>
 
       <!---Blogs card-->
-      <div
+      <div data-aos="fade-up" data-aos-duration="1000"
         class="relative flex flex-wrap items-center justify-center grid-cols-1 mx-0 z-2 my-7"
         id="data-output"
       ></div>
@@ -427,5 +429,8 @@
     <script src="light-dark-theme.js"></script>
     <script src="blog.js"></script>
     <script src="navbar.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
