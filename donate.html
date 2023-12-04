@@ -19,6 +19,50 @@
     <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+    <script>
+      function validateForm(form){
+
+        var nameData = document.getElementById('name').value;
+        var nameRegex = new RegExp("[A-Z][a-zA-Z]{1,}[\\s][A-Z][a-zA-Z]{1,}");
+
+        var emailData = document.getElementById('email').value;
+        var emailRegex = new RegExp("^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-]+)(\\.[a-zA-Z]{2,5}){1,3}$");
+
+        // only checkin if address is less than 3 as we cant anpply any particular regex on the address
+        var addressData = document.getElementById('address').value; 
+        
+
+        var cityData = document.getElementById('city').value;
+        var cityRegex = new RegExp("[A-Z][a-zA-Z]{1,}");
+
+        var stateData = document.getElementById('state').value;
+        var stateRegex = new RegExp("[A-Z][a-zA-Z]{1,}([\\s][A-Z][a-zA-Z]{1,})?");
+
+        var countryData = document.getElementById('country').value;
+        var countryRegex = new RegExp("[A-Z][a-zA-Z]{1,}");
+
+        var contactData = document.getElementById('number').value;
+        var contactRegex = new RegExp("^\\+(?:[0-9].?){6,14}[0-9]$");
+
+        var typeData = document.getElementById('pet-type').value;
+        var typeRegex = new RegExp("[A-Z][a-zA-Z]+");
+
+        var colourData = document.getElementById('pet-color').value;
+        var colourRegex = new RegExp("[A-Z][a-zA-Z]+");
+
+        var breedData = document.getElementById('breed').value;
+        var breedRegex = new RegExp("[A-Z][a-zA-Z]{1,}([\\s][A-Z][a-zA-Z]{1,})?");
+
+        if(nameRegex.test(nameData) && emailRegex.test(emailData) && addressData.length>3 && cityRegex.test(cityData) && 
+        stateRegex.test(stateData) && countryRegex.test(countryData) && contactRegex.test(contactData) && typeRegex.test(typeData)
+        && colourRegex.test(colourData) && breedRegex.test(breedData) &&breedRegex.test(breedData)){
+          return true;
+        }
+      
+        window.alert('Please enter valid form data')
+       return false;
+      }
+    </script>
     <title>Donate animals: PetMe</title>
     <style>
       .donate-section form .relative:has(input:required) label::after {
@@ -133,7 +177,7 @@
           Fill up the form below and donate your pets.
         </p>
       </div>
-      <form id="survey-form" action="https://formspree.io/f/xayaokzl" method="POST">
+      <form id="survey-form" action="https://formspree.io/f/xayaokzl" method="POST" name="survey-form" onsubmit="return validateForm()">
         <div class="lg:w-1/2 md:w-2/3 mx-auto">
           <div class="flex flex-wrap -m-2">
             <div class="p-2 w-1/2">
@@ -208,7 +252,7 @@
             <div class="p-2 w-1/2">
               <div class="relative">
                 <label for="name" class="leading-7 text-sm text-gray-900">Pet Name</label>
-                <input type="text" id="name" name="name" placeholder="Charlie" autocomplete="off"
+                <input type="text" id="pet-name" name="name" placeholder="Charlie" autocomplete="off"
                   class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
               </div>
             </div>
@@ -257,7 +301,7 @@
               </span>
             </div>
             <div class="p-4 w-full">
-              <button type="submit"
+              <button type="submit" 
                 id="submit_button">
                 Submit
               </button>
