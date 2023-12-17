@@ -1,4 +1,15 @@
 @media only screen and (max-width: 768px) {
+  .heading-main-body{
+    margin-top: 250px;
+  }
+  .heading-main-body-h1 {
+    font-size: 45px !important;
+  }
+
+  .heading-main-subpara {
+    max-width: 100%!important;
+  }
+
   .meet-heading {
     font-size: 45px;
   }
@@ -6,22 +17,26 @@
   .one-line-card {
     flex-direction: column;
   }
+
   .card-height {
     height: fit-content;
   }
+
   .footer {
     flex-direction: column;
   }
 }
 
-@media only screen and (max-width:1225px){
+@media only screen and (max-width:1225px) {
   .main-img {
     padding: 0;
     margin-top: 1rem;
   }
+
   .card-height {
     height: fit-content;
   }
+
   .main-card {
     width: 96%;
     max-width: 400px;

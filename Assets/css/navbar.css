@@ -8,6 +8,26 @@
   color: rgb(51 50 49 / var(--tw-bg-opacity));
 }
 
+.navitem{
+  position: relative;
+}
+.navitem::after{
+  content: '';
+  display: block;
+  background-color: #fff;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s;
+}
+.navitem:hover::after{
+  width: 90%;
+
+}
+
 #switch{
   font-size: 1.5rem;
   cursor: pointer;
@@ -79,12 +99,11 @@
 }
 
 .logo-border {
-  border: 2px solid black;
   border-radius: 9999px;
 }
 
 .logo-size {
-  width: 80px;
+  width: 70px;
 }
 
 /*make the icons white only for darker theme*/
@@ -149,3 +168,10 @@
 .skiptranslate goog-te-gadget #text{
   display: none!important;
 }
+
+.dropdownArea{
+  background-color: #ae642c;
+  color: #fff;
+
+}
+

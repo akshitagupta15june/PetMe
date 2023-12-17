@@ -1,56 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
-        <link rel="stylesheet" href="./output.css">
-        <link rel="stylesheet" href="./style.css">
-        <link rel="stylesheet" href="./introSection.css">
-        <link rel="stylesheet" href="./navbar.css">
-        <link rel="stylesheet" href="./mobileView.css">
-        <link rel="icon" type="image/x-icon" href="/Assets/Images/logo.ico">
-        <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
-        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-        <title>Donate animals: PetMe</title>
-        <style>
-          .donate-section form .relative:has(input:required) label::after {
-            content: '*';
-            color: red;
-            margin-left: 0.2rem;
-          }
 
-     #submit_button{
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+  <link rel="stylesheet" href="/Assets/css/output.css">
+  <link rel="stylesheet" href="/Assets/css/style.css">
+  <link rel="stylesheet" href="/Assets/css/introSection.css">
+  <link rel="stylesheet" href="/Assets/css/navbar.css">
+  <link rel="stylesheet" href="/Assets/css/mobileView.css">
+  <link rel="icon" type="image/x-icon" href="/Assets/Images/logo.ico">
+  <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <title>Donate animals: PetMe</title>
+  <style>
+    .donate-section form .relative:has(input:required) label::after {
+      content: '*';
+      color: red;
+      margin-left: 0.2rem;
+    }
 
-            display: flex;
-            margin-left: auto;
-            margin-right: auto;
-            color: white;
-            background-color: #4F46E5;
-            border: none;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            padding-left: 2rem;
-            padding-right: 2rem;
-            outline: none;
-            border-radius: 0.25rem;
-            font-size: 1.125rem;
-          }
+    #submit_button {
 
-          #submit_button:hover {
-            background-color: #4338C6;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      color: white;
+      background-color: #4F46E5;
+      border: none;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      outline: none;
+      border-radius: 0.25rem;
+      font-size: 1.125rem;
+    }
 
-          }
-        </style>
-      </head>
+    #submit_button:hover {
+      background-color: #4338C6;
+
+    }
+  </style>
+</head>
+
 <body>
-    <header id="header"
+  <header id="header"
     class=" text-gray-400 bg-header-offwhite body-font flex flex-row items-center justify-center lg:justify-around">
     <div class="flex flex-row items-center md:flex-row md:items-center p-2" id="logo">
       <span class="mission-1 mission-dark"> Saving Lives </span>
@@ -78,53 +80,66 @@
     </button>
     <nav class="">
       <div class="hidden w-full lg:block z-2" id="navbar">
-        <ul class="w-[100vw] h-1/2 top-0 right-0 p-8 lg:p-4 mt-12 lg:mt-0 text-center text-base lg:text-[18px] space-y-4 lg:space-y-0 lg:space-x-5 lg:static lg:w-auto flex flex-col rounded-lg items-start lg:items-center lg:bg-transparent lg:border-0 lg:flex-row justify-between">
-        <li>
-          <a href="./index.html" class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Home</a>
-        </li>
-          <a href="./news.html" class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Pet News</a>
-        </li>
-        <li>
-          <a href="./blog.html" class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Blogs</a>
-        </li>
-        <li>
-          <a href="./donate.html" class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Donate</a>
-        </li>
-        <li>
-          <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
-          <a @mouseover="open = true" class="text-custom-heading flex font-bold hover:underline underline-offset-4 turn-red-hover navbar-item w-full">
-            Support Us
-            <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="mt-1">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </a>
-          <div x-show="open" class="z-20 absolute -left-1 w-[7.5rem] py-2 bg-gray-100 rounded-md shadow-xl">
-            <a href="volunteer.html" class="block px-4 py-2 text-base text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">Become a Volunteer</a>
+        <ul
+          class="w-[100vw] h-1/2 top-0 right-0 p-8 lg:p-4 mt-12 lg:mt-0 text-center text-base lg:text-[18px] space-y-4 lg:space-y-0 lg:space-x-5 lg:static lg:w-auto flex flex-col rounded-lg items-start lg:items-center lg:bg-transparent lg:border-0 lg:flex-row justify-between">
+          <li>
+            <a href="./index.html"
+              class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Home</a>
+          </li>
+          <a href="./news.html"
+            class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Pet
+            News</a>
+          </li>
+          <li>
+            <a href="./blog.html"
+              class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Blogs</a>
+          </li>
+          <li>
+            <a href="./donate.html"
+              class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Donate</a>
+          </li>
+          <li>
+            <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
+              <a @mouseover="open = true"
+                class="text-custom-heading flex font-bold hover:underline underline-offset-4 turn-red-hover navbar-item w-full">
+                Support Us
+                <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" class="mt-1">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </a>
+              <div x-show="open" class="z-20 absolute -left-1 w-[7.5rem] py-2 bg-gray-100 rounded-md shadow-xl">
+                <a href="volunteer.html"
+                  class="block px-4 py-2 text-base text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">Become
+                  a Volunteer</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="./reportstary.html"
+              class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">SOS
+              Report</a>
+          </li>
+          <li>
+            <a id="theme-toggle">
+              <i class="ri-sun-line turn-yellow-hover light-theme" id="switch"></i>
+            </a>
+          </li>
+          <!-- google translate -->
+          <div id="google_translate_element">
+            <script type="text/javascript"
+              src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
           </div>
-          </div>
-        </li>
-        <li>
-          <a href="./reportstary.html" class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">SOS Report</a>
-        </li>
-        <li>
-          <a id="theme-toggle">
-            <i class="ri-sun-line turn-yellow-hover light-theme" id="switch"></i>
-          </a>
-        </li>
-        <!-- google translate -->
-        <div id="google_translate_element">
-          <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-        </div>
         </ul>
       </div>
-      </nav>
+    </nav>
   </header>
-<section class="relative flex flex-wrap lg:h-screen lg:items-center">
+  <section class="relative flex flex-wrap lg:h-screen lg:items-center">
     <div class="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-24">
       <div class="mx-auto max-w-lg text-center">
         <h1 class="text-3xl font-bold sm:text-3xl pt-5">Donate Animals</h1>
         <p class="mt-4 text-xl text-gray-500">
-            Fill up the form below and donate your pets.
+          Fill up the form below and donate your pets.
         </p>
       </div>
 
@@ -132,136 +147,91 @@
         <form action="" class="space-y-4">
           <div>
             <label class="sr-only" for="name">Name</label>
-            <input
-              class="w-full rounded-lg border border-gray-200 p-3 text-sm"
-              placeholder="Full Name"
-              type="text"
-              id="name"
-            />
+            <input class="w-full rounded-lg border border-gray-200 p-3 text-sm" placeholder="Full Name" type="text"
+              id="name" />
           </div>
 
           <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div>
               <label class="sr-only" for="email">Email</label>
-              <input
-                class="w-full rounded-lg border border-gray-200 p-3 text-sm"
-                placeholder="Email address"
-                type="email"
-                id="email"
-              />
+              <input class="w-full rounded-lg border border-gray-200 p-3 text-sm" placeholder="Email address"
+                type="email" id="email" />
             </div>
 
             <div>
               <label class="sr-only" for="phone">Phone</label>
-              <input
-                class="w-full rounded-lg border border-gray-200 p-3 text-sm"
-                placeholder="Phone Number"
-                type="tel"
-                id="phone"
-              />
+              <input class="w-full rounded-lg border border-gray-200 p-3 text-sm" placeholder="Phone Number" type="tel"
+                id="phone" />
             </div>
             <div>
               <label class="sr-only" for="message">Message</label>
-              <textarea
-                class="w-full rounded-lg border border-gray-200 p-3 text-sm"
-                placeholder="Address"
-                rows="3"
-                style="resize: none;"
-                id="address"
-              ></textarea>
+              <textarea class="w-full rounded-lg border border-gray-200 p-3 text-sm" placeholder="Address" rows="3"
+                style="resize: none;" id="address"></textarea>
             </div>
 
             <div>
               <label class="sr-only" for="city">City</label>
-              <input
-                  class="w-full rounded-lg border border-gray-200 p-3 text-sm"
-                  placeholder="City"
-                  type="text"
-                  id="city"
-              />
-          </div>
+              <input class="w-full rounded-lg border border-gray-200 p-3 text-sm" placeholder="City" type="text"
+                id="city" />
+            </div>
 
-          <div>
+            <div>
               <label class="sr-only" for="state">State</label>
-              <input
-                  class="w-full rounded-lg border border-gray-200 p-3 text-sm"
-                  placeholder="State"
-                  type="text"
-                  id="state"
-              />
-          </div>
+              <input class="w-full rounded-lg border border-gray-200 p-3 text-sm" placeholder="State" type="text"
+                id="state" />
+            </div>
 
-          <div>
+            <div>
               <label class="sr-only" for="country">Country</label>
-              <input
-                  class="w-full rounded-lg border border-gray-200 p-3 text-sm"
-                  placeholder="Country"
-                  type="text"
-                  id="country"
-              />
-          </div>
+              <input class="w-full rounded-lg border border-gray-200 p-3 text-sm" placeholder="Country" type="text"
+                id="country" />
+            </div>
 
-          <div>
+            <div>
               <label class="sr-only" for="petType">Pet Type</label>
-              <input
-                  class="w-full rounded-lg border border-gray-200 p-3 text-sm"
-                  placeholder="Pet Type"
-                  type="text"
-                  id="petType"
-              />
-          </div>
+              <input class="w-full rounded-lg border border-gray-200 p-3 text-sm" placeholder="Pet Type" type="text"
+                id="petType" />
+            </div>
 
-          <div>
+            <div>
               <label class="sr-only" for="petName">Pet Name</label>
-              <input
-                  class="w-full rounded-lg border border-gray-200 p-3 text-sm"
-                  placeholder="Pet Name"
-                  type="text"
-                  id="petName"
-              />
-          </div>
+              <input class="w-full rounded-lg border border-gray-200 p-3 text-sm" placeholder="Pet Name" type="text"
+                id="petName" />
+            </div>
 
-          <div>
+            <div>
               <label class="sr-only" for="petColor">Pet Color</label>
-              <input
-                  class="w-full rounded-lg border border-gray-200 p-3 text-sm"
-                  placeholder="Pet Color"
-                  type="text"
-                  id="petColor"
-              />
-          </div>
+              <input class="w-full rounded-lg border border-gray-200 p-3 text-sm" placeholder="Pet Color" type="text"
+                id="petColor" />
+            </div>
 
-          <div>
+            <div>
               <label class="sr-only" for="petBreed">Pet Breed</label>
-              <input
-                  class="w-full rounded-lg border border-gray-200 p-3 text-sm"
-                  placeholder="Pet Breed"
-                  type="text"
-                  id="petBreed"
-              />
-          </div>
-        </div>
-        <div class="p-2 w-full">
-          <div class="relative">
-            <label for="message" class="leading-7 text-sm text-gray-900">Your Pet's Image</label>
-            <div class="max-w-3xl">
-              <label
-                class="flex justify-center w-full h-32 px-4 transition bg-white border-2 border-gray-300 border-dashed rounded-md appearance-none cursor-pointer hover:border-gray-400 focus:outline-none">
-                <span class="flex items-center space-x-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-900" fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                      d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
-                  </svg>
-                  <span class="font-medium text-gray-600">
-                    Drop files to Attach, or
-                    <span class="text-blue-600 underline">Browse</span>
-                  </span>
-                </span>
-                <input type="file" name="file_upload" class="hidden" />
-              </label>
+              <input class="w-full rounded-lg border border-gray-200 p-3 text-sm" placeholder="Pet Breed" type="text"
+                id="petBreed" />
             </div>
           </div>
+          <div class="p-2 w-full">
+            <div class="relative">
+              <label for="message" class="leading-7 text-sm text-gray-900">Your Pet's Image</label>
+              <div class="max-w-3xl">
+                <label
+                  class="flex justify-center w-full h-32 px-4 transition bg-white border-2 border-gray-300 border-dashed rounded-md appearance-none cursor-pointer hover:border-gray-400 focus:outline-none">
+                  <span class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-900" fill="none"
+                      viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                    </svg>
+                    <span class="font-medium text-gray-600">
+                      Drop files to Attach, or
+                      <span class="text-blue-600 underline">Browse</span>
+                    </span>
+                  </span>
+                  <input type="file" name="file_upload" class="hidden" />
+                </label>
+              </div>
+            </div>
 
           </div>
           <div class="p-2 w-full">
@@ -272,10 +242,8 @@
           </div>
 
           <div class="mt-4">
-            <button
-              type="submit"
-              class="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto"
-            >
+            <button type="submit"
+              class="inline-block w-full rounded-lg bg-black px-5 py-3 font-medium text-white sm:w-auto">
               Submit
             </button>
           </div>
@@ -284,14 +252,11 @@
     </div>
 
     <div class="relative h-64 w-full sm:h-96 lg:h-full lg:w-1/2">
-      <img
-        alt="Welcome"
-        src="./animals1.jpg"
-        class="w-full h-full object-cover"
-      />
+      <img alt="Welcome" src="./animals1.jpg" class="w-full h-full object-cover" />
     </div>
   </section>
-  <script src="navbar.js"></script>
-  <script src="light-dark-theme.js"></script>
+  <script src="/Assets/js/navbar.js"></script>
+  <script src="/Assets/js/light-dark-theme.js"></script>
 </body>
+
 </html>

@@ -135,6 +135,23 @@
   }
 }
 
+/* primary components  */
+.primary-btn{
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #78350f;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.2rem;
+    border-radius: 0.50rem;
+}
+
+
 /* Add this CSS code to hide the About content initially */
 #about .fade-in {
   opacity: 0;

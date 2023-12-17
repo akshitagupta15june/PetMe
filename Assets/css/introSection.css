@@ -52,17 +52,17 @@
 }
 
 .main-body-section-div h1 {
-  font-size: 64px;
+  font-size: 75px;
   /* padding-left: 18.8%; */
   color: azure;
   font-weight: bold;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
 }
 .main-body-section-div p {
   font-size: 20px;
   font-weight: 400;
-  letter-spacing: 3px;
   color: white;
+  max-width: 65%;
 }
 .main-body-heading-text span{
   color: #c97f06;
