@@ -752,13 +752,39 @@
             >
               Name
             </label>
-            <input
+            <!-- <input
               class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
               id="contact_nom"
               name="contact_nom"
               type="text"
               placeholder="Name"
-            />
+            /> -->
+            <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
+                id="contact_nom"
+                name="contact_nom"
+                type="text"
+                placeholder="Name"
+                oninput="validateName(this)"
+              />
+
+              <span id="nameError" class="text-red-500"></span>
+
+              <script>
+              function validateName(input) {
+                var nameRegex = /^[A-Za-z\- ]+$/; // Allow letters, hyphens, and spaces
+
+                if (!input.value.match(nameRegex)) {
+                  document.getElementById('nameError').textContent =
+                    'Please enter a valid name with only letters, spaces, and hyphens.';
+                  input.classList.add('border-red-500');
+                } else {
+                  document.getElementById('nameError').textContent = '';
+                  input.classList.remove('border-red-500');
+                }
+              }
+              </script>
+
           </div>
           <div class="mb-6">
             <label
