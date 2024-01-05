@@ -1,6 +1,0 @@
-NODE_ENV= <development || production>
-PORT= <port || none is running in heroku>
-DATABASE= <link to database>
-DATABASE_PASSWORD= <password to databse>
-
-REMOTE= <url of website>

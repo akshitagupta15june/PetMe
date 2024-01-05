@@ -3,7 +3,6 @@
  <a href="https://hacktoberfest.com/">
  <img width="1200" alt="Email Banners-Dark" src="https://user-images.githubusercontent.com/79099734/189589410-ca17afb8-5855-4316-918a-054f27594809.png">
  </a>
------
 
 
 <p align="center">About the project:</p>
@@ -22,23 +21,21 @@
     <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
     <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white">
 </p>
-
-# PetMe
-
+<br>
+<h1 align="center">PetMe</h1>
+<h3 align="center">"Bringing Hearts and Paws Together"</h3>
 <p align="center">
   <img src="./Assets/Images/logo.jpg" height="250px">
   </p>
 
-<p align="center"> Join our official <a href="https://discord.gg/X3HZAPzykU">Discord Channel</a> for discussion and updates. </p>
+<p align="center"> Don't forget to join our official <a href="https://discord.gg/X3HZAPzykU">Discord Channel</a> for discussions and updates. </p>
 
 
 ## Inspiration for the Project:
 
 It has been estimated that more than one million adoptable dogs and cats are euthanized in the United States each year. This happens for the reason that there are too many pets that are enrolled into shelters and only a few people consider adoption when they look out for a pet.
 
-**The number of euthanized animals can be reduced drastically if more people adopt pets instead of buying them from stores. When you adopt an animal, you save a lovely life by making them a part of your family as well as open up a shelter space for an animal who might be in need of one desperately.**
-
-When the team heard about the animals that were getting in danger each year, it became a goal for us to help these speechless beings somehow. After brainstorming for a long time we came up with the idea of **PetMe**. We believe in the policy of saving animals and thus saving lives. Every life matters and we wish to be the part of the change that is making the same possible.
+When our team heard about the animals that were in danger each year, it became a goal for us to help these speechless beings somehow. After brainstorming for a long time we came up with the idea of **PetMe**. We believe in the policy of saving animals and thus saving lives. Every life matters and we wish to be the part of the change that is making the same possible.
 
 
 ## Features of PetMe at a Glance
@@ -48,9 +45,9 @@ When the team heard about the animals that were getting in danger each year, it 
 
 | Function | Feature | Image |
 | --- | ----------- | -------|
-| Adopting a Pet | Allows user to choose an animal they wish to adopt and submit their details for contact purposes | ![image](https://user-images.githubusercontent.com/99717469/193424761-4c7f510f-b099-4e48-b0c8-d09eece32469.png) |
-| Donating a Pet | Pet owners can donate their pets if they are unable to take care of the ones they have | ![image](https://user-images.githubusercontent.com/99717469/193424675-328e10ed-78f8-49bf-8fa6-68d0db4a7fd1.png) |
-| Emergency care for Stray Animals | Provide contact details to get emergency medical services | ![image](https://user-images.githubusercontent.com/99717469/193424731-fa82b5a9-8c01-4648-a378-7c23bfb20427.png) |
+| Adopting a Pet | Allows user to choose an animal they wish to adopt and submit their details for contact purposes | ![docfix1](https://github.com/5h0ov/PetMe/assets/83227649/df6cbd93-421c-45d2-b11a-9f61b7bba8f8) |
+| Donating a Pet | Pet owners can donate their pets if they are unable to take care of the ones they have | ![docfix2](https://github.com/5h0ov/PetMe/assets/83227649/6e18e6d7-1df5-41fc-841e-866f767763f7) |
+| Emergency care for Stray Animals | Provide contact details to get emergency medical services | ![docfix3](https://github.com/5h0ov/PetMe/assets/83227649/5ad9418b-5991-4495-b7a5-1b4fdcb5528d) |
 
 ----
 
@@ -73,7 +70,7 @@ Click the image below to view our website!
 
 ## Accomplishments:
 
-We are proud to build a website where pet lovers can easily adopt animals that need a home. They can not only provide medical assistance to them but can also allow their comrades in the community to adopt them.
+We are proud to build a website where pet lovers can easily adopt animals that need a home. They can not only provide medical assistance to them but can also allow their fellow comrades in the community to adopt them.
 
 ## What's next for PetMe 📲
 
@@ -112,7 +109,7 @@ You can refer to the following articles on the basics of Git and Github.
 git clone https://github.com/<your-github-username>/PetMe
 ```
 
-**3.** Navigate to the newly created LinkFree project directory:
+**3.** Navigate to the newly created PetMe project directory:
 
 ```bash
 cd PetMe
@@ -172,15 +169,17 @@ git push origin YourBranchName
 <td align="center"><a href="https://github.com/akshitagupta15june"><img src="https://avatars0.githubusercontent.com/u/57909583?v=4" width="100px;" alt=""/><br /><sub><b>Akshita Gupta</b></sub></a></td>
  
 <td align="center"><a href="https://github.com/muditchoudhary"><img src="https://avatars.githubusercontent.com/u/74391865?s=400&u=2944cf6cb540e3ba3a08653225406d0826e1c272&v=4" width="100px;" alt=""/><br /><sub><b>Mudit Choudhary</b></sub></a></td>
-   
-<td align="center"><a href="https://github.com/akshaaatt"><img src="https://avatars.githubusercontent.com/u/51470769?v=4" width="100px;" alt=""/><br /><sub><b>Akshat Tiwari</b></sub></a></td>
-   
+  
  </tr>
 </table>
 
 ## Thanks to all Contributors 💪 
 
-Thanks a lot for spending your time helping PetMe grow. Thanks a lot! Keep rocking 🍻
+Thanks a lot for spending your time and helping PetMe grow. Thanks a lot! Keep rocking 🍻
+
+<p>
+  <img src="https://api.vaunt.dev/v1/github/entities/akshitagupta15june/repositories/PetMe/contributors?format=svg&limit=54" width="600" height"250" />
+</p>
 
 [![Contributors](https://contrib.rocks/image?repo=akshitagupta15june/PetMe)](https://github.com/akshitagupta15june/PetMe/graphs/contributors)
 

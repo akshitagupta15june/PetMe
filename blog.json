@@ -15,94 +15,121 @@
     },
     {
         "id": 3,
-        "poster": "./blogs/img/b3-poster.png",
-        "title": "Kafka's blog:",
-        "description": "Today, I'm writing down this blog to introduce you to Kafka, my cat. Though, we rarely use this name. It's either Bibou or Bibouch....",
-        "read": "./blogs/eslem.html"
-    },
-    {
-        "id": 4,
         "poster": "./blogs/img/b4-poster.png",
         "title": "KEEPING DOGS HAPPY",
         "description": "Dogs are great pets, wonderful companions and show you love no matter what! It isn't really hard to keep your dog happy....",
         "read": "./blogs/disha.html"
     },
     {
-        "id": 5,
+        "id": 4,
         "poster": "./blogs/img/b5-poster.png",
         "title": "Pets are not Toys",
         "description": "Most people view pets as toys rather than living beings with real feelings. Firstly, instead of adopting them....",
         "read": "./blogs/anuran.html"
     },
     {
-        "id": 6,
+        "id": 5,
         "poster": "./blogs/img/b6-poster.png",
         "title": "All about pet ownership, love, caring, helping stray dogs",
         "description": "So lets begin with my story. I know no one is going to ask this question but still I ask you this question how do you feel being a pet owner?...",
         "read": "./blogs/omkar.html"
     },
     {
-        "id": 7,
+        "id": 6,
         "poster": "./blogs/img/b7-poster.png",
         "title": "Tips For New Feral Rescue Kitten Owners",
         "description": "Have you just adopted your first feral rescue kitten? Or maybe you’ve fallen in love with one but are unsure how to help them become confident, happy domestic cats....",
         "read": "./blogs/elizabeth.html"
     },
     {
-        "id": 8,
+        "id": 7,
         "poster": "./blogs/img/b8-poster.png",
         "title": "Stray Dogs are Social Responsibility",
         "description": "We often thinks how we should live but didn't ever realises how stray animals live...",
         "read": "./blogs/pagsum.html"
     },
     {
-        "id": 9,
+        "id": 8,
         "poster": "./blogs/img/b9-poster.png",
         "title": "DOGS ARE NOT PERILOUS",
         "description": "Dogs only exhibit aggressive behavior when there is a good reason for it...",
         "read": "./blogs/abhinav.html"
     },
     {
-        "id": 10,
+        "id": 9,
         "poster": "./blogs/img/b10-poster.png",
         "title": "MY MEMORABLE ENCOUNTERS WITH ANIMALS",
         "description": "Having strict parents, I was never allowed to have pets inside the house. But I had my fair share of experience playing with strays, feeding them, and bonding with them...",
         "read": "./blogs/tannistha.html"
     },
     {
-        "id": 11,
+        "id": 10,
         "poster": "./blogs/img/b11-poster.png",
         "title": "Who names a dog Darryl?",
         "description": "I’ve been fostering dogs with my local humane society for the last 20 years, and my first ‘foster fail’ happened 2 years ago with a dog named Darryl...",
         "read": "./blogs/elise.html"
     },
     {
-        "id": 12,
+        "id": 11,
         "poster": "./blogs/img/b12-poster.png",
         "title": "Rescue Rooster",
         "description": "‘Has anyone lost a chicken? We’ve one at the shop!’ This was the facebook post we saw...",
         "read": "./blogs/alexis.html"
     },
     {
-        "id": 13,
+        "id": 12,
         "poster": "./blogs/img/b13-poster.png",
         "title": "The best pet is a guinea pig",
         "description": "This is about my experience owning guinea pigs as pets. I grew up owning dogs that were Collies, Jack Russell Terriers, and mutts...",
         "read": "./blogs/shelby.html"
     },
     {
-        "id": 14,
+        "id": 13,
         "poster": "./blogs/img/b14-poster.png",
         "title": "Rantings of a pet-lover who hasn’t had a pet yet",
         "description": "This article might be pretty different from the other articles you will find here. Just like the title says, this will be me ranting about my dream of having a pet companion(s)...",
         "read": "./blogs/nalowa.html"
     },
     {
-        "id": 15,
+        "id": 14,
         "poster": "./blogs/img/b15-poster.png",
         "title": "A Dog’s Perspective:",
         "description": "Hi, I’m Kalu, and I just survived a disaster called the festival of lights!..",
         "read": "./blogs/manish.html"
+    },
+    {
+        "id": 15,
+        "poster": "./blogs/img/b16-poster.jpeg",
+        "title": "The Benefits of Owning a Pet",
+        "description": "The Unbreakable Bond: Exploring the Joy and Benefits of Owning a Pet..",
+        "read": "./blogs/rayarka26.html"
+    },
+    {
+        "id": 16,
+        "poster": "./blogs/img/b17-poster.jpeg",
+        "title": "The Importance of Pet Adoption and Rescue",
+        "description": "Rescue, Rehome, Rejoice: The Power of Pet Adoption and Building Connections..",
+        "read": "./blogs/rayarka2.html"
+    },
+    {
+        "id": 17,
+        "poster": "./blogs/img/b18-poster.jpeg",
+        "title": "Creating a Safe and Enriching Environment for Your Pet",
+        "description": "Setting the stage for a happy and thriving pet..",
+        "read": "./blogs/rayarka3.html"
+    },  {
+        "id": 18,
+        "poster": "./blogs/img/b21-poster.jpg",
+        "title": "FINDING FOREVER HOMES: THE JOY OF PET ADOPTION",
+        "description": "Discover the transformative power of pet adoption and how it brings joy, love, and a sense of purpose to both animals and their human companions...",
+        "read": "./blogs/arvind.html"
+    },{
+        "id": 19,
+        "poster": "./blogs/img/shruti-cover.jpg",
+        "title": "How a basic school assignment instilled in me a sense of compassion for stray dogs",
+        "description": "It is a real-life story that took place in the year 2020..........",
+        "read": "./blogs/shruti.html"
     }
+    
     
 ]

@@ -28,12 +28,15 @@ class element {
     };
   }
 }
-function changeToBW() {
-  let Image = document.getElementById("switch");
-  if (Image.getAttribute("src") === "Assets/Images/sun.svg") {
-    Image.setAttribute("src", "Assets/Images/moon.svg");
-  } else {
-    Image.setAttribute("src", "Assets/Images/sun.svg");
+
+var icon = document.getElementById("switch");
+
+icon.onclick = function(){
+  document.body.classList.toggle("dark-theme");
+  if(document.body.classList.contains("dark-theme")){
+    icon.className="ri-moon-line turn-red-hover dark-theme";
+  }else{
+    icon.className="ri-sun-line turn-yellow-hover light-theme";
   }
 }
 
@@ -50,7 +53,7 @@ let t3 = new element(
   "text-gray-900",
   "text-white"
 );
-let t4 = new element(["text_4"], "text-slate-800", "text-white");
+let t4 = new element(["text_4"], "text-choco", "text-white");
 
 // let b1 = new element("bg_1", "bg-slate-50", "bg-slate-400");
 let b1 = new element(

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,7 +10,7 @@
     padding: theme("spacing.6");
     box-shadow: theme("boxShadow.xl");
   }
- 
+
   .contributors-container {
     display: flex;
     flex-direction: column;
@@ -62,6 +63,34 @@
     margin-right: 5px;
   }
 
+  /* back to top button */
+  #bttbutton {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 9999;
+    border: none;
+    outline: none;
+    width: 55px;
+    transition: all 0.5s ease;
+    display: none;
+  }
+
+  /* Add this CSS code to hide the meet cards initially */
+  .main-card {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+
+  .hover-effect img {
+    transition: opacity 0.3s ease;
+  }
+
+  .hover-effect img:hover {
+    opacity: 0.75;
+  }
+
   /*-------sos button ---------*/
   #mySBtn {
     position: fixed;
@@ -106,6 +135,13 @@
   }
 }
 
+/* Add this CSS code to hide the About content initially */
+#about .fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
 .contributors {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -115,146 +151,121 @@
   padding-top: 20px;
 }
 
-/*-----end of sos button----*/
-
-.bg-amber-900 .btn {
-  color: white;
-  border: 1px solid white;
-}
-
-/**
-fixes contact us button
-**/
-.bg-header-orange-light {
-  color: #000;
-}
-/**
-Fixes contant form color when theme changes
-**/
-.bg-amber-900 .contact-form-container .text-black, .bg-amber-900 .contact-form-container .text-gray-700 {
-  color: #fff;
-}
-
-
-.bg-amber-900 .btn {
-  color: white;
-  border: 1px solid white;
-}
-
-/**
-fixes contact us button
-**/
-.bg-header-orange-light {
-  color: #000;
-}
-/**
-Fixes contant form color when theme changes
-**/
-.bg-amber-900 .contact-form-container .text-black, .bg-amber-900 .contact-form-container .text-gray-700 {
-  /* color: #fff; */
-  color: #000;
-}
-
-.btn {
-  margin-top: 18px;
-  border: 2px solid #000;
-  color: #000;
-  cursor: pointer;
-  background-color: #ffac46;
-  box-shadow: inset 0 0 0 0 #ffac46;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  transition: ease-out 0.4s;
-  -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
-  -ms-transition: ease-out 0.4s;
-  -o-transition: ease-out 0.4s;
-}
-
-.btn {
-  display: block;
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  height: 3rem;
-  width: 12rem;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.btn:hover {
-  border: 2px solid #fff;
-  box-shadow: inset 200px 0 0 0 #ffac46;
-  /* background-color:  #ffac46; */
-  color: #fff;
-}
-
-
-.fix {
-  margin-left: -260px;
-}
-
- /* underline animation for anchor tag in about us section */
-
-.hover-underline-animation {
+.hover-button {
+  /* Button styles */
+  margin-top: 1rem;
   display: inline-block;
-  position: relative;
-  color: #9ca3af;
-}
-
-.hover-underline-animation:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #9ca3af;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.hover-underline-animation:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-/* anchor animation ends  */
-
-
-
-/* Back to top button */
-#bttbutton {
-  position: fixed;
-  bottom: 120px;
-  right: 45px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #ae642c;
-  color: white !important;
+  padding: 0.8rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgb(68,38,0);
+  color: #fff;
   cursor: pointer;
-  padding: 18px !important;
-  border-radius: 20%;
-  font-size: 12px;
-  opacity: 0;
-  transition: all 0.5s;
-  transform: translateY(500px);
- }
-
-#bttbutton:hover {
-  background-color:#ffac46;
-  color: #ffac46;
-  font-weight: 700 !important;
+  background: #895a21 !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.hover-button:hover {
+  /* Hover styles */
+  background: #ffbb00 !important;
+  color: #000000;
+}
 
+@keyframes fade-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
+.anima-fade-in-right {
+  animation: fade-in-right 0.5s ease-in-out;
+}
 
-/* End of Back to top button */
+@keyframes scroll-fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-100px);
+  }
+}
+
+.scroll-fade-in {
+  animation: scroll-fade-in 0.5s ease-in-out both;
+}
+
+.scroll {
+  animation: scroll 0.5s ease-in-out both;
+}
+
+/*-----end of sos button----*/
+/* copy right  */
+#copyright {
+  text-align: center;
+  padding: 2px 2px 2px 2px;
+  background-color: black;
+  color: white;
+}
+
+#facebook {
+}
+.facebook-icon {
+  fill: lightgray; 
+  transition: fill 0.3s; 
+}
+
+.facebook-icon:hover {
+  fill: blue;
+}
+.instagram-icon {
+  fill: lightgray; 
+  transition: fill 0.3s; 
+}
+
+.instagram-icon:hover {
+  fill: rgb(251, 72, 254); 
+}
+.github-icon {
+  fill: lightgray; 
+  transition: fill 0.3s; 
+}
+
+.github-icon:hover {
+  fill: #6e5494; 
+}
+
+#google_translate_element select {
+  font-size: 14px;
+  border-radius: 20px;
+  padding: 8px;
+  padding-inline: 12px;
+  outline: none;
+  border: brown;
+  color: gray;
+  font-family: "Poppins";
+}
+#google_translate_element div {
+  color: white;
+}
+#google_translate_element span {
+}
+
+.copyright1{
+  margin-left: 50%;
+}

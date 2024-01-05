@@ -1,13 +1,14 @@
 Project Maintainers
 
 - [AKSHITA GUPTA](https://github.com/akshitagupta15june)
-- Susmita-Dey
-- muditchoudhary
+- [Susmita-Dey](https://github.com/Susmita-Dey)
+- [muditchoudhary](https://github.com/muditchoudhary)
 
 Contributors
-
 - [AKSHITA GUPTA](https://github.com/akshitagupta15june)
+- [KRISHNA KALANI](https://github.com/Krishnakalani111)
 - [Manish Pokhrel](https://github.com/manishpoko)
+- [Himanshu](https://github.com/heyhimansh)
 - [Karan Banjade](https://github.com/karanbanjade)
 - [Dev](https://github.com/d3vsuthar)
 - [Ahnaf Anis](https://github.com/Ahnaf-codes)
@@ -50,4 +51,17 @@ Contributors
 - [Eli Cohen](https://github.com/elijahlc)
 - [Bookish](https://github.com/bookish)
 - [Alexis Pendleton](littlemissbuttons.github.io)
+- [Sk Muneeruddin](https://github.com/SHAIK-MUNEERUDDIN)
+- [Sai Prasad Wali](https://github.com/saiwali)
+- [Hritik Singhal](https://github.com/Hritik1503)
+- [Aakshita Singh](https://github.com/aakshitaa)
+- [Sayantan Choudhury](https://github.com/Sch476)
+- [Swapnil Jadhav](https://github.com/Swapnil-2503)
+- [Emily Cruz Gutierrez](https://github.com/emily883)
+- [Vivek Sati](https://github.com/Viveksati5143)
+- [Soundarya Koutharapu](https://github.com/SoundaryaKoutharapu)
+- [Prince Gupta](https://github.com/myselfprincee)
+- [Gaurav Bomble](https://github.com/Gauravtb2253)
+- [Rishi Paul](https://github.com/rishicds)
 - [Othniel Abalaka](https://github.com/Othniel01)
+

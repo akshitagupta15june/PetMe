@@ -7,6 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./output.css">
   <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/PetMe/Assets/Images/logo.jpg">
   <title>PetMe</title>
 </head>
 
@@ -39,7 +40,7 @@
     <nav class="">
       <div class="hidden w-full lg:block z-0" id="navbar">
         <ul
-          class="absolute w-full h-1/2 top-0 right-0 p-4 text-center space-y-8 lg:space-y-0 lg:space-x-3 lg:static lg:w-auto flex flex-col bg-gray-800 rounded-lg border border-gray-100 items-center lg:bg-transparent lg:border-0 lg:flex-row justify-center">
+          class="absolute w-full h-1/2 lg:text-[18px] top-0 right-0 p-4 text-center space-y-8 lg:space-y-0 lg:space-x-3 lg:static lg:w-auto flex flex-col bg-gray-800 rounded-lg border border-gray-100 items-center lg:bg-transparent lg:border-0 lg:flex-row justify-center">
           <li><a href="./index.html" class="p-3 text-gray-800 font-bold hover:underline underline-offset-4">Home</a></li>
           <li><a href="./donate.html" class="p-3 text-gray-800 font-bold hover:underline underline-offset-4">Donate
               Animals</a></li>
@@ -340,28 +341,39 @@
 
 
   <!--     Contact us section html starts from here -->
-  <section id="contact">
-    <div class="sectionheader">
-      <h1>CONTACT US</h1>
+  <section id="contact" class="bg flex flex-wrap pt-16 pb-8 flex justify-center items-center w-full">
+    <div class="op rounded-lg shadow-lg bg-slate-50 max-w-xs">
+      <div class="p-4 flex flex-col gap-2">
+        <h5 class="text-gray-800 md:text-[40px] font-bold mb-2 text-center">CONTACT US</h5>
+        <p style="font-weight: bold; color: black; text-align: center;">
+          Any issues! Fill out the form below, and our team will contact you shortly.
+        </p>
+  
+        <label for="checkcontact" class="contactbutton">
+          <div class="mail"></div>
+        </label>
+        <input id="checkcontact" type="checkbox">
+  
+        <form action="https://formspree.io/f/xayaokzl" method="post" class="contactform">
+          <p class="input_wrapper" style="margin-bottom: 16px;">
+            <input type="text" name="contact_nom" value="" id="contact_nom" placeholder="NAME">
+          </p>
+          <p class="input_wrapper" style="margin-bottom: 16px;">
+            <input type="text" name="contact_email" value="" id="contact_email" placeholder="EMAIL">
+          </p>
+        
+          <p class="textarea_wrapper" style="margin-bottom: 16px;">
+            <textarea name="contact_message" id="contact_message" placeholder="MESSAGE"></textarea>
+          </p>
+          <button type="button"
+            class="border-2 bg-gray-800 rounded-lg py-3 px-16 mt-3 text-white hover:text-gray-300 ">Submit</button>
+        </form>
+        
+      </div>
     </div>
-    <article>
-      <p>Any issues! fill the form below and our team will contact you shortly.</p>
-
-      <label for="checkcontact" class="contactbutton">
-        <div class="mail"></div>
-      </label><input id="checkcontact" type="checkbox">
-
-      <form action="https://formspree.io/f/xayaokzl" method="post" class="contactform">
-        <p class="input_wrapper"><input type="text" name="contact_nom" value="" id="contact_nom"><label
-            for="contact_nom">NAME</label></p>
-        <p class="input_wrapper"><input type="text" name="contact_email" value="" id="contact_email"><label
-            for="contact_email">EMAIL</label></p>
-
-        <p class="textarea_wrapper"><textarea name="contact_message" id="contact_message"></textarea></p>
-        <p class="submit_wrapper"><input type="submit" value="SUBMIT"></p>
-      </form>
-    </article>
   </section>
+  
+  
   <!--     Contact us section html ends here -->
       
       

@@ -8,16 +8,29 @@
   color: rgb(51 50 49 / var(--tw-bg-opacity));
 }
 
-.turn-red-hover:hover {
-  --tw-text-opacity: 0.65;
-  color: rgb(255 0 0 / var(--tw-text-opacity));
-  transition-duration: 0.3s;
+#switch{
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color .3s;
 }
 
-.turn-yellow-hover:hover {
+#switch.light-theme {
+  color: white;
+}
+
+#switch.dark-theme {
+  color: rgb(62, 62, 62);;
+}
+
+
+#switch.turn-red-hover:hover {
+  --tw-text-opacity: 0.65;
+  color: rgb(255 0 0 / var(--tw-text-opacity));
+}
+
+#switch.turn-yellow-hover:hover {
   --tw-text-opacity: 0.65;
   color: rgb(255 177 0 / var(--tw-text-opacity));
-  transition-duration: 0.3s;
 }
 
 .bg-header-orange-light {
@@ -103,7 +116,7 @@
 }
 
 /* make the header sticky on scroll */
-.header {
+#header {
 	position: fixed;
 	top: 0;
 	transition: 0.25s;
@@ -118,4 +131,21 @@
 }
 .nav-hidden{
 	top: -100px;
+}
+
+#navbar{
+  height: fit-content;
+}
+
+.goog-logo-link,.goog-te-gadget span,.goog-te-banner-frame,#goog-gt-tt, .goog-te-balloon-frame,div#goog-gt-{
+  display: none!important;
+}
+
+.goog-te-gadget {
+  font-size:0px !important;
+  margin-bottom: -27px;
+}
+
+.skiptranslate goog-te-gadget #text{
+  display: none!important;
 }
