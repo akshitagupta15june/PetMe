@@ -63,3 +63,5 @@ Contributors
 - [Prince Gupta](https://github.com/myselfprincee)
 - [Gaurav Bomble](https://github.com/Gauravtb2253)
 - [Rishi Paul](https://github.com/rishicds)
+- [Othniel Abalaka](https://github.com/Othniel01)
+
