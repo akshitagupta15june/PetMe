@@ -324,3 +324,7 @@ dialog > #GoButton:hover{
   background-color: rgb(250, 250, 215);
   border: 2px solid;
 }
+/*Fixed footer form issue*/
+footer form{
+  background: var(--color-white);
+}
