@@ -19,6 +19,7 @@
 	
 	<script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
 	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	<link href="./news.css" rel="stylesheet">
 	<title>Pet News</title>
 	<style>
 		@media (max-width: 600px) {
@@ -137,111 +138,47 @@
 	<!-- Pet news -->
 	<div class="news-container"
 		style="background-image:url(https://wallup.net/wp-content/uploads/2016/01/256905-animals-dog-puppies.jpg);background-size: cover;">
-
-		<div class="relative w-[17.5rem] sm:w-[15.5rem] md:w-[19rem] lg:w-[27rem] xl:w-[35rem] h-80 flex justify-center items-center flex-col opacity-80 remove-extra-margin"
-			style="display: flex;border-radius: 4px;margin-top:20px;margin-top:20px;padding: 5px;align-items: center;justify-content: center;position:relative;box-shadow: #ddd;margin-left:8.5%;width: fit-content;height: min-content;padding-bottom:5%;text-align: center;vertical-align:middle;padding-right:4%;background-color:#86412d4d;padding-left:8%;padding-right:16%;margin-right:7%;">
-			<h1 class="text-3xl mt-28 ml-10" style="color:white;"><strong>World’s oldest dog living confirmed as 31-years-old  Rafeiro do Alentejo.</strong></h1>
+		<div style="backdrop-filter: blur(2px) !important;width: 100%;height: 100%;display: flex;flex-direction: column;justify-content: center;align-items: center;">
+		<div class="news-card">
+			<img src="Assets/Images/oldestdog.png" alt="News Image">
+			<div class="news-content">
+				<h2>World’s oldest dog living confirmed as 31-years-old  Rafeiro do Alentejo</h2>
+				<p>Bobi (born 11 May 1992) is a male purebred Rafeiro do Alentejo dog cared for by Leonel Costa of Conqueiros, Leiria, Portugal. On 2 February 2023, Bobi was confirmed as the first dog on record to live to the age of 30, along with being the oldest dog on record to ever live. On 11 May 2023, Bobi turned 31.</p>
+			</div>
 		</div>
-		<div class="text-lg ml-10 mt-8 sm:mb-28 sm:w-10/12  flex sm:flex-row flex-col"
-			style="display: flex;border-radius: 4px;padding: 5px;align-items: center;justify-content: center;position:relative;box-shadow: #ddd;margin: auto;background-color:#090a0a4d;max-width:95%">
-			<img class="relative ml-14 w-56 h-56  object-cover rounded-2xl shadow-lg shadow-red-700/50 " width="200px"
-				height="200px" src="Assets/Images/oldestdog.png" style="margin-top: 5px;margin-bottom: 5px;">
-
-
-
-			<span style="padding:20px;text-align: justify;font-family: 'Josefin Sans', sans-serif;color:white;">
-				<strong>
-					Bobi (born 11 May 1992) is a male purebred Rafeiro do Alentejo dog cared for by Leonel Costa of Conqueiros, Leiria, Portugal. On 2 February 2023, Bobi was confirmed as the first dog on record to live to the age of 30, along with being the oldest dog on record to ever live. On 11 May 2023, Bobi turned 31."
-				</strong>
-			</span>
+		
+		<div class="news-card">
+			<img src="Assets/Images/pearl-worlds-shortest-dog-041223-3-4adec9d684de473ab43eaaf3dc8ca6c3.jpg" alt="News Image">
+			<div class="news-content">
+				<h2>Meet Pearl, the pocket-sized chihuahua named shortest dog by Guinness World Records				</h2>
+				<p>Measuring at 3.59 inches tall and just five inches in length, Pearl is shorter than a popsicle stick and around the same size as a dollar bill, according to the Guinness World Records. When the chihuahua was born in September 2020 at Crystal Creek Animal Hospital in Orlando, Florida, she weighed less than an ounce at birth.</p>
+			</div>
 		</div>
-
-		<div class="relative w-[17.5rem] sm:w-[15.5rem] md:w-[19rem] lg:w-[27rem] xl:w-[35rem] h-80 flex justify-center items-center flex-col opacity-80"
-			style="display: flex;border-radius: 4px;align-items: center;justify-content: center;position:relative;box-shadow: #ddd;margin: auto;width: fit-content;height:min-content;padding-bottom:5%;padding-right:8%;background-color:#86412d4d;">
-			<h1 class="text-3xl mt-28 ml-10" style="color:white;"><strong>Meet Pearl, the pocket-sized chihuahua named
-					shortest dog by Guinness World Records</strong></h1>
+		
+		<div class="news-card">
+			<img src="Assets/Images/petnews3.png" alt="News Image">
+			<div class="news-content">
+				<h2>Viral Video: Pet Dog goes Paragliding with owner, netizens react</h2>
+				<p>Many social media users are outraged after seeing a video of a dog paragliding with its owner. The now-viral Instagram video demonstrates the four-legged furry ball being properly tethered for flight together with its owner. The man used a GoPro to capture the entire journey. The pair paragliding was included in a few wide Instagram Reels photos as well. They successfully touched down on the ground at the end of the video.</p>
+			</div>
 		</div>
-		<div class="text-lg ml-10 mt-8 sm:mb-28 sm:w-10/12  flex sm:flex-row flex-col"
-			style="display: flex;border-radius: 4px;padding: 5px;align-items: center;justify-content: center;position:relative;box-shadow: #ddd;margin: auto;background-color:#090a0a4d;max-width:95%">
-
-			<img class="relative ml-14 w-56 h-56  object-cover rounded-2xl shadow-lg shadow-red-700/50 "
-				src="Assets/Images/pearl-worlds-shortest-dog-041223-3-4adec9d684de473ab43eaaf3dc8ca6c3.jpg"
-				style="margin-top: 5px;margin-bottom: 5px;">
-
-
-
-			<span style="padding:20px;text-align: justify;font-family: 'Josefin Sans', sans-serif;color:white;"><strong>Measuring
-					at 3.59 inches tall and just five inches in length, Pearl is shorter than a popsicle stick and
-					around the same size as a dollar bill, according to the Guinness World Records. When the chihuahua
-					was born in September 2020 at Crystal
-					Creek Animal Hospital in Orlando, Florida, she weighed less than an ounce at birth.</strong></span>
+		
+		<div class="news-card">
+			<img src="Assets/Images/petnews4.png" alt="News Image">
+			<div class="news-content">
+				<h2>This 'intelligent' dog's digging skills goes viral, netizens say can solve Suez Canal blockade</h2>
+				<p>A new hilarious video of an Australian cattle dog is going viral on social media, it is an energetic dog who seems good at digging an irrigation trench and guiding water. The 59-second video was uploaded on a Twitter page, named, 'Humour and Animals', that shared the video of a dog digging the water channel.</p>
+			</div>
 		</div>
-
-		<div class="relative w-[17.5rem] sm:w-[15.5rem] md:w-[19rem] lg:w-[27rem] xl:w-[35rem] h-80 flex justify-center items-center flex-col opacity-80"
-			style="display: flex;border-radius: 4px;align-items: center;justify-content: center;position:relative;box-shadow: #ddd;margin: auto;width: fit-content;height:min-content;padding-bottom:5%;padding-right:8%;background-color:#86412d4d;">
-			<h1 class="text-3xl mt-28 ml-10" style="color:white;"><strong>Viral Video: Pet Dog goes Paragliding with
-					owner, netizens react</strong></h1>
+		<div class="news-card">
+			<img src="Assets/Images/dog_rescue.png" alt="News Image">
+			<div class="news-content">
+				<h2>Dog rescued after getting its head stuck in wheel rim</h2>
+				<p>A dog has been rescued from a tight spot by Queensland firefighters armed with a bottle of olive oil and a lot of patience. The puppy, named Bonnie, stuck its head through the middle of a wheel rim but couldn't pull itself back out. It was up to the firefighters at Mareeba Fire and Rescue to figure out a solution to the sticky situation. "We hear she's recovering well.</p>
+			</div>
 		</div>
-		<div class="text-lg ml-10 mt-8 sm:mb-28 sm:w-10/12  flex sm:flex-row flex-col"
-			style="display: flex;border-radius: 4px;padding: 5px;align-items: center;justify-content: center;position:relative;box-shadow: #ddd;margin: auto;background-color:#090a0a4d;max-width:95%">
-
-			<img class="relative ml-14 w-56 h-56  object-cover rounded-2xl shadow-lg shadow-red-700/50 "
-				src="Assets/Images/petnews3.png" style="margin-top: 5px;margin-bottom: 5px;">
-
-
-
-			<span style="padding:20px;text-align: justify;font-family: 'Josefin Sans', sans-serif;color:white;"><strong>Many
-					social media users are outraged after seeing a video of a dog paragliding with its owner.
-					The now-viral Instagram video demonstrates the four-legged furry ball being properly tethered for
-					flight together with its owner. The man used a GoPro to capture the entire journey.
-					The pair paragliding was included in a few wide Instagram Reels photos as well. They successfully
-					touched down on the ground at the end of the video. </strong></span>
-		</div>
-
-		<div class="relative w-[17.5rem] sm:w-[15.5rem] md:w-[19rem] lg:w-[27rem] xl:w-[35rem] h-80 flex justify-center items-center flex-col opacity-80"
-			style="display: flex;border-radius: 4px;align-items: center;justify-content: center;position:relative;box-shadow: #ddd;margin: auto;width: fit-content;height:min-content;padding-bottom:5%;padding-right:8%;background-color:#86412d4d;">
-			<h1 class="text-3xl mt-28 ml-10" style="color:white;"><strong>This 'intelligent' dog's digging skills goes
-					viral, netizens say can solve Suez Canal blockade</strong></h1>
-		</div>
-		<div class="text-lg ml-10 mt-8 sm:mb-28 sm:w-10/12  flex sm:flex-row flex-col"
-			style="display: flex;border-radius: 4px;padding: 5px;align-items: center;justify-content: center;position:relative;box-shadow: #ddd;margin: auto;background-color:#090a0a4d;max-width:95%">
-
-			<img class="relative ml-14 w-56 h-56  object-cover rounded-2xl shadow-lg shadow-red-700/50 "
-				src="Assets/Images/petnews4.png" style="margin-top: 5px;margin-bottom: 5px;">
-
-
-
-			<span style="padding:20px;text-align: justify;font-family: 'Josefin Sans', sans-serif;color:white;"><strong>A
-					new hilarious video of an Australian cattle dog is going viral on social media, it is an energetic
-					dog who seems good at digging an irrigation trench and guiding water.
-					The 59-second video was uploaded on a Twitter page, named, 'Humour and Animals', that shared the
-					video of a dog digging the water channel. </strong>
-			</span>
-			
-		</div>
-		<div class="relative w-[17.5rem] sm:w-[15.5rem] md:w-[19rem] lg:w-[27rem] xl:w-[35rem] h-80 flex justify-center items-center flex-col opacity-80"
-			style="display: flex;border-radius: 4px;align-items: center;justify-content: center;position:relative;box-shadow: #ddd;margin: auto;width: fit-content;height:min-content;padding-bottom:5%;padding-right:8%;background-color:#86412d4d;">
-			<h1 class="text-3xl mt-28 ml-10" style="color:white;"><strong>Dog rescued after getting its head stuck in wheel rim</strong></h1>
-		</div>
-		<div class="text-lg ml-10 mt-8 sm:mb-28 sm:w-10/12  flex sm:flex-row flex-col"
-			style="display: flex;border-radius: 4px;padding: 5px;align-items: center;justify-content: center;position:relative;box-shadow: #ddd;margin: auto;background-color:#090a0a4d;max-width:95%">
-
-			<img class="relative ml-14 w-56 h-56  object-cover rounded-2xl shadow-lg shadow-red-700/50 "
-				src="Assets/Images/dog_rescue.png" style="margin-top: 5px;margin-bottom: 5px;">
-
-
-
-			<span style="padding:20px;text-align: justify;font-family: 'Josefin Sans', sans-serif;color:white;">
-				<strong> 
-					A dog has been rescued from a tight spot by Queensland firefighters armed with a bottle of olive oil and a lot of patience.
-					The puppy, named Bonnie, stuck its head through the middle of a wheel rim but couldn't pull itself back out.
-					It was up to the firefighters at Mareeba Fire and Rescue to figure out a solution to the sticky situation.
-					"We hear she's recovering well."
-					
-				</strong>
-			</span>
-			
-		</div>
+	</div>
+	</div>
 	</div>
 
 	<!-- Footer section  -->
