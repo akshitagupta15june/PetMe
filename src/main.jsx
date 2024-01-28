@@ -13,6 +13,7 @@ import Blog from './pages/Blog';
 import SupportUs from './pages/SupportUs';
 import Report from './pages/Report';
 import ContactUs from './pages/ContactUs';
+import BlogPostForm from './pages/BlogPostForm';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
   {
     path: '/blogs',
     element: <Blog />,
+  },
+  {
+    path:'/create-blog-post',
+    element:<BlogPostForm />
   },
   {
     path: '/donate',
