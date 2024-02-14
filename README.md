@@ -45,10 +45,10 @@ When our team heard about the animals that were in danger each year, it became a
 
 | Function | Feature | Image |
 | --- | ----------- | -------|
-| Adopting a Pet | Allows user to choose an animal they wish to adopt and submit their details for contact purposes | ![docfix1](https://github.com/5h0ov/PetMe/assets/83227649/df6cbd93-421c-45d2-b11a-9f61b7bba8f8) |
-| Donating a Pet | Pet owners can donate their pets if they are unable to take care of the ones they have | ![docfix2](https://github.com/5h0ov/PetMe/assets/83227649/6e18e6d7-1df5-41fc-841e-866f767763f7) |
-| Emergency care for Stray Animals | Provide contact details to get emergency medical services | ![docfix3](https://github.com/5h0ov/PetMe/assets/83227649/5ad9418b-5991-4495-b7a5-1b4fdcb5528d) |
-
+| Adopting a Pet | Allows user to choose an animal they wish to adopt and submit their details for contact purposes | ![docfix1](https://github.com/5h0ov/PetMe/assets/83227649/df6cbd93-421c-45d2-b11a-9f61b7bba8f8) ![docfix2](https://akshitagupta15june.github.io/PetMe/adopt.html) |
+| Donating a Pet | Pet owners can donate their pets if they are unable to take care of the ones they have | ![docfix3](https://github.com/5h0ov/PetMe/assets/83227649/6e18e6d7-1df5-41fc-841e-866f767763f7) |
+| Emergency care for Stray Animals | Provide contact details to get emergency medical services | ![docfix4](https://github.com/5h0ov/PetMe/assets/83227649/5ad9418b-5991-4495-b7a5-1b4fdcb5528d) |
+| Support PetMe | Allows users to become volunteers for PetMe and submit their details for contact purposes | ![docfix5](https://akshitagupta15june.github.io/PetMe/volunteer.html) |
 ----
 
 
@@ -60,7 +60,13 @@ For a brief explanation about PetMe, you can watch the following video.
  
 Additional features:
 - All the data is stored in the database so when a person wishes to adopt or donate an animal, their information will be auto-filled using the database. 
+- The language of the website can also be translated to different languages by using the Google Translate button in the top right corner of the header.
+- Users can click on the moon/sun button in the top right corner of the header to switch between light and dark mode for the website.
 - Users can use the `Contact` page to drop in their details for a call with one of the team members. 
+- Users can subscribe to PetMe's newsletter to get the latest news and updates by entering their email in the subscription box located in the footer of every page. 
+- There is a help button located in the bottom right corner of the `SOS Report` page that allows users to enter their city and find the nearest pet care centers.
+- Users can find the organization's social media accounts in the bottom right corner of the footer of every page.
+
 
 ## View our Website:
 
