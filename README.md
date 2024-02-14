@@ -49,6 +49,8 @@ When our team heard about the animals that were in danger each year, it became a
 | Donating a Pet | Pet owners can donate their pets if they are unable to take care of the ones they have | ![docfix3](https://github.com/5h0ov/PetMe/assets/83227649/6e18e6d7-1df5-41fc-841e-866f767763f7) |
 | Emergency care for Stray Animals | Provide contact details to get emergency medical services | ![docfix4](https://github.com/5h0ov/PetMe/assets/83227649/5ad9418b-5991-4495-b7a5-1b4fdcb5528d) |
 | Support PetMe | Allows users to become volunteers for PetMe and submit their details for contact purposes | ![docfix5](https://github.com/stephanienguyens/PetMe/blob/documentation/Assets/Images/volunteerForm.png) |
+| Pet News | PetMe provides users with several stories on the latest news in the pet world | ![docfix6](https://github.com/stephanienguyens/PetMe/blob/documentation/Assets/Images/petNews.png) |
+| Blogs | PetMe also has a blogs section dedicated to pet lovers and their pet stories | ![docfix7](https://github.com/stephanienguyens/PetMe/blob/documentation/Assets/Images/blogs.png) |
 ----
 
 
