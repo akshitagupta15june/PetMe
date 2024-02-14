@@ -45,10 +45,10 @@ When our team heard about the animals that were in danger each year, it became a
 
 | Function | Feature | Image |
 | --- | ----------- | -------|
-| Adopting a Pet | Allows user to choose an animal they wish to adopt and submit their details for contact purposes | ![docfix1](https://github.com/5h0ov/PetMe/assets/83227649/df6cbd93-421c-45d2-b11a-9f61b7bba8f8) ![docfix2](https://akshitagupta15june.github.io/PetMe/adopt.html) |
+| Adopting a Pet | Allows user to choose an animal they wish to adopt and submit their details for contact purposes | ![docfix1](https://github.com/5h0ov/PetMe/assets/83227649/df6cbd93-421c-45d2-b11a-9f61b7bba8f8) ![docfix2](https://github.com/stephanienguyens/PetMe/blob/documentation/Assets/Images/adoptionForm.png) |
 | Donating a Pet | Pet owners can donate their pets if they are unable to take care of the ones they have | ![docfix3](https://github.com/5h0ov/PetMe/assets/83227649/6e18e6d7-1df5-41fc-841e-866f767763f7) |
 | Emergency care for Stray Animals | Provide contact details to get emergency medical services | ![docfix4](https://github.com/5h0ov/PetMe/assets/83227649/5ad9418b-5991-4495-b7a5-1b4fdcb5528d) |
-| Support PetMe | Allows users to become volunteers for PetMe and submit their details for contact purposes | ![docfix5](https://akshitagupta15june.github.io/PetMe/volunteer.html) |
+| Support PetMe | Allows users to become volunteers for PetMe and submit their details for contact purposes | ![docfix5](https://github.com/stephanienguyens/PetMe/blob/documentation/Assets/Images/volunteerForm.png) |
 ----
 
 
