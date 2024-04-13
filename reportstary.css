@@ -265,8 +265,10 @@ nav ul li a:hover::after {
 
 /* help css */
 .help_btn{
-  position: fixed;
-  left:85%;
+
+  position: absolute;
+  left:75%;
+
   bottom: 10%;
   font-size: 1rem;
   padding: 0.7em 1.7em;
