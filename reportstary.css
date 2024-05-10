@@ -263,17 +263,15 @@ nav ul li a:hover::after {
   margin-left: 120px;
 }
 
-/* help css */
 .help_btn{
 
-  position: absolute;
-  left:75%;
+  /* position: absolute;
+  left:75%; */
 
   bottom: 10%;
   font-size: 1rem;
-  padding: 0.7em 1.7em;
+  /* padding: 0.7em 1.7em; */
   color: #F5F5DC;
-  /* color: #FFD700; */
   font-weight: 700;
   --tw-bg-opacity: 0.87;
   background-color: rgb(120 53 15 / var(--tw-bg-opacity));
