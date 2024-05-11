@@ -1,7 +1,7 @@
 ## Open Source Programs
-<p align="center"> PetMe is ready for Hacktoberfest</p>
- <a href="https://hacktoberfest.com/">
- <img width="1200" alt="Email Banners-Dark" src="https://user-images.githubusercontent.com/79099734/189589410-ca17afb8-5855-4316-918a-054f27594809.png">
+<p align="center"> PetMe is ready for Gssoc 24</p>
+ <a href="https://gssoc.girlscript.tech/project">
+ <img width="1200" alt="Email Banners-Dark" src="https://camo.githubusercontent.com/dd5e3080a7adc2ead8f86cbbd6577cee0a38439c0ebf195021ce41587b0a405f/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313430302f312a633459675258595161794f5657785633376f757272772e706e67">
  </a>
 
 
