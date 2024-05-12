@@ -64,4 +64,5 @@ Contributors
 - [Gaurav Bomble](https://github.com/Gauravtb2253)
 - [Rishi Paul](https://github.com/rishicds)
 - [Othniel Abalaka](https://github.com/Othniel01)
+- [Rishi Mehta](https://github.com/RishiMehtaa)
 
