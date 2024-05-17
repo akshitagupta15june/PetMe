@@ -342,6 +342,7 @@
                 class="form-control"
                 placeholder="+91 1023456789"
                 oninput="this.value = this.value.replace(/[^0-9\+\.]/g, '').replace(/(\..*)\./g, '$1');"
+                pattern="[+]{1}[1-9]{2}[0-9]{10}"
                 required
               />
             </div>
