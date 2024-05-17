@@ -149,3 +149,16 @@
 .skiptranslate goog-te-gadget #text{
   display: none!important;
 }
+
+
+/* navbar changed responsiveness so the text doesn't get too big in the navbar */
+
+@media screen and (max-width: 1190px) {
+  #navbar{
+    white-space: nowrap;
+    
+  }
+  #navbar ul {
+    font-size: 15px;
+  }
+}
