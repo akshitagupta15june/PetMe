@@ -23,27 +23,28 @@
 
   <body>
     <header
-      class="text-gray-400 bg-header-offwhite body-font flex flex-row items-center justify-center lg:justify-around"
+      class="header text-gray-400 bg-header-offwhite body-font flex flex-row items-center justify-center lg:justify-around"
+      id="header"
     >
       <div
-        class="flex flex-row items-center md:flex-row md:items-center p-5"
+        class="flex flex-row items-center md:flex-row md:items-center p-2"
         id="logo"
       >
-        <span class="mission-1"> Saving Lives </span>
-        <a class="logo-border" href="./index.html">
+        <span class="mission-1 mission-dark"> Saving Lives </span>
+        <a class="logo-border" href="index.html">
           <img
             class="rounded-full logo-size"
             src="./Assets/Images/logo.jpg"
             alt="logo"
           />
         </a>
-        <span class="mission-2"> Saving Animals </span>
+        <span class="mission-2 mission-dark"> Saving Animals </span>
         <!--
-    <div class="w-full mt-8 md:mt-0">
-      <h1 class="text-4xl text_2  text-center md:text-left md:ml-12 uppercase font-serif font-bold " id = "heading-adopt-me">Adopt
-        today!</h1>
-      <p class="text-lg text-gray-400 text-center md:text-left md:ml-12 mt-2">Give life to a needed animal</p>
-    </div> -->
+      <div class="w-full mt-8 md:mt-0">
+        <h1 class="text-4xl text_2  text-center md:text-left md:ml-12 uppercase font-serif font-bold " id = "heading-adopt-me">Adopt
+          today!</h1>
+        <p class="text-lg text-gray-400 text-center md:text-left md:ml-12 mt-2">Give life to a needed animal</p>
+      </div> -->
       </div>
       <button
         data-collapse-toggle="navbar-default"
@@ -53,7 +54,7 @@
         aria-expanded="false"
         id="nav-button"
       >
-        <span class="sr-only">Open Main Menu</span>
+        <span class="sr-only">Open main menu</span>
         <svg
           class="w-6 h-6"
           aria-hidden="true"
@@ -70,26 +71,17 @@
       </button>
       <nav class="">
         <div class="hidden w-full lg:block z-2" id="navbar">
-          <ul
-            class="w-[100vw] h-1/2 top-0 right-0 p-8 lg:p-4 mt-12 lg:mt-0 text-center text-base lg:text-lg space-y-4 lg:space-y-0 lg:space-x-5 lg:static lg:w-auto flex flex-col rounded-lg items-start lg:items-center lg:bg-transparent lg:border-0 lg:flex-row justify-between"
-          >
-            <li>
-              <a
-                href="./index.html"
-                class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item"
-                >Home</a
-              >
-            </li>
+          <ul class="w-[100vw] h-1/2 top-0 right-0 p-8 lg:p-4 mt-12 lg:mt-0 text-center text-base lg:text-sm space-y-4 lg:space-y-0 lg:space-x-3 lg:mr-2 lg:static lg:w-auto flex flex-col rounded-lg items-center lg:items-center lg:bg-transparent lg:border-0 lg:flex-row justify-between">
             <li>
               <a
                 href="./index.html#meet"
-                class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item"
+                class="lg:p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item"
                 >Meet Pets</a
               >
             </li>
             <li>
               <a
-                href="./index.html#About"
+                href=",./index.html#About"
                 class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item"
                 >About Us</a
               >
@@ -149,7 +141,7 @@
                 >
                   <a
                     href="volunteer.html"
-                    class="block px-4 py-2 text-base text-gray-300 text-gray-700 hover:bg-amber-800 hover:text-white"
+                    class="block px-4 py-2 text-base text-gray-600 hover:bg-gray-400 hover:text-white"
                     >Become a Volunteer</a
                   >
                 </div>
@@ -163,9 +155,9 @@
               >
             </li>
             <li>
-              <a href="./index.html#contact">
+              <a href="#contact">
                 <button
-                  class="inline-flex items-center bg-header-orange-light border-0 py-2 lg:py-2 text-base px-2 focus:outline-none text_4 font-bold rounded text-base mt-4 md:mt-0"
+                  class="inline-flex items-center bg-header-orange-light border-0 py-2 lg:py-2 text-choco text-base px-2 focus:outline-none text_4 font-bold rounded mt-4 md:mt-0 hover:translate-x-2 transition-transform"
                 >
                   Contact Us
                   <svg
@@ -174,7 +166,7 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    class="w-4 h-4 ml-1"
+                    class="w-4 h-4 ml-1 transform translate-x-0 transition-transform"
                     viewBox="0 0 24 24"
                   >
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
