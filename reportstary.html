@@ -197,14 +197,21 @@
         <label for="email">Which type of stray animal?
           <span class="hint text-red-600">*</span>
         </label>
-        <select id="dropdown" name="role" class="form-control" required>
+        <select id="dropdown" name="role" class="form-control" onchange=addtextbox(this.value) required>
           <option disabled selected value>Select stray animal</option>
           <option value="student">Dog</option>
           <option value="artist">Cat</option>
           <option value="graphic_designer">Cow</option>
-          <option value="other">Pig</option>
+          <option value="pig">Pig</option>
           <option value="other">Other</option>
         </select>
+      </div>
+
+      <div class="form-group mb-2 hidden" id="box" >
+        <label >Other:
+          <span class="hint text-red-600">*</span>
+        </label>
+        <input type="text" name="b" class="form-control" >
       </div>
 
       <div class="form-group">
