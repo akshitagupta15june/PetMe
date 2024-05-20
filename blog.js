@@ -18,7 +18,7 @@ fetch("blog.json")
               <span class="text-base font-light lowercase py-3">${blog.description}</span>
             </h3>
             <div>
-               <a href="${blog.read}" rel="noopener noreferrer" class="pl-6 pr-6 m-auto mt-0 mb-0 text-white font-normal bg-amber-800 hover:bg-amber-900 rounded-md py-3 transition duration-300 ease-in-out focus:outline-none focus:ring focus:border-amber-900 transform hover:scale-105" aria-label="Read ${blog.title}">
+               <a href="${blog.read}" rel="noopener noreferrer" class="pl-6 pr-6 m-auto mt-0 mb-0 text-white font-normal bg-amber-800 hover:bg-amber-900 rounded-md py-2 transition duration-300 ease-in-out focus:outline-none focus:ring focus:border-amber-900 transform hover:scale-105 inline-block" aria-label="Read ${blog.title}">
                 <b>Read</b>
               </a>
             </div>
