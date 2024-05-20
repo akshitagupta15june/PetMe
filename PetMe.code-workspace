@@ -2,9 +2,33 @@
 	"folders": [
 		{
 			"path": "."
-		}
+		},
+                {
+                        "path": "backend"
+                },
+                {
+                        "path":"frontend"
+                }
 	],
 	"settings": {
+                "editor.Tabsize":2,
+                "editor.formatOnSave":true,
+                "files.exclude":{
+                 "**/.git":true,
+                 "**/.DS_Store":true,
+                "**/node_modules":true
 		"liveServer.settings.port": 5501
-	}
+	},
+        "terminal.integrated.shell.linux":
+"/bin/bash",
+        "python.pythonPath": "backend/venv/bin/python",
+        "eslist.enable":true,
+        "eslist.alwaysShowStatus":true
+},  
+  "extensions":{
+    "recommendations":[
+        "dbaeumer.vscode-eslint",
+        "ms-python.python",
+        "esbenp.prettier-vscode";
+        "eamodio.gitlens"
 }
