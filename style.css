@@ -158,16 +158,16 @@
   padding: 12px 24px;
   font-size: 1.25rem;
   border-radius: 0.5rem;
-  border: 0.1rem solid rgb(68,38,0);
+  border: 0.1rem solid rgb(244, 242, 240);
   color: #fff;
   cursor: pointer;
-  background: #895a21;
+  background: #ffbb00;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hover-button:hover {
   /* Hover styles */
-  background: #ffbb00;
+  background: #dfae28;
   color: #000000;
   transform: scale(1.05);
   box-shadow: 0 0 10px rgba(0,0,0,0.2);

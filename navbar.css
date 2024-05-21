@@ -65,12 +65,12 @@
 }
 
 .bg-color-btn {
-  background-color: rgb(255, 193, 117);
+  background-color: rgb(247, 239, 9);
   border: 2px white solid;
 }
 
 .bg-color-btn:hover {
-  background-color: rgb(255, 172, 70);
+  background-color:rgb(222, 215, 0) ;
   transition-duration: 0.3s;
 }
 

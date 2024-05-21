@@ -211,7 +211,7 @@ form {
   display: block;
   width: 100%;
   padding: 0.75rem;
-  background: var(--color-green);
+  background: yellow;
   color: inherit;
   border-radius: 0.25rem;
   cursor: pointer;
