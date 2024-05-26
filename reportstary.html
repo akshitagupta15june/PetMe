@@ -227,6 +227,12 @@
       <div class="form-group mt-2">
         <label for="comment">Would you like to share any additional information about the stray animal's
           condition?</label>
+        <p>Click on the "Choose File" button to upload a file:</p>  //image upload
+
+<form action="/action_page.php">
+  <input type="file" id="myFile" name="filename">
+  <input type="submit">
+</form>
         <textarea id="comment" class="input-textarea focus:outline-green-400 border-2 border-gray-200" name="comment"
           placeholder="Enter your comment here..."></textarea>
       </div>
