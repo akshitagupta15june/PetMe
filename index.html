@@ -39,7 +39,7 @@
         class="flex flex-row items-center md:flex-row md:items-center p-2"
         id="logo"
       >
-        <span class="mission-1 mission-dark"> Saving Lives </span>
+        <span class="mission-1 mission-dark"  style="color: orange;"> Saving Lives </span>
         <a class="logo-border" href="index.html">
           <img
             class="rounded-full logo-size"
@@ -47,7 +47,7 @@
             alt="logo"
           />
         </a>
-        <span class="mission-2 mission-dark"> Saving Animals </span>
+        <span class="mission-2 mission-dark" style="color: orange;"> Saving Animals </span>
         <!--
       <div class="w-full mt-8 md:mt-0">
         <h1 class="text-4xl text_2  text-center md:text-left md:ml-12 uppercase font-serif font-bold " id = "heading-adopt-me">Adopt
@@ -208,6 +208,8 @@
           <div class="main-body-heading-text z-10">
             <h1 class="heading-main-body-h1"><span>Adopt</span> Me</h1>
             <p>Give life to an animal in need.</p>
+            <span id="element"></span>
+
           </div>
         </div>
       </div>
@@ -1130,5 +1132,15 @@
     <script src="index.js"></script>
     <script src="navbar.js"></script>
     <script src="light-dark-theme.js"></script>
+     <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['You cant buy love, but you can rescue it.', 'Do not pity a shelter dog. Adopt one.'],
+      typeSpeed: 50,
+    });
+  </script>
   </body>
 </html>
