@@ -1,0 +1,1 @@
+Addition of a feature: Inclusion of Grooming services to pets, such as different styles of grooming, shower, etc.. with different costs. Customers can choose for any grooming style & get the service done.
