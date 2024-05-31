@@ -251,7 +251,27 @@
           class="form-control"
           placeholder="Enter your name | eg. John Doe"
           required 
+          oninput="validateName(this)"
         />
+        <span id="nameError" class="text-red-500"></span>
+        
+        <script>
+          function validateName(input) {
+            var nameRegex = /^[A-Za-z\- ]+$/; // Allow letters, hyphens, and spaces
+
+            if (input.value.trim() === '') {
+              document.getElementById('nameError').textContent = '';
+              input.classList.remove('border-red-500');
+            } else if (!input.value.match(nameRegex)) {
+              document.getElementById('nameError').textContent =
+                'Please enter a valid name with only letters, spaces, and hyphens.';
+              input.classList.add('border-red-500');
+            } else {
+              document.getElementById('nameError').textContent = '';
+              input.classList.remove('border-red-500');
+            }
+          }
+        </script>
       </div>
       <div class="form-group">
         <svg
@@ -275,7 +295,27 @@
           class="form-control"
           placeholder="Enter your email"
           required
+          oninput="validateEmail(this)"
         />
+        <span id="emailError" class="text-red-500"></span>
+        
+        <script>
+          function validateEmail(input) {
+            const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+
+            if (input.value.trim() === '') {
+              document.getElementById('emailError').textContent = '';
+              input.classList.remove('border-red-500');
+            } else if (!input.value.match(emailRegex)) {
+              document.getElementById('emailError').textContent =
+                'Please enter a valid email including @.';
+              input.classList.add('border-red-500');
+            } else {
+              document.getElementById('emailError').textContent = '';
+              input.classList.remove('border-red-500');
+            }
+          }
+        </script>
       </div>
       <div class="form-group">
         <svg
