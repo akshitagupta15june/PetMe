@@ -4,9 +4,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="/Assets/Images/apple-touch-icon.png" />
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/Assets/Images/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/Assets/Images/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/Assets/Images/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/Assets/Images/favicon-16x16.png" /> -->
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
     <link rel="stylesheet" href="./output.css" />
@@ -14,11 +14,9 @@
     <link rel="stylesheet" href="./introSection.css" />
     <link rel="stylesheet" href="./navbar.css" />
     <link rel="stylesheet" href="./mobileView.css" />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="/PetMe/Assets/Images/logo.jpg"
-    />
+    <link rel="icon" type="image/x-icon" href="logo.png" />
+
+    
     <script
       defer
       src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"
@@ -117,11 +115,7 @@
               >
             </li>
             <li>
-              <div
-                x-data="{ open: false }"
-                @mouseleave="open = false"
-                class="relative"
-              >
+              <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
                 <a
                   @mouseover="open = true"
                   class="text-custom-heading flex font-bold hover:underline underline-offset-4 turn-red-hover navbar-item w-full"
@@ -146,15 +140,17 @@
                 </a>
                 <div
                   x-show="open"
-                  class="z-20 absolute -left-1 w-[7.5rem] py-2 bg-gray-100 rounded-md shadow-xl"
+                  class="z-20 absolute left-0 w-max py-2 bg-gray-100 rounded-md shadow-xl overflow-hidden"
                 >
                   <a
                     href="volunteer.html"
                     class="block px-4 py-2 text-base text-gray-600 hover:bg-gray-400 hover:text-white"
-                    >Become a Volunteer</a
                   >
+                    Become a Volunteer
+                  </a>
                 </div>
               </div>
+              
             </li>
             <li>
               <a
@@ -771,36 +767,50 @@
               <span id="nameError" class="text-red-500"></span>
 
               <script>
-              function validateName(input) {
-                var nameRegex = /^[A-Za-z\- ]+$/; // Allow letters, hyphens, and spaces
+                function validateName(input) {
+                  var nameRegex = /^[A-Za-z\- ]+$/; // Allow letters, hyphens, and spaces
 
-                if (!input.value.match(nameRegex)) {
-                  document.getElementById('nameError').textContent =
-                    'Please enter a valid name with only letters, spaces, and hyphens.';
-                  input.classList.add('border-red-500');
-                } else {
-                  document.getElementById('nameError').textContent = '';
-                  input.classList.remove('border-red-500');
+                  if (input.value.trim() === '') {
+                    document.getElementById('nameError').textContent = '';
+                    input.classList.remove('border-red-500');
+                  } else if (!input.value.match(nameRegex)) {
+                    document.getElementById('nameError').textContent =
+                      'Please enter a valid name with only letters, spaces, and hyphens.';
+                    input.classList.add('border-red-500');
+                  } else {
+                    document.getElementById('nameError').textContent = '';
+                    input.classList.remove('border-red-500');
+                  }
                 }
-              }
               </script>
 
           </div>
           <div class="mb-6">
-            <label
-              class="block text_3 text-sm font-bold mb-2"
-              for="contact_email" style="color: white;"
-            >
+            <label class="block text_3 text-sm font-bold mb-2" for="contact_email" style="color: white;">
               Email
             </label>
-            <input
-              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
-              id="contact_email"
-              name="contact_email"
-              type="email"
-              required
-              placeholder="hello@petme"
-            />
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
+              id="contact_email" name="contact_email" type="email" required placeholder="hello@petme"
+              oninput="validateEmail(this)" />
+            <span id="emailError" class="text-red-500"></span>
+          
+            <script>
+              function validateEmail(input) {
+                const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+
+                if (input.value.trim() === '') {
+                  document.getElementById('emailError').textContent = '';
+                  input.classList.remove('border-red-500');
+                } else if (!input.value.match(emailRegex)) {
+                  document.getElementById('emailError').textContent =
+                    'Please enter a valid email including @.';
+                  input.classList.add('border-red-500');
+                } else {
+                  document.getElementById('emailError').textContent = '';
+                  input.classList.remove('border-red-500');
+                }
+              }
+            </script>
           </div>
           <div class="mb-6">
             <label
