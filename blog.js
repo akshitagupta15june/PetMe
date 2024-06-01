@@ -17,8 +17,10 @@ fetch("blog.json")
               <b>${blog.title}</b><br>
               <span class="text-base font-light lowercase">${blog.description}</span>
             </h3>
+
             <div class="mt-4">
                <a href="${blog.read}" rel="noopener noreferrer" class="px-4 py-2 text-white font-normal bg-amber-800 hover:bg-amber-900 rounded-md transition duration-300 ease-in-out focus:outline-none focus:ring focus:border-amber-900 transform hover:scale-105" aria-label="Read ${blog.title}">
+
                 <b>Read</b>
               </a>
             </div>
