@@ -1,99 +1,106 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/Assets/Images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/Assets/Images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/Assets/Images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="./output.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./introSection.css">
+  <link rel="stylesheet" href="./navbar.css">
+  <link rel="stylesheet" href="./mobileView.css">
+  <link rel="icon" type="image/x-icon" href="/Assets/Images/logo.ico">
+  <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+  <script>
+    var regexPattern = {
+      name: new RegExp("[A-Z][a-zA-Z]{1,}[\\s][A-Z][a-zA-Z]{1,}"),
+      email: new RegExp("^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-]+)(\\.[a-zA-Z]{2,5}){1,3}$"),
+      address:new RegExp(".{4,}"),
+      city: new RegExp("[A-Z][a-zA-Z]{1,}"),
+      state: new RegExp("[A-Z][a-zA-Z]{1,}([\\s][A-Z][a-zA-Z]{1,})?"),
+      country: new RegExp("[A-Z][a-zA-Z]{1,}"),
+      contact: new RegExp("^\\+(?:[0-9].?){6,14}[0-9]$"),
+      pettype: new RegExp("[A-Z][a-zA-Z]+"),
+      petcolor: new RegExp("[A-Z][a-zA-Z]+"),
+      breed: new RegExp("[A-Z][a-zA-Z]{1,}([\\s][A-Z][a-zA-Z]{1,})?"),
+    }
+    function validateForm(form) {
+      var nameData = document.getElementById('name').value;
+      var emailData = document.getElementById('email').value;
+      var addressData = document.getElementById('address').value;
+      var cityData = document.getElementById('city').value;
+      var stateData = document.getElementById('state').value;
+      var countryData = document.getElementById('country').value;
+      var contactData = document.getElementById('number').value;
+      var typeData = document.getElementById('pettype').value;
+      var colourData = document.getElementById('petcolor').value;
+      var breedData = document.getElementById('breed').value;
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="/Assets/Images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/Assets/Images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/Assets/Images/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="./output.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./introSection.css">
-    <link rel="stylesheet" href="./navbar.css">
-    <link rel="stylesheet" href="./mobileView.css">
-    <link rel="icon" type="image/x-icon" href="/Assets/Images/logo.ico">
-    <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
-    <script>
-      function validateForm(form){
-
-        var nameData = document.getElementById('name').value;
-        var nameRegex = new RegExp("[A-Z][a-zA-Z]{1,}[\\s][A-Z][a-zA-Z]{1,}");
-
-        var emailData = document.getElementById('email').value;
-        var emailRegex = new RegExp("^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-]+)(\\.[a-zA-Z]{2,5}){1,3}$");
-
-        // only checkin if address is less than 3 as we cant anpply any particular regex on the address
-        var addressData = document.getElementById('address').value; 
-        
-
-        var cityData = document.getElementById('city').value;
-        var cityRegex = new RegExp("[A-Z][a-zA-Z]{1,}");
-
-        var stateData = document.getElementById('state').value;
-        var stateRegex = new RegExp("[A-Z][a-zA-Z]{1,}([\\s][A-Z][a-zA-Z]{1,})?");
-
-        var countryData = document.getElementById('country').value;
-        var countryRegex = new RegExp("[A-Z][a-zA-Z]{1,}");
-
-        var contactData = document.getElementById('number').value;
-        var contactRegex = new RegExp("^\\+(?:[0-9].?){6,14}[0-9]$");
-
-        var typeData = document.getElementById('pet-type').value;
-        var typeRegex = new RegExp("[A-Z][a-zA-Z]+");
-
-        var colourData = document.getElementById('pet-color').value;
-        var colourRegex = new RegExp("[A-Z][a-zA-Z]+");
-
-        var breedData = document.getElementById('breed').value;
-        var breedRegex = new RegExp("[A-Z][a-zA-Z]{1,}([\\s][A-Z][a-zA-Z]{1,})?");
-
-        if(nameRegex.test(nameData) && emailRegex.test(emailData) && addressData.length>3 && cityRegex.test(cityData) && 
-        stateRegex.test(stateData) && countryRegex.test(countryData) && contactRegex.test(contactData) && typeRegex.test(typeData)
-        && colourRegex.test(colourData) && breedRegex.test(breedData) &&breedRegex.test(breedData)){
-          return true;
-        }
-      
-        window.alert('Please enter valid form data')
-       return false;
+      if (regexPattern[name].test(nameData) && regexPattern[email].test(emailData) && regexPattern[address].test(addressData) && regexPattern[city].test(cityData) &&
+      regexPattern[state].test(stateData) && regexPattern[country].test(countryData) && regexPattern[contact].test(contactData) && regexPattern[type].test(typeData)
+        && regexPattern[colour].test(colourData) && regexPattern[breed].test(breedData)) {
+        return true;
       }
-    </script>
-    <title>Donate animals: PetMe</title>
-    <style>
-      .donate-section form .relative:has(input:required) label::after {
-        content: '*';
-        color: red;
-        margin-left: 0.2rem;
+
+      window.alert('Please enter valid form data')
+      return false;
+    }
+
+    function displayErrorMsg(inputName) {
+      var inputfield = document.getElementById(`${inputName}`);
+      var element = document.getElementById(`${inputName}-helper`);
+
+      if (!regexPattern[inputName].test(inputfield.value)) {
+        element.style.display = 'block';
+        inputfield.classList.remove('border-gray-300', 'focus:border-indigo-500', 'focus:bg-white', 'focus:ring-2', 'focus:ring-indigo-200');
+        inputfield.classList.add('border-red')
       }
-      
- #submit_button{
-        
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        color: white;
-        background-color: #90400E;
-        border: none;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        outline: none;
-        border-radius: 0.25rem;
-        font-size: 1.125rem;
+      else {
+        element.style.display = 'none';
+        inputfield.classList.remove('border-red')
+        inputfield.classList.add('border-gray-300', 'focus:border-indigo-500', 'focus:bg-white', 'focus:ring-2', 'focus:ring-indigo-200');
       }
-      
-      #submit_button:hover {
-        background-color: #c15a1b;
-        
-      }
-    </style>
-  </head>
+    }
+
+  </script>
+  <title>Donate animals: PetMe</title>
+  <style>
+    .donate-section form .relative:has(input:required) label::after {
+      content: '*';
+      color: red;
+      margin-left: 0.2rem;
+    }
+
+    #submit_button {
+
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      color: white;
+      background-color: #90400E;
+      border: none;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      outline: none;
+      border-radius: 0.25rem;
+      font-size: 1.125rem;
+    }
+
+    #submit_button:hover {
+      background-color: #c15a1b;
+
+    }
+  </style>
+</head>
 
 <body>
   <header id="header"
@@ -124,46 +131,59 @@
     </button>
     <nav class="">
       <div class="hidden w-full lg:block z-2" id="navbar">
-        <ul class="w-[100vw] h-1/2 top-0 right-0 p-8 lg:p-4 mt-12 lg:mt-0 text-center text-base lg:text-[18px] space-y-4 lg:space-y-0 lg:space-x-5 lg:static lg:w-auto flex flex-col rounded-lg items-start lg:items-center lg:bg-transparent lg:border-0 lg:flex-row justify-between">
-        <li>
-          <a href="./index.html" class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Home</a>
-        </li>
-          <a href="./news.html" class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Pet News</a>
-        </li>
-        <li>
-          <a href="./blog.html" class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Blogs</a>
-        </li>
-        <li>
-          <a href="./donate.html" class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Donate</a>
-        </li>
-        <li>
-          <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
-          <a @mouseover="open = true" class="text-custom-heading flex font-bold hover:underline underline-offset-4 turn-red-hover navbar-item w-full">
-            Support Us
-            <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="mt-1">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </a>
-          <div x-show="open" class="z-20 absolute -left-1 w-[7.5rem] py-2 bg-gray-100 rounded-md shadow-xl">
-            <a href="volunteer.html" class="block px-4 py-2 text-base text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">Become a Volunteer</a>
+        <ul
+          class="w-[100vw] h-1/2 top-0 right-0 p-8 lg:p-4 mt-12 lg:mt-0 text-center text-base lg:text-[18px] space-y-4 lg:space-y-0 lg:space-x-5 lg:static lg:w-auto flex flex-col rounded-lg items-start lg:items-center lg:bg-transparent lg:border-0 lg:flex-row justify-between">
+          <li>
+            <a href="./index.html"
+              class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Home</a>
+          </li>
+          <a href="./news.html"
+            class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Pet
+            News</a>
+          </li>
+          <li>
+            <a href="./blog.html"
+              class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Blogs</a>
+          </li>
+          <li>
+            <a href="./donate.html"
+              class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Donate</a>
+          </li>
+          <li>
+            <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
+              <a @mouseover="open = true"
+                class="text-custom-heading flex font-bold hover:underline underline-offset-4 turn-red-hover navbar-item w-full">
+                Support Us
+                <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" class="mt-1">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </a>
+              <div x-show="open" class="z-20 absolute -left-1 w-[7.5rem] py-2 bg-gray-100 rounded-md shadow-xl">
+                <a href="volunteer.html"
+                  class="block px-4 py-2 text-base text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">Become
+                  a Volunteer</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="./reportstary.html"
+              class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">SOS
+              Report</a>
+          </li>
+          <li>
+            <a id="theme-toggle">
+              <i class="ri-sun-line turn-yellow-hover light-theme" id="switch"></i>
+            </a>
+          </li>
+          <!-- google translate -->
+          <div id="google_translate_element">
+            <script type="text/javascript"
+              src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
           </div>
-          </div>
-        </li>
-        <li>
-          <a href="./reportstary.html" class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">SOS Report</a>
-        </li>
-        <li>
-          <a id="theme-toggle">
-            <i class="ri-sun-line turn-yellow-hover light-theme" id="switch"></i>
-          </a>
-        </li>
-        <!-- google translate -->
-        <div id="google_translate_element">
-          <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-        </div>
         </ul>
       </div>
-      </nav>
+    </nav>
   </header>
 
   <section class="text-gray-600 body-font relative bg-[url('Assets/Images/pet-don.jpg')] bg-center bg-no-repeat
@@ -177,99 +197,117 @@
           Fill up the form below and donate your pets.
         </p>
       </div>
-      <form id="survey-form" action="https://formspree.io/f/xayaokzl" method="POST" name="survey-form" onsubmit="return validateForm()">
+      <form id="survey-form" action="https://formspree.io/f/xayaokzl" method="POST" name="survey-form"
+        onsubmit="return validateForm()">
         <div class="lg:w-1/2 md:w-2/3 mx-auto">
           <div class="flex flex-wrap -m-2">
             <div class="p-2 w-1/2">
               <div class="relative">
                 <label for="name" class="leading-7 text-sm text-gray-900">Full Name</label>
                 <input type="text" id="name" name="name" placeholder="John Doe" autocomplete="off"
+                  onchange="displayErrorMsg(this.name)"
                   class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   required />
+                <p id="name-helper" class="help">Enter valid name <br>-> Enter Your first and last name (Starting with uppercase) with
+                  separate space.</p>
               </div>
             </div>
             <div class="p-2 w-1/2">
               <div class="relative">
                 <label for="email" class="leading-7 text-sm text-gray-900">Email</label>
                 <input type="email" id="email" name="email" placeholder="youremail@gmail.com" autocomplete="off"
-                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  onchange="displayErrorMsg(this.name)"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300  focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   required />
+                <p id="email-helper" class="help">Enter valid email address </p>
               </div>
             </div>
             <div class="p-2 w-full">
               <div class="relative">
                 <label for="address" class="leading-7 text-sm text-gray-900">Address</label>
                 <input type="text" id="address" name="address" placeholder="Your Address" autocomplete="off"
+                  onchange="displayErrorMsg(this.name)"
                   class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   required />
+                <p id="address-helper" class="help">Enter valid address</p>
               </div>
             </div>
             <div class="p-2 w-1/2">
               <div class="relative">
                 <label for="city" class="leading-7 text-sm text-gray-900">City</label>
                 <input type="text" id="city" name="city" placeholder="Agra" autocomplete="off"
+                  onchange="displayErrorMsg(this.name)"
                   class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   required />
+                <p id="city-helper" class="help">Enter valid city name (Start with capital letter)</p>
               </div>
             </div>
             <div class="p-2 w-1/2">
               <div class="relative">
                 <label for="state" class="leading-7 text-sm text-gray-900">State</label>
                 <input type="text" id="state" name="state" placeholder="Uttar Pradesh" autocomplete="off"
+                  onchange="displayErrorMsg(this.name)"
                   class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   required />
+                <p id="state-helper" class="help">Enter valid state name(Start with capital letter)</p>
               </div>
             </div>
             <div class="p-2 w-1/2">
               <div class="relative">
                 <label for="country" class="leading-7 text-sm text-gray-900">Country</label>
                 <input type="text" id="country" name="country" placeholder="India" autocomplete="off"
+                  onchange="displayErrorMsg(this.name)"
                   class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   required />
+                <p id="country-helper" class="help">Enter valid country (Start with capital letter)</p>
               </div>
             </div>
             <div class="p-2 w-1/2">
               <div class="relative">
                 <label for="number" class="leading-7 text-sm text-gray-900">Contact Number</label>
-
-                <input type="text" id="number" name="number" autocomplete="off" placeholder="+91 0123456789" 
-
-                
-
+                <input type="text" id="contact" name="contact" autocomplete="off" placeholder="+91 0123456789"
+                  onchange="displayErrorMsg(this.name)"
                   class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   oninput="this.value = this.value.replace(/[^0-9\+\.]/g, '').replace(/(\..*)\./g, '$1');" required />
-
+                <p id="contact-helper" class="help">Enter valid number (formate : +91 0123456789)</p>
               </div>
             </div>
             <div class="p-2 w-1/2">
               <div class="relative">
                 <label for="pet-type" class="leading-7 text-sm text-gray-900">Pet Type</label>
-                <input type="text" id="pet-type" name="pet-type" placeholder="Dog" autocomplete="off"
+                <input type="text" id="pettype" name="pettype" placeholder="Dog" autocomplete="off"
+                  onchange="displayErrorMsg(this.name)"
                   class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   required />
+                <p id="pettype-helper" class="help">Enter valid pet type</p>
               </div>
             </div>
             <div class="p-2 w-1/2">
               <div class="relative">
                 <label for="name" class="leading-7 text-sm text-gray-900">Pet Name</label>
-                <input type="text" id="pet-name" name="name" placeholder="Charlie" autocomplete="off"
+                <input type="text" id="petname" name="petname" placeholder="Charlie" autocomplete="off"
                   class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                <p id="petname-helper" class="help">Enter valid pet name</p>
               </div>
             </div>
             <div class="p-2 w-1/2">
               <div class="relative">
-                <label for="pet-color" class="leading-7 text-sm text-gray-900">Pet Color</label>
-                <input type="text" id="pet-color" name="pet-color" placeholder="Yellow" autocomplete="off"
+                <label for="petcolor" class="leading-7 text-sm text-gray-900">Pet Color</label>
+                <input type="text" id="petcolor" name="petcolor" placeholder="Yellow" autocomplete="off"
+                  onchange="displayErrorMsg(this.name)"
                   class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   required />
+                <p id="petcolor-helper" class="help">Enter valid pet color</p>
               </div>
             </div>
             <div class="p-2 w-1/2">
               <div class="relative">
-                <label for="color" class="leading-7 text-sm text-gray-900">Pet Breed</label>
-                <input type="text" id="breed" name="color" placeholder="German Shepherd" autocomplete="off"
+                <label for="breed" class="leading-7 text-sm text-gray-900">Pet Breed</label>
+                <input type="text" id="breed" name="breed" placeholder="German Shepherd" autocomplete="off"
+                  onchange="displayErrorMsg(this.name)"
                   class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   required />
+                <p id="breed-helper" class="help">Enter valid pet breed</p>
               </div>
             </div>
             <div class="p-2 w-full">
@@ -301,8 +339,7 @@
               </span>
             </div>
             <div class="p-4 w-full">
-              <button type="submit" 
-                id="submit_button">
+              <button type="submit" id="submit_button">
                 Submit
               </button>
             </div>
@@ -312,159 +349,109 @@
     </form>
   </section>
 
-    <!-- Footer section  -->
+  <!-- Footer section  -->
 
-    <footer class="bg-black text-white shadow-inner pt-4 pb-8">
-      <div class="flex p-5 justify-between">
-        <div
-          class="flex flex-1 flex-col text-center sm:flex-row items-center justify-center space-x-3"
-        >
-          <div>
-            <a href="#top">
-              <img
-                class="rounded-full w-24 cursor-pointer"
-                src="./Assets/Images/logo.jpg"
-                alt="logo"
-              />
-            </a>
-          </div>
-          <div>
-            <div class="space-y-2">
-              <h3 class="text-2xl">Adopt a pet</h3>
-              <div>Give life to an animal in need</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Subscribe column -->
-        <div class="md:flex flex-col hidden text-center items-center flex-1">
-          <div class="space-y-2">
-            <h3 class="text-2xl">Subscribe to our newsletter</h3>
-            <div class="text-md">
-              Get the latest news and updates delivered straight to your inbox.
-            </div>
-            <div class="text-center">
-              <input
-                class="my-1 mr-2 p-2 rounded-md text-black"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter your email address"
-              />
-              <button
-                class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md"
-                type="submit"
-              >
-                Subscribe
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- Subscribe column end -->
-
-        <!-- Social icons  -->
-        <div class="flex-1 flex flex-col items-center justify-center">
-          <div class="text-2xl">Follow us on</div>
-          <div class="flex mt-2 flex-row space-x-3 my-0">
-            <div class="hover:scale-110 transition-all">
-              <a href="#" class="w-5 ml-3">
-                <!-- Facebook icon -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="40"
-                  height="40"
-                  class="fill-white"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
-                  />
-                </svg>
-              </a>
-            </div>
-            <div class="hover:scale-110 transition-all">
-              <a href="#" class="w-10 ml-3 mr-3">
-                <!-- Instagram icon -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="40"
-                  height="40"
-                  class="fill-white"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-                  />
-                </svg>
-              </a>
-            </div>
-            <div class="hover:scale-110 transition-all">
-              <a
-                href="https://github.com/akshitagupta15june/PetMe"
-                target="_blank"
-                class="w-10 ml-3 mr-3"
-              >
-                <!-- Github icon -->
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="40"
-                  height="40"
-                  class="fill-white"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- Social icons end -->
-
-        <!-- Scroll to top -->
-        <div class="md:pr-8 hover-effect">
+  <footer class="bg-black text-white shadow-inner pt-4 pb-8">
+    <div class="flex p-5 justify-between">
+      <div class="flex flex-1 flex-col text-center sm:flex-row items-center justify-center space-x-3">
+        <div>
           <a href="#top">
-            <button id="bttbutton" title="backtotop">
-              <img src="./image.svg" class="w-6 md:w-10 md:object-left" />
-            </button>
+            <img class="rounded-full w-24 cursor-pointer" src="./Assets/Images/logo.jpg" alt="logo" />
           </a>
         </div>
-        <!-- Scroll to top -->
+        <div>
+          <div class="space-y-2">
+            <h3 class="text-2xl">Adopt a pet</h3>
+            <div>Give life to an animal in need</div>
+          </div>
+        </div>
       </div>
 
-      <div
-        class="pt-5 pb-8 flex flex-col text-center md:hidden mt-8 items-center flex-1"
-      >
+      <!-- Subscribe column -->
+      <div class="md:flex flex-col hidden text-center items-center flex-1">
         <div class="space-y-2">
-          <h3 class="text-2xl text-center">Subscribe to our newsletter</h3>
+          <h3 class="text-2xl">Subscribe to our newsletter</h3>
           <div class="text-md">
             Get the latest news and updates delivered straight to your inbox.
           </div>
           <div class="text-center">
-            <input
-              class="my-1 mr-2 p-2 rounded-md"
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Enter your email address"
-              style="color: black"
-            />
-            <button
-              class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md"
-              type="submit"
-            >
+            <input class="my-1 mr-2 p-2 rounded-md text-black" type="email" id="email" name="email"
+              placeholder="Enter your email address" />
+            <button class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md" type="submit">
               Subscribe
             </button>
           </div>
         </div>
       </div>
-      <div id="copyright">
-        <p>
-          Copyright &copy; <span id="date"></span> [PetMe] All Right Reserved.
-        </p>
+      <!-- Subscribe column end -->
+
+      <!-- Social icons  -->
+      <div class="flex-1 flex flex-col items-center justify-center">
+        <div class="text-2xl">Follow us on</div>
+        <div class="flex mt-2 flex-row space-x-3 my-0">
+          <div class="hover:scale-110 transition-all">
+            <a href="#" class="w-5 ml-3">
+              <!-- Facebook icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="fill-white" viewBox="0 0 20 20">
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+              </svg>
+            </a>
+          </div>
+          <div class="hover:scale-110 transition-all">
+            <a href="#" class="w-10 ml-3 mr-3">
+              <!-- Instagram icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="fill-white" viewBox="0 0 20 20">
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+              </svg>
+            </a>
+          </div>
+          <div class="hover:scale-110 transition-all">
+            <a href="https://github.com/akshitagupta15june/PetMe" target="_blank" class="w-10 ml-3 mr-3">
+              <!-- Github icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="fill-white" viewBox="0 0 20 20">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
-    </footer>
+      <!-- Social icons end -->
+
+      <!-- Scroll to top -->
+      <div class="md:pr-8 hover-effect">
+        <a href="#top">
+          <button id="bttbutton" title="backtotop">
+            <img src="./image.svg" class="w-6 md:w-10 md:object-left" />
+          </button>
+        </a>
+      </div>
+      <!-- Scroll to top -->
+    </div>
+
+    <div class="pt-5 pb-8 flex flex-col text-center md:hidden mt-8 items-center flex-1">
+      <div class="space-y-2">
+        <h3 class="text-2xl text-center">Subscribe to our newsletter</h3>
+        <div class="text-md">
+          Get the latest news and updates delivered straight to your inbox.
+        </div>
+        <div class="text-center">
+          <input class="my-1 mr-2 p-2 rounded-md" type="email" id="email" name="email"
+            placeholder="Enter your email address" style="color: black" />
+          <button class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md" type="submit">
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="copyright">
+      <p>
+        Copyright &copy; <span id="date"></span> [PetMe] All Right Reserved.
+      </p>
+    </div>
+  </footer>
 
   <script src="navbar.js"></script>
   <script src="light-dark-theme.js"></script>

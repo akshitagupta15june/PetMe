@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.tailwindcss.com"></script>
 	<link rel="apple-touch-icon" sizes="180x180" href="/Assets/Images/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/Assets/Images/favicon-32x32.png">
+
 	<link rel="icon" type="image/png" sizes="16x16" href="/Assets/Images/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
@@ -16,7 +16,12 @@
 	<link rel="stylesheet" href="./introSection.css">
 	<link rel="stylesheet" href="./navbar.css">
 	<link rel="stylesheet" href="./mobileView.css">
+
+	<link rel="icon" type="image/x-icon" href="logo.png" />
 	
+
+
+
 	<script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
 	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 	<title>Pet News</title>
@@ -34,113 +39,117 @@
 
 <body>
 	<header
-			class="header text-gray-400 bg-header-offwhite body-font flex flex-row items-center justify-center lg:justify-around"
-			id="header"
-		>
-			<div
-				class="flex flex-row items-center md:flex-row md:items-center p-2"
-				id="logo"
-			>
-				<span class="mission-1 mission-dark"> Saving Lives </span>
-				<a class="logo-border" href="index.html">
-					<img
-						class="rounded-full logo-size"
-						src="./Assets/Images/logo.jpg"
-						alt="logo"
-					/>
-				</a>
-				<span class="mission-2 mission-dark"> Saving Animals </span>
-			</div>
-			<button
-				data-collapse-toggle="navbar-default"
-				type="button"
-				class="absolute top-4 right-4 sm:inline-flex sm:items-center p-2 lg:hidden focus:outline-none text_4"
-				aria-controls="navbar-default"
-				aria-expanded="false"
-				id="nav-button"
-			>
-				<span class="sr-only">Open main menu</span>
-				<svg
-					class="w-6 h-6"
-					aria-hidden="true"
-					fill="currentColor"
-					viewBox="0 0 20 20"
-					xmlns="http://www.w3.org/2000/svg"
-				>
-					<path
-						fill-rule="evenodd"
-						d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-						clip-rule="evenodd"
-					></path>
-				</svg>
-			</button>
-			<nav class="">
-				<div class="hidden w-full lg:block z-2" id="navbar">
-				  <ul class="w-[100vw] h-1/2 top-0 right-0 p-8 lg:p-4 mt-12 lg:mt-0 text-center text-base lg:text-lg space-y-4 lg:space-y-0 lg:space-x-5 lg:static lg:w-auto flex flex-col rounded-lg items-start lg:items-center lg:bg-transparent lg:border-0 lg:flex-row justify-between">
-					
+		class="header text-gray-400 bg-header-offwhite body-font flex flex-row items-center justify-center xl:justify-around"
+		id="header">
+		<div class="flex flex-row items-center md:flex-row md:items-center p-2" id="logo">
+			<span class="mission-1 mission-dark"> Saving Lives </span>
+			<a class="logo-border" href="index.html">
+				<img class="rounded-full logo-size" src="./Assets/Images/logo.jpg" alt="logo" />
+			</a>
+			<span class="mission-2 mission-dark"> Saving Animals </span>
+		</div>
+		<button data-collapse-toggle="navbar-default" type="button"
+			class="absolute top-7 right-4 sm:inline-flex sm:items-center p-2 xl:hidden focus:outline-none text_4"
+			aria-controls="navbar-default" aria-expanded="false" id="nav-button">
+			<span class="sr-only">Open main menu</span>
+			<svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd"
+					d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+					clip-rule="evenodd"></path>
+			</svg>
+		</button>
+		<nav class="">
+			<div class="hidden w-full mb-5 xl:mb-0 xl:block z-2" id="navbar">
+				<ul
+					class="w-[100vw] h-1/2 top-0 right-0 p-8 xl:px-3 mt-12 xl:mt-0 text-center text-base xl:text-lg space-y-4 xl:space-y-0 xl:space-x-5 lg:static xl:w-auto flex flex-col rounded-lg items-center xl:items-center xl:bg-transparent xl:border-0 xl:flex-row justify-between">
+
 					<li>
-						<a href="./index.html" class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Home</a>
+						<a href="./index.html"
+							class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Home</a>
 					</li>
 					<li>
-					  <a href="index.html#meet" class="p-3 text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Meet Pets</a>
+						<a href="index.html#meet"
+							class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Meet
+							Pets</a>
 					</li>
 					<li>
-					  <a href="index.html#About" class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">About Us</a>
+						<a href="index.html#About"
+							class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">About
+							Us</a>
 					</li>
 					<li>
-					  <a href="./blog.html" class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Blogs</a>
+						<a href="./news.html"
+							class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Pet News</a>
 					</li>
 					<li>
-					  <a href="./donate.html" class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Donate</a>
+						<a href="./blog.html"
+							class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Blogs</a>
 					</li>
 					<li>
-					  <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
-						<a @mouseover="open = true" class="text-custom-heading flex font-bold hover:underline underline-offset-4 turn-red-hover navbar-item w-full">
-						  Support Us
-						  <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="mt-1">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-						  </svg>
-						</a>
-						<div x-show="open" class="z-20 absolute -left-1 w-[7.5rem] py-2 bg-gray-100 rounded-md shadow-xl">
-						  <a href="volunteer.html" class="block px-4 py-2 text-base text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">Become a Volunteer</a>
+						<a href="./donate.html"
+							class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">Donate</a>
+					</li>
+					<li>
+						<div x-data="{ open: false }" @mouseleave="open = false" class="relative">
+							<a @mouseover="open = true"
+								class="text-custom-heading flex font-bold hover:underline underline-offset-4 turn-red-hover navbar-item w-full">
+								Support Us
+								<svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" fill="none"
+									viewBox="0 0 24 24" stroke="currentColor" class="mt-1">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+										d="M19 9l-7 7-7-7"></path>
+								</svg>
+							</a>
+							<div x-show="open"
+								class="z-20 absolute -left-1 w-[7.5rem] py-2 bg-gray-100 rounded-md shadow-xl">
+								<a href="volunteer.html"
+									class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-400 hover:text-white">Become
+									a Volunteer</a>
+							</div>
 						</div>
-					  </div>
 					</li>
 					<li>
-					  <a href="./reportstary.html" class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">SOS Report</a>
+						<a href="./reportstary.html"
+							class="text-custom-heading font-bold hover:underline underline-offset-4 turn-red-hover navbar-item">SOS
+							Report</a>
 					</li>
 					<li>
-					  <a href="./index.html#contact">
-						<button class="inline-flex items-center bg-header-orange-light border-0 py-2 lg:py-2 text-choco text-base px-2 focus:outline-none text_4 font-bold rounded text-base mt-4 md:mt-0">
-						  Contact Us
-						  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-							<path d="M5 12h14M12 5l7 7-7 7"></path>
-						  </svg>
-						</button>
-					  </a>
+						<a href="./index.html#contact">
+							<button
+								class="inline-flex items-center bg-header-orange-light border-0 py-2 lg:py-2 text-choco px-2 focus:outline-none text_4 font-bold rounded text-base mt-4 md:mt-0">
+								Contact Us
+								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+									stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+									<path d="M5 12h14M12 5l7 7-7 7"></path>
+								</svg>
+							</button>
+						</a>
 					</li>
 					<li>
-					  <a id="theme-toggle">
-						<i class="ri-sun-line turn-yellow-hover light-theme" id="switch"></i>
-					  </a>
+						<a id="theme-toggle">
+							<i class="ri-sun-line turn-yellow-hover light-theme" id="switch"></i>
+						</a>
 					</li>
 					<!-- google translate -->
 					<div id="google_translate_element">
-					  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+						<script type="text/javascript"
+							src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 					</div>
-				  </ul>
-				</div>
-			  </nav>
-			  
-		</header>
+				</ul>
+			</div>
+		</nav>
+
+	</header>
 
 	<!-- Pet news -->
 	<div class="news-container"
-		style="background-image:url(https://wallup.net/wp-content/uploads/2016/01/256905-animals-dog-puppies.jpg);background-size: cover;">
+		style="background-image:url(https://wallup.net/wp-content/uploads/2016/01/256905-animals-dog-puppies.jpg);background-size: cover;padding-bottom: 10px;">
 
 		<div class="relative w-[17.5rem] sm:w-[15.5rem] md:w-[19rem] lg:w-[27rem] xl:w-[35rem] h-80 flex justify-center items-center flex-col opacity-80 remove-extra-margin"
 			style="display: flex;border-radius: 4px;margin-top:20px;margin-top:20px;padding: 5px;align-items: center;justify-content: center;position:relative;box-shadow: #ddd;margin-left:8.5%;width: fit-content;height: min-content;padding-bottom:5%;text-align: center;vertical-align:middle;padding-right:4%;background-color:#86412d4d;padding-left:8%;padding-right:16%;margin-right:7%;">
-			<h1 class="text-3xl mt-28 ml-10" style="color:white;"><strong>World’s oldest dog living confirmed as 31-years-old  Rafeiro do Alentejo.</strong></h1>
+			<h1 class="text-3xl mt-28 ml-10" style="color:white;"><strong>World’s oldest dog living confirmed as
+					31-years-old Rafeiro do Alentejo.</strong></h1>
 		</div>
 		<div class="text-lg ml-10 mt-8 sm:mb-28 sm:w-10/12  flex sm:flex-row flex-col"
 			style="display: flex;border-radius: 4px;padding: 5px;align-items: center;justify-content: center;position:relative;box-shadow: #ddd;margin: auto;background-color:#090a0a4d;max-width:95%">
@@ -151,7 +160,10 @@
 
 			<span style="padding:20px;text-align: justify;font-family: 'Josefin Sans', sans-serif;color:white;">
 				<strong>
-					Bobi (born 11 May 1992) is a male purebred Rafeiro do Alentejo dog cared for by Leonel Costa of Conqueiros, Leiria, Portugal. On 2 February 2023, Bobi was confirmed as the first dog on record to live to the age of 30, along with being the oldest dog on record to ever live. On 11 May 2023, Bobi turned 31."
+					Bobi (born 11 May 1992) is a male purebred Rafeiro do Alentejo dog cared for by Leonel Costa of
+					Conqueiros, Leiria, Portugal. On 2 February 2023, Bobi was confirmed as the first dog on record to
+					live to the age of 30, along with being the oldest dog on record to ever live. On 11 May 2023, Bobi
+					turned 31."
 				</strong>
 			</span>
 		</div>
@@ -217,11 +229,12 @@
 					The 59-second video was uploaded on a Twitter page, named, 'Humour and Animals', that shared the
 					video of a dog digging the water channel. </strong>
 			</span>
-			
+
 		</div>
 		<div class="relative w-[17.5rem] sm:w-[15.5rem] md:w-[19rem] lg:w-[27rem] xl:w-[35rem] h-80 flex justify-center items-center flex-col opacity-80"
 			style="display: flex;border-radius: 4px;align-items: center;justify-content: center;position:relative;box-shadow: #ddd;margin: auto;width: fit-content;height:min-content;padding-bottom:5%;padding-right:8%;background-color:#86412d4d;">
-			<h1 class="text-3xl mt-28 ml-10" style="color:white;"><strong>Dog rescued after getting its head stuck in wheel rim</strong></h1>
+			<h1 class="text-3xl mt-28 ml-10" style="color:white;"><strong>Dog rescued after getting its head stuck in
+					wheel rim</strong></h1>
 		</div>
 		<div class="text-lg ml-10 mt-8 sm:mb-28 sm:w-10/12  flex sm:flex-row flex-col"
 			style="display: flex;border-radius: 4px;padding: 5px;align-items: center;justify-content: center;position:relative;box-shadow: #ddd;margin: auto;background-color:#090a0a4d;max-width:95%">
@@ -232,15 +245,18 @@
 
 
 			<span style="padding:20px;text-align: justify;font-family: 'Josefin Sans', sans-serif;color:white;">
-				<strong> 
-					A dog has been rescued from a tight spot by Queensland firefighters armed with a bottle of olive oil and a lot of patience.
-					The puppy, named Bonnie, stuck its head through the middle of a wheel rim but couldn't pull itself back out.
-					It was up to the firefighters at Mareeba Fire and Rescue to figure out a solution to the sticky situation.
+				<strong>
+					A dog has been rescued from a tight spot by Queensland firefighters armed with a bottle of olive oil
+					and a lot of patience.
+					The puppy, named Bonnie, stuck its head through the middle of a wheel rim but couldn't pull itself
+					back out.
+					It was up to the firefighters at Mareeba Fire and Rescue to figure out a solution to the sticky
+					situation.
 					"We hear she's recovering well."
-					
+
 				</strong>
 			</span>
-			
+
 		</div>
 	</div>
 
@@ -248,16 +264,10 @@
 
 	<footer class="bg-black text-white shadow-inner pt-4 pb-8">
 		<div class="flex p-5 justify-between">
-			<div
-				class="flex flex-1 flex-col text-center sm:flex-row items-center justify-center space-x-3"
-			>
+			<div class="flex flex-1 flex-col text-center sm:flex-row items-center justify-center space-x-3">
 				<div>
 					<a href="#top">
-						<img
-							class="rounded-full w-24 cursor-pointer"
-							src="./Assets/Images/logo.jpg"
-							alt="logo"
-						/>
+						<img class="rounded-full w-24 cursor-pointer" src="./Assets/Images/logo.jpg" alt="logo" />
 					</a>
 				</div>
 				<div>
@@ -276,17 +286,9 @@
 						Get the latest news and updates delivered straight to your inbox.
 					</div>
 					<div class="text-center">
-						<input
-							class="my-1 mr-2 p-2 rounded-md text-black"
-							type="email"
-							id="email"
-							name="email"
-							placeholder="Enter your email address"
-						/>
-						<button
-							class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md"
-							type="submit"
-						>
+						<input class="my-1 mr-2 p-2 rounded-md text-black" type="email" id="email" name="email"
+							placeholder="Enter your email address" />
+						<button class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md" type="submit">
 							Subscribe
 						</button>
 					</div>
@@ -301,52 +303,30 @@
 					<div class="hover:scale-110 transition-all">
 						<a href="#" class="w-5 ml-3">
 							<!-- Facebook icon -->
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="40"
-								height="40"
-								class="fill-white"
-								viewBox="0 0 20 20"
-							>
+							<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="fill-white"
+								viewBox="0 0 20 20">
 								<path
-									d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
-								/>
+									d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
 							</svg>
 						</a>
 					</div>
 					<div class="hover:scale-110 transition-all">
 						<a href="#" class="w-10 ml-3 mr-3">
 							<!-- Instagram icon -->
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="40"
-								height="40"
-								class="fill-white"
-								viewBox="0 0 20 20"
-							>
+							<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="fill-white"
+								viewBox="0 0 20 20">
 								<path
-									d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-								/>
+									d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
 							</svg>
 						</a>
 					</div>
 					<div class="hover:scale-110 transition-all">
-						<a
-							href="https://github.com/akshitagupta15june/PetMe"
-							target="_blank"
-							class="w-10 ml-3 mr-3"
-						>
+						<a href="https://github.com/akshitagupta15june/PetMe" target="_blank" class="w-10 ml-3 mr-3">
 							<!-- Github icon -->
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="40"
-								height="40"
-								class="fill-white"
-								viewBox="0 0 20 20"
-							>
+							<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="fill-white"
+								viewBox="0 0 20 20">
 								<path
-									d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-								/>
+									d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
 							</svg>
 						</a>
 					</div>
@@ -359,38 +339,26 @@
 			<div class="md:pr-8 hover-effect">
 				<a href="#top">
 					<button id="bttbutton" title="backtotop">
-						<img src="./image.svg" class="w-6 md:w-10 md:object-left"/>
+						<img src="./image.svg" class="w-6 md:w-10 md:object-left" />
 					</button>
 				</a>
 			</div>
 			<!-- Scroll to top -->
 
-			
+
 
 		</div>
 
-		<div
-			class="pt-5 pb-8 flex flex-col text-center md:hidden mt-8 items-center flex-1"
-		>
+		<div class="pt-5 pb-8 flex flex-col text-center md:hidden mt-8 items-center flex-1">
 			<div class="space-y-2">
 				<h3 class="text-2xl text-center">Subscribe to our newsletter</h3>
 				<div class="text-md">
 					Get the latest news and updates delivered straight to your inbox.
 				</div>
 				<div class="text-center">
-					<input
-						class="my-1 mr-2 p-2 rounded-md"
-						type="email"
-						id="email"
-						name="email"
-						placeholder="Enter your email address"
-							   style="color: black"
-
-					/>
-					<button
-						class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md"
-						type="submit"
-					>
+					<input class="my-1 mr-2 p-2 rounded-md" type="email" id="email" name="email"
+						placeholder="Enter your email address" style="color: black" />
+					<button class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md" type="submit">
 						Subscribe
 					</button>
 				</div>
