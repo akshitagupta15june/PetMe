@@ -179,6 +179,15 @@
           placeholder="Enter your correct address (eg. Meenawati marg, Lucknow, 209087)" required/>
       </div>
       <div class="form-group mb-2">
+        <label for="liveLocation">
+          Live Location
+          <span class="hint text-red-600">*</span>
+          <span class="locate-link" onclick="locateUser()">Locate Me</span>
+      </label>
+      <input type="text" name="liveLocation" id="locationLabel" class="form-control" 
+        placeholder="Press Locate Me for precise Location... " required/>
+      </div>
+      <div class="form-group mb-2">
         <label for="landmark">
           Landmark
           <span class="hint text-red-600">*</span>
