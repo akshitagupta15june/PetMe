@@ -26,3 +26,13 @@ Gobtn.addEventListener("click", Gotopage);
 
 // Change to the stored current theme.
 changeToCurrTheme()
+
+function addtextbox(val){
+  let ele = document.getElementById('box');
+  if(val == "other"){
+    ele.style.display = 'block';
+  }
+  else{
+    ele.style.display = 'none';
+  }
+}
