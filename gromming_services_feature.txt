@@ -1,0 +1,7 @@
+Simplifying the process of making vetenary gromming services available to pet owners, who are concerned about the hygine of their pets and also like to style their pets, with different looks and haircuts . Personal pet hygine is the cornern here
+
+a new feature i.e grooming services can be added. Customer would be provided with options to book for various grooming styles, such as different haircuts, shower etc..along with their costs mentioned. Service is provoded after booking and customer can even provide feedback for the service provided.
+
+this can be provided as a complementary service to most frequent users. also, some discounts can be given for the frequent users.
+
+Please let me know, if this can be implemented.
