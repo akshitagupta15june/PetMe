@@ -101,7 +101,7 @@
 .main-img {
   position: relative;
   background-color: rgb(255, 231, 202);
-  border-radius: 15px;
+  border-radius: 35px;
   overflow: hidden;
   transition: all 300ms;
 }
