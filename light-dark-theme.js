@@ -49,6 +49,7 @@ let t3 = new element(
     "main-body-section-div",
     "turn-white-hover",
     "text-custom-heading",
+    "text-center"
   ],
   "text-gray-900",
   "text-white"
@@ -68,6 +69,9 @@ let b2 = new element(
   "bg-yellow-900"
 );
 let b3 = new element(["bg_3"], "bg-blue-600", "bg-blue-200");
+
+let b4 = new element(["bg-blog"], "bg-white-200","bg-amber-700");
+
 
 let mission1 = new element(["mission-1"], "mission-dark", "mission-light");
 let mission2 = new element(["mission-2"], "mission-dark", "mission-light");
@@ -89,6 +93,7 @@ toggler.addEventListener("click", () => {
   b1.toggle();
   b2.toggle();
   b3.toggle();
+  b4.toggle();
   navbarItem.toggle();
   mission1.toggle();
   mission2.toggle();

@@ -113,10 +113,7 @@ button {
   border: none;
 }
 
-/* .container {
-  width: 100%;
-  margin: 3.125rem auto;
-} */
+
 
 @media (min-width: 576px) {
   .container {
@@ -150,6 +147,19 @@ button {
   margin-left: 0.25rem;
   font-size: 0.875rem;
   color: #495057;
+}
+
+.form-control {
+  margin-top: 10px;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.locate-link {
+  color: rgb(120 53 15);
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 10px;
 }
 
 /* Form */
@@ -217,68 +227,21 @@ form {
   cursor: pointer;
 }
 
-/*
-nav {
-  margin-top: 1vh;
-  font-weight: bold;
-  margin-right: 3px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-left: -12px;
-  text-align: center;
-  background-color: grey;
-}
 
-nav ul li {
-  display: inline-block;
-  list-style: none;
-  margin: 10px 20px;
-}
-nav ul li a {
-  color: rgb(51 50 49 / var(--tw-bg-opacity));
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 100px;
-  position: relative;
-}
-
-nav ul li a::after {
-  content: "";
-  width: 0;
-  height: 3px;
-  background: #ff004f;
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  transition: 0.5s;
-}
-
-nav ul li a:hover::after {
-  width: 100%;
-} */
 
 #portfolio-header {
   margin-left: 120px;
 }
-
 /* help css */
 .help_btn{
 
-  position: fixed;
-  right: 2%;
-  z-index: 100;
-
-  bottom: 10%;
   font-size: 1rem;
-  padding: 0.7em 1.7em;
+  padding: 0.75em 1.7em;
   color: #F5F5DC;
-  /* color: #FFD700; */
   font-weight: 700;
   --tw-bg-opacity: 0.87;
   background-color: rgb(120 53 15 / var(--tw-bg-opacity));
-  border-radius: 25px;
+  border-radius: 8px;
 }
 .popup {
     text-align: center;
