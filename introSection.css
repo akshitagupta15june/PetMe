@@ -65,7 +65,7 @@
   color: white;
 }
 .main-body-heading-text span{
-  color: #c97f06;
+  color: hsl(37, 73%, 59%);
   text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
 }
 
