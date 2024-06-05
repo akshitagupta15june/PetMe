@@ -1,28 +1,32 @@
-class element {
+class Element {
   constructor(cssNames, lightCss, darkCss) {
-    this.cssNames = cssNames; // list with css names
-    this.eles = []; // list of elements selected for which dark CSS will apply
+    this.cssNames = cssNames; 
+    this.elements = []; 
     cssNames.forEach((element) => {
       document.querySelectorAll("." + element).forEach((ele) => {
-        this.eles.push(ele);
+        this.elements.push(ele);
       });
     });
 
     this.lightCss = lightCss;
     this.darkCss = darkCss;
 
-    this.eles.forEach((element) => {
-      element.classList.add(darkCss);
+    this.elements.forEach((element) => {
+      if (!document.body.classList.contains("light-mode")) {
+        element.classList.add(darkCss);
+      }
     });
 
     this.toggle = function () {
-      this.eles.forEach((element) => {
-        if (element.classList.contains(darkCss)) {
-          // element.classList.remove(lightCss);
-          element.classList.remove(darkCss);
+      this.elements.forEach((element) => {
+        if (document.body.classList.contains("light-mode")) {
+          
+          element.classList.toggle(lightCss);
+          element.style.color = ""; // Change text color to blue in light mode
         } else {
-          element.classList.add(darkCss);
-          // element.classList.add(lightCss);
+          
+          element.classList.toggle(darkCss);
+          element.style.color = ""; // Reset text color in dark mode
         }
       });
     };
@@ -31,18 +35,18 @@ class element {
 
 var icon = document.getElementById("switch");
 
-icon.onclick = function(){
+icon.onclick = function () {
   document.body.classList.toggle("dark-theme");
-  if(document.body.classList.contains("dark-theme")){
-    icon.className="ri-moon-line turn-red-hover dark-theme";
-  }else{
-    icon.className="ri-sun-line turn-yellow-hover light-theme";
+  if (document.body.classList.contains("dark-theme")) {
+    icon.className = "ri-moon-line turn-red-hover dark-theme";
+  } else {
+    icon.className = "ri-sun-line turn-yellow-hover light-theme";
   }
-}
+};
 
-let t1 = new element(["text_1"], "text-slate-50", "text-gray-900");
-let t2 = new element(["text_2"], "text-blue-600", "text-blue-200");
-let t3 = new element(
+let t1 = new Element(["text_1"], "text-slate-50", "text-gray-900");
+let t2 = new Element(["text_2"], "text-blue-600", "text-blue-200");
+let t3 = new Element(
   [
     "text_3",
     "meet-heading",
@@ -53,44 +57,46 @@ let t3 = new element(
   "text-gray-900",
   "text-white"
 );
-let t4 = new element(["text_4"], "text-choco", "text-white");
+let t4 = new Element(["text_4"], "text-choco", "text-white");
+let tContactForm = new Element(
+  ["contact-form-text"],
+   "contactusform-color-lightmode",
+   "contactusform-color-darkmode"); //for contact us form
 
-// let b1 = new element("bg_1", "bg-slate-50", "bg-slate-400");
-let b1 = new element(
+let b1 = new Element(
   ["bg-header-offwhite", "main-card", "b_1"],
   "bg-slate-100",
   "bg-amber-900"
 );
-// bg-header-offwhite
-let b2 = new element(
+
+let b2 = new Element(
   ["bg_2", "meet-heading", "pet-card-flex"],
   "bg-blue-300",
   "bg-yellow-900"
 );
-let b3 = new element(["bg_3"], "bg-blue-600", "bg-blue-200");
+let b3 = new Element(["bg_3"], "bg-blue-600", "bg-blue-200");
 
-let mission1 = new element(["mission-1"], "mission-dark", "mission-light");
-let mission2 = new element(["mission-2"], "mission-dark", "mission-light");
+let mission1 = new Element(["mission-1"], "mission-dark", "mission-light");
+let mission2 = new Element(["mission-2"], "mission-dark", "mission-light");
 
-let navbarItem = new element(
+let navbarItem = new Element(
   ["navbar-item"],
   "turn-red-hover",
   "turn-yellow-hover"
 );
 
 let toggler = document.querySelector("#theme-toggle");
-// let body = document.querySelector("body");
-// let heading = document.querySelector("#heading-adopt-me");
 toggler.addEventListener("click", () => {
   t1.toggle();
   t2.toggle();
   t3.toggle();
   t4.toggle();
+  tContactForm.toggle(); // Added for contact form
   b1.toggle();
   b2.toggle();
   b3.toggle();
   navbarItem.toggle();
   mission1.toggle();
   mission2.toggle();
-  changeToBW();
 });
+
