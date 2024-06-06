@@ -56,6 +56,14 @@ let t3 = new element(
 );
 let t4 = new element(["text_4"], "text-choco", "text-white");
 
+let t5 = new element(
+  [
+    "donate-h1","donate-h2","leading-7"
+  ],
+  ["text-amber","text-gray-900"],
+  "text-white"
+);
+
 // let b1 = new element("bg_1", "bg-slate-50", "bg-slate-400");
 let b1 = new element(
   ["bg-header-offwhite", "main-card", "b_1"],
@@ -70,7 +78,7 @@ let b2 = new element(
 );
 let b3 = new element(["bg_3"], "bg-blue-600", "bg-blue-200");
 
-let b4 = new element(["bg-blog"], "bg-white-200","bg-amber-700");
+let b4 = new element(["bg-blog","bg-donate"], "bg-white-200","bg-amber-700");
 
 
 let mission1 = new element(["mission-1"], "mission-dark", "mission-light");
@@ -90,6 +98,7 @@ toggler.addEventListener("click", () => {
   t2.toggle();
   t3.toggle();
   t4.toggle();
+  t5.toggle();
   b1.toggle();
   b2.toggle();
   b3.toggle();
