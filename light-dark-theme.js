@@ -1,24 +1,24 @@
 class Element {
   constructor(cssNames, lightCss, darkCss) {
     this.cssNames = cssNames; 
-    this.elements = []; 
+    this.eles = []; 
     cssNames.forEach((element) => {
       document.querySelectorAll("." + element).forEach((ele) => {
-        this.elements.push(ele);
+        this.eles.push(ele);
       });
     });
 
     this.lightCss = lightCss;
     this.darkCss = darkCss;
 
-    this.elements.forEach((element) => {
+    this.eles.forEach((element) => {
       if (!document.body.classList.contains("light-mode")) {
         element.classList.add(darkCss);
       }
     });
 
     this.toggle = function () {
-      this.elements.forEach((element) => {
+      this.eles.forEach((element) => {
         if (document.body.classList.contains("light-mode")) {
           element.classList.toggle(lightCss);
           element.style.color = ""; // Change text color to blue in light mode
