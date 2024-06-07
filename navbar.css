@@ -1,17 +1,16 @@
+/* Header Styles */
 .bg-header-offwhite {
-  --tw-bg-opacity: 0.5;
-  background-color: rgb(237 224 211);
+  background-color: rgb(237, 224, 211);
 }
 
 .text-custom-heading {
-  --tw-bg-opacity: 0.8;
-  color: rgb(51 50 49 / var(--tw-bg-opacity));
+  color: rgba(51, 50, 49, 0.8);
 }
 
-#switch{
+#switch {
   font-size: 1.5rem;
   cursor: pointer;
-  transition: color .3s;
+  transition: color 0.3s;
 }
 
 #switch.light-theme {
@@ -19,39 +18,32 @@
 }
 
 #switch.dark-theme {
-  color: rgb(62, 62, 62);;
+  color: rgb(62, 62, 62);
 }
 
-
 #switch.turn-red-hover:hover {
-  --tw-text-opacity: 0.65;
   color: red;
 }
 
 #switch.turn-yellow-hover:hover {
-  --tw-text-opacity: 0.65;
-  color: rgb(255 177 0 / var(--tw-text-opacity));
+  color: rgba(255, 177, 0, 0.65);
 }
 
 .bg-header-orange-light {
-  --tw-bg-opacity: 0.4;
-  background-color: rgb(255 171 87 / var(--tw-bg-opacity));
+  background-color: rgba(255, 171, 87, 0.4);
 }
 
 .bg-header-orange-dark {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 195 122 / var(--tw-bg-opacity));
+  background-color: rgb(255, 195, 122);
 }
 
 .bg-header-orange-dark:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 180 92 / var(--tw-bg-opacity));
+  background-color: rgb(255, 180, 92);
   transition-duration: 0.3s;
 }
 
 .bg-header-orange-light:hover {
-  --tw-bg-opacity: 0.7;
-  background-color: rgb(255 171 87 / var(--tw-bg-opacity));
+  background-color: rgba(255, 171, 87, 0.7);
   transition-duration: 0.3s;
 }
 
@@ -66,7 +58,7 @@
 
 .bg-color-btn {
   background-color: rgb(255, 193, 117);
-  border: 2px white solid;
+  border: 2px solid white;
 }
 
 .bg-color-btn:hover {
@@ -89,97 +81,160 @@
 
 /*make the icons white only for darker theme*/
 .text-white .icon {
-  filter: invert(99%) sepia(1%) saturate(200%) hue-rotate(190deg)
-    brightness(117%) contrast(100%);
+  filter: invert(99%) sepia(1%) saturate(200%) hue-rotate(190deg) brightness(117%) contrast(100%);
 }
 
-#logo{
+#logo {
   transition: 0.3s ease;
 }
 
-#logo:hover{
+#logo:hover {
   transform: scale(1.05);
 }
 
-.mission-dark{
+.mission-dark {
   color: rgb(62, 62, 62);
   cursor: default;
 }
 
-.mission-light{
+.mission-light {
   color: rgb(255, 255, 255);
   cursor: default;
 }
 
-#theme-toggle{
+#theme-toggle {
   cursor: pointer;
 }
 
 /* make the header sticky on scroll */
 #header {
-	position: fixed;
-	top: 0;
-	transition: 0.25s;
-	width: 100%;
-	z-index: 100;
+  position: fixed;
+  top: 0;
+  transition: 0.25s;
+  width: 100%;
+  z-index: 100;
 }
 
-.add_border{
+.add_border {
   border-bottom: 2px solid #ae642c;
   /* give a bottom shadow */
-  box-shadow:  0px 10px 10px 0px rgba(0, 0, 0, 0.4);
-}
-.nav-hidden{
-	top: -100px;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
-#navbar{
+.nav-hidden {
+  top: -100px;
+}
+
+#navbar {
   height: fit-content;
 }
 
-.goog-logo-link,.goog-te-gadget span,.goog-te-banner-frame,#goog-gt-tt, .goog-te-balloon-frame,div#goog-gt-{
-  display: none!important;
+.goog-logo-link,
+.goog-te-gadget span,
+.goog-te-banner-frame,
+#goog-gt-tt,
+.goog-te-balloon-frame,
+div#goog-gt- {
+  display: none !important;
 }
 
 .goog-te-gadget {
-  font-size:0px !important;
+  font-size: 0px !important;
   margin-bottom: -27px;
 }
 
-.skiptranslate goog-te-gadget #text{
-  display: none!important;
+.skiptranslate.goog-te-gadget #text {
+  display: none !important;
 }
 
-
 /* navbar changed responsiveness so the text doesn't get too big in the navbar */
-
 @media screen and (max-width: 1190px) {
-  #navbar{
+  #navbar {
     white-space: nowrap;
-    
   }
   #navbar ul {
     font-size: 15px;
   }
 }
-.nav-items{
+
+.nav-items {
   display: flex;
   gap: 2rem;
   padding: 0 4rem;
-  
 }
-a{
+
+a {
   text-decoration: none;
   color: white;
 }
-a:hover{
-  color:hwb(37 38% 0%);
+
+a:hover {
+  color: hwb(37 38% 0%);
   font-size: 1.25rem;
 }
-.nav-items div{
+
+.nav-items div {
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
-  transition:  5s;
-  
+  transition: color 0.5s;
+}
+
+/* navbar.css */
+
+/* General Navbar Styling */
+nav {
+  background-color: #ffffff;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+nav button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    display: none;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  nav ul li a {
+    padding: 10px 20px;
+  }
 }

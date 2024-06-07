@@ -237,9 +237,6 @@
   background-color: black;
   color: white;
 }
-
-#facebook {
-}
 .facebook-icon {
   fill: lightgray; 
   transition: fill 0.3s; 
@@ -278,9 +275,11 @@
 #google_translate_element div {
   color: rgb(255, 255, 255);
 }
-#google_translate_element span {
-}
 
 .copyright1{
   margin-left: 50%;
+}
+
+.changes{
+  color: white;
 }
