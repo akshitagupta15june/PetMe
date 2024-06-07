@@ -20,11 +20,9 @@ class Element {
     this.toggle = function () {
       this.elements.forEach((element) => {
         if (document.body.classList.contains("light-mode")) {
-          
           element.classList.toggle(lightCss);
           element.style.color = ""; // Change text color to blue in light mode
         } else {
-          
           element.classList.toggle(darkCss);
           element.style.color = ""; // Reset text color in dark mode
         }
@@ -61,7 +59,8 @@ let t4 = new Element(["text_4"], "text-choco", "text-white");
 let tContactForm = new Element(
   ["contact-form-text"],
    "contactusform-color-lightmode",
-   "contactusform-color-darkmode"); //for contact us form
+   "contactusform-color-darkmode"
+);
 
 let b1 = new Element(
   ["bg-header-offwhite", "main-card", "b_1"],
@@ -91,7 +90,7 @@ toggler.addEventListener("click", () => {
   t2.toggle();
   t3.toggle();
   t4.toggle();
-  tContactForm.toggle(); // Added for contact form
+  tContactForm.toggle(); 
   b1.toggle();
   b2.toggle();
   b3.toggle();
