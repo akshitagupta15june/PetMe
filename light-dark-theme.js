@@ -28,6 +28,7 @@ class Element {
 
   toggle() {
     this.eles.forEach((element) => {
+
       if (document.body.classList.contains("light-mode")) {
         element.classList.toggle(this.lightCss);
         element.style.color = ""; // Change text color to blue in light mode
@@ -35,6 +36,7 @@ class Element {
         element.classList.toggle(this.darkCss);
         element.style.color = ""; // Reset text color in dark mode
       }
+
     });
   }
 }
@@ -52,6 +54,7 @@ icon.onclick = function () {
   }
   toggleThemeForAllElements();
 };
+
 
 let elements = [
   new Element(["text_1"], "text-slate-50", "text-gray-900"),
@@ -111,5 +114,6 @@ function loadThemePreference() {
 
 // Load theme preference on page load
 document.addEventListener("DOMContentLoaded", loadThemePreference);
+
 
 
