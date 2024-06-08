@@ -175,6 +175,8 @@ a{
 a:hover{
   color:hwb(37 38% 0%);
   font-size: 1.25rem;
+  cursor: pointer;
+  text-decoration: underline;
 }
 .nav-items div{
   font-size: 20px;
