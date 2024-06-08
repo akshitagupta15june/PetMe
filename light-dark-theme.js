@@ -91,8 +91,10 @@ let elements = [
     ["contact-form-text"],
     "contactusform-color-lightmode",
     "contactusform-color-darkmode"
-  )
-];
+  ),
+
+new Element(["donate-h1","donate-h2","leading-7"],["text-amber","text-gray-900"],"text-white")
+  ];
 
 function toggleThemeForAllElements() {
   elements.forEach((element) => element.toggle());
