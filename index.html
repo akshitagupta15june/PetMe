@@ -79,6 +79,7 @@
             </div>
             <li>
               <a
+                 
                 href="#About"
                 class="text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item"
                 >About Us</a
@@ -107,31 +108,13 @@
             </li>
             
             <li>
-              <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
-                <a
-                  @mouseover="open = true"
-                  class="text-custom-heading flex font-bold  underline-offset-4 turn-red-hover navbar-item w-full"
-                >
-                  Support Us
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="14px"
-                    height="14px"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    class="mt-1"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M19 9l-7 7-7-7"
-                    ></path>
-                  </svg>
-                </a>
-              </div>
-              
+
+              <a
+                href="./volunteer.html"
+                class="text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item"
+                >Support Us</a
+              >
+
             </li>
             <li>
               <a
@@ -595,10 +578,12 @@
         class="bg-black rounded-md main-bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100 px-8 pt-8 pb-10">
         <p id="contact"></p>
 
+
         <h2 class="text-3xl mt-1 mb-2 text-center bold-500 text_3 contact-form-text" style="color: white;">
           CONTACT US
         </h2>
         <p class="text-base text-center text_3 contact-form-text" style="color: white;">
+
 
           Any issues! Fill the form below and our team will contact you
           shortly.
@@ -606,7 +591,9 @@
         <br />
         <div class="mb-4">
 
+
           <label class="block text_3 text-sm font-bold mb-2 contact-form-text" for="contact_nom" style="color: white;">
+
 
             Name
           </label>
@@ -643,6 +630,7 @@
 
         </div>
         <div class="mb-6">
+
 
           <label class="block text_3 text-sm font-bold mb-2 contact-form-text" for="contact_email" style="color: white;">
 
@@ -705,6 +693,7 @@
       }
     });
   </script>
+
 
   <!-- <section class="dark:bg-gray-900 b_1 pt-20 pb-20">
 			<div class="w-full contact-form-container mx-auto max-w-screen-md">
@@ -793,7 +782,9 @@
           </a>
         </div>
         <div>
-          <div class="space-y-2">
+
+          <div class="space-y-2 " style="color:#f1f5f9;">
+
             <h3 class="text-2xl font-medium">Adopt a pet</h3>
             <div>Give life to an animal in need</div>
           </div>
@@ -803,8 +794,10 @@
       <!-- Subscribe column -->
       <div class="md:flex flex-col hidden text-center items-center flex-1">
         <form id="subscription-form">
-          <div class="space-y-2">
-            <h3 class="text-2xl font-medium">Subscribe to our newsletter</h3>
+
+          <div class="space-y-2" style="color:#f1f4f9">
+            <h3 class="text-2xl text-center" style="color:#f1f5f9">Subscribe to our newsletter</h3>
+
             <div class="text-md">
               Get the latest news and updates delivered straight to your inbox.
             </div>
@@ -932,6 +925,7 @@
       const scrollPosition = window.scrollY + window.innerHeight;
       const contentOffset = aboutContent.offsetTop;
 
+
       if (scrollPosition > contentOffset) {
         aboutContent.style.opacity = "1";
         aboutContent.style.transform = "translateY(0)";
@@ -944,3 +938,4 @@
 </body>
 
 </html>
+

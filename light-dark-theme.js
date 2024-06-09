@@ -29,6 +29,7 @@ class Element {
   toggle() {
     this.eles.forEach((element) => {
 
+
       if (document.body.classList.contains("light-mode")) {
         element.classList.toggle(this.lightCss);
         element.style.color = ""; // Change text color to blue in light mode
@@ -36,6 +37,7 @@ class Element {
         element.classList.toggle(this.darkCss);
         element.style.color = ""; // Reset text color in dark mode
       }
+
 
     });
   }
@@ -54,6 +56,7 @@ icon.onclick = function () {
   }
   toggleThemeForAllElements();
 };
+
 
 
 let elements = [
@@ -95,6 +98,7 @@ let elements = [
 
 new Element(["donate-h1","donate-h2","leading-7"],["text-amber","text-gray-900"],"text-white")
   ];
+
 
 function toggleThemeForAllElements() {
   elements.forEach((element) => element.toggle());
