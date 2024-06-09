@@ -116,10 +116,3 @@ function loadThemePreference() {
 
 // Load theme preference on page load
 document.addEventListener("DOMContentLoaded", loadThemePreference);
-
-
-
-
-
-
-
