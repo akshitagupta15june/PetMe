@@ -1,3 +1,4 @@
+
 <html lang="en" class="dark">
 
 <head>
@@ -78,6 +79,7 @@
             </div>
             <li>
               <a
+                 
                 href="#About"
                 class="text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item"
                 >About Us</a
@@ -104,12 +106,15 @@
                 >Donate</a
               >
             </li>
+            
             <li>
+
               <a
                 href="./volunteer.html"
                 class="text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item"
                 >Support Us</a
               >
+
             </li>
             <li>
               <a
@@ -572,16 +577,24 @@
       <form action="https://formspree.io/f/xayaokzl" method="POST"
         class="bg-black rounded-md main-bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100 px-8 pt-8 pb-10">
         <p id="contact"></p>
-        <h2 class="text-3xl mt-1 mb-2 text-center bold-500 text_3" style="color: white;">
+
+
+        <h2 class="text-3xl mt-1 mb-2 text-center bold-500 text_3 contact-form-text" style="color: white;">
           CONTACT US
         </h2>
-        <p class="text-base text-center text_3" style="color: white;">
+        <p class="text-base text-center text_3 contact-form-text" style="color: white;">
+
+
           Any issues! Fill the form below and our team will contact you
           shortly.
         </p>
         <br />
         <div class="mb-4">
-          <label class="block text_3 text-sm font-bold mb-2" for="contact_nom" style="color: white;">
+
+
+          <label class="block text_3 text-sm font-bold mb-2 contact-form-text" for="contact_nom" style="color: white;">
+
+
             Name
           </label>
           <!-- <input
@@ -617,7 +630,10 @@
 
         </div>
         <div class="mb-6">
-          <label class="block text_3 text-sm font-bold mb-2" for="contact_email" style="color: white;">
+
+
+          <label class="block text_3 text-sm font-bold mb-2 contact-form-text" for="contact_email" style="color: white;">
+
             Email
           </label>
           <input
@@ -625,6 +641,7 @@
             id="contact_email" name="contact_email" type="email" required placeholder="hello@petme"
             oninput="validateEmail(this)" />
           <span id="emailError" class="text-red-500"></span>
+
 
           <script>
             function validateEmail(input) {
@@ -645,7 +662,7 @@
           </script>
         </div>
         <div class="mb-6">
-          <label for="contact_message" class="block text_3 text-sm font-bold mb-2" style="color: white;">Message</label>
+          <label for="contact_message" class="block text_3 text-sm font-bold mb-2 contact-form-text" style="color: white;">Message</label>
           <textarea
             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
             id="contact_message" name="contact_message" required rows="6" placeholder="Your message"></textarea>
@@ -660,14 +677,15 @@
       </form>
     </div>
   </section>
-
+  
   <script>
-    window.addEventListener("scroll", function () {
-      var contactFormContainer = document.getElementById(
-        "contactFormContainer"
-      );
-      var scrollPosition = window.scrollY + window.innerHeight;
-      var contactFormOffset = contactFormContainer.offsetTop;
+      window.addEventListener("scroll", function () {
+        var contactFormContainer = document.getElementById(
+          "contactFormContainer"
+        );
+        var scrollPosition = window.scrollY + window.innerHeight;
+        var contactFormOffset = contactFormContainer.offsetTop;
+
 
       if (scrollPosition > contactFormOffset) {
         contactFormContainer.style.opacity = "1";
@@ -675,6 +693,7 @@
       }
     });
   </script>
+
 
   <!-- <section class="dark:bg-gray-900 b_1 pt-20 pb-20">
 			<div class="w-full contact-form-container mx-auto max-w-screen-md">
@@ -763,7 +782,9 @@
           </a>
         </div>
         <div>
+
           <div class="space-y-2 " style="color:#f1f5f9;">
+
             <h3 class="text-2xl font-medium">Adopt a pet</h3>
             <div>Give life to an animal in need</div>
           </div>
@@ -773,8 +794,10 @@
       <!-- Subscribe column -->
       <div class="md:flex flex-col hidden text-center items-center flex-1">
         <form id="subscription-form">
+
           <div class="space-y-2" style="color:#f1f4f9">
             <h3 class="text-2xl text-center" style="color:#f1f5f9">Subscribe to our newsletter</h3>
+
             <div class="text-md">
               Get the latest news and updates delivered straight to your inbox.
             </div>
@@ -902,6 +925,7 @@
       const scrollPosition = window.scrollY + window.innerHeight;
       const contentOffset = aboutContent.offsetTop;
 
+
       if (scrollPosition > contentOffset) {
         aboutContent.style.opacity = "1";
         aboutContent.style.transform = "translateY(0)";
@@ -914,3 +938,4 @@
 </body>
 
 </html>
+
