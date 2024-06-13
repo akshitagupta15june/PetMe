@@ -1,6 +1,6 @@
 .bg-header-offwhite {
   --tw-bg-opacity: 0.5;
-  background-color: rgb(237 224 211);
+  background-color: #f9d6b7;
 }
 
 .text-custom-heading {
@@ -14,11 +14,11 @@
   transition: color .3s;
 }
 
-#switch.light-theme {
+#switch.dark-theme {
   color: rgb(255, 255, 255);
 }
 
-#switch.dark-theme {
+#switch.light-theme {
   color: rgb(62, 62, 62);;
 }
 

@@ -86,7 +86,7 @@ let elements = [
     "bg-yellow-900"
   ),
   new Element(["bg_3"], "bg-blue-600", "bg-blue-200"),
-  new Element(["bg-blog"], "bg-white-200", "bg-amber-700"),
+  new Element(["bg-blog", "bg-donate"], "bg-white-200", "bg-amber-700"),
   new Element(["mission-1"], "mission-dark", "mission-light"),
   new Element(["mission-2"], "mission-dark", "mission-light"),
   new Element(["navbar-item"], "turn-red-hover", "turn-yellow-hover"),
