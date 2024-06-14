@@ -149,6 +149,19 @@ button {
   color: #495057;
 }
 
+.form-control {
+  margin-top: 10px;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.locate-link {
+  color: rgb(120 53 15);
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
 /* Form */
 form {
   background: var(--color-cyan-alpha);

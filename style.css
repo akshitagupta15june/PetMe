@@ -132,6 +132,8 @@
     max-width: 700px;
     width: 100%;
     margin: auto;
+    
+    
   }
 }
 
@@ -276,7 +278,7 @@
   font-family: "Poppins";
 }
 #google_translate_element div {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 #google_translate_element span {
 }
@@ -284,3 +286,7 @@
 .copyright1{
   margin-left: 50%;
 }
+
+
+
+

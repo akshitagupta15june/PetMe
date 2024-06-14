@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./introSection.css" />
     <link rel="stylesheet" href="./navbar.css" />
     <link rel="stylesheet" href="./mobileView.css" />
+    <link rel="stylesheet" href="./blogs/blog.css">
     <link rel="icon" type="image/x-icon" href="/Assets/Images/logo.ico" />
     <link rel="icon" type="image/x-icon" href="logo.png" />
     <link
@@ -26,7 +27,7 @@
       src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"
     ></script>
     <link
-      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      href="https://unpkg.com/tailwindccss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
     <link
@@ -127,44 +128,11 @@
               >
             </li>
             <li>
-              <div
-                x-data="{ open: false }"
-                @mouseleave="open = false"
-                class="relative"
+              <a
+                href="./volunteer.html"
+                class="text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item"
+                >Support Us</a
               >
-                <a
-                  @mouseover="open = true"
-                  class="text-custom-heading flex font-bold hover:underline underline-offset-4 turn-red-hover navbar-item w-full"
-                >
-                  Support Us
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="14px"
-                    height="14px"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    class="mt-1"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M19 9l-7 7-7-7"
-                    ></path>
-                  </svg>
-                </a>
-                <div
-                  x-show="open"
-                  class="z-20 absolute -left-1 w-[7.5rem] py-2 bg-gray-100 rounded-md shadow-xl"
-                >
-                  <a
-                    href="volunteer.html"
-                    class="block px-4 py-2 text-base text-gray-300 hover:bg-gray-400 hover:text-white"
-                    >Become a Volunteer</a
-                  >
-                </div>
-              </div>
             </li>
             <li>
               <a
@@ -214,11 +182,11 @@
     </header>
 
     <!---Blogs container-->
-    <section class="main-body-section">
+    <section class="main-body-section bg-blog bg-opacity-90 bg-white-200">
       <div class="container max-w-5xl mx-auto">
         <img src="./Assets/cats-dogs.jpg" class="mt-32" />
         <h1
-          class="xl:-mt-7 mb-2 text-black text-4xl leading-tight font-bold text-center w-full"
+          class="xl:-mt-7 mb-2 text-black text-5xl leading-tight font-bold text-center w-full"
         >
           Blogs
         </h1>
@@ -229,7 +197,7 @@
 
       <!---Blogs card-->
       <div
-        class="relative flex flex-wrap items-center justify-center grid-cols-1 mx-0 z-2 my-7"
+        class="relative flex flex-wrap items-center justify-center grid-cols-2 mx-0 z-2 my-5"
         id="data-output"
       ></div>
     </section>
@@ -359,7 +327,7 @@
       <div
         class="bg-gray-900 pt-5 pb-8 flex flex-col text-center md:hidden mt-8 items-center flex-1"
       >
-        <div class="space-y-2">
+        <div class="space-y-2" style="color:white">
           <h3 class="text-2xl text-center">Subscribe to our newsletter</h3>
           <div class="text-md">
             Get the latest news and updates delivered straight to your inbox.
