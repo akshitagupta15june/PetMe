@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="./navbar.css">
   <link rel="stylesheet" href="./mobileView.css">
   <link rel="stylesheet" href="./reportstary.css">
+  <link rel="icon" type="image/x-icon" href="logo.png" />
   <!-- <link rel="icon" type="image/x-icon" href="/Assets/Images/logo.ico"> -->
   <link rel="shortcut icon" type="image/x-icon" href="/PetMe/Assets/Images/logo.jpg">
   <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
@@ -84,45 +85,11 @@
             >
           </li>
           <li>
-            <div
-              x-data="{ open: false }"
-              @mouseleave="open = false"
-              class="relative"
+            <a
+              href="./volunteer.html"
+              class="text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item"
+              >Support Us</a
             >
-              <a
-                @mouseover="open = true"
-                class="text-custom-heading flex font-bold hover:underline underline-offset-4 turn-red-hover navbar-item w-full"
-              >
-                Support Us
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14px"
-                  height="14px"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  class="mt-1"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 9l-7 7-7-7"
-                  ></path>
-                </svg>
-              </a>
-
-              <div
-                x-show="open"
-                class="z-20 absolute -left-1 w-[7.5rem] py-2 bg-gray-100 rounded-md shadow-xl"
-              >
-                <a
-                  href="volunteer.html"
-                  class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white"
-                  >Become a Volunteer</a
-                >
-              </div>
-            </div>
           </li>
           <li>
             <a
@@ -178,6 +145,15 @@
           placeholder="Enter your correct address (eg. Meenawati marg, Lucknow, 209087)" required/>
       </div>
       <div class="form-group mb-2">
+        <label for="liveLocation">
+          Live Location
+          <span class="hint text-red-600">*</span>
+          <span class="locate-link" onclick="locateUser()">Locate Me</span>
+      </label>
+      <input type="text" name="liveLocation" id="locationLabel" class="form-control" 
+        placeholder="Press Locate Me for precise Location... " required/>
+      </div>
+      <div class="form-group mb-2">
         <label for="landmark">
           Landmark
           <span class="hint text-red-600">*</span>
@@ -197,14 +173,21 @@
         <label for="email">Which type of stray animal?
           <span class="hint text-red-600">*</span>
         </label>
-        <select id="dropdown" name="role" class="form-control" required>
+        <select id="dropdown" name="role" class="form-control" onchange=addtextbox(this.value) required>
           <option disabled selected value>Select stray animal</option>
           <option value="student">Dog</option>
           <option value="artist">Cat</option>
           <option value="graphic_designer">Cow</option>
-          <option value="other">Pig</option>
+          <option value="pig">Pig</option>
           <option value="other">Other</option>
         </select>
+      </div>
+
+      <div class="form-group mb-2 hidden" id="box" >
+        <label >Other:
+          <span class="hint text-red-600">*</span>
+        </label>
+        <input type="text" name="b" class="form-control" >
       </div>
 
       <div class="form-group">
@@ -231,17 +214,19 @@
           placeholder="Enter your comment here..."></textarea>
       </div>
 
-      <div class="flex justify-center">
+      <div class="flex justify-between">
+        <div class="form-group text-white">
+        <button class="help_btn bg-amber-900  hover:bg-yellow-900">Help</button>
+      </div>
         <div class="form-group text-white">
           <button type="submit" id="submit"
             class="flex mx-auto text-white bg-amber-900 border-0 py-3 px-12 rounded-md cursor-pointer hover:bg-yellow-900">Submit</button>
         </div>
       </div>
 
-
     </form>
   </div>
-  <button class="help_btn bg-amber-900 hover:bg-yellow-900">Help</button>
+
 
   <dialog id="popup" class="popup border-2 border-green-500" style="display:none">
     <div class="bg-white rounded-lg p-6 max-w-md">
