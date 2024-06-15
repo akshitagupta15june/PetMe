@@ -65,4 +65,5 @@ Contributors
 - [Rishi Paul](https://github.com/rishicds)
 - [Othniel Abalaka](https://github.com/Othniel01)
 - [Rishi Mehta](https://github.com/RishiMehtaa)
+- [Shivanya](https://github.com/shivanya8235)
 
