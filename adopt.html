@@ -206,11 +206,11 @@
         class="bg-[#78350f] grid md:grid-cols-2 border-[#78350f] rounded-lg shadow-lg shadow-[#78350f] p-5"
       >
         <div class="flex justify-between gap-10 p-5 items-center flex-col">
-          <h1 class="font-bold text-teal-400" id="title">
+          <h1 class="font-bold text-white" id="title" style="color: #e4e3c2;">
             Adopt Your Favourite Pet
           </h1>
           <img
-            class="inline-block relative w-[250px] h-[250px] overflow-hidden border-[#78350f] rounded-full"
+            class="inline-block relative w-[250px] h-[250px] overflow-hidden border-[#78350f] rounded-full object-cover"
             src="https://i.pinimg.com/736x/44/d9/8c/44d98cccb725fd3a80c0446b9b2e646d.jpg"
             alt=""
           />
@@ -235,7 +235,7 @@
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               id="person"
-              class="w-6 h-6 relative top-8 right-7 inline-block mr-2"
+              class="w-6 h-6 relative top-6 right-7 inline-block mr-2"
             >
     
             <g data-name="Layer 2">
@@ -262,7 +262,7 @@
             height="24"
             viewBox="0 0 24 24"
             id="email"
-            class="w-6 h-6 relative top-8 right-7 inline-block mr-2"
+            class="w-6 h-6 relative top-6 right-7 inline-block mr-2"
           >
             <path fill="none" d="M0 0h24v24H0V0z"></path>
             <path
@@ -284,7 +284,7 @@
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 256 256"
             id="house"
-            class="w-6 h-6 relative top-8 right-7 inline-block mr-2"
+            class="w-6 h-6 relative top-6 right-7 inline-block mr-2"
           >
             <rect width="256" height="256" fill="none"></rect>
             <path
@@ -307,7 +307,7 @@
             data-name="Layer 1"
             viewBox="0 0 24 24"
             id="address"
-            class="w-6 h-6 relative top-8 right-7 inline-block mr-2"
+            class="w-6 h-6 relative top-6 right-7 inline-block mr-2"
           >
             <path
               d="M19.82 9H17.9a1.38 1.38 0 0 1 0 .2 8.89 8.89 0 0 1-.79 2.24 21.17 21.17 0 0 1-3.66 5L12 17.81l-1.41-1.39a20.83 20.83 0 0 1-3.67-5 8.81 8.81 0 0 1-.79-2.25A1.25 1.25 0 0 1 6.1 9H4.18l-2.4 12h20.44Z"
@@ -316,7 +316,7 @@
               d="M7 8a4.94 4.94 0 0 0 .11 1 8.12 8.12 0 0 0 .71 2 20.17 20.17 0 0 0 3.47 4.71l.71.7.71-.7A20.17 20.17 0 0 0 16.18 11a8.12 8.12 0 0 0 .71-2A4.94 4.94 0 0 0 17 8 5 5 0 0 0 7 8Zm6 1h-2V7h2Z"
             ></path>
           </svg>
-  
+          <label for="country-code">Landmark <span style="color: red;">*</span></label>
           <input
             type="text"
             name="address"
@@ -332,7 +332,7 @@
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             id="phone"
-            class="w-6 h-6 relative top-8 right-7 inline-block mr-2"
+            class="w-6 h-6 relative top-6 right-7 inline-block mr-2"
           >
             <g data-name="Layer 2">
               <g data-name="phone">
@@ -343,7 +343,7 @@
               </g>
             </g>
           </svg>
-  
+          <label for="country-code">Phone Number <span style="color: red;">*</span></label>
           <select id="country-code" name="country-code" class="form-control" required>
             <option value="+91">India (+91)</option>
             <option value="+1">USA (+1)</option>
@@ -351,7 +351,7 @@
             <option value="+61">Australia (+61)</option>
             <!-- country codes added--> 
           </select>
-          <label for="country-code">Phone Number <span style="color: red;">*</span></label>
+         
           <input
             type="tel"
             name="tel"
