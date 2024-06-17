@@ -604,6 +604,11 @@
 
             Name
           </label>
+
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
+            id="contact_nom" name="contact_nom" type="text" placeholder="Name" oninput="validateName(this)" />
+
           <!-- <input
               class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
               id="contact_nom"
@@ -611,9 +616,9 @@
               type="text"
               placeholder="Name"
             /> -->
-          <input
+          <!-- <input
             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
-            id="contact_nom" name="contact_nom" type="text" placeholder="Name" oninput="validateName(this)" />
+            id="contact_nom" name="contact_nom" type="text" placeholder="Name" oninput="validateName(this)" /> -->
 
           <span id="nameError" class="text-red-500"></span>
 
@@ -636,6 +641,22 @@
           </script>
 
         </div>
+
+        <div class="mb-5">
+          <label class="block text_3 text-sm font-bold mb-2 contact-form-text" for="contact_nom" style="color: white;">
+
+
+            Phone No.
+          </label>
+
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
+            id="contact_nom" name="contact_nom" type="number" placeholder="Phone Number" oninput="validateName(this)" />
+
+
+            <span id="nameError" class="text-red-500"></span>
+        </div>
+
         <div class="mb-6">
 
 
