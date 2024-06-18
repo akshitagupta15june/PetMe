@@ -161,24 +161,6 @@
                                 />
 
                                 <span id="nameError" class="text-red-500"></span>
-
-                                <script>
-                                  function validateName(input) {
-                                    var nameRegex = /^[A-Za-z\s]+$/; // Allow letters, hyphens, and spaces
-
-                                    if (input.value.trim() === '') {
-                                      document.getElementById('nameError').textContent = '';
-                                      input.classList.remove('border-red-500');
-                                    } else if (!input.value.match(nameRegex)) {
-                                      document.getElementById('nameError').textContent =
-                                        'Please enter a name with only letters and spaces.';
-                                      input.classList.add('border-red-500');
-                                    } else {
-                                      document.getElementById('nameError').textContent = '';
-                                      input.classList.remove('border-red-500');
-                                    }
-                                  }
-                                </script>
                             </div>
                         </div>
                         <div class="p-2 w-1/2">
@@ -194,25 +176,6 @@
                                   oninput="validateEmail(this)" 
                                 />
                                 <span id="emailError" class="text-red-500"></span>
-
-
-                                <script>
-                                  function validateEmail(input) {
-                                    const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-
-                                    if (input.value.trim() === '') {
-                                      document.getElementById('emailError').textContent = '';
-                                      input.classList.remove('border-red-500');
-                                    } else if (!input.value.match(emailRegex)) {
-                                      document.getElementById('emailError').textContent =
-                                        'Please enter a valid email including @.';
-                                      input.classList.add('border-red-500');
-                                    } else {
-                                      document.getElementById('emailError').textContent = '';
-                                      input.classList.remove('border-red-500');
-                                    }
-                                  }
-                                </script>
                             </div>
                         </div>
                         <div class="p-2 w-full">
@@ -243,24 +206,6 @@
                                 />
 
                                 <span id="cityNameError" class="text-red-500"></span>
-                                
-                                <script>
-                                  function validateCityName(input) {
-                                    var cityNameRegex = /^[A-Za-z\s]+$/; // Allow letters, and spaces
-
-                                    if (input.value.trim() === '') {
-                                      document.getElementById('cityNameError').textContent = '';
-                                      input.classList.remove('border-red-500');
-                                    } else if (!input.value.match(cityNameRegex)) {
-                                      document.getElementById('cityNameError').textContent =
-                                        'Please enter only letters and spaces.';
-                                      input.classList.add('border-red-500');
-                                    } else {
-                                      document.getElementById('cityNameError').textContent = '';
-                                      input.classList.remove('border-red-500');
-                                    }
-                                  }
-                                </script>
                             </div>
                         </div>
                         <div class="p-2 w-1/2">
@@ -277,24 +222,6 @@
                                 />
 
                                 <span id="stateNameError" class="text-red-500"></span>
-                                
-                                <script>
-                                  function validateStateName(input) {
-                                    var stateNameRegex = /^[A-Za-z\s]+$/; // Allow letters, and spaces
-
-                                    if (input.value.trim() === '') {
-                                      document.getElementById('stateNameError').textContent = '';
-                                      input.classList.remove('border-red-500');
-                                    } else if (!input.value.match(stateNameRegex)) {
-                                      document.getElementById('stateNameError').textContent =
-                                        'Please enter only letters and spaces.';
-                                      input.classList.add('border-red-500');
-                                    } else {
-                                      document.getElementById('stateNameError').textContent = '';
-                                      input.classList.remove('border-red-500');
-                                    }
-                                  }
-                                </script>
                             </div>
                         </div>
                         <div class="p-2 w-1/2">
@@ -311,24 +238,6 @@
                                 />
 
                                 <span id="countryNameError" class="text-red-500"></span>
-                                
-                                <script>
-                                  function validateCountryName(input) {
-                                    var countryNameRegex = /^[A-Za-z\s]+$/; // Allow letters, and spaces
-
-                                    if (input.value.trim() === '') {
-                                      document.getElementById('countryNameError').textContent = '';
-                                      input.classList.remove('border-red-500');
-                                    } else if (!input.value.match(countryNameRegex)) {
-                                      document.getElementById('countryNameError').textContent =
-                                        'Please enter only letters and spaces.';
-                                      input.classList.add('border-red-500');
-                                    } else {
-                                      document.getElementById('countryNameError').textContent = '';
-                                      input.classList.remove('border-red-500');
-                                    }
-                                  }
-                                </script>
                             </div>
                         </div>
                         <div class="p-2 w-1/2">
@@ -356,9 +265,129 @@
                         </div>
                     </div>
                     <div class="p-4 w-full">
-                        <button type="submit" class="flex mx-auto text-white bg-amber-800 border-0 py-2 px-8 rounded-md cursor-pointer hover:bg-orange-500">
+                        <button type="submit" id="submit" class="flex mx-auto text-white bg-amber-800 border-0 py-2 px-8 rounded-md cursor-pointer hover:bg-orange-500">
                             Submit
                         </button>
+                        <script>
+                          const form = document.getElementById('survey-form');
+                          let errors = [];
+                          let submitButton = document.getElementById("submit");
+
+                          form.addEventListener('input', function () {
+                              validateForm();
+                            });
+
+                          // Validate Form   
+                          function validateForm() {
+                            if (errors.length > 0) {
+                              submitButton.disabled = true;
+                              submitButton.classList.add('cursor-not-allowed');
+                            } else {
+                              submitButton.disabled = false;
+                              submitButton.classList.remove('cursor-not-allowed');
+                            }
+                          }
+
+                          // Name Validation
+                          function validateName(input) {
+                              var nameRegex = /^[A-Za-z\s]+$/; // Allow letters, hyphens, and spaces
+
+                              if (input.value.trim() === '') {
+                                document.getElementById('nameError').textContent = '';
+                                input.classList.remove('border-red-500');
+                                errors = errors.filter((error) => error !== "name");
+                              } else if (!input.value.match(nameRegex)) {
+                                document.getElementById('nameError').textContent =
+                                'Please enter a name with only letters and spaces.';
+                                input.classList.add('border-red-500');
+                                errors.push("name");
+                              } else {
+                                document.getElementById('nameError').textContent = '';
+                                input.classList.remove('border-red-500');
+                                errors = errors.filter((error) => error !== "name");
+                              }
+                          }
+
+                          // Email Validation
+                          function validateEmail(input) {
+                              var emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+
+                              if (input.value.trim() === '') {
+                                document.getElementById('emailError').textContent = '';
+                                input.classList.remove('border-red-500');
+                                errors = errors.filter((error)=> error !== "email");
+                              } else if (!input.value.match(emailRegex)) {
+                                document.getElementById('emailError').textContent =
+                                  'Please enter a valid email including @.';
+                                input.classList.add('border-red-500');
+                                errors.push("email");
+                              } else {
+                                document.getElementById('emailError').textContent = '';
+                                input.classList.remove('border-red-500');
+                                errors = errors.filter((error) => error !== "email");
+                              }
+                          }
+
+                          // City Name Validation
+                          function validateCityName(input) {
+                              var cityNameRegex = /^[A-Za-z\s]+$/; // Allow letters, and spaces
+
+                              if (input.value.trim() === '') {
+                                document.getElementById('cityNameError').textContent = '';
+                                input.classList.remove('border-red-500');
+                                errors = errors.filter((error)=> error !== "city");
+                              }else if (!input.value.match(cityNameRegex)) {
+                                document.getElementById('cityNameError').textContent =
+                                  'Please enter only letters and spaces.';
+                                input.classList.add('border-red-500');
+                                errors.push("city");
+                              }else {
+                                document.getElementById('cityNameError').textContent = '';
+                                input.classList.remove('border-red-500');
+                                errors = errors.filter((error) => error !== "city");
+                              }
+                          }
+
+                          // State Name Validation
+                          function validateStateName(input) {
+                              var stateNameRegex = /^[A-Za-z\s]+$/; // Allow letters, and spaces
+
+                              if (input.value.trim() === '') {
+                                document.getElementById('stateNameError').textContent = '';
+                                input.classList.remove('border-red-500');
+                                errors = errors.filter((error) => error !== "state");
+                              } else if (!input.value.match(stateNameRegex)) {
+                                document.getElementById('stateNameError').textContent =
+                                  'Please enter only letters and spaces.';
+                                input.classList.add('border-red-500');
+                                errors.push("state");
+                              } else {
+                                document.getElementById('stateNameError').textContent = '';
+                                input.classList.remove('border-red-500');
+                                errors = errors.filter((error) => error !== "state");
+                              }
+                          }
+
+                          // Country Name Validation          
+                          function validateCountryName(input) {
+                            var countryNameRegex = /^[A-Za-z\s]+$/; // Allow letters, and spaces
+                            if (input.value.trim() === '') {
+                              document.getElementById('countryNameError').textContent = '';
+                              input.classList.remove('border-red-500');
+                              errors = errors.filter((error)=> error !== "country");
+                            }else if (!input.value.match(countryNameRegex)) {
+                              document.getElementById('countryNameError').textContent =
+                                  'Please enter only letters and spaces.';
+                              input.classList.add('border-red-500');
+                              errors.push("country");
+                            }else {
+                              document.getElementById('countryNameError').textContent = '';
+                              input.classList.remove('border-red-500');
+                              errors = errors.filter((error) => error !== "country");
+
+                            }
+                          }
+                        </script>
                     </div>                 
                     </div>
                 </div>
