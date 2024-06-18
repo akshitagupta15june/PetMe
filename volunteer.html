@@ -135,12 +135,12 @@
 
     <section class="text-gray-600 body-font relative bg-[url('Assets/Images/pet-don.jpg')] bg-center bg-no-repeat
         bg-cover">
-        <div class="container  px-5 py-24 mx-auto bg-donate bg-opacity-80 card backdrop-blur-sm" style="margin-top: 10vh">
+        <div class="container px-5 pt-24 mx-auto bg-black/20 !text-black bg-opacity-80 card backdrop-blur-sm" style="margin-top:10vh">
             <div class="flex flex-col text-center w-full mb-12">
-                <h1 class="sm:text-3xl text-2xl donate-h1 font-medium title-font mb-4 text-gray-900">
+                <h1 class="sm:text-3xl text-2xl donate-h1 font-medium title-font mb-4 !text-black">
                     Thanks for showing your support
                 </h1>
-                <p class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-90">
+                <p class="sm:text-3xl text-2xl font-medium title-font mb-4 text-black">
                     Fill out the form below to become volunteer.
                 </p>
             </div>
@@ -149,67 +149,208 @@
                     <div class="flex flex-wrap -m-2">
                         <div class="p-2 w-1/2">
                             <div class="relative">
-                                <label for="name" class="leading-7 text-sm text-gray-900">Full Name</label>
-                                <input type="text" id="name" name="name" placeholder="Richard Zeus"
-                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                                    required />
+                                <label for="name" class="leading-7 text-sm !text-gray-900">Full Name</label>
+                                <input 
+                                  type="text" 
+                                  id="name"
+                                  name="name" 
+                                  placeholder="Richard Zeus"
+                                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                  required 
+                                  oninput="validateName(this)" 
+                                />
+
+                                <span id="nameError" class="text-red-500"></span>
+
+                                <script>
+                                  function validateName(input) {
+                                    var nameRegex = /^[A-Za-z\s]+$/; // Allow letters, hyphens, and spaces
+
+                                    if (input.value.trim() === '') {
+                                      document.getElementById('nameError').textContent = '';
+                                      input.classList.remove('border-red-500');
+                                    } else if (!input.value.match(nameRegex)) {
+                                      document.getElementById('nameError').textContent =
+                                        'Please enter a name with only letters and spaces.';
+                                      input.classList.add('border-red-500');
+                                    } else {
+                                      document.getElementById('nameError').textContent = '';
+                                      input.classList.remove('border-red-500');
+                                    }
+                                  }
+                                </script>
                             </div>
                         </div>
                         <div class="p-2 w-1/2">
                             <div class="relative">
-                                <label for="email" class="leading-7 text-sm text-gray-900">Email</label>
-                                <input type="email" id="email" name="email" placeholder="youremail@gmail.com"
-                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                                    required />
+                                <label for="email" class="leading-7 text-sm !text-gray-900">Email</label>
+                                <input 
+                                  type="email" 
+                                  id="email" 
+                                  name="email" 
+                                  placeholder="youremail@gmail.com"
+                                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                  required 
+                                  oninput="validateEmail(this)" 
+                                />
+                                <span id="emailError" class="text-red-500"></span>
+
+
+                                <script>
+                                  function validateEmail(input) {
+                                    const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+
+                                    if (input.value.trim() === '') {
+                                      document.getElementById('emailError').textContent = '';
+                                      input.classList.remove('border-red-500');
+                                    } else if (!input.value.match(emailRegex)) {
+                                      document.getElementById('emailError').textContent =
+                                        'Please enter a valid email including @.';
+                                      input.classList.add('border-red-500');
+                                    } else {
+                                      document.getElementById('emailError').textContent = '';
+                                      input.classList.remove('border-red-500');
+                                    }
+                                  }
+                                </script>
                             </div>
                         </div>
                         <div class="p-2 w-full">
                             <div class="relative">
-                                <label for="address" class="leading-7 text-sm text-gray-900">Address</label>
-                                <input type="text" id="address" name="address" placeholder="Your Address"
-                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                                    required />
+                                <label for="address" class="leading-7 text-sm !text-gray-900">Address</label>
+                                <input 
+                                  type="text" 
+                                  id="address" 
+                                  name="address" 
+                                  placeholder="Your Address"
+                                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                  required 
+                                />
+                                
                             </div>
                         </div>
                         <div class="p-2 w-1/2">
                             <div class="relative">
-                                <label for="city" class="leading-7 text-sm text-gray-900">City</label>
-                                <input type="text" id="city" name="city" placeholder="Indore"
-                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                                    required />
-                            </div>
-                        </div>
-                        <div class="p-2 w-1/2">
-                            <div class="relative">
-                                <label for="state" class="leading-7 text-sm text-gray-900">State</label>
-                                <input type="text" id="state" name="state" placeholder="Madhya Pradesh"
-                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                                    required />
-                            </div>
-                        </div>
-                        <div class="p-2 w-1/2">
-                            <div class="relative">
-                                <label for="country" class="leading-7 text-sm text-gray-900">Country</label>
-                                <input type="text" id="country" name="country" placeholder="India"
-                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                                    required />
-                            </div>
-                        </div>
-                        <div class="p-2 w-1/2">
-                            <div class="relative">
-                                <label for="number" class="leading-7 text-sm text-gray-900">Contact Number</label>
+                                <label for="city" class="leading-7 text-sm !text-gray-900">City</label>
+                                <input 
+                                  type="text" 
+                                  id="city" 
+                                  name="city" 
+                                  placeholder="Indore"
+                                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                  required 
+                                  oninput="validateCityName(this)" 
+                                />
 
-                                <input type="text" id="number" name="number" placeholder="+91 01234 56789"
-                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                                    oninput="this.value = this.value.replace(/[^0-9\+\.]/g, '').replace(/(\..*)\./g, '$1');"
-                                    required />
+                                <span id="cityNameError" class="text-red-500"></span>
+                                
+                                <script>
+                                  function validateCityName(input) {
+                                    var cityNameRegex = /^[A-Za-z\s]+$/; // Allow letters, and spaces
+
+                                    if (input.value.trim() === '') {
+                                      document.getElementById('cityNameError').textContent = '';
+                                      input.classList.remove('border-red-500');
+                                    } else if (!input.value.match(cityNameRegex)) {
+                                      document.getElementById('cityNameError').textContent =
+                                        'Please enter only letters and spaces.';
+                                      input.classList.add('border-red-500');
+                                    } else {
+                                      document.getElementById('cityNameError').textContent = '';
+                                      input.classList.remove('border-red-500');
+                                    }
+                                  }
+                                </script>
+                            </div>
+                        </div>
+                        <div class="p-2 w-1/2">
+                            <div class="relative">
+                                <label for="state" class="leading-7 text-sm !text-gray-900">State</label>
+                                <input 
+                                  type="text" 
+                                  id="state" 
+                                  name="state" 
+                                  placeholder="Madhya Pradesh"
+                                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                  required 
+                                  oninput="validateStateName(this)" 
+                                />
+
+                                <span id="stateNameError" class="text-red-500"></span>
+                                
+                                <script>
+                                  function validateStateName(input) {
+                                    var stateNameRegex = /^[A-Za-z\s]+$/; // Allow letters, and spaces
+
+                                    if (input.value.trim() === '') {
+                                      document.getElementById('stateNameError').textContent = '';
+                                      input.classList.remove('border-red-500');
+                                    } else if (!input.value.match(stateNameRegex)) {
+                                      document.getElementById('stateNameError').textContent =
+                                        'Please enter only letters and spaces.';
+                                      input.classList.add('border-red-500');
+                                    } else {
+                                      document.getElementById('stateNameError').textContent = '';
+                                      input.classList.remove('border-red-500');
+                                    }
+                                  }
+                                </script>
+                            </div>
+                        </div>
+                        <div class="p-2 w-1/2">
+                            <div class="relative">
+                                <label for="country" class="leading-7 text-sm !text-gray-900">Country</label>
+                                <input 
+                                  type="text" 
+                                  id="country" 
+                                  name="country" 
+                                  placeholder="India"
+                                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                  required 
+                                  oninput="validateCountryName(this)" 
+                                />
+
+                                <span id="countryNameError" class="text-red-500"></span>
+                                
+                                <script>
+                                  function validateCountryName(input) {
+                                    var countryNameRegex = /^[A-Za-z\s]+$/; // Allow letters, and spaces
+
+                                    if (input.value.trim() === '') {
+                                      document.getElementById('countryNameError').textContent = '';
+                                      input.classList.remove('border-red-500');
+                                    } else if (!input.value.match(countryNameRegex)) {
+                                      document.getElementById('countryNameError').textContent =
+                                        'Please enter only letters and spaces.';
+                                      input.classList.add('border-red-500');
+                                    } else {
+                                      document.getElementById('countryNameError').textContent = '';
+                                      input.classList.remove('border-red-500');
+                                    }
+                                  }
+                                </script>
+                            </div>
+                        </div>
+                        <div class="p-2 w-1/2">
+                            <div class="relative">
+                                <label for="number" class="leading-7 text-sm !text-gray-900">Contact Number</label>
+
+                                <input 
+                                  type="text" 
+                                  id="number" 
+                                  name="number" 
+                                  placeholder="+91 01234 56789"
+                                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                  oninput="this.value = this.value.replace(/[^0-9\+\.]/g, '').replace(/(\..*)\./g, '$1');"
+                                  required 
+                                />
 
                             </div>
                         </div>
 
                         <div class="p-2 w-full">
                             <input type="checkbox" name="check" id="check" required>
-                            <span class="leading-7 p-1 font-medium text-gray-900">
+                            <span class="leading-7 p-1 font-medium !text-gray-900">
                                 I've read and agree to the Terms and Conditions for volunteering this organisation.
                             </span>
                         </div>
@@ -218,9 +359,7 @@
                         <button type="submit" class="flex mx-auto text-white bg-amber-800 border-0 py-2 px-8 rounded-md cursor-pointer hover:bg-orange-500">
                             Submit
                         </button>
-                    </div>
-                    
-                    
+                    </div>                 
                     </div>
                 </div>
             </form>
