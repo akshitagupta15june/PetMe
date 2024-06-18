@@ -344,44 +344,51 @@
   </section>
 
   <!-- Footer section  -->
-
   <footer class="bg-black text-white shadow-inner pt-4 pb-8">
     <div class="flex p-5 justify-between">
       <div class="flex flex-1 flex-col text-center sm:flex-row items-center justify-center space-x-3">
         <div>
           <a href="#top">
-            <img class="rounded-full w-24 cursor-pointer" src="./Assets/Images/logo.jpg" alt="logo" />
+            <img class="rounded-full w-24 cursor-pointer hover:scale-110" src="./Assets/Images/logo.jpg" alt="logo" />
           </a>
         </div>
         <div>
-          <div class="space-y-2">
-            <h3 class="text-2xl">Adopt a pet</h3>
+  
+          <div class="space-y-2 " style="color:#f1f5f9;">
+  
+            <h3 class="text-2xl font-medium">Adopt a pet</h3>
             <div>Give life to an animal in need</div>
           </div>
         </div>
       </div>
-
+  
       <!-- Subscribe column -->
       <div class="md:flex flex-col hidden text-center items-center flex-1">
-        <div class="space-y-2">
-          <h3 class="text-2xl">Subscribe to our newsletter</h3>
-          <div class="text-md">
-            Get the latest news and updates delivered straight to your inbox.
+        <form id="subscription-form">
+  
+          <div class="space-y-2 text-white">
+            <div class="text-xl text-center" style="color:white;">Subscribe to our newsletter</div>
+  
+            <div class="text-md">
+              Get the latest news and updates delivered straight to your inbox.
+            </div>
+            <div class="text-center">
+              <input class="my-1 mr-2 p-2 rounded-md text-black" type="email" id="email" name="email"
+                placeholder="Enter your email address" />
+              <div id="error-message" class="text-red-500 hidden">Email address is required.</div>
+              <button class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md" type="submit"
+                id="subscribe-button">
+                Subscribe
+              </button>
+            </div>
           </div>
-          <div class="text-center">
-            <input class="my-1 mr-2 p-2 rounded-md text-black" type="email" id="email" name="email"
-              placeholder="Enter your email address" />
-            <button class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md" type="submit">
-              Subscribe
-            </button>
-          </div>
-        </div>
+        </form>
       </div>
       <!-- Subscribe column end -->
-
+  
       <!-- Social icons  -->
       <div class="flex-1 flex flex-col items-center justify-center">
-        <div class="text-2xl">Follow us on</div>
+        <div class="text-2xl font-medium">Follow us on</div>
         <div class="flex mt-2 flex-row space-x-3 my-0">
           <div class="hover:scale-110 transition-all">
             <a href="#" class="w-5 ml-3">
@@ -410,30 +417,21 @@
               </svg>
             </a>
           </div>
-          <div class="hover:scale-110 transition-all">
-            <a href="https://www.linkedin.com/in/akshita-gupta-a4a895187/?originalSubdomain=in" target="_blank" class="w-10 ml-3 mr-3">
-              <!-- Linkedin icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="30" height="30" class="fill-white" viewBox="0 0 20 20">
-                <path fill="#FFFFFF" d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" />
-              </svg>
-
-            </a>
-          </div>
         </div>
       </div>
       <!-- Social icons end -->
-
+  
       <!-- Scroll to top -->
       <div class="md:pr-8 hover-effect">
         <a href="#top">
           <button id="bttbutton" title="backtotop">
-            <img src="./image.svg" class="w-6 md:w-10 md:object-left" />
+            <img src="./image.svg" class="w-6 md:w-10 md:object-left sm:w-10" />
           </button>
         </a>
       </div>
       <!-- Scroll to top -->
     </div>
-
+  
     <div class="pt-5 pb-8 flex flex-col text-center md:hidden mt-8 items-center flex-1">
       <div class="space-y-2">
         <h3 class="text-2xl text-center">Subscribe to our newsletter</h3>
@@ -451,7 +449,7 @@
     </div>
     <div id="copyright">
       <p>
-        Copyright &copy; <span id="date"></span> [PetMe] All Right Reserved.
+        Copyright &copy; <span id="date"></span> [PetMe] All Rights Reserved.
       </p>
     </div>
   </footer>

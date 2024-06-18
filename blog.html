@@ -143,46 +143,54 @@
 
   <!-- Footer section  -->
 
-  <footer class="bg-black text-white">
+  <footer class="bg-black text-white shadow-inner pt-4 pb-8">
     <div class="flex p-5 justify-between">
       <div class="flex flex-1 flex-col text-center sm:flex-row items-center justify-center space-x-3">
         <div>
-          <img class="rounded-full w-24 cursor-pointer" src="./Assets/Images/logo.jpg" alt="logo"
-            onclick="scrollToTop();" />
+          <a href="#top">
+            <img class="rounded-full w-24 cursor-pointer hover:scale-110" src="./Assets/Images/logo.jpg" alt="logo" />
+          </a>
         </div>
         <div>
-          <div class="space-y-2 text-white">
-            <h3 class="text-2xl">Adopt a pet</h3>
+  
+          <div class="space-y-2 " style="color:#f1f5f9;">
+  
+            <h3 class="text-2xl font-medium">Adopt a pet</h3>
             <div>Give life to an animal in need</div>
           </div>
         </div>
       </div>
-
+  
       <!-- Subscribe column -->
       <div class="md:flex flex-col hidden text-center items-center flex-1">
-        <div class="space-y-2">
-          <h3 class="text-2xl text-white">Subscribe to our newsletter</h3>
-          <div class="text-md text-white">
-            Get the latest news and updates delivered straight to your inbox.
+        <form id="subscription-form">
+  
+          <div class="space-y-2 text-white">
+            <div class="text-xl text-center" style="color:white;">Subscribe to our newsletter</div>
+  
+            <div class="text-md">
+              Get the latest news and updates delivered straight to your inbox.
+            </div>
+            <div class="text-center">
+              <input class="my-1 mr-2 p-2 rounded-md text-black" type="email" id="email" name="email"
+                placeholder="Enter your email address" />
+              <div id="error-message" class="text-red-500 hidden">Email address is required.</div>
+              <button class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md" type="submit"
+                id="subscribe-button">
+                Subscribe
+              </button>
+            </div>
           </div>
-          <div class="text-center">
-            <input class="my-1 mr-2 p-2 rounded-md text-black" type="email" id="email" name="email"
-              placeholder="Enter your email address" />
-            <button class="bg-red-600 hover:bg-red-500 text-white py-2 px-4 rounded-md" type="submit">
-              Subscribe
-            </button>
-          </div>
-        </div>
+        </form>
       </div>
       <!-- Subscribe column end -->
-
+  
       <!-- Social icons  -->
       <div class="flex-1 flex flex-col items-center justify-center">
-        <div class="text-2xl">Follow us on</div>
+        <div class="text-2xl font-medium">Follow us on</div>
         <div class="flex mt-2 flex-row space-x-3 my-0">
           <div class="hover:scale-110 transition-all">
             <a href="#" class="w-5 ml-3">
-
               <!-- Facebook icon -->
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="fill-white" viewBox="0 0 20 20">
                 <path
@@ -211,18 +219,28 @@
         </div>
       </div>
       <!-- Social icons end -->
+  
+      <!-- Scroll to top -->
+      <div class="md:pr-8 hover-effect">
+        <a href="#top">
+          <button id="bttbutton" title="backtotop">
+            <img src="./image.svg" class="w-6 md:w-10 md:object-left sm:w-10" />
+          </button>
+        </a>
+      </div>
+      <!-- Scroll to top -->
     </div>
-
-    <div class="bg-gray-900 pt-5 pb-8 flex flex-col text-center md:hidden mt-8 items-center flex-1">
-      <div class="space-y-2" style="color:white">
+  
+    <div class="pt-5 pb-8 flex flex-col text-center md:hidden mt-8 items-center flex-1">
+      <div class="space-y-2">
         <h3 class="text-2xl text-center">Subscribe to our newsletter</h3>
         <div class="text-md">
           Get the latest news and updates delivered straight to your inbox.
         </div>
         <div class="text-center">
           <input class="my-1 mr-2 p-2 rounded-md" type="email" id="email" name="email"
-            placeholder="Enter your email address" />
-          <button class="bg-red-600 hover:bg-red-500 text-white py-2 px-4 rounded-md" type="submit">
+            placeholder="Enter your email address" style="color: black" />
+          <button class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-md" type="submit">
             Subscribe
           </button>
         </div>
@@ -230,11 +248,11 @@
     </div>
     <div id="copyright">
       <p>
-        Copyright &copy; <span id="date"></span> PetMe All Right Reserved.
+        Copyright &copy; <span id="date"></span> [PetMe] All Rights Reserved.
       </p>
     </div>
   </footer>
-  <script>
+    <script>
     const date = new Date();
     const year = date.getFullYear();
     document.getElementById("date").innerHTML = year;
