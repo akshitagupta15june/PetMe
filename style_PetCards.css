@@ -1,0 +1,121 @@
+/* Light Mode Styles for New Elements */
+.bg-light-mode {
+    background: linear-gradient(180deg, #c0692c 0%, #e2e2e2 100%);
+    /* background: linear-gradient(135deg, #f9f9f9 0%, #e2e2e2 100%); */
+}
+
+.main-card-light {
+    /* background: linear-gradient(180deg, #b1591a 0%, #e2e2e2 100%); */
+    background: linear-gradient(135deg, #bcbcbc 0%, #e7e6e6 100%);
+    box-shadow: 0 4px 8px rgba(178, 94, 25, 0.5);
+    transition: transform 0.8s, box-shadow 0.8s, background 0.8s;
+}
+
+.main-card-light:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(180deg, #aa581d 0%, #e2e2e2 100%);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.hover-button-light {
+    background-color: #aa5519;
+    color: #ffffff;
+    transition: background-color 0.8s, color 0.8s, transform 0.3s;
+}
+
+.hover-button-light:hover {
+    background: linear-gradient(135deg, #aa5519 0%, #753a10 100%);
+    color: #ffffff;
+    transform: scale(1.05); 
+}
+
+
+.text-light-mode {
+    color: #8b4513; 
+    font-weight: bold;
+}
+
+
+.bg-dark-mode {
+    background: linear-gradient(180deg, #b27349 0%, #673514 100%);
+    background-size: cover;
+}
+
+.main-card-dark {
+    background: linear-gradient(180deg, #8d4211 0%, #411b02 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.8s, box-shadow 0.8s, background 0.8s;
+}
+
+.main-card-dark:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(90deg, #411b02 0%, #8d4211 100%);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.hover-button-dark {
+    background: linear-gradient(135deg, #8b8b8b 0%, #e7e6e6 100%);
+    color: #1e1e1e;
+    transition: background-color 0.8s, color 0.8s, transform 0.3s;
+}
+
+.hover-button-dark:hover {
+    background: linear-gradient(135deg, #e7e6e6 0%, #747373 100%);
+    color: #1e1e1e;
+    transform: scale(1.04); 
+}
+
+.text-dark-mode {
+    color: #ffffff; 
+}
+
+
+.pet-card-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main-card {
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+    transition: background 0.8s; 
+}
+
+.card-img-size {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ccc;
+}
+
+.main-text {
+    padding: 20px;
+    color: inherit;
+    color: #fff;
+}
+
+.hover-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card-img-size{
+   width: 320px;
+   height: 320px;
+    border-bottom: 2px solid #ccc;
+}
+
+
+@media screen and (max-width: 768px) {
+    .pet-card-flex{
+        align-items: center;
+        
+    }
+    .main-card {
+        max-width: 400px;
+    }
+    
+}
