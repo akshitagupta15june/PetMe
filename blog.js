@@ -8,11 +8,11 @@ fetch("blog.json")
     for(let blog of blogs){
       out += `
       <div class="relative flex items-center m-10 bg-white shadow-2xl shadow-slate-500 rounded-2xl justify-center backdrop-filter backdrop-blur-md">
-        <div class="relative w-[17.5rem] sm:w-[15.5rem] md:w-[19rem] lg:w-[27rem] xl:w-[35rem] h-auto flex flex-col justify-center items-center opacity-80 hover:opacity-100">
+        <div class="relative w-[20.5rem] sm:w-[15.5rem] md:w-[19rem] lg:w-[27rem] xl:w-[35rem] h-auto flex flex-col justify-center items-center opacity-80 hover:opacity-100">
           <div class="relative w-full truncate duration-500 border-8 border-solid rounded-t-2xl border-black/25">
-            <img src="${blog.poster}" alt="blog image" class="object-cover w-full h-48 rounded-t-2xl"/>
+            <img src="${blog.poster}" alt="blog image" class="object-cover w-full h-64 rounded-t-2xl"/>
           </div>
-          <div class="relative flex flex-col items-center justify-center px-4 py-4 text-center bg-white rounded-b-2xl">
+          <div class="relative flex flex-col items-center justify-center px-6 py-6 text-center bg-white rounded-b-2xl">
             <h3 class="duration-500 text-black uppercase font-medium text-sm tracking-wider py-2">
               <b>${blog.title}</b><br>
               <span class="text-base font-light lowercase">${blog.description}</span>
