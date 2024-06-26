@@ -132,7 +132,7 @@
     max-width: 700px;
     width: 100%;
     margin: auto;
-    
+
     
   }
 }
@@ -236,7 +236,7 @@
 #copyright {
   text-align: center;
   padding: 2px 2px 2px 2px;
-  background-color: black;
+  background-color: rgb(220, 26, 26);
   color: white;
 }
 
