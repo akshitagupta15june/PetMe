@@ -114,7 +114,7 @@
     </nav>
   </header>
 
-  <!---Blogs container-->
+  <!---Blogs container
   <section class="main-body-section bg-blog bg-opacity-90 bg-white-200">
     <div class="container max-w-5xl mx-auto">
       <img src="./Assets/cats-dogs.jpg" class="mt-32" />
@@ -125,8 +125,82 @@
         <b>A Blog For Pet Lovers And Their Pet Stories</b>
       </p>
     </div>
+Blogs card-->
 
-    <!---Blogs card-->
+  <!-- Blogs Container -->
+   <section class="main-body-section bg-blog bg-opacity-90 bg-white-200 py-12">
+    <div class="container max-w-5xl mx-auto text-center">
+        <div class="relative">
+            <img src="./Assets/cats-dogs.jpg" class="mx-auto mt-32 animate-fade-in" alt="Cats and Dogs" />
+        </div>
+        <h1 class="text-black text-5xl leading-tight font-bold w-full mt-8">Blogs</h1>
+        <p class="text-amber-900 text-xl font-bold mt-2 mb-10">A Blog For Pet Lovers And Their Pet Stories</p>
+    </div>
+
+    <!-- Form to Add Blog -->
+    <div class="form-container">
+        <h2>Add Your Blog</h2>
+        <form id="blogForm">
+            <input type="text" id="title" placeholder="Blog Title" required>
+            <input type="url" id="image" placeholder="Image URL" required>
+            <textarea id="content" placeholder="Blog Content" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Blogs Card -->
+    <div class="relative flex flex-wrap items-center justify-center gap-6 mx-0 z-2 my-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4" id="data-output">
+        <!-- Example Blog Card -->
+        <div class="blog-card">
+           <!-- <img src="./Assets/sample-blog.jpg" alt="Sample Blog Image" class="w-full h-48 object-cover" />-->
+            <div class="content">
+                <h2>Blog Title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna vitae lorem.</p>
+            </div>
+        </div>
+        <!-- Additional blogs will be added here dynamically -->
+    </div>
+</section>
+
+<script>
+    document.getElementById('blogForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        // Get form data
+        const title = document.getElementById('title').value;
+        const image = document.getElementById('image').value;
+        const content = document.getElementById('content').value;
+
+        // Create a new blog card
+        const blogCard = document.createElement('div');
+        blogCard.className = 'blog-card';
+
+        const blogImage = document.createElement('img');
+        blogImage.src = image;
+        blogImage.alt = title;
+        blogImage.className = 'w-full h-48 object-cover';
+
+        const blogContent = document.createElement('div');
+        blogContent.className = 'content';
+
+        const blogTitle = document.createElement('h2');
+        blogTitle.textContent = title;
+
+        const blogText = document.createElement('p');
+        blogText.textContent = content;
+
+        blogContent.appendChild(blogTitle);
+        blogContent.appendChild(blogText);
+        blogCard.appendChild(blogImage);
+        blogCard.appendChild(blogContent);
+
+        // Append the new blog card to the blog section
+        document.getElementById('data-output').appendChild(blogCard);
+
+        // Clear the form
+        document.getElementById('blogForm').reset();
+    });
+</script>
     <div class="relative flex flex-wrap items-center justify-center grid-cols-2 mx-0 z-2 my-5" id="data-output"></div>
   </section>
 
