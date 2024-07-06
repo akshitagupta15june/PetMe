@@ -137,6 +137,26 @@
   }
 }
 
+/* CSS for the logo hover effect */
+.logo-size {
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-size:hover {
+  transform: scale(1.1); /* Adjust the scale value as needed */
+}
+
+/* Ensuring the logo stays within the navbar */
+.header {
+  overflow: hidden;
+}
+
+/* Adding margin to the text adjacent to the logo */
+#logo .mission-1, #logo .mission-2 {
+  margin-left: 20px; /* Adjust the margin as needed */
+  margin-right: 20px; /* Adjust the margin as needed */
+}
+
 /* Add this CSS code to hide the About content initially */
 #about .fade-in {
   opacity: 0;
