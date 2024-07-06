@@ -18,5 +18,13 @@
   "description": "",
   "devDependencies": {
     "tailwindcss": "^3.1.7"
+  },
+  "scripts": {
+    "build": "jekyll build",
+    "postinstall": "gem install jekyll bundler"
+  },
+  "engines": {
+    "ruby": ">= 2.6.0"
   }
 }
+
