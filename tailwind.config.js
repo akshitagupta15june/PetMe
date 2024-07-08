@@ -34,6 +34,7 @@ module.exports = {
         },
         colors: {
           'light-blue': '#B7DFF8',
+          'hover-choco': '#8b4513',
         }
       },
     },
