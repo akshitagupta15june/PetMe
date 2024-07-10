@@ -132,8 +132,6 @@
     max-width: 700px;
     width: 100%;
     margin: auto;
-    
-    
   }
 }
 
@@ -286,6 +284,52 @@
 .copyright1{
   margin-left: 50%;
 }
+
+/* Additional CSS for navbar buttons */
+.navbar .nav-item {
+  margin: 0;
+  padding: 0;
+  transform: translateX(0);
+  /* Smooth transition on all properties */
+
+}
+/* Specific styling for the 'Support Us' button */
+#supportus-button {
+  transition: all 0.3s ease; /* Smooth transition on all properties */
+}
+
+/* Prevent 'Contact Us' button from sliding to the right */
+#contactus-button:hover {
+  transform: translateX(0);
+}
+
+/* General hover effect for buttons */
+.navbar .nav-link:hover {
+  color: #fff;
+  background-color: #007bff;
+}
+
+/* Specific styling for the 'SupportUs' button */
+#supportus-button:hover {
+  background-color: #0056b3;
+  color: #fff;
+
+}
+#contactus-button2:hover {
+  transform: translateX(0);
+
+}
+ #blogcontact-us{
+  transform: translateX(0);
+
+ }
+ #blogcontact-us:hover{
+  transform: translateX(0);
+
+ }
+
+
+
 
 
 
