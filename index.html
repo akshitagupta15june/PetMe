@@ -31,7 +31,7 @@
     id="header">
     <div class="flex flex-row items-center md:flex-row md:items-center p-2" id="logo">
       <span class="mission-1 mission-dark"> Saving Lives </span>
-      <a class="logo-border" href="index.html">
+      <a class="logo-border remover" href="index.html">
         <img class="rounded-full logo-size" src="./Assets/Images/logo.jpg" alt="logo" />
       </a>
       <span class="mission-2 mission-dark"> Saving Animals </span>
@@ -67,12 +67,12 @@
       </button>
       <nav class="">
         <div class="hidden w-full lg:block z-2" id="navbar">
-          <ul class="w-[100vw] h-1/2 top-0 right-0 p-8 lg:p-4 mt-12 lg:mt-0 text-center text-base md:text-md space-y-4 lg:space-y-0 lg:space-x-5 lg:static lg:w-auto flex flex-col rounded-lg items-center lg:items-center lg:bg-transparent lg:border-0 lg:flex-row justify-between">
+          <ul class="w-[100vw] h-1/2 top-0 right-0 p-4 lg:p-4 mt-12 lg:mt-0 text-center text-base md:text-md space-y-4 lg:space-y-0 lg:space-x-5 lg:static lg:w-auto flex flex-col rounded-lg items-center lg:items-center lg:bg-transparent lg:border-0 lg:flex-row justify-between">
            <div class="nav-item">
             <li>
               <a
                 href="#meet"
-                class="lg:p-3 text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item"
+                class="lg:p-1 text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item"
                 >Meet Pets</a
               >
               
@@ -82,28 +82,28 @@
               <a
                  
                 href="#About"
-                class="text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item"
+                class="lg:p-1 text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item"
                 >About Us</a
               >
             </li>
             <li>
               <a
                 href="./news.html"
-                class="text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item"
+                class="lg:p-1 text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item"
                 >Pet News</a
               >
             </li>
             <li>
               <a
                 href="./blog.html"
-                class="text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item"
+                class="lg:p-1 text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item"
                 >Blogs</a
               >
             </li>
             <li>
               <a
                 href="./donate.html"
-                class="text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item"
+                class="lg:p-1 text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item"
                 >Donate</a
               >
             </li>
@@ -111,14 +111,14 @@
             <li>
 
               <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
-              <a @mouseover="open = true" class="text-custom-heading flex font-bold hover:underline underline-offset-4 turn-red-hover navbar-item w-full">
+              <a @mouseover="open = true" class=" lg:p-1 text-custom-heading flex font-bold underline-offset-4 turn-red-hover navbar-item">
                 Support Us
                 <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="mt-1">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </a>
-              <div x-show="open" class="z-20 absolute -left-1 w-[7.5rem] py-2 bg-gray-100 rounded-md shadow-xl">
-                <a href="volunteer.html" class="block px-4 py-2 text-base text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white">Become a Volunteer</a>
+              <div x-show="open" class="z-20 absolute -left-1 w-[7.5rem] py-2 bg-gray-100 rounded-md shadow-xl hover:bg-gray-400 ">
+                <a href="volunteer.html" class=" remover block px-4 py-2 text-base text-gray-300 text-gray-700 hover:text-white">Become a Volunteer</a>
               </div>
               </div>
 
@@ -127,15 +127,14 @@
             <li>
               <a
                 href="./reportstary.html"
-                class="text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item"
+                class="lg:p-1 text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item"
                 >SOS Report</a
               >
             </li>
             <li>
-              <a href="#contact">
-                <button
-                  class="inline-flex items-center bg-header-orange-light border-0 py-2 lg:py-2 text-choco text-base px-2 focus:outline-none text_4 font-bold rounded mt-4 md:mt-0 hover:translate-x-2 transition-transform"
-                >
+              <a href="#contact"
+              class="lg:p-1 text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item remover">
+                <button class="flex inline-flex items-center bg-header-orange-light border-0 py-2 lg:py-2 text-choco text-base px-2 focus:outline-none text_4 font-bold rounded mt-4 md:mt-0 hover:bg-hover-choco hover:translate-x-2 transition-transform text-light-mode">
                   Contact Us
                   <svg
                     fill="none"
@@ -152,8 +151,8 @@
               </a>
             </li>
             <li>
-              <a id="theme-toggle">
-                <i class="ri-sun-line turn-yellow-hover light-theme" id="switch"></i>
+              <a id="theme-toggle" class="remover">
+                <i class="ri-sun-line light-theme" id="switch"></i>
               </a>
             </li>
             <!-- google translate -->

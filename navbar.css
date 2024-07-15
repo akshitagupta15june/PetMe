@@ -192,7 +192,7 @@ a:hover::after {
 a:hover {
   color: hwb(37 38% 0%);
   cursor: pointer;
-  transform: scale(1.3);
+  
 }
 
 .nav-items div{
@@ -201,4 +201,12 @@ a:hover {
   cursor: pointer;
   transition:  5s;
   
+}
+
+.remover::after{
+  content: none;
+}
+
+.x-text :hover{
+  background-color:#8b4513;
 }
