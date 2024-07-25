@@ -12,19 +12,13 @@
 /* Add this to your CSS file */
 /* Add this to your CSS file */
 
-
-
 .contactusform-color-lightmode {
-  color: rgb(18, 17, 17) ;  /* contact us form text color in light-mode */
+  color: rgb(18, 17, 17); /* contact us form text color in light-mode */
 }
 
-.contactusform-color-darkmode{
+.contactusform-color-darkmode {
   /*if contact us form text color needs to be changed, can be chnaged here */
 }
-
-
-
-
 
 *,
 ::before,
@@ -53,7 +47,7 @@
 
 html {
   line-height: 1.5;
-  scroll-behavior: smooth;    /* gives a smooth scroll effect */
+  scroll-behavior: smooth; /* gives a smooth scroll effect */
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
@@ -228,8 +222,6 @@ textarea {
   padding: 0;
   /* 3 */
 }
-
-
 
 /*---change*/
 
@@ -1263,47 +1255,43 @@ video {
 .rounded-full {
   border-radius: 9999px;
   display: flex;
-  gap:10px;
+  gap: 10px;
 }
 
 .mission-1 {
   display: flex;
-  color: #F8FAFC;
+  color: #f8fafc;
   margin: 0.5rem;
   width: 3.5rem;
   font-size: 1rem;
   font-weight: 600;
-
 }
 
 .mission-2 {
   display: flex;
-  color: #F8FAFC;
+  color: #f8fafc;
   margin: 0.7rem;
   width: 3.5rem;
   font-size: 1rem;
   font-weight: 600;
-
 }
 
 .mission-L1 {
   display: flex;
-  color: #333231CC;
+  color: #333231cc;
   margin: 0.8rem;
   width: 3.5rem;
   font-size: 1rem;
   font-weight: 600;
-
 }
 
 .mission-L2 {
   display: flex;
-  color: #333231CC;
+  color: #333231cc;
   margin: 0.8rem;
   width: 3.5rem;
   font-size: 1rem;
   font-weight: 600;
-
 }
 
 .rounded {
@@ -1344,13 +1332,13 @@ video {
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
-.border-red{
+.border-red {
   --tw-border-opacity: 1;
   border-color: rgb(255 0 0 / var(--tw-border-opacity));
 }
 
-.help { 
-  display: none; 
+.help {
+  display: none;
   font-size: small;
   color: red;
 }
@@ -1668,14 +1656,14 @@ video {
 
 .text-gray-900 {
   --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
+  color: rgb(209 213 221);
 }
 
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.text-choco{
+.text-choco {
   color: chocolate;
 }
 
@@ -2246,14 +2234,10 @@ video {
   }
 }
 .text-lg {
-  
-  
   transition: width 2s, transform 2s;
 }
 .text-lg:hover {
   width: 1500px;
-  
-  border-radius:8px;
-  
-}
 
+  border-radius: 8px;
+}
