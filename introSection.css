@@ -10,22 +10,23 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.m-heading {				background-color: rgb(123, 53, 15);
-				text-align: center;
-        margin-left: 20%;
-        margin-right: 20%;
-				font-weight: 800;
-				color: aliceblue;
-				padding-top: 30px;
-				padding-bottom: 30px;
+.m-heading {
+  background-color: rgb(123, 53, 15);
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-weight: 800;
+  color: aliceblue;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* CORRECT THE HERO IMAGE: I also changed the height to a 850px to give clearer view of the cute puppies */
-.main-body-section-div{
+.main-body-section-div {
   /* background: url("./Assets/Images/main-heading-body-bg.jpg") no-repeat center
     center/cover; */
-  background-repeat: no-repeat!important;
-  background-size: cover!important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
   min-height: 850px;
   opacity: 0.9;
   padding-top: 80px;
@@ -35,8 +36,6 @@
 .main-body-heading-text {
   padding-top: 8%;
   padding-left: 5%;
-
-
 }
 
 /* CORRECT THE HERO IMAGE: The list element style was causing the whitespace. Removing it succesfully fixes the problem */
@@ -64,7 +63,7 @@
   letter-spacing: 3px;
   color: white;
 }
-.main-body-heading-text span{
+.main-body-heading-text span {
   color: hsl(37, 73%, 59%);
   text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
 }
@@ -95,7 +94,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  scroll-margin-top:96px;
+  scroll-margin-top: 96px;
 }
 
 .main-img {
@@ -104,6 +103,7 @@
   border-radius: 15px;
   overflow: hidden;
   transition: all 300ms;
+  margin: 0 10px;
 }
 
 .hv {
@@ -148,7 +148,7 @@
   width: 330px;
   height: 330px;
   object-fit: cover;
-  object-position: 25% 75%;;
+  object-position: 25% 75%;
 }
 
 ::-webkit-scrollbar {
