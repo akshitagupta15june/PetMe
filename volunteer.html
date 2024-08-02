@@ -144,7 +144,7 @@
                     Fill out the form below to become volunteer.
                 </p>
             </div>
-            <form id="survey-form" action="https://formspree.io/f/xayaokzl" method="POST">
+            <form id="survey-form" action="https://formspree.io/f/xayaokzl" method="POST" novalidate class="needs-validation">
                 <div class="lg:w-1/2 md:w-2/3 mx-auto">
                     <div class="flex flex-wrap -m-2">
                         <div class="p-2 w-1/2">
@@ -153,6 +153,7 @@
                                 <input type="text" id="name" name="name" placeholder="Richard Zeus"
                                     class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                     required />
+                                <div class="invalid-feedback">Full name is required!</div>    
                             </div>
                         </div>
                         <div class="p-2 w-1/2">
@@ -161,6 +162,7 @@
                                 <input type="email" id="email" name="email" placeholder="youremail@gmail.com"
                                     class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                     required />
+                                    <div class="invalid-feedback">Email is required!</div>    
                             </div>
                         </div>
                         <div class="p-2 w-full">
@@ -169,6 +171,7 @@
                                 <input type="text" id="address" name="address" placeholder="Your Address"
                                     class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                     required />
+                                    <div class="invalid-feedback">Please enter complete address.</div>    
                             </div>
                         </div>
                         <div class="p-2 w-1/2">
@@ -177,6 +180,7 @@
                                 <input type="text" id="city" name="city" placeholder="Indore"
                                     class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                     required />
+                                    <div class="invalid-feedback">City is required!</div>    
                             </div>
                         </div>
                         <div class="p-2 w-1/2">
@@ -185,6 +189,7 @@
                                 <input type="text" id="state" name="state" placeholder="Madhya Pradesh"
                                     class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                     required />
+                                    <div class="invalid-feedback">State is required!.</div>    
                             </div>
                         </div>
                         <div class="p-2 w-1/2">
@@ -193,6 +198,7 @@
                                 <input type="text" id="country" name="country" placeholder="India"
                                     class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                     required />
+                                    <div class="invalid-feedback">Country is required!</div>
                             </div>
                         </div>
                         <div class="p-2 w-1/2">
@@ -203,6 +209,7 @@
                                     class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                     oninput="this.value = this.value.replace(/[^0-9\+\.]/g, '').replace(/(\..*)\./g, '$1');"
                                     required />
+                                    <div class="invalid-feedback">Please enter a valid 10 digit-no.</div>
 
                             </div>
                         </div>
@@ -212,6 +219,7 @@
                             <span class="leading-7 p-1 font-medium text-gray-900">
                                 I've read and agree to the Terms and Conditions for volunteering this organisation.
                             </span>
+                            <div class="valid-feedback">(You've agreed to our terms and conditions.)</div>
                         </div>
                     </div>
                     <div class="p-4 w-full">
@@ -382,6 +390,7 @@
     </footer>
 
     <script src="navbar.js"></script>
+    <script src="script.js"></script>
     <script src="light-dark-theme.js"></script>
 </body>
 

@@ -192,7 +192,8 @@
         </p>
       </div>
       <form id="survey-form" action="https://formspree.io/f/xayaokzl" method="POST" name="survey-form"
-        onsubmit="return validateForm()">
+          novalidate class="needs-validation">
+           <!-- onsubmit="return validateForm()"  -->
         <div class="lg:w-1/2 md:w-2/3 mx-auto">
           <div class="flex flex-wrap -m-2">
             <div class="p-2 w-1/2">
@@ -202,8 +203,7 @@
                   onchange="displayErrorMsg(this.name)"
                   class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   required />
-                <p id="name-helper" class="help">Enter valid name <br>-> Enter Your first and last name (Starting with uppercase) with
-                  separate space.</p>
+                  <div class="invalid-feedback">Enter complete name.</div>
               </div>
             </div>
             <div class="p-2 w-1/2">
@@ -213,7 +213,7 @@
                   onchange="displayErrorMsg(this.name)"
                   class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300  focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   required />
-                <p id="email-helper" class="help">Enter valid email address </p>
+                  <div class="invalid-feedback">Enter valid email address.</div>
               </div>
             </div>
             <div class="p-2 w-full">
@@ -223,7 +223,7 @@
                   onchange="displayErrorMsg(this.name)"
                   class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   required />
-                <p id="address-helper" class="help">Enter valid address</p>
+                  <div class="invalid-feedback">Enter the complete address.</div>
               </div>
             </div>
             <div class="p-2 w-1/2">
@@ -233,7 +233,8 @@
                   onchange="displayErrorMsg(this.name)"
                   class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   required />
-                <p id="city-helper" class="help">Enter valid city name (Start with capital letter)</p>
+                <!-- <p id="city-helper" class="help">Enter valid city name (Start with capital letter)</p> -->
+                <div class="valid-feedback">Great!!.</div>
               </div>
             </div>
             <div class="p-2 w-1/2">
@@ -243,7 +244,8 @@
                   onchange="displayErrorMsg(this.name)"
                   class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   required />
-                <p id="state-helper" class="help">Enter valid state name(Start with capital letter)</p>
+                <!-- <p id="state-helper" class="help">Enter valid state name(Start with capital letter)</p> -->
+                <div class="valid-feedback">Great!!</div>
               </div>
             </div>
             <div class="p-2 w-1/2">
@@ -253,7 +255,8 @@
                   onchange="displayErrorMsg(this.name)"
                   class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   required />
-                <p id="country-helper" class="help">Enter valid country (Start with capital letter)</p>
+                <!-- <p id="country-helper" class="help">Enter valid country (Start with capital letter)</p> -->
+                <div class="invalid-feedback">Country name is required!</div>
               </div>
             </div>
             <div class="p-2 w-1/2">
@@ -263,7 +266,8 @@
                   onchange="displayErrorMsg(this.name)"
                   class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   oninput="this.value = this.value.replace(/[^0-9\+\.]/g, '').replace(/(\..*)\./g, '$1');" required />
-                <p id="contact-helper" class="help">Enter valid number (formate : +91 0123456789)</p>
+                <!-- <p id="contact-helper" class="help">Enter valid number (formate : +91 0123456789)</p> -->
+                <div class="invalid-feedback">Enter valid number (formate : +91 0123456789)</div>
               </div>
             </div>
             <div class="p-2 w-1/2">
@@ -273,7 +277,8 @@
                   onchange="displayErrorMsg(this.name)"
                   class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   required />
-                <p id="pettype-helper" class="help">Enter valid pet type</p>
+                <!-- <p id="pettype-helper" class="help">Enter valid pet type</p> -->
+                <div class="invalid-feedback">Pet is required!</div>
               </div>
             </div>
             <div class="p-2 w-1/2">
@@ -281,7 +286,8 @@
                 <label for="name" class="leading-7 text-sm text-gray-900">Pet Name</label>
                 <input type="text" id="petname" name="petname" placeholder="Charlie" autocomplete="off"
                   class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-                <p id="petname-helper" class="help">Enter valid pet name</p>
+                <!-- <p id="petname-helper" class="help">Enter valid pet name</p> -->
+                <div class="invalid-feedback">Pet name needs to be entered.</div>
               </div>
             </div>
             <div class="p-2 w-1/2">
@@ -291,7 +297,8 @@
                   onchange="displayErrorMsg(this.name)"
                   class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   required />
-                <p id="petcolor-helper" class="help">Enter valid pet color</p>
+                <!-- <p id="petcolor-helper" class="help">Enter valid pet color</p> -->
+                <div class="valid-feedback">Nice Color!</div>
               </div>
             </div>
             <div class="p-2 w-1/2">
@@ -301,7 +308,8 @@
                   onchange="displayErrorMsg(this.name)"
                   class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   required />
-                <p id="breed-helper" class="help">Enter valid pet breed</p>
+                <!-- <p id="breed-helper" class="help">Enter valid pet breed</p> -->
+                <div class="invalid-feedback">Kindly state the pet's breed.</div>
               </div>
             </div>
             <div class="p-2 w-full">
@@ -322,6 +330,7 @@
                       </span>
                     </span>
                     <input type="file" name="file_upload" class="hidden" />
+                    <div class="invalid-feedback">Pet image is required to volunteer the condition.</div>
                   </label>
                 </div>
               </div>
@@ -331,6 +340,7 @@
               <span class="leading-7 p-1 font-medium text-gray-900">
                 I've read and agree to the Terms and Conditions of PetMe.
               </span>
+              <div class="valid-feedback">(You've agreed to the terms and conditions)</div>
             </div>
             <div class="p-4 w-full">
               <button type="submit" id="submit_button">
@@ -457,6 +467,7 @@
   </footer>
 
   <script src="navbar.js"></script>
+  <script src="script.js"></script>
   <script src="light-dark-theme.js"></script>
 </body>
 
