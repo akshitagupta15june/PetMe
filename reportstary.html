@@ -122,27 +122,36 @@
       <p id="description">The details you provide with this form will be used to reach the nearest authority at the
         location of the stray animal.</p>
     </div>
-    <form class="flex flex-col  md:w-2/3 max-w-[775px] w-auto sm:mx-6 mx-2" id="survey-form"
-      action="https://formspree.io/f/xayaokzl" method="POST">
+    <form class="flex flex-col  md:w-2/3 max-w-[775px] w-auto sm:mx-6 mx-2 needs-validation" id="survey-form"
+      action="https://formspree.io/f/xayaokzl" method="POST" novalidate>
       <div class="form-group mb-2">
         <label for="name">Name
           <span class="hint text-red-600">*</span>
         </label>
         <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+        <div class="invalid-feedback">
+          Enter your name.
+        </div>
       </div>
       <div class="form-group mb-2">
         <label for="email">Email
           <span class="hint text-red-600">*</span>
         </label>
         <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required />
+        <div class="invalid-feedback">
+          Enter valid email.
+        </div>
       </div>
       <div class="form-group mb-2">
         <label for="address">
-          Address(street address,City, pincode)
+          Address(Street address,City, pincode)
           <span class="hint text-red-600">*</span>
         </label>
         <input type="address" name="first address" id="first address" class="form-control"
           placeholder="Enter your correct address (eg. Meenawati marg, Lucknow, 209087)" required/>
+          <div class="invalid-feedback">
+            Kindly enter the complete address.
+          </div>
       </div>
       <div class="form-group mb-2">
         <label for="liveLocation">
@@ -152,6 +161,9 @@
       </label>
       <input type="text" name="liveLocation" id="locationLabel" class="form-control" 
         placeholder="Press Locate Me for precise Location... " required/>
+        <div class="invalid-feedback">
+          Important!
+        </div>
       </div>
       <div class="form-group mb-2">
         <label for="landmark">
@@ -160,6 +172,9 @@
         </label>
         <input type="address" min="1" name="address" id="address" class="form-control"
           placeholder="Enter the nearest landmark to identify the location." required/>
+          <div class="invalid-feedback">
+            Please enter nearby landmark!
+          </div>
       </div>
       <div class="form-group mb-2">
         <label for="contact-no">
@@ -168,6 +183,9 @@
         </label>
         <input type="tel" name="contact-no" id="contact" class="form-control"
           placeholder="Enter an active contact number" required/>
+          <div class="invalid-feedback">
+            Enter valid 10-digit number.
+          </div>
       </div>
       <div class="form-group mb-4">
         <label for="email">Which type of stray animal?
@@ -181,6 +199,7 @@
           <option value="pig">Pig</option>
           <option value="other">Other</option>
         </select>
+        <div class="invalid-feedback">Required!</div>
       </div>
 
       <div class="form-group mb-2 hidden" id="box" >
@@ -188,6 +207,9 @@
           <span class="hint text-red-600">*</span>
         </label>
         <input type="text" name="b" class="form-control" >
+        <div class="invalid-feedback">
+          Required!
+        </div>
       </div>
 
       <div class="form-group">
@@ -423,6 +445,7 @@ hideBackToTopButton()
 
 
   <script src="./navbar.js"></script>
+  <script src="./script.js"></script>
   <script src="./light-dark-theme.js"></script>
   <script src="reportstary.js"></script>
 </body>
