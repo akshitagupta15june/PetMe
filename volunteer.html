@@ -40,6 +40,79 @@
         #survey-form input::placeholder{
           color: rgba(0, 0, 0, 0.481);
         }
+         ::-webkit-scrollbar {
+      width: 10px;
+      background-color: rgb(92, 77, 77);
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: rgb(146, 200, 204);
+      border-radius: 5px;
+      min-height: 6px;
+    }
+    ::-webkit-scrollbar-button {
+      width: 15px;
+      height: 15px;
+      background-color: #c8b0b0;
+      position: relative;
+    }
+    ::-webkit-scrollbar-button:active {
+      background-color: #c8b0b0;
+    }
+    ::-webkit-scrollbar-button:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 0;
+      height: 0;
+      border-style: solid;
+    }
+
+    ::-webkit-scrollbar-button:single-button:vertical:decrement:before {
+      border-width: 0 4px 8px 4px;
+      border-color: transparent transparent #333 transparent;
+    }
+
+    ::-webkit-scrollbar-button:single-button:vertical:increment:before {
+      border-width: 8px 4px 0 4px;
+      border-color: #333 transparent transparent transparent;
+    }
+    .container {
+      width: 60%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+    }
+    .hidden {
+      display: none;
+    }
+    
+    #cart-modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000; 
+    }
+    #cart-modal {
+      max-width: 90%;
+      max-height: 90%;
+      overflow-y: auto;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    body.modal-open {
+      overflow: hidden;
+    }
+
     </style>
 </head>
 
@@ -226,6 +299,80 @@
             </form>
         </div>
     </section>
+      <!--Merchandise section-->
+    <h2 class="font-extrabold text-[30px] text-center p-4 font-mono">Buy Merches from us to save animal lives</h2>
+    <div class="w-full flex items-center justify-between bg-[goldenrod] ">
+      <div
+        class="cart-cont flex w-full justify-end items-center flex-wrap mr-1 m-2"
+      >
+        <div
+          class="cart flex flex-end h-full bg-white justify-evenly w-[7%] border-1 border-white rounded-md hover:cursor-pointer"
+          id="cart-button"
+        >
+          <i
+            class="fa-solid fa-cart-shopping my-auto text-[30px] text-[goldenrod]"
+          ></i>
+          <p id="count" class="text-[30px] font-bold text-[goldenrod]">0</p>
+        </div>
+      </div>
+      <!--cart cont-->
+    </div>
+    <div
+      class="pagebody w-full my-2 grid grid-cols-3 gap-3 justify-items-center items-center"
+      id="card-container"
+    ></div>
+    <div
+      id="thank-you-modal-overlay"
+      class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
+      class="hidden"
+    >
+      <div class="bg-white rounded-lg p-4 max-w-sm w-full">
+        <h3 class="text-lg font-semibold mb-4">Thank You!</h3>
+        <p>
+          Thanks for helping out the team for collecting money through our
+          merchandise website for welfare.
+        </p>
+        <button
+          id="close-thank-you"
+          class="mt-4 bg-[goldenrod] text-white p-2 rounded-lg"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+    <!-- Cart Modal Structure -->
+     <div
+      id="cart-modal-overlay"
+      class="fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center z-50"
+      class="hidden"
+    >
+      <div
+        id="cart-modal"
+        class="p-5 rounded shadow-lg w-[21%] mb-[30px] bg-slate-200 relative"
+      >
+        <div
+          class="head bg-[goldenrod] border-1 rounded-[3px] h-[40px] p-[10px] mb-[10px] text-white flex items-center justify-between"
+        >
+          My Cart
+          <button id="close-cart" class="text-white text-2xl font-bold">
+            &times;
+          </button>
+        </div>
+        <div
+          id="cart-items-container"
+          class="cartItem flex flex-col justify-center self-center"
+        >
+          Your Cart is Empty
+        </div>
+        <div
+          class="foot flex justify-between mx-[20px] px-[10px] border-t-[1px] border-solid border-[#333]"
+        >
+          <h3>Total</h3>
+          <h2 id="total">$0.00</h2>
+        </div>
+      </div>
+    </div> 
+    <!--container ends-->
 
     <!-- Footer section  -->
 
@@ -384,5 +531,221 @@
     <script src="navbar.js"></script>
     <script src="light-dark-theme.js"></script>
 </body>
+<script>
+      const cardContainer = document.getElementById("card-container");
+      const cartItemsContainer = document.getElementById(
+        "cart-items-container"
+      );
+      const totalElement = document.getElementById("total");
+
+      // Define the card template as a string
+      const cardTemplate = `
+    <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <a href="#">
+        <img class="p-8 rounded-t-lg" src="{imageUrl}" alt="product image" style="height:100%;">
+      </a>
+      <div class="px-5 pb-5">
+        <a href="#">
+          <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">{productName}</h5>
+        </a>
+        <div class="flex flex-row flex-wrap items-center">
+          <p class="text-red-300">Rating:</p>
+          <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">{rating}</span>
+        </div>
+      </div>
+      <div class="flex items-center justify-between">
+        <span class="text-3xl font-bold text-gray-900 dark:text-white m-2">$ {price}</span>
+        <a href="#" class="text-white bg-blue-700 m-2 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" onclick="addToCart({index})">Add to cart</a>
+      </div>
+    </div>
+  `;
+
+      let cartCount = 0;
+      const cartItems = [];
+      const products = [
+        {
+          index: 1,
+          productName: "Product 1",
+          rating: "5.0",
+          price: 599,
+          imageUrl: "./Assets/Merch/img1.jpeg",
+        },
+        {
+          index: 2,
+          productName: "Product 2",
+          rating: "4.5",
+          price: 499,
+          imageUrl: "./Assets/Merch/img2.jpeg",
+        },
+        {
+          index: 3,
+          productName: "Product 3",
+          rating: "4.0",
+          price: 399,
+          imageUrl: "./Assets/Merch/img3.jpeg",
+        },
+        {
+          index: 4,
+          productName: "Product 4",
+          rating: "5.0",
+          price: 299,
+          imageUrl: "./Assets/Merch/img4.jpeg",
+        },
+        {
+          index: 5,
+          productName: "Product 5",
+          rating: "4.5",
+          price: 499,
+          imageUrl: "./Assets/Merch/img5.jpeg",
+        },
+        {
+          index: 6,
+          productName: "Product 6",
+          rating: "4.0",
+          price: 399,
+          imageUrl: "./Assets/Merch/img6.jpeg",
+        },
+        {
+          index: 7,
+          productName: "Product 7",
+          rating: "5.0",
+          price: 200,
+          imageUrl: "./Assets/Merch/img7.jpeg",
+        },
+        {
+          index: 8,
+          productName: "Product 8",
+          rating: "4.5",
+          price: 199,
+          imageUrl: "./Assets/Merch/img8.jpeg",
+        },
+        {
+          index: 9,
+          productName: "Product 9",
+          rating: "4.0",
+          price: 499,
+          imageUrl: "./Assets/Merch/img9.jpeg",
+        }
+      ];
+
+      // Generate the cards dynamically
+      products.forEach((product) => {
+        const cardHTML = cardTemplate
+          .replace("{imageUrl}", product.imageUrl)
+          .replace("{productName}", product.productName)
+          .replace("{rating}", product.rating)
+          .replace("{price}", product.price)
+          .replace("{index}", product.index);
+        const cardElement = document.createElement("div");
+        cardElement.innerHTML = cardHTML;
+        cardContainer.appendChild(cardElement);
+      });
+
+      function addToCart(productId) {
+        const product = products.find((item) => item.index === productId);
+        if (product) {
+          cartItems.push(product);
+          cartCount++;
+          updateCartDisplay();
+        }
+      }
+
+      function removeFromCart(index) {
+        cartItems.splice(index, 1);
+        cartCount--;
+        updateCartDisplay();
+      }
+
+      function updateTotal() {
+        const total = cartItems.reduce((sum, item) => sum + item.price, 0);
+        totalElement.textContent = `$${total.toFixed(2)}`;
+      }
+
+      function updateCartDisplay() {
+        const cartCountElement = document.getElementById("count");
+        cartCountElement.textContent = cartCount;
+
+        if (cartItems.length === 0) {
+          cartItemsContainer.innerHTML = "<p>Your Cart is Empty</p>";
+        } else {
+          cartItemsContainer.innerHTML = "";
+          cartItems.forEach((item, index) => {
+            const itemElement = document.createElement("div");
+            itemElement.className = "cart-item flex justify-between p-2";
+            itemElement.innerHTML = `
+          <span>${item.productName}</span>
+          <span>$${item.price.toFixed(2)}</span>
+          <button class="remove-item bg-red-500 text-white p-1" onclick="removeFromCart(${index})">Remove</button>
+        `;
+            cartItemsContainer.appendChild(itemElement);
+          });
+        }
+        updateTotal();
+      }
+
+      const cartModalOverlay = document.getElementById("cart-modal-overlay");
+      const cartButton = document.getElementById("cart-button");
+      const closeCartButton = document.getElementById("close-cart");
+
+      // Ensure the modal is hidden initially
+      cartModalOverlay.classList.add("hidden");
+
+      // Toggle the cart modal visibility when the cart button is clicked
+      cartButton.addEventListener("click", () => {
+        if (cartModalOverlay.classList.contains("hidden")) {
+          cartModalOverlay.classList.remove("hidden");
+          document.body.classList.add("modal-open");
+        } else {
+          cartModalOverlay.classList.add("hidden");
+          document.body.classList.remove("modal-open");
+        }
+      });
+
+      // Close the modal when the close button is clicked
+      closeCartButton.addEventListener("click", () => {
+        cartModalOverlay.classList.add("hidden");
+        document.body.classList.remove("modal-open");
+      });
+
+      // Close the modal when clicking outside of it
+      cartModalOverlay.addEventListener("click", (event) => {
+        if (event.target === cartModalOverlay) {
+          cartModalOverlay.classList.add("hidden");
+          document.body.classList.remove("modal-open");
+        }
+      });
+      const thankYouModalOverlay = document.getElementById(
+        "thank-you-modal-overlay"
+      );
+      if (!thankYouModalOverlay.classList.contains("hidden")) {
+        thankYouModalOverlay.classList.add("hidden");
+      }
+
+      function showThankYouModal() {
+        thankYouModalOverlay.classList.remove("hidden");
+        document.body.classList.add("modal-open");
+      }
+      function closeThankYouModal() {
+        thankYouModalOverlay.classList.add("hidden");
+        document.body.classList.remove("modal-open");
+      }
+      // Event listener to close the thank-you modal
+      const closeThankYouButton = document.getElementById("close-thank-you");
+      closeThankYouButton.addEventListener("click", closeThankYouModal);
+
+      // Modify the addToCart function to show the thank-you modal
+      function addToCart(productId) {
+        const product = products.find((item) => item.index === productId);
+        if (product) {
+          cartItems.push(product);
+          cartCount++;
+          updateCartDisplay();
+          showThankYouModal(); // Show thank-you modal when an item is added
+        }
+      }
+
+      // Initialize the page
+      updateCartDisplay();
+    </script>
 
 </html>
