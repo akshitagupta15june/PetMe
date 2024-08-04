@@ -95,6 +95,7 @@ let elements = [
   new Element(["main-card"], "main-card-light", "main-card-dark"),
   new Element(["hover-button"], "hover-button-light", "hover-button-dark"),
   new Element(["pet-name"], "text-light-mode", "text-dark-mode"), // New class for pet name
+  new Element(["text_3"], "text-light-mode", "text-light-mode"), // Removes the change of text 3 to black in light mode within contact us and footer    
   new Element(["text_4"], "text-light-mode", "text-dark-mode") // Apply changes to list items and icons
 ];
 
