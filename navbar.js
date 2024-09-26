@@ -2,6 +2,21 @@ const navBar = document.getElementById("navbar");
 const logo = document.getElementById("logo");
 const navBtn = document.getElementById("nav-button");
 
+// Get the nav-button and the span element
+const menuSpan = navBtn.querySelector('.material-symbols-outlined');
+
+// Add an event listener to the nav-button
+navBtn.addEventListener('click', () => {
+  // Check the current text content of the span element
+  if (menuSpan.textContent === 'close') {
+    // Change the text content to 'close'
+    menuSpan.textContent = 'menu';
+  } else {
+    // Change the text content back to 'menu'
+    menuSpan.textContent = 'close';
+  }
+});
+
 let prevScrollPos =  window.pageYOffset
 
 navBtn.addEventListener("click", () => {
