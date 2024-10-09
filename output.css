@@ -15,11 +15,12 @@
 
 
 .contactusform-color-lightmode {
-  color: rgb(18, 17, 17) ;  /* contact us form text color in light-mode */
+  color: rgb(12, 11, 11) ;  /* contact us form text color in light-mode */
 }
 
 .contactusform-color-darkmode{
   /*if contact us form text color needs to be changed, can be chnaged here */
+  color: rgb(229, 219, 219);
 }
 
 
