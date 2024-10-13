@@ -147,7 +147,7 @@
 .card-img-size {
   width: 330px;
   height: 330px;
-  object-fit: cover;
+  object-fit: fill;
   object-position: 25% 75%;;
 }
 
