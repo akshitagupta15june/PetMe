@@ -1,4 +1,3 @@
-
 <html lang="en" class="dark">
 
 <head>
@@ -41,131 +40,101 @@
           today!</h1>
         <p class="text-lg text-gray-400 text-center md:text-left md:ml-12 mt-2">Give life to a needed animal</p>
       </div> -->
-      </div>
-      <button
-        data-collapse-toggle="navbar-default"
-        type="button"
-        class="absolute top-4 right-4 sm:inline-flex sm:items-center p-2 lg:hidden focus:outline-none text_4"
-        aria-controls="navbar-default"
-        aria-expanded="false"
-        id="nav-button"
-      >
-        <span class="sr-only">Open main menu</span>
-        <svg
-          class="w-6 h-6"
-          aria-hidden="true"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <nav class="">
-        <div class="hidden w-full lg:block z-2" id="navbar">
-          <ul class="w-[100vw] h-1/2 top-0 right-0 p-4 lg:p-4 mt-12 lg:mt-0 text-center text-base md:text-md space-y-4 lg:space-y-0 lg:space-x-5 lg:static lg:w-auto flex flex-col rounded-lg items-center lg:items-center lg:bg-transparent lg:border-0 lg:flex-row justify-between">
-           <div class="nav-item">
+    </div>
+    <button data-collapse-toggle="navbar-default" type="button"
+      class="absolute top-4 right-4 sm:inline-flex sm:items-center p-2 lg:hidden focus:outline-none text_4"
+      aria-controls="navbar-default" aria-expanded="false" id="nav-button">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+          clip-rule="evenodd"></path>
+      </svg>
+    </button>
+    <nav class="">
+      <div class="hidden w-full lg:block z-2" id="navbar">
+        <ul
+          class="w-[100vw] h-1/2 top-0 right-0 p-4 lg:p-4 mt-12 lg:mt-0 text-center text-base md:text-md space-y-3 lg:space-y-0 lg:space-x-3 lg:static lg:w-auto flex flex-col rounded-lg items-center lg:items-center lg:bg-transparent lg:border-0 lg:flex-row justify-between">
+          <div class="nav-item">
             <li>
-              <a
-                href="#meet"
-                class="lg:p-1 text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item"
-                >Meet Pets</a
-              >
-              
-            </li>
-            </div>
-            <li>
-              <a
-                 
-                href="#About"
-                class="lg:p-1 text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item"
-                >About Us</a
-              >
-            </li>
-            <li>
-              <a
-                href="./news.html"
-                class="lg:p-1 text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item"
-                >Pet News</a
-              >
-            </li>
-            <li>
-              <a
-                href="./blog.html"
-                class="lg:p-1 text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item"
-                >Blogs</a
-              >
-            </li>
-            <li>
-              <a
-                href="./donate.html"
-                class="lg:p-1 text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item"
-                >Donate</a
-              >
-            </li>
-            
-            <li>
+              <a href="#meet"
+                class="lg:p-1 text-custom-heading font-semibold  underline-offset-4 turn-red-hover navbar-item">Meet
+                Pets</a>
 
-              <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
-              <a @mouseover="open = true" class=" lg:p-1 text-custom-heading flex font-bold underline-offset-4 turn-red-hover navbar-item">
+            </li>
+          </div>
+          <li>
+            <a href="#About"
+              class="lg:p-1 text-custom-heading font-semibold  underline-offset-4 turn-red-hover navbar-item">About
+              Us</a>
+          </li>
+          <li>
+            <a href="./news.html"
+              class="lg:p-1 text-custom-heading font-semibold  underline-offset-4 turn-red-hover navbar-item">Pet
+              News</a>
+          </li>
+          <li>
+            <a href="./blog.html"
+              class="lg:p-1 text-custom-heading font-semibold  underline-offset-4 turn-red-hover navbar-item">Blogs</a>
+          </li>
+          <li>
+            <a href="./donate.html"
+              class="lg:p-1 text-custom-heading font-semibold  underline-offset-4 turn-red-hover navbar-item">Donate</a>
+          </li>
+
+          <li>
+
+            <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
+              <a @mouseover="open = true"
+                class=" lg:p-0 text-custom-heading flex font-semibold underline-offset-4 turn-red-hover navbar-item">
                 Support Us
-                <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="mt-1">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" class="mt-1">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
               </a>
-              <div x-show="open" class="z-20 absolute -left-1 w-[7.5rem] py-2 bg-gray-100 rounded-md shadow-xl hover:bg-gray-400 ">
-                <a href="volunteer.html" class=" remover block px-4 py-2 text-base text-gray-300 text-gray-700 hover:text-white">Become a Volunteer</a>
+              <div x-show="open"
+                class="z-20 absolute -left-1 w-[7.5rem] py-2 bg-gray-50 rounded-md shadow-2xl hover:bg-gray-200 ">
+                <a href="volunteer.html"
+                  class=" remover block px-2 py-2 font-semibold text-gray-700 hover:text-gray-700">Become a Volunteer</a>
               </div>
-              </div>
-
-            </li>
-
-            <li>
-              <a
-                href="./reportstary.html"
-                class="lg:p-1 text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item"
-                >SOS Report</a
-              >
-            </li>
-            <li>
-              <a href="#contact"
-              class="lg:p-1 text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item remover">
-                <button class="flex inline-flex items-center bg-header-orange-light border-0 py-2 lg:py-2 text-choco text-base px-2 focus:outline-none text_4 font-bold rounded mt-4 md:mt-0 hover:bg-hover-choco hover:translate-x-2 transition-transform text-light-mode">
-                  Contact Us
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-4 h-4 ml-1 transform translate-x-0 transition-transform"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </button>
-              </a>
-            </li>
-            <li>
-              <a id="theme-toggle" class="remover">
-                <i class="ri-sun-line light-theme" id="switch"></i>
-              </a>
-            </li>
-            <!-- google translate -->
-            <div id="google_translate_element">
-              <script
-                type="text/javascript"
-                src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-              ></script>
             </div>
 
-          
+          </li>
+
+          <li>
+            <a href="./reportstary.html"
+              class="lg:p-1 text-custom-heading font-semibold  underline-offset-4 turn-red-hover navbar-item">SOS
+              Report</a>
+          </li>
+          <li>
+            <a href="#contact"
+              class="lg:p-1 text-custom-heading font-semibold  underline-offset-4 turn-red-hover navbar-item remover">
+              <button
+                class="inline-flex items-center bg-header-orange-light border-0 py-2 lg:py-2 text-choco text-base px-2 focus:outline-none text_4 font-semibold rounded mt-4 md:mt-0 hover:bg-hover-choco hover:translate-x-2 transition-transform text-light-mode">
+                Contact Us
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-4 h-4 ml-1 transform translate-x-0 transition-transform" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+            </a>
+          </li>
+          <li>
+            <a id="theme-toggle" class="remover">
+              <i class="ri-sun-line light-theme" id="switch"></i>
+            </a>
+          </li>
           <!-- google translate -->
-         
+          <div id="google_translate_element">
+            <script type="text/javascript"
+              src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+          </div>
+
+
+          <!-- google translate -->
+
         </ul>
       </div>
     </nav>
@@ -205,11 +174,11 @@
     <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
       <p id="About"></p>
       <h2
-        class="mb-8 text-7xl tracking-tight underline-offset-4 turn-yellow-hover antialiased font-extrabold text-center text-gray-900 dark:text-white text_3"
-        style="padding-top: 120px; padding-bottom: 25px">
+        class="mb-8 text-7xl tracking-tight underline-offset-4 hover:text-amber-800 antialiased font-extrabold text-center text-gray-900 dark:text-white text_3 cursor-pointer"
+        style="padding-top: 20px; padding-bottom: 25px">
         About Us
       </h2>
-      <p class="mb-8 lg:mb-16 font-light text-center text-gray-900 dark:text-white text_3 sm:text-2xl text_6">
+      <p class="mb-8 lg:mb-10 font-light text-center text-gray-900 dark:text-white text_3 sm:text-2xl text_6">
         Our mission is to provide a platform that connects animal lovers with
         pets in need of a forever home, while also providing emergency medical
         care for stray animals in distress. We strive to make a difference in
@@ -223,7 +192,7 @@
       </p>
       <a href="./volunteer.html" class="block mx-auto w-fit ">
         <button
-          class="inline-flex items-center hover:bg-amber-800 border-0 py-2 lg:py-2 px-2 focus:outline-none text-white font-bold rounded text-base mt-4 md:mt-0 hover:translate-x-2 transition-transform bg-transparent ">
+          class="inline-flex items-center hover:bg-amber-800 border-0 py-2 lg:py-0 px-2 focus:outline-none text-gray-600 hover:text-white font-bold rounded text-base mt-4 md:mt-0 hover:translate-x-2 transition-transform bg-transparent ">
           Become Volunteer
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             class="w-4 h-4 ml-1 transform translate-x-0 transition-transform" viewBox="0 0 24 24">
@@ -241,347 +210,347 @@
     <br />
     <br />
     <div>
-        <h1 class="m-heading text-3xl lg:text-6xl hover:shadow-2xl antialiased hover:subpixel-antialiased">
-            Meet Our Friends Here
-        </h1>
+      <h1 class="m-heading text-3xl lg:text-6xl hover:shadow-2xl antialiased hover:subpixel-antialiased">
+        Meet Our Friends Here
+      </h1>
     </div>
     <br />
     <div class="one-line-card" id="meet">
-        <div class="main-card card-height shadow-2xl">
-            <div class="main-img">
-                <div class="hv rounded-lg shadow-lg max-w-xs card-img-div">
-                    <a href="#">
-                        <img class="card-img-size" src="Assets/Images/goldern-ret.jpg" alt="" />
-                    </a>
-                </div>
-            </div>
-            <div class="main-text">
-                <div class="p-4 flex flex-col gap-2">
-                    <h5 class="text_3 md:text-[40px] font-bold mb-2 text-center">
-                        Bongo
-                    </h5>
-                    <ul class="grid grid-cols-2 gap-5 text_4">
-                        <li class="flex gap-2 text-xl justify-self-center">
-                            <img class="w-5 icon h-auto" src="Assets/Images/dog-icon.svg" alt="" />
-                            <span>Dog</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>8 years</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>Male</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>G-Retriever</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>Brown</span>
-                        </li>
-                        <li class="flex gap-2 text-xl justify-self-center">
-                            <img class="w-5 icon h-auto" src="Assets/Images/loation-icon.svg" alt="" />
-                            <span>Delhi</span>
-                        </li>
-                    </ul>
-                    <a class="self-center pt-2" href="adopt.html">
-                        <button type="button" class="hover-button">Adopt me</button>
-                    </a>
-                </div>
-            </div>
+      <div class="main-card card-height shadow-2xl">
+        <div class="main-img">
+          <div class="hv rounded-lg shadow-lg max-w-xs card-img-div">
+            <a href="#">
+              <img class="card-img-size" src="Assets/Images/goldern-ret.jpg" alt="" />
+            </a>
+          </div>
         </div>
-        <div class="main-card card-height shadow-2xl">
-            <div class="main-img">
-                <div class="hv rounded-lg shadow-lg max-w-xs card-img-div">
-                    <a href="#">
-                        <img class="card-img-size" src="Assets/Images/pug.jpg" alt="" />
-                    </a>
-                </div>
-            </div>
-            <div class="main-text">
-                <div class="p-4 flex flex-col gap-2">
-                    <h5 class="text_3 md:text-[40px] font-bold mb-2 text-center">
-                        Roblet
-                    </h5>
-                    <ul class="grid grid-cols-2 gap-5 text_4">
-                        <li class="flex gap-2 text-xl justify-self-center">
-                            <img class="w-5 icon h-auto" src="Assets/Images/dog-icon.svg" alt="" />
-                            <span>Dog</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>8 years</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>Male</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>Pug</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>Brown</span>
-                        </li>
-                        <li class="flex gap-2 text-xl justify-self-center">
-                            <img class="w-5 icon h-auto" src="Assets/Images/loation-icon.svg" alt="" />
-                            <span>Lucknow</span>
-                        </li>
-                    </ul>
-                    <a class="self-center" href="adopt.html">
-                        <button type="button" class="hover-button">Adopt me</button>
-                    </a>
-                </div>
-            </div>
+        <div class="main-text">
+          <div class="p-4 flex flex-col gap-2">
+            <h5 class="text_3 md:text-[40px] font-bold mb-2 text-center">
+              Bongo
+            </h5>
+            <ul class="grid grid-cols-2 gap-5 text_4">
+              <li class="flex gap-2 text-xl justify-self-center">
+                <img class="w-5 icon h-auto" src="Assets/Images/dog-icon.svg" alt="" />
+                <span>Dog</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>8 years</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>Male</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>G-Retriever</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>Brown</span>
+              </li>
+              <li class="flex gap-2 text-xl justify-self-center">
+                <img class="w-5 icon h-auto" src="Assets/Images/loation-icon.svg" alt="" />
+                <span>Delhi</span>
+              </li>
+            </ul>
+            <a class="self-center pt-2" href="adopt.html">
+              <button type="button" class="hover-button">Adopt me</button>
+            </a>
+          </div>
         </div>
+      </div>
+      <div class="main-card card-height shadow-2xl">
+        <div class="main-img">
+          <div class="hv rounded-lg shadow-lg max-w-xs card-img-div">
+            <a href="#">
+              <img class="card-img-size" src="Assets/Images/pug.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="main-text">
+          <div class="p-4 flex flex-col gap-2">
+            <h5 class="text_3 md:text-[40px] font-bold mb-2 text-center">
+              Roblet
+            </h5>
+            <ul class="grid grid-cols-2 gap-5 text_4">
+              <li class="flex gap-2 text-xl justify-self-center">
+                <img class="w-5 icon h-auto" src="Assets/Images/dog-icon.svg" alt="" />
+                <span>Dog</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>8 years</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>Male</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>Pug</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>Brown</span>
+              </li>
+              <li class="flex gap-2 text-xl justify-self-center">
+                <img class="w-5 icon h-auto" src="Assets/Images/loation-icon.svg" alt="" />
+                <span>Lucknow</span>
+              </li>
+            </ul>
+            <a class="self-center" href="adopt.html">
+              <button type="button" class="hover-button">Adopt me</button>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="one-line-card ">
-        <div class="main-card card-height shadow-2xl">
-            <div class="main-img">
-                <div class="hv rounded-lg shadow-lg max-w-xs card-img-div">
-                    <a href="#">
-                        <img class="card-img-size" src="Assets/Images/husky.jpg" alt="" />
-                    </a>
-                </div>
-            </div>
-            <div class="main-text">
-                <div class="p-4 flex flex-col gap-2">
-                    <h5 class="text_3 md:text-[40px] font-bold mb-2 text-center">
-                        Sipper
-                    </h5>
-                    <ul class="grid grid-cols-2 gap-5 text_4">
-                        <li class="flex gap-2 text-xl justify-self-center">
-                            <img class="w-5 icon h-auto" src="Assets/Images/dog-icon.svg" alt="" />
-                            <span>Dog</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>7 years</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>Male</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>Husky</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>Brown</span>
-                        </li>
-                        <li class="flex gap-2 text-xl justify-self-center">
-                            <img class="w-5 icon h-auto" src="Assets/Images/loation-icon.svg" alt="" />
-                            <span>Kashmir</span>
-                        </li>
-                    </ul>
-                    <a class="self-center" href="adopt.html">
-                        <button type="button" class="hover-button">Adopt me</button>
-                    </a>
-                </div>
-            </div>
+      <div class="main-card card-height shadow-2xl">
+        <div class="main-img">
+          <div class="hv rounded-lg shadow-lg max-w-xs card-img-div">
+            <a href="#">
+              <img class="card-img-size" src="Assets/Images/husky.jpg" alt="" />
+            </a>
+          </div>
         </div>
-        <div class="main-card card-height shadow-2xl">
-            <div class="main-img">
-                <div class="hv rounded-lg shadow-lg max-w-xs card-img-div">
-                    <a href="#">
-                        <img class="card-img-size" src="Assets/Images/ragdo.jpg" alt="" />
-                    </a>
-                </div>
-            </div>
-            <div class="main-text">
-                <div class="p-4 flex flex-col gap-2">
-                    <h5 class="text_3 md:text-[40px] font-bold mb-2 text-center">
-                        Russia
-                    </h5>
-                    <ul class="grid grid-cols-2 gap-5 text_4">
-                        <li class="flex gap-2 text-xl justify-self-center">
-                            <img class="w-5 icon h-auto" src="Assets/Images/cat.png" alt="" />
-                            <span>Cat</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>2.5 years</                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>Female</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>Ragdoll</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>White</span>
-                        </li>
-                        <li class="flex gap-2 text-xl justify-self-center">
-                            <img class="w-5 icon h-auto" src="Assets/Images/loation-icon.svg" alt="" />
-                            <span>Karnataka</span>
-                        </li>
-                    </ul>
-                    <a class="self-center" href="adopt.html">
-                        <button type="button" class="hover-button">Adopt me</button>
-                    </a>
-                </div>
-            </div>
+        <div class="main-text">
+          <div class="p-4 flex flex-col gap-2">
+            <h5 class="text_3 md:text-[40px] font-bold mb-2 text-center">
+              Sipper
+            </h5>
+            <ul class="grid grid-cols-2 gap-5 text_4">
+              <li class="flex gap-2 text-xl justify-self-center">
+                <img class="w-5 icon h-auto" src="Assets/Images/dog-icon.svg" alt="" />
+                <span>Dog</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>7 years</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>Male</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>Husky</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>Brown</span>
+              </li>
+              <li class="flex gap-2 text-xl justify-self-center">
+                <img class="w-5 icon h-auto" src="Assets/Images/loation-icon.svg" alt="" />
+                <span>Kashmir</span>
+              </li>
+            </ul>
+            <a class="self-center" href="adopt.html">
+              <button type="button" class="hover-button">Adopt me</button>
+            </a>
+          </div>
         </div>
+      </div>
+      <div class="main-card card-height shadow-2xl">
+        <div class="main-img">
+          <div class="hv rounded-lg shadow-lg max-w-xs card-img-div">
+            <a href="#">
+              <img class="card-img-size" src="Assets/Images/ragdo.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="main-text">
+          <div class="p-4 flex flex-col gap-2">
+            <h5 class="text_3 md:text-[40px] font-bold mb-2 text-center">
+              Russia
+            </h5>
+            <ul class="grid grid-cols-2 gap-5 text_4">
+              <li class="flex gap-2 text-xl justify-self-center">
+                <img class="w-5 icon h-auto" src="Assets/Images/cat.png" alt="" />
+                <span>Cat</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>2.5 years</ </li>
+              <li class="flex text-xl justify-self-center">
+                <span>Female</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>Ragdoll</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>White</span>
+              </li>
+              <li class="flex gap-2 text-xl justify-self-center">
+                <img class="w-5 icon h-auto" src="Assets/Images/loation-icon.svg" alt="" />
+                <span>Karnataka</span>
+              </li>
+            </ul>
+            <a class="self-center" href="adopt.html">
+              <button type="button" class="hover-button">Adopt me</button>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="one-line-card">
-        <div class="main-card card-height">
-            <div class="main-img">
-                <div class="hv rounded-lg shadow-lg max-w-xs card-img-div">
-                    <a href="#">
-                        <img class="card-img-size" src="Assets/Images/persian.webp" alt="" />
-                    </a>
-                </div>
-            </div>
-            <div class="main-text">
-                <div class="p-4 flex flex-col gap-2">
-                    <h5 class="text_3 md:text-[40px] font-bold mb-2 text-center">
-                        Zombo
-                    </h5>
-                    <ul class="grid grid-cols-2 gap-5 text_4">
-                        <li class="flex gap-2 text-xl justify-self-center">
-                            <img class="w-5 icon h-auto" src="Assets/Images/cat.png" alt="" />
-                            <span>Cat</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>1.5 years</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>Female</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>Persian</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>White</span>
-                        </li>
-                        <li class="flex gap-2 text-xl justify-self-center">
-                            <img class="w-5 icon h-auto" src="Assets/Images/loation-icon.svg" alt="" />
-                            <span>Kanpur</span>
-                        </li>
-                    </ul>
-                    <a class="self-center" href="adopt.html">
-                        <button type="button" class="hover-button">Adopt me</button>
-                    </a>
-                </div>
-            </div>
+      <div class="main-card card-height">
+        <div class="main-img">
+          <div class="hv rounded-lg shadow-lg max-w-xs card-img-div">
+            <a href="#">
+              <img class="card-img-size" src="Assets/Images/persian.webp" alt="" />
+            </a>
+          </div>
         </div>
-        <div class="main-card card-height shadow-2xl">
-            <div class="main-img">
-                <div class="hv rounded-lg shadow-lg max-w-xs card-img-div">
-                    <a href="#">
-                        <img class="card-img-size" src="Assets/Images/angora.jpg" alt="" />
-                    </a>
-                </div>
-            </div>
-            <div class="main-text">
-                <div class="p-4 flex flex-col gap-2">
-                    <h5 class="text_3 md:text-[40px] font-bold mb-2 text-center">
-                        Riksy
-                    </h5>
-                    <ul class="grid grid-cols-2 gap-5 text_4">
-                        <li class="flex gap-2 text-xl justify-self-center">
-                            <img class="w-5 icon h-auto" src="Assets/Images/rabbit.png" alt="" />
-                            <span>Rabbit</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>0.5 years</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>Female</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>Angora</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>White</span>
-                        </li>
-                        <li class="flex gap-2 text-xl justify-self-center">
-                            <img class="w-5 icon h-auto" src="Assets/Images/loation-icon.svg" alt="" />
-                            <span>Kashmir</span>
-                        </li>
-                    </ul>
-                    <a class="self-center" href="adopt.html">
-                        <button type="button" class="hover-button">Adopt me</button>
-                    </a>
-                </div>
-            </div>
+        <div class="main-text">
+          <div class="p-4 flex flex-col gap-2">
+            <h5 class="text_3 md:text-[40px] font-bold mb-2 text-center">
+              Zombo
+            </h5>
+            <ul class="grid grid-cols-2 gap-5 text_4">
+              <li class="flex gap-2 text-xl justify-self-center">
+                <img class="w-5 icon h-auto" src="Assets/Images/cat.png" alt="" />
+                <span>Cat</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>1.5 years</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>Female</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>Persian</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>White</span>
+              </li>
+              <li class="flex gap-2 text-xl justify-self-center">
+                <img class="w-5 icon h-auto" src="Assets/Images/loation-icon.svg" alt="" />
+                <span>Kanpur</span>
+              </li>
+            </ul>
+            <a class="self-center" href="adopt.html">
+              <button type="button" class="hover-button">Adopt me</button>
+            </a>
+          </div>
         </div>
+      </div>
+      <div class="main-card card-height shadow-2xl">
+        <div class="main-img">
+          <div class="hv rounded-lg shadow-lg max-w-xs card-img-div">
+            <a href="#">
+              <img class="card-img-size" src="Assets/Images/angora.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="main-text">
+          <div class="p-4 flex flex-col gap-2">
+            <h5 class="text_3 md:text-[40px] font-bold mb-2 text-center">
+              Riksy
+            </h5>
+            <ul class="grid grid-cols-2 gap-5 text_4">
+              <li class="flex gap-2 text-xl justify-self-center">
+                <img class="w-5 icon h-auto" src="Assets/Images/rabbit.png" alt="" />
+                <span>Rabbit</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>0.5 years</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>Female</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>Angora</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>White</span>
+              </li>
+              <li class="flex gap-2 text-xl justify-self-center">
+                <img class="w-5 icon h-auto" src="Assets/Images/loation-icon.svg" alt="" />
+                <span>Kashmir</span>
+              </li>
+            </ul>
+            <a class="self-center" href="adopt.html">
+              <button type="button" class="hover-button">Adopt me</button>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="one-line-card">
-        <div class="main-card card-height">
-            <div class="main-img">
-                <div class="hv rounded-lg shadow-lg max-w-xs card-img-div">
-                    <a href="#">
-                        <img class="card-img-size" src="Assets/Images/german.jpg" alt="" />
-                    </a>
-                </div>
-            </div>
-            <div class="main-text">
-                <div class="p-4 flex flex-col gap-2">
-                    <h5 class="text_3 md:text-[40px] font-bold mb-2 text-center">
-                        Sheru
-                    </h5>
-                    <ul class="grid grid-cols-2 gap-5 text_4">
-                        <li class="flex gap-2 text-xl justify-self-center">
-                            <img class="w-5 icon h-auto" src="Assets/Images/dog-icon.svg" alt="" />
-                            <span>Dog</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>5 years</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>Male</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>G-Shepherd</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>Black</span>
-                        </li>
-                        <li class="flex gap-2 text-xl justify-self-center">
-                            <img class="w-5 icon h-auto" src="Assets/Images/loation-icon.svg" alt="" />
-                            <span>Kolkata</span>
-                        </li>
-                    </ul>
-                    <a class="self-center" href="adopt.html">
-                        <button type="button" class="hover-button">Adopt me</button>
-                    </a>
-                </div>
-            </div>
+      <div class="main-card card-height">
+        <div class="main-img">
+          <div class="hv rounded-lg shadow-lg max-w-xs card-img-div">
+            <a href="#">
+              <img class="card-img-size" src="Assets/Images/german.jpg" alt="" />
+            </a>
+          </div>
         </div>
-        <div class="main-card card-height shadow-2xl">
-            <div class="main-img">
-                <div class="hv rounded-lg shadow-lg card-img-div">
-                    <a href="#">
-                        <img class="card-img-size" src="Assets/Images/porme.jpg" alt="" />
-                    </a>
-                </div>
-            </div>
-            <div class="main-text">
-                <div class="p-4 flex flex-col gap-2">
-                    <h5 class="text_3 md:text-[40px] font-bold mb-2 text-center">
-                        Swaggy
-                    </h5>
-                    <ul class="grid grid-cols-2 gap-5 text_4">
-                        <li class="flex gap-2 text-xl justify-self-center">
-                            <img class="w-5 icon h-auto" src="Assets/Images/dog-icon.svg" alt="" />
-                            <span>Dog</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>2 years</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>Female</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>Pomeranian</span>
-                        </li>
-                        <li class="flex text-xl justify-self-center">
-                            <span>White</span>
-                        </li>
-                        <li class="flex gap-2 text-xl justify-self-center">
-                            <img class="w-5 icon h-auto" src="Assets/Images/loation-icon.svg" alt="" />
-                            <span>Kashmir</span>
-                        </li>
-                    </ul>
-                    <a class="self-center" href="adopt.html">
-                        <button type="button" class="hover-button">Adopt me</button>
-                    </a>
-                </div>
-            </div>
+        <div class="main-text">
+          <div class="p-4 flex flex-col gap-2">
+            <h5 class="text_3 md:text-[40px] font-bold mb-2 text-center">
+              Sheru
+            </h5>
+            <ul class="grid grid-cols-2 gap-5 text_4">
+              <li class="flex gap-2 text-xl justify-self-center">
+                <img class="w-5 icon h-auto" src="Assets/Images/dog-icon.svg" alt="" />
+                <span>Dog</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>5 years</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>Male</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>G-Shepherd</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>Black</span>
+              </li>
+              <li class="flex gap-2 text-xl justify-self-center">
+                <img class="w-5 icon h-auto" src="Assets/Images/loation-icon.svg" alt="" />
+                <span>Kolkata</span>
+              </li>
+            </ul>
+            <a class="self-center" href="adopt.html">
+              <button type="button" class="hover-button">Adopt me</button>
+            </a>
+          </div>
         </div>
+      </div>
+      <div class="main-card card-height shadow-2xl">
+        <div class="main-img">
+          <div class="hv rounded-lg shadow-lg card-img-div">
+            <a href="#">
+              <img class="card-img-size" src="Assets/Images/porme.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="main-text">
+          <div class="p-4 flex flex-col gap-2">
+            <h5 class="text_3 md:text-[40px] font-bold mb-2 text-center">
+              Swaggy
+            </h5>
+            <ul class="grid grid-cols-2 gap-5 text_4">
+              <li class="flex gap-2 text-xl justify-self-center">
+                <img class="w-5 icon h-auto" src="Assets/Images/dog-icon.svg" alt="" />
+                <span>Dog</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>2 years</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>Female</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>Pomeranian</span>
+              </li>
+              <li class="flex text-xl justify-self-center">
+                <span>White</span>
+              </li>
+              <li class="flex gap-2 text-xl justify-self-center">
+                <img class="w-5 icon h-auto" src="Assets/Images/loation-icon.svg" alt="" />
+                <span>Kashmir</span>
+              </li>
+            </ul>
+            <a class="self-center" href="adopt.html">
+              <button type="button" class="hover-button">Adopt me</button>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
 
 
@@ -648,7 +617,8 @@
         <div class="mb-6">
 
 
-          <label class="block text_3 text-sm font-bold mb-2 contact-form-text" for="contact_email" style="color: white;">
+          <label class="block text_3 text-sm font-bold mb-2 contact-form-text" for="contact_email"
+            style="color: white;">
 
             Email
           </label>
@@ -678,7 +648,8 @@
           </script>
         </div>
         <div class="mb-6">
-          <label for="contact_message" class="block text_3 text-sm font-bold mb-2 contact-form-text" style="color: white;">Message</label>
+          <label for="contact_message" class="block text_3 text-sm font-bold mb-2 contact-form-text"
+            style="color: white;">Message</label>
           <textarea
             class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
             id="contact_message" name="contact_message" required rows="6" placeholder="Your message"></textarea>
@@ -693,14 +664,14 @@
       </form>
     </div>
   </section>
-  
+
   <script>
-      window.addEventListener("scroll", function () {
-        var contactFormContainer = document.getElementById(
-          "contactFormContainer"
-        );
-        var scrollPosition = window.scrollY + window.innerHeight;
-        var contactFormOffset = contactFormContainer.offsetTop;
+    window.addEventListener("scroll", function () {
+      var contactFormContainer = document.getElementById(
+        "contactFormContainer"
+      );
+      var scrollPosition = window.scrollY + window.innerHeight;
+      var contactFormOffset = contactFormContainer.offsetTop;
 
 
       if (scrollPosition > contactFormOffset) {
@@ -954,4 +925,3 @@
 </body>
 
 </html>
-

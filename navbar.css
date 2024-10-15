@@ -84,7 +84,7 @@
 }
 
 .logo-size {
-  width: 80px;
+  width: 60px;
 }
 
 /*make the icons white only for darker theme*/
@@ -159,13 +159,13 @@
     
   }
   #navbar ul {
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 .nav-items{
   display: flex;
   gap: 2rem;
-  padding: 0 4rem;
+  padding: 0 2rem;
   
 }
 a {
