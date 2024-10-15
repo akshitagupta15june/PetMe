@@ -270,8 +270,8 @@
 #google_translate_element select {
   font-size: 14px;
   border-radius: 20px;
-  padding: 8px;
-  padding-inline: 12px;
+  padding: 4px;
+  padding-inline: 8px;
   outline: none;
   border: brown;
   color: gray;
