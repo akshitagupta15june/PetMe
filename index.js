@@ -86,23 +86,108 @@ document.addEventListener("DOMContentLoaded", function () {
   const errorMessage = document.getElementById("error-message");
   const subscribeButton = document.getElementById("subscribe-button");
 
-  subscribeButton.addEventListener("click", function (event) {
-    event.preventDefault();
+  // Email validation function
+  function isValidEmail(email) {
+    if (!email || typeof email !== "string") return false;
+    if (email.length > 254) return false;
 
-    if (emailInput.value.trim() === "") {
-      alert("Email address is required.");
-    } else if (!isValidEmail(emailInput.value)) {
-      alert("Invalid email address format.");
+    // Split email into local part and domain
+    const parts = email.split("@");
+    if (parts.length !== 2) return false;
+    const [localPart, domain] = parts;
+
+    // Local part validation
+    if (!isValidLocalPart(localPart)) return false;
+
+    // Domain validation
+    if (!isValidDomain(domain)) return false;
+
+    return true;
+  }
+
+  function isValidLocalPart(localPart) {
+    if (!localPart || localPart.length > 64) return false;
+    if (localPart.startsWith(".") || localPart.endsWith(".")) return false;
+    if (localPart.includes("..")) return false;
+
+    // Allowed characters check
+    const validLocalRegex = /^[a-zA-Z0-9!#$%&'*+\-/=?^_`{|}~.]+$/;
+    return validLocalRegex.test(localPart);
+  }
+
+  function isValidDomain(domain) {
+    if (!domain || domain.length > 255) return false;
+    if (domain.startsWith(".") || domain.endsWith(".")) return false;
+    if (domain.includes("..")) return false;
+
+    // Split domain into parts
+    const parts = domain.split(".");
+    if (parts.length < 2) return false;
+
+    // Check each part
+    for (const part of parts) {
+      if (!part || part.length > 63) return false;
+      if (part.startsWith("-") || part.endsWith("-")) return false;
+
+      const validDomainRegex = /^[a-zA-Z0-9-]+$/;
+      if (!validDomainRegex.test(part)) return false;
+    }
+
+    // TLD should only contain letters
+    const tld = parts[parts.length - 1];
+    if (!/^[a-zA-Z]{2,}$/.test(tld)) return false;
+
+    return true;
+  }
+
+  // Function to display error message
+  function showError(message) {
+    if (errorMessage) {
+      errorMessage.textContent = message;
+      errorMessage.style.display = "block";
+      emailInput.classList.add("error");
     } else {
-      form.submit();
+      alert(message);
+    }
+  }
+
+  function clearError() {
+    if (errorMessage) {
+      errorMessage.style.display = "none";
+      emailInput.classList.remove("error");
+    }
+  }
+
+  // Real-time validation as user types
+  emailInput?.addEventListener("input", function () {
+    const email = this.value.trim();
+    if (email === "") {
+      clearError();
+    } else if (!isValidEmail(email)) {
+      showError("Please enter a valid email address");
+    } else {
+      clearError();
     }
   });
 
-  function isValidEmail(email) {
-    // Regular expression for email validation
-    const emailRegex = /^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
-    return emailRegex.test(email);
-  }
+  subscribeButton?.addEventListener("click", function (event) {
+    event.preventDefault();
+    const email = emailInput.value.trim();
+
+    if (email === "") {
+      showError("Email address is required.");
+      return;
+    }
+
+    if (!isValidEmail(email)) {
+      showError("Please enter a valid email address.");
+      return;
+    }
+
+    // If all validation passes, submit the form, for now added these checks
+    clearError();
+    form.submit();
+  });
 });
 
 // scroll to top function
