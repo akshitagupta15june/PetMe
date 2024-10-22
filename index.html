@@ -689,93 +689,160 @@
         updateSubmitButton();
       }
 
-      // Email validation function
+      // Valid TLD list (commonly used top-level domains)
+      const VALID_TLDS = new Set([
+        'com', 'net', 'org', 'edu', 'gov', 'mil', 'int',
+        'uk', 'us', 'ca', 'au', 'de', 'fr', 'es', 'it', 'ru', 'cn', 'jp', 'kr', 'in',
+        'io', 'co', 'ai', 'app', 'dev', 'cloud', 'me', 'info', 'biz', 'tech',
+      ]);
+
+      const VALID_SECOND_LEVEL_DOMAINS = new Set([
+        'co.uk', 'co.jp', 'co.kr', 'com.au', 'com.br', 'com.cn',
+        'ac.uk', 'gov.uk', 'org.uk', 'net.uk',
+        'edu.au', 'gov.au', 'org.au',
+      ]);
+
+      // Common email providers and their valid domains
+      const VALID_EMAIL_PROVIDERS = {
+        'gmail': ['gmail.com'],
+        'yahoo': ['yahoo.com', 'yahoo.co.uk', 'yahoo.co.jp', 'yahoo.com.au'],
+        'hotmail': ['hotmail.com', 'hotmail.co.uk', 'hotmail.fr'],
+        'outlook': ['outlook.com', 'outlook.co.uk', 'outlook.fr'],
+        'live': ['live.com', 'live.co.uk'],
+        'aol': ['aol.com'],
+      };
+
       function validateEmail(input) {
-        const value = input.value.trim();
+        const value = input.value.trim().toLowerCase();
         const emailError = document.getElementById('emailError');
 
-        // Basic checks
-        if (value === '') {
-          showError(emailError, 'Email is required', input);
+        try {
+          if (value === '') {
+            throw new Error('Email is required');
+          }
+
+          if (value.length > 254) {
+            throw new Error('Email address is too long');
+          }
+
+          // Split email into local part and domain
+          const parts = value.split('@');
+          if (parts.length !== 2) {
+            throw new Error('Email must contain exactly one @ symbol');
+          }
+
+          const [localPart, domain] = parts;
+
+          validateLocalPart(localPart);
+
+          validateDomain(domain);
+
+          clearError(emailError, input);
+          formValidation.email = true;
+          updateSubmitButton();
+
+        } catch (error) {
+          showError(emailError, error.message, input);
           formValidation.email = false;
           return;
         }
+      }
 
-        if (value.length > 254) {
-          showError(emailError, 'Email address is too long', input);
-          formValidation.email = false;
-          return;
-        }
-
-        // Split email into local part and domain
-        const parts = value.split('@');
-        if (parts.length !== 2) {
-          showError(emailError, 'Email must contain exactly one @ symbol', input);
-          formValidation.email = false;
-          return;
-        }
-
-        const [localPart, domain] = parts;
-
-        // Local part validation
+      function validateLocalPart(localPart) {
+        // Length check
         if (localPart.length === 0 || localPart.length > 64) {
-          showError(emailError, 'Invalid email address format', input);
-          formValidation.email = false;
-          return;
+          throw new Error('Local part of email is invalid length');
         }
 
-        // Check for invalid characters in local part
+        if (localPart.startsWith('.') || localPart.endsWith('.')) {
+          throw new Error('Local part cannot start or end with a dot');
+        }
+
         const localPartRegex = /^[a-zA-Z0-9!#$%&'*+\-/=?^_`{|}~.]+$/;
         if (!localPartRegex.test(localPart)) {
-          showError(emailError, 'Email contains invalid characters', input);
-          formValidation.email = false;
-          return;
+          throw new Error('Email contains invalid characters');
         }
 
-        // Check for consecutive dots
-        if (localPart.includes('..') || domain.includes('..')) {
-          showError(emailError, 'Email cannot contain consecutive dots', input);
-          formValidation.email = false;
-          return;
+        if (/[!#$%&'*+\-/=?^_`{|}~.]{2,}/.test(localPart)) {
+          throw new Error('Email cannot contain consecutive special characters');
         }
 
-        // Domain validation
+        if (localPart.includes('..')) {
+          throw new Error('Email cannot contain consecutive dots');
+        }
+
+        if (!/^[a-zA-Z0-9]/.test(localPart)) {
+          throw new Error('Email must start with a letter or number');
+        }
+      }
+
+      function validateDomain(domain) {
+        if (domain.startsWith('-') || domain.endsWith('-')) {
+          throw new Error('Domain parts cannot start or end with a hyphen');
+        }
+
+        // Split domain into parts
         const domainParts = domain.split('.');
         if (domainParts.length < 2) {
-          showError(emailError, 'Invalid domain format', input);
-          formValidation.email = false;
-          return;
+          throw new Error('Invalid domain format');
         }
 
-        // Check each domain part
-        const domainRegex = /^[a-zA-Z0-9-]+$/;
+        const domainRegex = /^[a-zA-Z0-9]([a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?$/;
         for (const part of domainParts) {
           if (!part || part.length > 63 || !domainRegex.test(part)) {
-            showError(emailError, 'Invalid domain format', input);
-            formValidation.email = false;
-            return;
+            throw new Error('Invalid domain format');
           }
         }
 
-        // Validate TLD (last part of domain)
+        // Get TLD and check validity
         const tld = domainParts[domainParts.length - 1];
-        if (!/^[a-zA-Z]{2,}$/.test(tld)) {
-          showError(emailError, 'Invalid top-level domain', input);
-          formValidation.email = false;
+        const secondLevelDomain = domainParts.slice(-2).join('.');
+
+        for (const [provider, domains] of Object.entries(VALID_EMAIL_PROVIDERS)) {
+          if (domain.includes(provider) && !domains.includes(domain)) {
+            throw new Error(`Invalid ${provider} email domain`);
+          }
+        }
+
+        if (VALID_SECOND_LEVEL_DOMAINS.has(secondLevelDomain)) {
           return;
         }
 
-        clearError(emailError, input);
-        formValidation.email = true;
-        updateSubmitButton();
+        if (!VALID_TLDS.has(tld)) {
+          throw new Error('Invalid top-level domain');
+        }
+
+        if (domain.length > 255) {
+          throw new Error('Domain name is too long');
+        }
       }
+
+      // Helper functions
+      function showError(element, message, input) {
+        if (element) {
+          element.textContent = message;
+          element.style.display = 'block';
+          input.classList.add('error');
+        }
+      }
+
+      function clearError(element, input) {
+        if (element) {
+          element.textContent = '';
+          element.style.display = 'none';
+          input.classList.remove('error');
+        }
+      }
+
+      document.getElementById('emailInput')?.addEventListener('input', function () {
+        validateEmail(this);
+      });
 
       // Message validation function
       function validateMessage(input) {
         const value = input.value.trim();
         const messageError = document.getElementById('messageError');
 
-        // Basic checks
         if (value === '') {
           showError(messageError, 'Message is required', input);
           formValidation.message = false;
@@ -794,7 +861,6 @@
           return;
         }
 
-        // Check for meaningful content (not just spaces or special characters)
         const meaningfulContentRegex = /^(?=.*[a-zA-Z]{3,}).{10,}$/;
         if (!meaningfulContentRegex.test(value)) {
           showError(messageError, 'Message must contain meaningful text', input);
