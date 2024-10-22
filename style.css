@@ -132,8 +132,6 @@
     max-width: 700px;
     width: 100%;
     margin: auto;
-    
-    
   }
 }
 
@@ -160,11 +158,12 @@
   padding: 12px 24px;
   font-size: 1.25rem;
   border-radius: 0.5rem;
-  border: 0.1rem solid rgb(68,38,0);
+  border: 0.1rem solid rgb(68, 38, 0);
   color: #fff;
   cursor: pointer;
   background: #895a21;
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .hover-button:hover {
@@ -172,7 +171,7 @@
   background: #ffbb00;
   color: #000000;
   transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   animation: 0.5s ease-in-out infinite;
 }
 
@@ -243,28 +242,28 @@
 #facebook {
 }
 .facebook-icon {
-  fill: lightgray; 
-  transition: fill 0.3s; 
+  fill: lightgray;
+  transition: fill 0.3s;
 }
 
 .facebook-icon:hover {
   fill: blue;
 }
 .instagram-icon {
-  fill: lightgray; 
-  transition: fill 0.3s; 
+  fill: lightgray;
+  transition: fill 0.3s;
 }
 
 .instagram-icon:hover {
-  fill: rgb(251, 72, 254); 
+  fill: rgb(251, 72, 254);
 }
 .github-icon {
-  fill: lightgray; 
-  transition: fill 0.3s; 
+  fill: lightgray;
+  transition: fill 0.3s;
 }
 
 .github-icon:hover {
-  fill: #6e5494; 
+  fill: #6e5494;
 }
 
 #google_translate_element select {
@@ -283,10 +282,27 @@
 #google_translate_element span {
 }
 
-.copyright1{
+.copyright1 {
   margin-left: 50%;
 }
 
+#email.error {
+  border-color: #ff4444;
+  background-color: #fff8f8;
+}
 
+#error-message {
+  color: #ff4444;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: none;
+}
 
+.subscription-form input:focus {
+  outline: none;
+  border-color: #4caf50;
+}
 
+.subscription-form input.error:focus {
+  border-color: #ff4444;
+}
