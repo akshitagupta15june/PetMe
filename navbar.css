@@ -1,6 +1,6 @@
 .bg-header-offwhite {
-  --tw-bg-opacity: 0.5;
-  background-color: #f9d6b7;
+  --tw-bg-opacity: 0.4;
+  background-color: transparent;
 }
 
 .text-custom-heading {
@@ -9,7 +9,7 @@
 }
 
 #switch{
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   cursor: pointer;
   transition: color .3s;
 }
@@ -70,7 +70,7 @@
 }
 
 .bg-color-btn:hover {
-  background-color: rgb(255, 172, 70);
+  background-color: rgb(185, 169, 149);
   transition-duration: 0.3s;
 }
 
@@ -79,12 +79,12 @@
 }
 
 .logo-border {
-  border: 2px solid black;
-  border-radius: 9999px;
+  border: 2px solid rgb(133, 111, 17);
+  border-radius: 9000px;
 }
 
 .logo-size {
-  width: 80px;
+  width: 90px;
 }
 
 /*make the icons white only for darker theme*/
@@ -136,7 +136,10 @@
 #navbar{
   height: fit-content;
 }
-
+.mission-1 mission-dark{
+  font-size: 10px;
+  
+}
 .goog-logo-link,.goog-te-gadget span,.goog-te-banner-frame,#goog-gt-tt, .goog-te-balloon-frame,div#goog-gt-{
   display: none!important;
 }
