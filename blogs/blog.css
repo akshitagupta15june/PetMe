@@ -5,10 +5,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    /* background-color: rgb(55, 65, 81); */
+    /* transition: 0.3s; */
+}
+
+body{
+    background-color: rgb(216, 222, 223)
 }
 
 html{
     font-size: 10px;
+    scroll-behavior: smooth;    /* gives a smooth scroll effect */
 }
 
 h1{
@@ -19,4 +26,112 @@ h1{
 main .p {
     color: #5b5963;
 
+}
+
+/* make the header sticky on scroll */
+#header {
+	position: fixed;
+	top: 0;
+	transition: 0.25s;
+	width: 100%;
+    height: 10rem;
+	z-index: 100;
+}
+
+.add_border{
+  border-bottom: 2px solid #ae642c;
+  /* give a bottom shadow */
+  box-shadow:  0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+.nav-hidden{
+	top: -100px;
+}
+
+.header-container{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    /* background-color: #f9d6b7; */
+    background-color: (203, 213, 225, 1)
+}
+
+.back-arrow, .home{
+    height: 30px;
+    width: 30px;
+    position: relative;
+}
+
+body,
+.back-arrow,
+.home,
+.ri-moon-line,
+.ri-sun-line,
+.header-container{
+    transition: 0.3s;
+}
+
+.back-arrow:hover, .home:hover{
+    scale: 1.1;
+}
+
+.logo-container{
+    flex-direction: row;
+    display: flex;
+    column-gap: 20px;
+}
+
+/* --- LOGOS --- */
+
+#switch{
+    font-size: 2.5rem;
+}
+
+.ri-moon-line:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.ri-sun-line{
+    color: white;
+}
+
+.ri-sun-line:hover{
+    color:rgb(218, 185, 21);
+    cursor: pointer;
+}
+
+.hover-effect{
+    position: fixed;
+    bottom:15px;
+    right: 28px;
+  }
+
+.top-arrow{
+    width: 40px;
+    height: 40px;
+    transition: 0.2s ease;
+}
+
+.top-arrow:hover{
+    transform: scale(1.1);
+}
+
+/* FOOTER */
+footer{
+    font-size: 1.4rem;
+}
+
+/* --- DARK MOD --- */
+
+body.dark-mode{
+    background-color: rgba(180, 83, 9, 0.605);
+}
+  
+.dark-mode .header-container {
+    background-color: #78350f; /* Fond pour le header en mode sombre */
+    transition: 0.2;
 }

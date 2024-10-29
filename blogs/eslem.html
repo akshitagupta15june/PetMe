@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" referrerpolicy="no-referrer" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
     <link rel="stylesheet" href="./blog.css">
     <link rel="icon" type="image/x-icon" href="logo.png" />
     <title>Blog: Eslem</title>
 </head>
 <body>
-    <header class="w-full h-20 top-0 z-20 bg-slate-300 fixed">
+    <!-- <header class="w-full h-20 top-0 z-20 bg-slate-300 fixed">
         <div class="w-full h-full justify-between flex flex-cols items-center py-0 px-0 xl:px-[1.5rem] ">
             <a href="../blog.html" class="mx-4 w-12 h-12"><img src="./img/back.png" alt=""></a>
             <div class="logo"><a class="logo-border" href="#">
@@ -20,7 +21,46 @@
               <a href="../index.html" class="mr-10 ml-4 w-12 h-12"><img src="./img/home.png" alt=""></a>
             </ul>
         </div>
+    </header> -->
+
+    <header class="header bg-header-offwhite body-font items-center bg-slate-100 nav-hidden add_border" id="header">
+      <div class="header-container">
+          <a href="../blog.html" class="logo back-arrow"><img src="./img/back.png" alt=""></a>
+          <div class="logo-container">
+            <a class="logo-border" href="#">
+              <img class="rounded-full logo-size w-20 h-20" src="../Assets/Images/logo.jpg" alt="logo" />
+            </a>
+          </div>
+          <div class="logo-container">
+            <!-- <i class="ri-moon-line " id="switch"></i> -->
+            <i class="ri-moon-line " id="switch"></i>
+            <a href="../index.html" class="logo-home">
+              <img src="./img/home.png" class="home" alt="">
+            </a>
+          </div>
+          <!-- </ul> -->
+      </div>
     </header>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const switchIcon = document.getElementById('switch');
+        
+        switchIcon.addEventListener('click', function () {
+          // Toggle the dark-mode class on the body
+          document.body.classList.toggle('dark-mode');
+          
+          // Toggle icon classes between ri-moon-line and ri-sun-line
+          if (switchIcon.classList.contains('ri-moon-line')) {
+            switchIcon.classList.remove('ri-moon-line');
+            switchIcon.classList.add('ri-sun-line');
+          } else {
+            switchIcon.classList.remove('ri-sun-line');
+            switchIcon.classList.add('ri-moon-line');
+          }
+        });
+      });
+    </script>
 
     <div class="xl:w-[117rem] my-0 mx-0 xl:mx-auto">
       <div class="mx-auto my-auto w-[80vw] xl:w-[114rem] md:h-[30rem] h-[25rem] xl:h-[40rem] my-[5rem] xl:mx-auto bg-[url('./img/b2-poster.png')] bg-no-repeat bg-cover snap-center rounded-xl">
@@ -105,7 +145,7 @@
       <div class=" flex-1 flex flex-col items-center justify-center ">
         <div class="text-2xl">Follow us on</div>
         <div class="flex mt-2 flex-row space-x-3 my-0">
-          <div>
+          <div class="hover:scale-110 transition-all">
             <a href="#" class=" w-5 ml-3">
               <!-- Facebook icon -->
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="fill-white" viewBox="0 0 20 20">
@@ -114,7 +154,7 @@
               </svg>
             </a>
           </div>
-          <div>
+          <div class="hover:scale-110 transition-all">
             <a href="#" class=" w-10 ml-3 mr-3">
               <!-- Instagram icon -->
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="fill-white" viewBox="0 0 20 20">
@@ -123,7 +163,7 @@
               </svg>
             </a>
           </div>
-          <div>
+          <div class="hover:scale-110 transition-all">
             <a href="https://github.com/akshitagupta15june/PetMe" target="_blank" class="w-10 ml-3 mr-3">
               <!-- Github icon -->
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" class="fill-white" viewBox="0 0 20 20">
@@ -135,6 +175,32 @@
         </div>
       </div>
       <!-- Social icons end -->
+
+            <!-- Scroll to top -->
+            <div class="md:pr-8 hover-effect">
+              <a href="#top">
+                <button id="bttbutton" title="backtotop">
+                  <img src="../image.svg" class="top-arrow" />
+                </button>
+              </a>
+            </div>
+            <!-- Scroll to top -->
+      
+            <script>
+              const bttButton = document.getElementById('bttbutton');
+            
+              window.addEventListener('scroll', function() {
+                // Calculer la hauteur de la fenêtre + position de défilement
+                const scrollPosition = window.scrollY;
+                const windowHeight = window.innerHeight;
+                // Afficher le bouton si le scroll est supérieur à la hauteur de l'écran
+                if (scrollPosition <= 0) {
+                  bttButton.style.display = "none";
+                } else {
+                  bttButton.style.display = "block";
+                }
+              });
+            </script>
 
     </div>
 
