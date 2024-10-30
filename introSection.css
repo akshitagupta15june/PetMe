@@ -66,7 +66,7 @@
 }
 .main-body-heading-text span{
   color: hsl(37, 73%, 59%);
-  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.5);
 }
 
 .pet-card-flex {
@@ -85,7 +85,7 @@
   background-color: rgb(255, 231, 202);
   border-radius: 50px;
   overflow: hidden;
-  width: 49%;
+  width: 50%;
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -95,17 +95,16 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  scroll-margin-top:96px;
+  scroll-margin-top:95px;
 }
 
 .main-img {
   position: relative;
-  background-color: rgb(255, 231, 202);
-  border-radius: 15px;
+  background-color: rgb(250, 230, 205);
+  border-radius:20 px;
   overflow: hidden;
   transition: all 300ms;
 }
-
 .hv {
   position: relative;
   background-size: cover;
@@ -118,7 +117,7 @@
   content: "";
   width: 100%;
   height: 100%;
-  background-color: rgb(255, 231, 202);
+  background-color: rgb(250, 230, 205);
   top: 0;
   opacity: 0;
 }
@@ -136,7 +135,7 @@
 }
 
 .card-img-a {
-  background-color: rgb(255, 231, 202);
+  background-color: rgb(250, 230, 205);
   color: rgb(255, 231, 202);
 }
 
@@ -160,6 +159,6 @@
 ::-webkit-scrollbar-thumb {
   background-clip: content-box;
   border: 2px transparent solid;
-  background-color: brown;
+  background-color: rgb(156, 153, 153);
   border-radius: 13px;
 }
