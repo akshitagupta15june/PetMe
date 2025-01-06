@@ -2,7 +2,7 @@
 const contributors = document.getElementById("contributors");
 const repo = "PetMe";
 const owner = "akshitagupta15june";
-const apiURL = `https://api.github.com/repos/${owner}/${repo}/contributors`;
+const apiURL = https://api.github.com/repos/${owner}/${repo}/contributors;
 
 function displayContributors(contributorsList) {
   contributorsList.forEach((contributor) => {
@@ -108,4 +108,4 @@ document.addEventListener("DOMContentLoaded", function () {
 // scroll to top function
 
 // Change to the stored current theme.
-changeToCurrTheme();
+changeToCurrTheme(); " give me better" 
