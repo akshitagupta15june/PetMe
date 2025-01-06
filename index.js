@@ -1,97 +1,85 @@
-// Script for to get Github contributors list
+// GitHub Contributors List Script
 const contributors = document.getElementById("contributors");
 const repo = "PetMe";
 const owner = "akshitagupta15june";
 const apiURL = `https://api.github.com/repos/${owner}/${repo}/contributors`;
 
+async function getContributorsList() {
+  try {
+    const response = await fetch(apiURL);
+    if (!response.ok) {
+      throw new Error(`Error fetching contributors: ${response.statusText}`);
+    }
+    const contributorsList = await response.json();
+    displayContributors(contributorsList);
+  } catch (error) {
+    console.error("Failed to fetch contributors:", error);
+  }
+}
+
 function displayContributors(contributorsList) {
   contributorsList.forEach((contributor) => {
-    // create anchor tag and set relevant attributes
     const link = document.createElement("a");
-    link.setAttribute("href", contributor.html_url);
-    link.setAttribute("target", "_blank");
+    link.href = contributor.html_url;
+    link.target = "_blank";
 
-    // create image element and set relevant attributes
     const avatar = document.createElement("img");
-    avatar.setAttribute("class", "avatar");
-    avatar.setAttribute("src", contributor.avatar_url);
-    avatar.setAttribute("title", contributor.login);
-    avatar.setAttribute("alt", contributor.login);
+    avatar.className = "avatar";
+    avatar.src = contributor.avatar_url;
+    avatar.title = contributor.login;
+    avatar.alt = contributor.login;
 
     link.appendChild(avatar);
     contributors?.appendChild(link);
   });
 }
 
-function hideBackToTopButton() {
+// Smooth Scroll and Back-to-Top Button
+function setupBackToTopButton() {
   const bttButton = document.getElementById("bttbutton");
 
-  bttButton.addEventListener("click", (e) => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
+  if (!bttButton) return;
+
+  bttButton.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
-  window.addEventListener("scroll", (e) => {
+  window.addEventListener("scroll", () => {
     bttButton.style.display = window.scrollY > 15 ? "block" : "none";
   });
 }
 
-// get contributors list  from github API
-async function getContributorsList() {
-  try {
-    const response = await fetch(apiURL);
-    const contributors = await response.json();
-    displayContributors(contributors);
-  } catch (error) {
-    console.log(error);
-  }
-}
-
-hideBackToTopButton();
-getContributorsList();
-
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement(
-    { pageLanguage: "en" },
-    "google_translate_element"
-  );
-}
-
-var imageIndex = 0;
-var imagesArray = [
+// Background Image Rotator
+const imagesArray = [
   "url('./Assets/Images/main-heading-body-bg.jpg') center",
   "url('./Assets/Images/main-heading-body-bg2.png') center",
   "url('./Assets/Images/main-heading-body-bg3.png') center",
   "url('./Assets/Images/main-heading-body-bg4.png') center",
 ];
+let imageIndex = 0;
 
 function changeBackground() {
-  var index = imageIndex++ % imagesArray.length;
-  document.querySelector(".main-body-section-div").style.background =
-    imagesArray[index];
+  const mainDiv = document.querySelector(".main-body-section-div");
+  if (mainDiv) {
+    mainDiv.style.background = imagesArray[imageIndex % imagesArray.length];
+    imageIndex++;
+  }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelector(".main-body-section-div").style.background =
-    imagesArray[0];
-  setInterval(changeBackground, 2000);
-});
-
-document.addEventListener("DOMContentLoaded", function () {
+// Subscription Form Validation
+function setupSubscriptionForm() {
   const form = document.getElementById("subscription-form");
   const emailInput = document.getElementById("email");
-  const errorMessage = document.getElementById("error-message");
-  const subscribeButton = document.getElementById("subscribe-button");
 
-  subscribeButton.addEventListener("click", function (event) {
+  if (!form || !emailInput) return;
+
+  form.addEventListener("submit", (event) => {
     event.preventDefault();
+    const email = emailInput.value.trim();
 
-    if (emailInput.value.trim() === "") {
+    if (!email) {
       alert("Email address is required.");
-    } else if (!isValidEmail(emailInput.value)) {
+    } else if (!isValidEmail(email)) {
       alert("Invalid email address format.");
     } else {
       form.submit();
@@ -99,13 +87,37 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function isValidEmail(email) {
-    // Regular expression for email validation
     const emailRegex = /^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
     return emailRegex.test(email);
   }
+}
+
+// Initialize Google Translate Widget
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    { pageLanguage: "en" },
+    "google_translate_element"
+  );
+}
+
+// Initialize Theme (Assuming `changeToCurrTheme` is defined elsewhere)
+function initializeTheme() {
+  if (typeof changeToCurrTheme === "function") {
+    changeToCurrTheme();
+  }
+}
+
+// Document Ready
+document.addEventListener("DOMContentLoaded", () => {
+  const mainDiv = document.querySelector(".main-body-section-div");
+  if (mainDiv) {
+    mainDiv.style.background = imagesArray[0];
+    setInterval(changeBackground, 2000);
+  }
+  setupSubscriptionForm();
+  setupBackToTopButton();
+  initializeTheme();
 });
 
-// scroll to top function
-
-// Change to the stored current theme.
-changeToCurrTheme();
+// Fetch and Display Contributors
+getContributorsList();
