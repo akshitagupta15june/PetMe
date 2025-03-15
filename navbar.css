@@ -9,7 +9,7 @@
 }
 
 #switch{
-  font-size: 1.5rem;
+  font-size: 2rem;
   cursor: pointer;
   transition: color .3s;
 }
@@ -174,7 +174,7 @@ a {
   position: relative;
 }
 
-a::after {
+.navbar-item::after {
   content: '';
   position: absolute;
   width: 0;
@@ -185,7 +185,7 @@ a::after {
   transition: width 0.3s ease-in-out;
 }
 
-a:hover::after {
+.navbar-item:hover::after {
   width: 100%;
 }
 
