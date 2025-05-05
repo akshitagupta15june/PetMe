@@ -583,115 +583,167 @@
     </div>
 </section>
 
-
-
-
   <!-- style="opacity: 0; transform: translateX(50px); transition: opacity 1s ease, transform 1s ease;"   -->
   <!--     Contact us section html starts from here -->
-  <section id="contact" class="dark:bg-gray-700 b_1 pt-40 pb-20">
-    <div class="w-full contact-form-container mx-auto max-w-screen-md" id="contactFormContainer">
+  <section id="contact" class="bg-gradient-to-b from-white to-gray-100 dark:from-gray-800 dark:to-gray-900 pt-24 pb-16">
+    <div class="w-full mx-auto max-w-screen-md px-4">
       <form action="https://formspree.io/f/xayaokzl" method="POST"
-        class="bg-black rounded-md main-bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-200 border border-gray-50 px-8 pt-8 pb-10">
-        <p id="contact"></p>
-
-
-        <h2 class="text-3xl mt-1 mb-2 text-center bold-500 text_3 contact-form-text" style="color: white;">
-          CONTACT US
-        </h2>
-        <p class="text-base text-center text_3 contact-form-text" style="color: white;">
-
-
-          Any issues! Fill the form below and our team will contact you
-          shortly.
-        </p>
-        <br />
-        <div class="mb-4">
-
-
-          <label class="block text_3 text-sm font-bold mb-2 contact-form-text" for="contact_nom" style="color: white;">
-
-
-            Name
-          </label>
-          <!-- <input
-              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
-              id="contact_nom"
-              name="contact_nom"
-              type="text"
-              placeholder="Name"
-            /> -->
-          <input
-            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
-            id="contact_nom" name="contact_nom" type="text" placeholder="Name" oninput="validateName(this)" />
-
-          <span id="nameError" class="text-red-500"></span>
-
-          <script>
-            function validateName(input) {
-              var nameRegex = /^[A-Za-z\- ]+$/; // Allow letters, hyphens, and spaces
-
-              if (input.value.trim() === '') {
-                document.getElementById('nameError').textContent = '';
-                input.classList.remove('border-red-500');
-              } else if (!input.value.match(nameRegex)) {
-                document.getElementById('nameError').textContent =
-                  'Please enter a valid name with only letters, spaces, and hyphens.';
-                input.classList.add('border-red-500');
-              } else {
-                document.getElementById('nameError').textContent = '';
-                input.classList.remove('border-red-500');
-              }
-            }
-          </script>
-
+        class="relative overflow-hidden rounded-2xl shadow-xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
+        
+        <!-- Form Header -->
+        <div class="relative overflow-hidden bg-slate-200 py-8 px-6">
+          <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC40Ij48cGF0aCBkPSJNMzYgMzRjMC0yLjItMS44LTQtNC00cy00IDEuOC00IDQgMS44IDQgNCA0IDQtMS44IDQtNHptMC0xOGMwLTIuMi0xLjgtNC00LTRzLTQgMS44LTQgNCAxLjggNCA0IDQgNC0xLjggNC00em0xOCA4YzAtMi4yLTEuOC00LTQtNHMtNCAxLjgtNCA0IDEuOCA0IDQgNCA0LTEuOCA0LTR6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4=')]"></div>
+          </div>
+          <h2 class="text-3xl font-bold text-white text-center relative z-10 text_3">CONTACT US</h2>
+          <p class="text-base text-opacity-90 text-center mt-2 relative z-10 text_3">
+            Any issues? Fill the form below and our team will contact you shortly.
+          </p>
         </div>
-        <div class="mb-6">
-
-
-          <label class="block text_3 text-sm font-bold mb-2 contact-form-text" for="contact_email" style="color: white;">
-
-            Email
-          </label>
-          <input
-            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
-            id="contact_email" name="contact_email" type="email" required placeholder="hello@petme"
-            oninput="validateEmail(this)" />
-          <span id="emailError" class="text-red-500"></span>
-
-
-          <script>
-            function validateEmail(input) {
-              const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-
-              if (input.value.trim() === '') {
-                document.getElementById('emailError').textContent = '';
-                input.classList.remove('border-red-500');
-              } else if (!input.value.match(emailRegex)) {
-                document.getElementById('emailError').textContent =
-                  'Please enter a valid email including @.';
-                input.classList.add('border-red-500');
-              } else {
-                document.getElementById('emailError').textContent = '';
-                input.classList.remove('border-red-500');
-              }
-            }
-          </script>
-        </div>
-        <div class="mb-6">
-          <label for="contact_message" class="block text_3 text-sm font-bold mb-2 contact-form-text" style="color: white;">Message</label>
-          <textarea
-            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:shadow-outline"
-            id="contact_message" name="contact_message" required rows="6" placeholder="Your message"></textarea>
-        </div>
-        <div class="flex justify-center">
-          <button
-            class="bg-amber-800 hover-button hover:bg-amber-700 text-center text_3  font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            type="submit">
-            Submit
-          </button>
+        
+        <!-- Form Body -->
+        <div class="p-8">
+          <div class="space-y-6">
+            <!-- Name Field -->
+            <div>
+              <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="contact_nom">
+                Name
+              </label>
+              <div class="relative rounded-md shadow-sm">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <input
+                  class="block w-full pl-10 pr-3 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-amber-500 dark:focus:ring-amber-600 focus:border-transparent transition-all duration-200"
+                  id="contact_nom" name="contact_nom" type="text" placeholder="Your name" oninput="validateName(this)" />
+              </div>
+              <span id="nameError" class="text-red-500 text-sm mt-1 block"></span>
+            </div>
+            
+            <!-- Email Field -->
+            <div>
+              <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="contact_email">
+                Email
+              </label>
+              <div class="relative rounded-md shadow-sm">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                  </svg>
+                </div>
+                <input
+                  class="block w-full pl-10 pr-3 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-amber-500 dark:focus:ring-amber-600 focus:border-transparent transition-all duration-200"
+                  id="contact_email" name="contact_email" type="email" required placeholder="your.email@example.com" oninput="validateEmail(this)" />
+              </div>
+              <span id="emailError" class="text-red-500 text-sm mt-1 block"></span>
+            </div>
+            
+            <!-- Message Field -->
+            <div>
+              <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="contact_message">
+                Message
+              </label>
+              <div class="relative rounded-md shadow-sm">
+                <textarea
+                  class="block w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-amber-500 dark:focus:ring-amber-600 focus:border-transparent transition-all duration-200"
+                  id="contact_message" name="contact_message" required rows="5" placeholder="How can we help you?"></textarea>
+              </div>
+            </div>
+            
+            <!-- Submit Button -->
+            <div class="pt-2">
+              <button
+                class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-base font-medium text-white bg-amber-600 hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 dark:bg-amber-700 dark:hover:bg-amber-600 dark:focus:ring-amber-600 transition-all duration-200"
+                type="submit">
+                <span>Submit</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </form>
     </div>
+    
+    <!-- Dark Mode Toggle Button -->
+    <div class="fixed bottom-4 right-4">
+      <button id="darkModeToggle" class="bg-gray-200 dark:bg-gray-700 p-2 rounded-full shadow-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-all duration-200">
+        <!-- Sun icon (for dark mode) -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-600 dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+        <!-- Moon icon (for light mode) -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-200 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+        </svg>
+      </button>
+    </div>
+    
+    <!-- Validation Scripts -->
+    <script>
+      // Name validation
+      function validateName(input) {
+        var nameRegex = /^[A-Za-z\- ]+$/; // Allow letters, hyphens, and spaces
+        
+        if (input.value.trim() === '') {
+          document.getElementById('nameError').textContent = '';
+          input.classList.remove('border-red-500');
+          input.classList.add('border-gray-300', 'dark:border-gray-600');
+        } else if (!input.value.match(nameRegex)) {
+          document.getElementById('nameError').textContent = 'Please enter a valid name with only letters, spaces, and hyphens.';
+          input.classList.remove('border-gray-300', 'dark:border-gray-600');
+          input.classList.add('border-red-500');
+        } else {
+          document.getElementById('nameError').textContent = '';
+          input.classList.remove('border-red-500');
+          input.classList.add('border-gray-300', 'dark:border-gray-600');
+        }
+      }
+      
+      // Email validation
+      function validateEmail(input) {
+        const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+        
+        if (input.value.trim() === '') {
+          document.getElementById('emailError').textContent = '';
+          input.classList.remove('border-red-500');
+          input.classList.add('border-gray-300', 'dark:border-gray-600');
+        } else if (!input.value.match(emailRegex)) {
+          document.getElementById('emailError').textContent = 'Please enter a valid email including @.';
+          input.classList.remove('border-gray-300', 'dark:border-gray-600');
+          input.classList.add('border-red-500');
+        } else {
+          document.getElementById('emailError').textContent = '';
+          input.classList.remove('border-red-500');
+          input.classList.add('border-gray-300', 'dark:border-gray-600');
+        }
+      }
+      
+      // Dark mode toggle
+      const darkModeToggle = document.getElementById('darkModeToggle');
+      
+      // Check for saved theme preference or use the system preference
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+      
+      // Add event listener to the dark mode toggle button
+      darkModeToggle.addEventListener('click', function() {
+        if (document.documentElement.classList.contains('dark')) {
+          document.documentElement.classList.remove('dark');
+          localStorage.theme = 'light';
+        } else {
+          document.documentElement.classList.add('dark');
+          localStorage.theme = 'dark';
+        }
+      });
+    </script>
   </section>
   
   <script>
