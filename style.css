@@ -287,6 +287,50 @@
   margin-left: 50%;
 }
 
+#favorites-tab {
+  right: -40px;
+  transition: right 0.3s ease-in-out;
+}
+
+#favorites-tab:hover {
+  right: 0;
+  transition: right 0.3s ease-in-out;
+}
+
+#favorites-panel {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  width: 0;
+  transition: width 0.3s ease-in-out;
+  max-width: 300px;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+}
+
+.favorite-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 48px;
+  color: #dc2626;
+  transition: color 0.3s ease;
+}
+
+.favorite-button:hover {
+  color: #b91c1c;
+}
+
+.favorite-button.favorited {
+  color: #b91c1c;
+}
+
+#favorites-list {
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+}
 
 
 
