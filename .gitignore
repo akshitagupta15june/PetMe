@@ -1,3 +1,26 @@
 node_modules
 *.env
 .DS_Store
+# Ignore system files
+Application Data/
+Cookies/
+Documents/My Music/
+Documents/My Pictures/
+Documents/My Videos/
+Local Settings/
+My Documents/
+NetHood/
+PrintHood/
+Recent/
+SendTo/
+Start Menu/
+Templates/
+Contacts/
+Desktop/
+Downloads/
+Favorites/
+Links/
+NTUSER.DAT*
+OneDrive/
+Saved Games/
+Searches/
