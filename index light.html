@@ -16,7 +16,7 @@
   <header class=" text-gray-400 bg-blue-300 body-font flex flex-row items-center justify-center lg:justify-around">
     <div class="flex flex-row items-center md:flex-row md:items-center p-5">
       <span class="mission-L1"> Saving Lives </span>
-      <a class="w-32" href="#">
+      <a class="w-32" href="#"> 
         <img class="rounded-full" src="./Assets/Images/logo.jpg" alt="logo" />
       </a>
       <span class="mission-L2"> Saving Animals </span>
@@ -24,7 +24,8 @@
       <div class="w-full mt-8 md:mt-0">
         <h1 class="text-4xl text-blue-600 text-center md:text-left md:ml-12 uppercase font-serif font-bold ">Adopt
           today!</h1>
-        <p class="text-lg text-gray-800 text-center md:text-left md:ml-12 mt-2">Give life to a needed animal</p>
+        <!-- <p class="text-lg text-gray-800 text-center md:text-left md:ml-12 mt-2">Give life to a needed animal</p> -->
+        <span id="element"class="text-lg text-gray-800 text-center md:text-left md:ml-12 mt-2"></span>
       </div>
     </div>
     <button data-collapse-toggle="navbar-default" type="button"
@@ -403,6 +404,13 @@
       </div>
   </footer>
   <script src="index.js" ></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Give life to a needed animal!', 'Be a Hero and rescue a Pet in Need!', 'Adopt Happiness!'],
+            typeSpeed: 50,
+        });
+    </script>
 </body>
 
 </html>
